@@ -349,14 +349,4 @@ body {
 .footer {
   background-color: #3e3e3e;
   padding: 100px 0 50px;
-}
-.footer .fooer_logo {
-  display: flex;
-  align-items: center;
-}
-.footer .fooer_logo .footer_logo-img {
-  background-color: red;
-}
-.footer .fooer_logo .footer_menuform {
-  display: flex;
 }/*# sourceMappingURL=style.css.map */
