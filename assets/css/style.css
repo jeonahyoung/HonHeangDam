@@ -1,0 +1,362 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css");
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.ttf") format("truetype");
+}
+header {
+  background-color: #FFF8ED;
+  justify-content: space-between;
+  padding: 50px 80px;
+}
+header .header-nav {
+  color: #272727;
+  gap: 0 120px;
+}
+header .header-navbar {
+  gap: 0 100px;
+}
+header .header-nav-link {
+  font-size: 28px;
+  font-weight: 600;
+  color: #272727;
+}
+header .header-nav-link:focus, header .header-nav-link:hover {
+  color: #272727;
+}
+header .header-nav-link span {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+header .header-nav-link:focus span, header .header-nav-link:hover span {
+  color: #272727;
+}
+header .mark {
+  padding: 0;
+  background-color: #FFF8ED;
+}
+header .mark::after {
+  content: "";
+  width: 0.5px;
+  height: 12px;
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  background-color: #FFA500;
+  z-index: -1;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+header .mark:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+header .header_nav-icon {
+  list-style: none;
+  display: flex;
+  gap: 0 40px;
+}
+header .header_nav-icon i {
+  font-size: 35px;
+  font-weight: 600;
+  color: #272727;
+}
+header .header_nav-icon i:hover {
+  color: #FFA500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn {
+  background-color: #FFA500;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 20px 35px;
+  border: none;
+  border-radius: 50px;
+  margin-top: 70px;
+}
+
+.btn a {
+  background-color: #FFA500;
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Paperlogy";
+}
+
+.sec01 {
+  background-color: #FFF8ED;
+  padding: 50px 80px 100px;
+}
+.sec01 .sec01_title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #272727;
+  position: absolute;
+}
+.sec01 .sec01_title p {
+  margin: 0;
+}
+.sec01 .sec01_title .basic-c {
+  color: #FFA500;
+}
+.sec01 .sec01_title .point-c {
+  color: #009F57;
+}
+.sec01 .sec01_bg {
+  width: 100%;
+  height: 71vh;
+  background: url(../images/sec01-bg_1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.sec02 {
+  padding: 100px 0;
+}
+
+.sec02-titleform {
+  margin-bottom: 80px;
+}
+.sec02-titleform .sec02_title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #272727;
+}
+.sec02-titleform .sec02__subtitle {
+  color: #a3a2a2;
+  font-size: 28px;
+}
+
+.sec02_card-form {
+  position: relative;
+  border-radius: 30px;
+}
+.sec02_card-form .sec02_c-content {
+  width: 100%;
+  height: 45vh;
+  z-index: 0;
+}
+.sec02_card-form p {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  bottom: 5%;
+  color: #fff;
+  right: 5%;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.sec02_card-form::after {
+  content: "";
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0); /* 초기 투명 */
+  transition: background-color 0.2s ease-in-out;
+  z-index: 999999;
+}
+
+.sec02_card-form:hover::after {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  position: absolute;
+  z-index: 1;
+}
+
+.sec03 {
+  padding: 100px 0;
+}
+.sec03 .sec03_title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #272727;
+}
+.sec03 .row {
+  gap: 0 24px;
+  margin-bottom: 80px;
+}
+.sec03 .sec03_card01,
+.sec03 .sec03_card02,
+.sec03 .sec03_card03 {
+  width: 32%;
+  height: 39vh;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end; /* 세로 하단 정렬 */
+}
+.sec03 .sec03_card01 {
+  background: url(../images/sec03-card01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sec03 .sec03_card02 {
+  background: url(../images/sec03-card02.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sec03 .sec03_card03 {
+  background: url(../images/sec03-card03.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sec03_c-content p {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+.sec03_c-content span {
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.sec04 {
+  padding: 80px 0;
+  background-color: #FFF8ED;
+}
+.sec04 .sec04_titleform {
+  font-size: 50px;
+  font-weight: 700;
+  color: #272727;
+}
+.sec04 .sec04_img {
+  background: url(../images/sec04_image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 29vh;
+}
+
+.sec05 {
+  padding: 100px 0;
+}
+.sec05 .sec05_titleform .sec05_title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #272727;
+}
+.sec05 .sec05_titleform .sec05_subtitle {
+  font-size: 25px;
+  font-weight: 500;
+  color: #a3a2a2;
+  margin-bottom: 80px;
+}
+.sec05 .sec05_qnaform .sec05-q {
+  font-size: 28px;
+  font-weight: 600;
+  color: #272727;
+  padding: 25px 0;
+  border-bottom: 2px solid #FFA500;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0 100px;
+}
+.sec05 .sec05_qnaform .sec05-q button {
+  border: none;
+  background-color: #fff;
+  margin-left: auto;
+}
+.sec05 .sec05_qnaform .sec05-q button i {
+  font-size: 30px;
+  color: #FFA500;
+}
+.sec05 .sec05_qnaform .sec05-a {
+  font-size: 25px;
+  font-weight: 400;
+  color: #272727;
+  background-color: #FFF8ED;
+  border-radius: 0 0 30px 30px;
+  padding: 20px 27px;
+}
+.sec05 .sec05_qnaform .sec05-a .sec05-highlighter {
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #3e3e3e;
+  padding: 100px 0 50px;
+}
+.footer .fooer_logo {
+  display: flex;
+  align-items: center;
+}
+.footer .fooer_logo .footer_logo-img {
+  background-color: red;
+}
+.footer .fooer_logo .footer_menuform {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
