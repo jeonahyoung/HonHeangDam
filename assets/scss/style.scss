@@ -116,17 +116,12 @@
         color: variables.$font-c;
     }
 
-    .row{
-        gap: 0 24px;
-        margin-bottom: 80px;
-    }
+
 
     .sec03_card01,
     .sec03_card02,
     .sec03_card03{
-        width: 32%;
         height: 39vh;
-        padding: 20px;
         display: flex;
         align-items: flex-end; /* 세로 하단 정렬 */
     }
