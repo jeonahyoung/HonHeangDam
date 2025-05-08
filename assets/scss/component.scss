@@ -8,72 +8,77 @@
     .header-nav{
         color:variables.$font-c;
         gap: 0 120px;
-    }
-    
-    .header-navbar{
-        gap: 0 100px;
-    }
 
-    .header-nav-link{
-        font-size: map-get(variables.$font-size, 28);
-        font-weight: map-get(variables.$font-weight, 600);
-        color: variables.$font-c;
-    }
+        .header-navbar{
+            gap: 0 100px;
 
-    .header-nav-link:focus, .header-nav-link:hover {
-        color: variables.$font-c;
-    }
+            .header-nav-link{
+                font-size: map-get(variables.$font-size, 28);
+                font-weight: map-get(variables.$font-weight, 600);
+                color: variables.$font-c;
+            }
 
-    .header-nav-link span {
-        position: relative;
-        display: inline-block;
-        z-index: 0;
-      }
+            .header-nav-link:focus, .header-nav-link:hover {
+                color: variables.$font-c;
+            }
 
-    .header-nav-link:focus span, .header-nav-link:hover span {
-        color: variables.$font-c;
-    }
+            .header-nav-link span {
+                position: relative;
+                display: inline-block;
+                z-index: 0;
+              }
+        
+            .header-nav-link:focus span, .header-nav-link:hover span {
+                color: variables.$font-c;
+            }
 
-    .mark{
-        padding: 0;
-        background-color: variables.$basic-bg;
-    }
+            .mark{
+                padding: 0;
+                background-color: variables.$basic-bg;
+            }
 
-    .mark::after{
-        content: "";
-        width: 0.5px;
-        height: 12px;
-        position: absolute;
-        bottom: 11px;
-        left: 0;
-        background-color: variables.$basic-c;
-        z-index: -1;
-        // transition: all 0.3s ease-in-out;
-        opacity: 0;
-        transition-property: all;
-        transition-duration: 0.7s;
-    }
+            .mark::after{
+                content: "";
+                width: 0.5px;
+                height: 12px;
+                position: absolute;
+                bottom: 11px;
+                left: 0;
+                background-color: variables.$basic-c;
+                z-index: -1;
+                // transition: all 0.3s ease-in-out;
+                opacity: 0;
+                transition-property: all;
+                transition-duration: 0.7s;
+            }
+        
+            .mark:hover::after{
+                opacity: 1;
+                width: 100%;
+            }
 
-    .mark:hover::after{
-        opacity: 1;
-        width: 100%;
+        }
     }
 
     .header_nav-icon{
         list-style: none;
         display: flex;
         gap: 0 40px;
-    }
 
-    .header_nav-icon i{
-        font-size: map-get(variables.$font-size, 35);
-        font-weight: map-get(variables.$font-weight, 600);
-        color: variables.$font-c;
-    }
+        i{
+            font-size: map-get(variables.$font-size, 35);
+            font-weight: map-get(variables.$font-weight, 600);
+            color: variables.$font-c;
+        }
+    
+        i:hover{
+            color: variables.$basic-c;
+            transition: all 0.2s ease-in-out;
+        }
 
-    .header_nav-icon i:hover{
-        color: variables.$basic-c;
-        transition: all 0.2s ease-in-out;
+        .hamburger{
+            display: none;
+        }
     }
  }
 //==========header end==========
@@ -83,7 +88,7 @@
     background-color: variables.$basic-c;
     font-size: map-get(variables.$font-size,28);
     font-weight: map-get(variables.$font-weight,500);
-    padding: 20px 35px;
+    padding: 12px;
     border: none;
     border-radius: 50px;
     margin-top: 70px;
