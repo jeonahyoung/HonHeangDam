@@ -149,6 +149,12 @@ header .header_nav-icon .hamburger {
 body {
   font-family: "Paperlogy";
 }
+body .basic-c {
+  color: #FFA500;
+}
+body .point-c {
+  color: #32BD7E;
+}
 
 .sec01 {
   background-color: #FFF8ED;
@@ -167,7 +173,7 @@ body {
   color: #FFA500;
 }
 .sec01 .sec01-form .sec01_title .point-c {
-  color: #009F57;
+  color: #32BD7E;
 }
 
 .sec02 {
@@ -305,7 +311,7 @@ body {
   color: #FFA500;
 }
 .sec05 .sec05_titleform .sec05_title .point-c {
-  color: #009F57;
+  color: #32BD7E;
 }
 .sec05 .sec05_titleform .sec05_subtitle {
   font-size: 25px;
@@ -359,52 +365,156 @@ body {
 
 .footer {
   background-color: #3e3e3e;
-  padding: 100px 0 50px;
 }
-.footer .footer-container {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1320px;
+.footer .footer-logo {
+  width: 70%;
 }
-.footer .footer-container .footer_logo {
+.footer .footer-form01 {
   align-items: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
 }
-.footer .footer-container .footer_logo .footer_menuform {
-  justify-content: flex-end;
-  margin-left: auto;
-}
-.footer .footer-container .footer_logo .footer_menuform ul {
+.footer .footer-form01 ul {
   list-style: none;
-  display: flex;
-  gap: 0 60px;
 }
-.footer .footer-container .footer_logo .footer_menuform ul a {
-  text-decoration: none;
+.footer .footer-form01 ul a {
   font-size: 22px;
   font-weight: 500;
   color: #d9d9d9;
+  padding: 0.5rem 1rem;
 }
-.footer .footer-container .footer_content {
-  padding-top: 50px;
-}
-.footer .footer-container .footer_content ul {
+.footer .footer-form02 ul {
   list-style: none;
   color: #a3a2a2;
   padding: 0;
-  margin: 0;
+  margin-bottom: 35px;
 }
-.footer .footer-container .footer_content ul li {
-  line-height: 36px;
+.footer .footer-form02 ul li {
   font-size: 18px;
   font-weight: 400;
+  padding-bottom: 1rem;
+  padding-left: 0;
 }
-.footer .footer-container .footer_content .line {
-  border-bottom: 2px solid #d9d9d9;
-  padding-top: 50px;
-}
-.footer .footer-container .footer_content .footer-copyright {
+.footer .footer-form02 .footer-copy {
   font-size: 18px;
   font-weight: 500;
   color: #a3a2a2;
   padding-top: 50px;
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding: 30px 80px;
+  }
+  header img {
+    width: 90%;
+  }
+  header .header-nav .header-navbar {
+    gap: 0 80px;
+  }
+  header .header-nav .header-nav-link {
+    font-size: 25px !important;
+  }
+  .header_nav-icon i {
+    font-size: 28px !important;
+  }
+  .sec01 {
+    padding: 40px 60px 80px;
+  }
+  .sec01_title p {
+    font-size: 43px;
+  }
+  .sec01_bg-img {
+    width: 100%;
+  }
+  .sec02 {
+    padding: 80px 0;
+  }
+  .sec02 .sec02-titleform {
+    margin-bottom: 60px;
+  }
+  .sec02 .sec02-titleform .sec02_title {
+    font-size: 43px;
+  }
+  .sec02 .sec02-titleform .sec02__subtitle {
+    font-size: 25px;
+  }
+  .sec02 .sec02_card-form .sec02_c-content {
+    height: 36vh;
+  }
+  .sec02 .sec02_card-form p {
+    bottom: 1%;
+    font-size: 21px;
+  }
+  .sec03 {
+    padding: 80px 0;
+  }
+  .sec03 .sec03_titleform {
+    margin-bottom: 60px;
+  }
+  .sec03 .sec03_titleform p {
+    font-size: 43px;
+  }
+  .sec03 .sec03__content .sec03__subcontent {
+    margin: 18px;
+  }
+  .sec03 .sec03__content .sec03__subcontent p {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .sec03 .sec03__content .sec03__subcontent span {
+    font-size: 21px;
+  }
+  .sec03 .btn {
+    font-size: 25px;
+    padding: 12px;
+    margin-top: 60px;
+  }
+  .sec04 {
+    padding: 80px 0;
+  }
+  .sec04 .sec04_titleform {
+    font-size: 43px;
+  }
+  .sec04 .sec04_titleform .btn {
+    font-size: 25px;
+  }
+  .sec04 .sec04-gap {
+    width: 30%;
+  }
+  .sec05 {
+    padding: 80px 0;
+  }
+  .sec05 .sec05_titleform .sec05_title {
+    font-size: 43px;
+  }
+  .sec05 .sec05_titleform .sec05_subtitle {
+    font-size: 21px;
+  }
+  .sec05 .accordion-item .accordion-button {
+    font-size: 25px;
+    padding: 21px 0;
+  }
+  .sec05 .accordion-item .accordion-button:not(.collapsed) {
+    font-size: 25px;
+  }
+  .sec05 .accordion-item .accordion-body p {
+    font-size: 21px;
+  }
+  .footer .footer-form01 {
+    padding-top: 30px;
+  }
+  .footer .footer-form01 ul {
+    margin-bottom: 15px;
+  }
+  .footer .footer-form01 ul a {
+    font-size: 18px;
+  }
+  .footer .footer-form02 ul li {
+    font-size: 15px;
+  }
+  .footer .footer-form02 .footer-copy {
+    font-size: 15px;
+    padding-top: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

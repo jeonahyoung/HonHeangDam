@@ -1,12 +1,23 @@
 @use 'animations';
-@use 'component';
 @use 'variables';
+@use 'component';
 @use 'responsive';
+
+
+
 
   body{
     font-family: 'Paperlogy';
+
+    .basic-c{
+        color: variables.$basic-c;
+    }
+
+    .point-c{
+        color: variables.$point-c;
+    }
   }
- //==========header=============
+//==========header==============
 
 //==========header end==========
 
@@ -258,69 +269,217 @@
 //==========footer==============
 .footer{
     background-color: #3e3e3e;
-    padding: 100px 0 50px;
-
-    .footer-container{
-        width: 100%;
-        margin: 0 auto;
-        max-width: 1320px;
-
-        .footer_logo{
-            align-items: center;
-
-            .footer_menuform{
-                justify-content: flex-end;
-                margin-left: auto;
-                
-                ul{
-                    list-style: none;
-                    display: flex;
-                    gap: 0 60px;
-    
-                    a{
-                        text-decoration: none;
-                        font-size: map-get(variables.$font-size,22);
-                        font-weight: map-get(variables.$font-weight, 500);
-                        color: variables.$footer-font;
-                    }
-                }
-            }
-        }
-
-    .footer_content{
+    .footer-logo{
+        width: 70%;
+    }
+    .footer-form01{
+        align-items: center;
         padding-top: 50px;
+        margin-bottom: 50px;
+        ul{
+            list-style: none;
+            a{
+                font-size: map-get(variables.$font-size,22);
+                font-weight: map-get(variables.$font-weight,500);
+                color: variables.$footer-font;
+                padding: 0.5rem 1rem;
+            }
+        }   
+    }
 
+    .footer-form02{
         ul{
             list-style: none;
             color: variables.$gray-font;
             padding: 0;
-            margin: 0;
-            
-
+            margin-bottom: 35px;
             li{
-                line-height: 36px;
                 font-size: map-get(variables.$font-size,18);
                 font-weight: map-get(variables.$font-weight, 400);
+                padding-bottom: 1rem;
+                padding-left: 0;
+
             }
         }
 
-        .line{
-            border-bottom: 2px solid variables.$footer-font;
-            padding-top: 50px;
-        }
-
-        .footer-copyright{
+        .footer-copy{
             font-size: map-get(variables.$font-size,18);
             font-weight: map-get(variables.$font-weight, 500);
             color: variables.$gray-font;
             padding-top: 50px;
-            }
-        
+        }
     }
-        
-    }
-   
-   
 }
-
 //==========footet end==========
+
+
+@media (max-width:1280px) {
+     // =============header====================
+    header{
+        padding: 30px 80px;
+        img{
+            width: 90%;
+        }
+        .header-nav {
+            .header-navbar{
+                gap: 0 80px;
+                }
+                 .header-nav-link {
+                    font-size: 25px !important;
+                }
+            }
+        }
+        
+        .header_nav-icon i {
+            font-size: 28px !important;
+        }
+    
+    // =============header end==================
+
+    // =============sec 01======================
+    .sec01{
+        padding: 40px 60px 80px;  
+    } 
+   
+    .sec01_title p{
+        font-size: 43px;
+    } 
+    .sec01_bg-img{
+        width: 100%;
+    }
+    // =============sec 01 end==================
+
+    // =============sec 02======================
+    .sec02{
+        padding: 80px 0;
+        .sec02-titleform{
+            margin-bottom: 60px;
+            .sec02_title{
+                font-size: 43px;
+            }
+            .sec02__subtitle{
+                font-size: 25px;
+            }
+        }
+
+        .sec02_card-form{
+            .sec02_c-content{
+                height: 36vh;
+            }
+            p{
+                bottom: 1%;
+                font-size: 21px;
+            }
+        }
+    }
+    // =============sec 02 end==================
+
+    // =============sec 03======================
+    .sec03{
+        padding: 80px 0;
+
+        .sec03_titleform{
+            margin-bottom: 60px;
+            p{
+             font-size: 43px;
+            }
+        }
+
+        .sec03__content{
+            .sec03__subcontent{
+                margin: 18px;
+                p{
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                }
+
+                span{
+                font-size: 21px;
+                }
+            }
+        }
+        .btn{
+            font-size: 25px;
+            padding: 12px;
+            margin-top: 60px;
+        }
+    }
+    // =============sec 03 end==================
+
+    // =============sec 04======================
+    .sec04{
+        padding: 80px 0;
+        .sec04_titleform {
+            font-size: 43px;
+            .btn{
+                font-size: 25px;
+            }
+        }
+        .sec04-gap{
+            width: 30%;
+        }
+    }
+    // =============sec 04 end==================
+
+    // =============sec 05======================
+    .sec05{
+        padding: 80px 0;
+        .sec05_titleform{
+            .sec05_title{
+                font-size: 43px;
+            }
+            .sec05_subtitle{
+                font-size: 21px;
+            }
+        }
+
+        .accordion-item{
+            .accordion-button{
+                font-size: 25px;
+                padding: 21px 0;
+            }
+            .accordion-button:not(.collapsed){
+                font-size: 25px;
+            }
+
+            .accordion-body p{
+                font-size: 21px;
+            }
+        }
+    }
+    // =============sec 05 end==================
+
+    // =============footer======================
+   .footer{
+        .footer-form01{
+            padding-top: 30px;
+            ul{
+                margin-bottom: 15px;
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .footer-form02{
+            ul{
+                li{
+                    font-size: 15px;
+                }
+            }
+
+            .footer-copy{
+                font-size: 15px;
+                padding-top: 30px;
+                }
+            }
+        }
+   }
+    // =============footer end==================
+    
+
+
+
+
+
+

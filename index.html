@@ -11,6 +11,8 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  
 </head>
 
 <body>
@@ -58,7 +60,7 @@
   <!--sec02-->
   <section class="sec02">
     <div class="col-md-12 sec02-titleform">
-      <p class="sec02_title text-center m-auto">랜선으로 즐기는 방구석투어</p>
+      <p class="sec02_title text-center m-auto">랜선으로 즐기는 <span class="basic-c">방구석</span><span class="point-c">투어</span></p>
       <p class="sec02__subtitle text-center m-auto">사진으로 먼저 떠나볼까요:)</p>
     </div>
 
@@ -192,7 +194,7 @@
             <a href="#">취향 고르러 가기</a>
           </div>
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-4 sec04-gap"></div>
         <div class="col-md-3 sec04_img"></div>
       </div>
     </div>
@@ -273,35 +275,39 @@
 
   <!--footer-->
   <section class="footer">
-    <div class="footer-container">
-      <div class="footer_logo d-flex">
-        <div class="footer_logo-img">
-          <img src="assets/images/logo.png" alt="logo">
+    <div class="container">
+        <div class="py-5">
+            <div class="row footer-form01">
+                <div class="col-md-2">
+                    <img src="assets/images/logo.png" alt="logo" class="footer-logo">
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-5">
+                    <ul class="d-flex justify-content-end ">
+                        <li><a href="#" class="text-decoration-none">여행지찾기</a></li>
+                        <li><a href="#" class="text-decoration-none">추천코스</a></li>
+                        <li><a href="#" class="text-decoration-none">방구석투어</a></li>
+                        <li><a href="#" class="text-decoration-none">커뮤니티</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer-form02">
+                <div class="col-md-12 border-bottom">
+                    <ul>
+                        <li>"고요한 길 위에서, 진짜 나를 만나는 여행</li>
+                        <li>인천광역시 미추홀구 용마루로 33</li>
+                        <li>Tel: 032_4577-6334</li>
+                        <li>대표자: 전 아 영</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 border-top footer-copy">
+                    <p class="text-end">Copyright ⓒ HonHeangDam. All Rights Reserved</p>
+                </div>
+            </div>
         </div>
-        <div class="footer_menuform">
-          <ul>
-            <li><a href="#">여행지찾기</a></li>
-            <li><a href="#">추천코스</a></li>
-            <li><a href="#">방구석투어</a></li>
-            <li><a href="#">커뮤니티</a></li>
-          </ul>
-        </div>
-      </div>
-  
-      <div class="footer_content">
-        <ul>
-          <li>“고요한 길 위에서, 진짜 나를 만나는 여행”</li>
-          <li>인천광역시 미추홀구 용마루로 33</li>
-          <li>Tel : 032)4577-6334</li>
-          <li>대표자 : 전 아 영</li>
-        </ul>
-        <div class="line"></div>
-        <div class="footer-copyright">
-          <p align="right">Copyright ⓒ HonHeangDam. All Rights Reserved</p>
-        </div>
-      </div>
+       
     </div>
-  </section>
+</section>
   <!--footer end-->
 
 
@@ -321,7 +327,7 @@
       centeredSlides: true,
       
       autoplay: {
-        delay: 1000,
+        delay: 100000,
         pauseOnMouseEnter: true,
   
       },
