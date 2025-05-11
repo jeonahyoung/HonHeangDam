@@ -17,7 +17,7 @@
 
 <body>
   <!-- header -->
-  <header class="d-flex">
+  <header class="d-flex align-items-center">
     <div class="logo">
       <img src="assets/images/logo.png" alt="logo">
     </div>
@@ -32,7 +32,7 @@
             <a class="nav-link header-nav-link" href="#"><span class="mark">커뮤니티</span></a>
           </div>
           <div class="header_nav-icon">
-            <i class="ph ph-bookmark-simple"></i>
+            <i class="ph ph-bookmark-simple icon_mark"></i>
             <i class="ph ph-map-pin icon_map"></i>
             <i class="ph ph-list hamburger"></i>
           </div>
@@ -178,7 +178,7 @@
       </div>
     </div>
 
-    <div class="btn d-grid mx-auto" style="width: 100%; max-width: 250px;">
+    <div class="btn d-grid mx-auto">
       <a href="#">더 알아보기</a>
     </div>
   </section>
@@ -190,7 +190,7 @@
       <div class="row">
         <div class="col-md-5 sec04_titleform">
           <p>취향을 고르면,<br>추천 코스를 알려드릴게요!</p>
-          <div class="btn d-grid" style="width: 100%; max-width: 250px;">
+          <div class="btn d-grid">
             <a href="#">취향 고르러 가기</a>
           </div>
         </div>
@@ -276,19 +276,18 @@
   <!--footer-->
   <section class="footer">
     <div class="container">
-        <div class="py-5">
             <div class="row footer-form01">
                 <div class="col-md-2">
                     <img src="assets/images/logo.png" alt="logo" class="footer-logo">
                 </div>
-                <div class="col-md-5"></div>
-                <div class="col-md-5">
-                    <ul class="d-flex justify-content-end ">
+                <div class="col-md-5 footer-gap"></div>
+                <div class="col-md-5 footer-nav">
+                  <ul class="d-flex justify-content-end">
                         <li><a href="#" class="text-decoration-none">여행지찾기</a></li>
                         <li><a href="#" class="text-decoration-none">추천코스</a></li>
                         <li><a href="#" class="text-decoration-none">방구석투어</a></li>
                         <li><a href="#" class="text-decoration-none">커뮤니티</a></li>
-                    </ul>
+                  </ul>
                 </div>
             </div>
             <div class="row footer-form02">
@@ -304,7 +303,7 @@
                     <p class="text-end">Copyright ⓒ HonHeangDam. All Rights Reserved</p>
                 </div>
             </div>
-        </div>
+       
        
     </div>
 </section>
@@ -327,7 +326,7 @@
       centeredSlides: true,
       
       autoplay: {
-        delay: 100000,
+        delay: 1000,
         pauseOnMouseEnter: true,
   
       },

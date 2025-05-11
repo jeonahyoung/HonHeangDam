@@ -269,44 +269,49 @@
 //==========footer==============
 .footer{
     background-color: #3e3e3e;
-    .footer-logo{
-        width: 70%;
-    }
-    .footer-form01{
-        align-items: center;
-        padding-top: 50px;
-        margin-bottom: 50px;
-        ul{
-            list-style: none;
-            a{
-                font-size: map-get(variables.$font-size,22);
-                font-weight: map-get(variables.$font-weight,500);
-                color: variables.$footer-font;
-                padding: 0.5rem 1rem;
-            }
-        }   
-    }
-
-    .footer-form02{
-        ul{
-            list-style: none;
-            color: variables.$gray-font;
-            padding: 0;
-            margin-bottom: 35px;
-            li{
-                font-size: map-get(variables.$font-size,18);
-                font-weight: map-get(variables.$font-weight, 400);
-                padding-bottom: 1rem;
-                padding-left: 0;
-
-            }
+    .container{
+        padding: 50px 0;
+        .footer-logo{
+            width: 70%;
         }
-
-        .footer-copy{
-            font-size: map-get(variables.$font-size,18);
-            font-weight: map-get(variables.$font-weight, 500);
-            color: variables.$gray-font;
+        .footer-form01{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding-top: 50px;
+            margin-bottom: 50px;
+            ul{
+                list-style: none;
+                a{
+                    font-size: map-get(variables.$font-size,22);
+                    font-weight: map-get(variables.$font-weight,500);
+                    color: variables.$footer-font;
+                    padding: 0.5rem 1rem;
+                }
+            }   
+        }
+    
+        .footer-form02{
+            ul{
+                list-style: none;
+                color: variables.$gray-font;
+                padding: 0;
+                margin-bottom: 35px;
+                li{
+                    font-size: map-get(variables.$font-size,18);
+                    font-weight: map-get(variables.$font-weight, 400);
+                    padding-bottom: 1rem;
+                    padding-left: 0;
+    
+                }
+            }
+    
+            .footer-copy{
+                font-size: map-get(variables.$font-size,18);
+                font-weight: map-get(variables.$font-weight, 500);
+                color: variables.$gray-font;
+                padding-top: 50px;
+            }
         }
     }
 }
@@ -317,22 +322,20 @@
      // =============header====================
     header{
         padding: 30px 80px;
-        img{
-            width: 90%;
-        }
-        .header-nav {
-            .header-navbar{
-                gap: 0 80px;
-                }
-                 .header-nav-link {
-                    font-size: 25px !important;
-                }
-            }
-        }
+    }
         
-        .header_nav-icon i {
-            font-size: 28px !important;
-        }
+    header img{
+        width: 90%;
+    }
+    header .header-nav .header-navbar{
+        gap: 0 80px;
+    }
+    header .header-nav .header-navbar .header-nav-link {
+        font-size: 25px;
+    }
+    header .header_nav-icon i {
+        font-size: 28px;
+    }
     
     // =============header end==================
 
@@ -451,33 +454,444 @@
 
     // =============footer======================
    .footer{
-        .footer-form01{
-            padding-top: 30px;
-            ul{
-                margin-bottom: 15px;
-                a{
-                    font-size: 18px;
-                }
-            }
-        }
-
-        .footer-form02{
-            ul{
-                li{
-                    font-size: 15px;
-                }
-            }
-
-            .footer-copy{
-                font-size: 15px;
+        .container{
+            padding: 30px 0;
+            .footer-form01{
                 padding-top: 30px;
+                ul{
+                    margin-bottom: 15px;
+                    a{
+                        font-size: 18px;
+                    }
                 }
             }
+    
+            .footer-form02{
+                ul{
+                    li{
+                        font-size: 15px;
+                    }
+                }
+    
+                .footer-copy{
+                    font-size: 15px;
+                    padding-top: 30px;
+                    }
+                }
         }
+            
+        
+        }
+   // =============footer end==================
    }
-    // =============footer end==================
+ 
+    
+@media (max-width:1024px){
+    // =============header==================
+    header {
+        padding: 20px 60px;
+    }
+
+    header img {
+        width: 85%;
+    }
+
+     header .header-nav .header-navbar .header-nav-link {
+        font-size: 20px;
+    }
+
+    header .header_nav-icon {
+        display: none;
+    }
+    // =============header end==============
+
+    // =============sec01===================
+    .sec01 {
+        padding: 20px 60px 60px;
+    }
+    .sec01_title p {
+        font-size: 33px;
+    }
+    // =============sec01 end==============
+
+    // =============sec02===================
+    .sec02 {
+        padding: 60px 0;
+    }
+
+    .sec02 .sec02-titleform .sec02_title {
+        font-size: 33px;
+    }
+
+    .sec02 .sec02-titleform .sec02__subtitle {
+        font-size: 20px;
+    }
+    
+    .sec02 .sec02_card-form p {
+        font-size: 20px;
+    }
+
+    .sec02 .sec02_card-form .sec02_c-content {
+        height: 30vh;
+    }
+    // =============sec02 end===============
+
+    // =============.sec03==================
+    .sec03 {
+        padding: 60px 0;
+    }
+    
+    .sec03 .sec03_titleform p {
+        font-size: 33px;
+    }
+
+    .sec03 .sec03__content {
+        height: 33vh;
+    }
+
+    .sec03 .sec03__content .sec03__subcontent p {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .sec03 .sec03__content .sec03__subcontent span {
+        font-size: 20px;
+    }
+
+    .sec03 .btn {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+    // =============sec03 end===============
+
+    // =============sec04===================
+    .sec04 {
+        padding: 60px 0;
+    }
+
+    .sec04 .sec04_titleform {
+        font-size: 33px;
+    }
+
+    .sec04 .sec04_titleform .btn {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    .sec04 .sec04-gap {
+        width: 32%;
+    }
+
+    .sec04 .sec04_img {
+         height: 20vh;
+    }
+    // =============sec04 end===============
+
+    // =============.sec05==================
+    .sec05 {
+        padding: 60px 0;
+    }
+
+    .sec05 .sec05_titleform .sec05_title {
+        font-size: 33px;
+    }
+
+        .sec05 .sec05_titleform .sec05_subtitle {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .sec05 .accordion-item .accordion-button {
+        font-size: 22px;
+        padding: 13px 0;
+    }
+
+    .sec05 .accordion-item .accordion-button:not(.collapsed) {
+        font-size: 22px;
+    }
+
+    .sec05 .accordion-item .accordion-body p {
+        font-size: 20px;
+    }
+    // =============sec05 end===============
+
+    // =============footer==================
+    .footer .container {
+        padding: 20px 0;
+    }
+
+    .footer .container .footer-logo {
+        width: 70%;
+    }
+
+    .footer .container .footer-form01 ul a {
+        font-size: 15px;
+    }
+
+    .footer-gap{
+        width: 27%;
+    }
+
+    .footer-nav{
+        width: 48%;      
+    }
+
+    .footer .footer-form02 ul{
+      margin-bottom: 20px;
+    }
+
+    .footer .container .footer-form02 ul li{
+        font-size: 13px;
+        padding-bottom: 0.3rem;
+    }
+
+    .footer .container .footer-form02 .footer-copy {
+        font-size: 13px;
+        padding-top: 20px;
+    }
+    // =============footer end==============
+}
+
+
+@media (max-width:768px){
+    //==========header==============
+    header {
+        padding: 10px 25px;
+    }
+
+    header img {
+        width: 65%;
+    }
+
+    .collapse:not(.show) {
+        display: block;
+    }
+
+    .header-navbar{
+        display: none;
+    }
+
+    header .header_nav-icon .hamburger {
+        display: block;
+        color: variables.$font-c;
+    }
+
+    header .header_nav-icon .icon_map,.icon_mark{
+        display: none;
+    }
+
+    header .header_nav-icon {
+        display: flex;
+    }
+
+    header .header_nav-icon i {
+        font-size: 25px;
+    }
+//==========header end==========
+
+//==========sec01===============
+    .sec01 {
+        padding: 20px 25px 40px;
+    }
+
+    .sec01_title p {
+        font-size: 26px;
+    }
+//==========sec01 end===========
+
+//==========sec02===============
+    .sec02 {
+        padding: 40px 0;
+    }
+
+    .sec02 .sec02-titleform .sec02_title {
+        font-size: 26px;
+    }
+
+        .sec02 .sec02-titleform .sec02__subtitle {
+        font-size: 14px;
+    }
+
+    .sec02 .sec02_card-form p {
+        font-size: 14px;
+    }
+//==========sec02 end===========
+
+//==========sec03===============
+    .sec03 {
+        padding: 40px 0;
+    }
+
+    .sec03 .sec03_titleform p {
+        font-size: 26px;
+    }
+
+    .sec03 .sec03_titleform {
+        margin-bottom: 40px;
+    }
+
+    .sec03 .sec03__content .sec03__subcontent p {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .sec03 .sec03__content .sec03__subcontent span {
+        font-size: 14px;
+    }
+
+    .sec03 .btn {
+        font-size: 18px;
+        max-width: 166px;
+        padding: 9px;
+    }
+//==========sec03 end===========
     
 
+//==========sec04===============
+    .sec04 {
+        padding: 40px 0;
+    }
+
+    .sec04 .sec04_titleform {
+        font-size: 26px;
+    }
+
+    .sec04 .sec04_titleform .btn {
+        font-size: 18px;
+        max-width: 176px;
+        padding: 8px;
+    }
+//==========sec04 end===========
+
+//==========sec05===============
+    .sec05 {
+        padding: 40px 0;
+    }
+
+    .sec05 .sec05_titleform .sec05_title {
+        font-size: 26px;
+    }
+
+    .sec05 .sec05_titleform .sec05_subtitle {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .sec05 .accordion-item .accordion-button {
+        font-size: 18px;
+        padding: 1px 0;
+    }
+
+    .sec05 .accordion-item .accordion-button:not(.collapsed) {
+        font-size: 18px;
+    }
+
+    .sec05 .accordion-item .accordion-body p {
+        font-size: 14px;
+        line-height: 27px;
+    }
+//==========sec05 end===========
+
+//==========footer==============
+    .footer .container .footer-logo {
+        width: 65%;
+    }
+
+    .footer .container .footer-form01 {
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .footer .container .footer-form01 ul{
+         padding-left: 0;
+    }
+    
+
+    .footer .container .footer-form01 ul a {
+        font-size: 11px;
+    } 
+
+    .footer .container .footer-form02 ul{
+        margin-bottom: 20px;
+    }
+
+    .footer .container .footer-form02 ul li {
+        font-size: 10px;
+        padding-bottom: 0.1rem;
+            
+    }
+
+    .footer .container .footer-form02 .footer-copy {
+        font-size: 10px;
+        padding-top: 20px;
+    }
+//==========footer end==========
+}
+
+@media (max-width:540px){
+//==========header==============
+    header {
+        padding: 10px 33px;
+    }
+
+    header img {
+        width: 53%;
+    }
+//==========header end==========
+
+//==========sec01==========
+    .sec01_bg-img {
+        opacity: 0;
+    }
+
+    .sec01 .sec01-form .sec01_title {
+        text-align: center;
+        top: 22%;
+        left: 25%;
+    }
+//==========sec01 end===========
+
+//==========sec02===============
+//==========sec02 end===========
+
+//==========sec03===============
+    .sec03 .sec03__content {
+        height: 33vh;
+        margin-bottom: 15px;
+    }
+//==========sec03 end===========
+
+//==========sec04===============
+    .sec04 .sec04_titleform {
+        text-align: center;
+    }
+
+    .sec04 .sec04_img {
+        display: none;
+    }
+
+    .sec04 .sec04_titleform .btn {
+        margin: 0 auto;
+    }
+//==========sec04 end===========
+
+//==========sec05===============
+//==========sec05 end===========
+
+//==========footer==============
+    .footer .container .footer-logo {
+        width: 12%;
+    }
+//==========footer end==========
+
+
+
+
+
+
+
+}
+@media (max-width:348px){}
 
 
 
