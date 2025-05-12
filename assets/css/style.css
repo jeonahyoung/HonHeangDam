@@ -776,11 +776,33 @@ body .point-c {
   }
   .sec01_bg-img {
     opacity: 0;
+    width: 90%;
   }
   .sec01 .sec01-form .sec01_title {
     text-align: center;
-    top: 22%;
+    top: 13%;
     left: 25%;
+  }
+  .sec01_title p {
+    font-size: 28px;
+  }
+  .sec02 {
+    padding: 60px 0;
+  }
+  .sec02 .sec02-titleform .sec02_title {
+    font-size: 28px;
+  }
+  .sec02 .sec02_card-form .sec02_c-content {
+    height: 20vh;
+  }
+  .sec02 .sec02-titleform {
+    margin-bottom: 40px;
+  }
+  .sec03 {
+    padding: 60px 0;
+  }
+  .sec03 .sec03_titleform p {
+    font-size: 28px;
   }
   .sec03 .sec03__content {
     height: 33vh;
