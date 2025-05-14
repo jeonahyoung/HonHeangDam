@@ -131,21 +131,23 @@ header .header_nav-icon .hamburger {
 }
 
 .btn {
-  background-color: #FFA500;
+  background-color: #fff;
+  color: #FFA500;
   font-size: 28px;
   font-weight: 500;
+  text-decoration: none;
   padding: 12px;
-  border: none;
+  border: 2px solid #FFA500;
   border-radius: 50px;
   margin-top: 70px;
   width: 100%;
   max-width: 250px;
+  transform: all 0.5s ease;
 }
 
-.btn a {
+.btn:hover {
   background-color: #FFA500;
   color: #fff;
-  text-decoration: none;
 }
 
 body {
@@ -321,64 +323,52 @@ body .point-c {
   color: #a3a2a2;
   margin-bottom: 80px;
 }
-.sec05 .accordion-item {
-  background-color: #fff;
+.sec05 .ui-widget {
+  font-family: "Paperlogy";
+  font-size: 25px;
+  font-weight: 400;
+}
+.sec05 .ui-widget h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.sec05 .ui-widget .ui-widget-content {
   border: none;
-}
-.sec05 .accordion-item .accordion-button {
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 50px;
-  padding: 25px 0;
-  border-bottom: 2px solid #FFA500;
-}
-.sec05 .accordion-item .accordion-button:not(.collapsed) {
-  color: #FFA500;
-  font-size: 28px;
-  font-weight: 600;
-  background-color: white;
-  box-shadow: none;
-  border-bottom: 2px solid #FFA500;
-}
-.sec05 .accordion-item .accordion-button:focus {
-  border-color: #FFA500;
-  box-shadow: none;
-}
-.sec05 .accordion-item .accordion-button::after {
-  background-image: url(../images/icon/sec05-icon_plus.png);
-  width: 2.5rem;
-  height: 2.5rem;
-  background-position: center;
-}
-.sec05 .accordion-item .accordion-button:not(.collapsed)::after {
-  background-image: url(../images/icon/sec05-icon_minus.png);
-  transform: rotate(-180deg);
-}
-.sec05 .accordion-item .accordion-body {
-  background-color: #FFF8ED;
+  background: #FFF8ED;
   border-radius: 0 0 30px 30px;
+  color: #272727;
   padding: 20px 27px;
 }
-.sec05 .accordion-item .accordion-body p {
-  font-size: 25px;
+.sec05 .ui-widget .ui-widget-content .sec05_a {
   margin: 0;
-  line-height: 40px;
+  line-height: 140%;
+  height: fit-content;
+}
+.sec05 .ui-widget .ui-state-default {
+  background-color: #fff;
+  color: #272727;
+  border: none;
+  border-bottom: 2px solid #FFA500;
+}
+.sec05 .ui-widget .ui-state-active {
+  background-color: #fff;
+  color: #272727;
+  border: none;
+  border-bottom: 2px solid #FFA500;
 }
 
 .footer {
   background-color: #3e3e3e;
 }
 .footer .container {
-  padding: 50px 0;
+  padding: 80px 0;
 }
 .footer .container .footer-logo {
   width: 70%;
 }
 .footer .container .footer-form01 {
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 50px;
   margin-bottom: 50px;
 }
 .footer .container .footer-form01 ul {
@@ -390,23 +380,33 @@ body .point-c {
   color: #d9d9d9;
   padding: 0.5rem 1rem;
 }
-.footer .container .footer-form02 ul {
+.footer .container .footer-form02 .p-none {
+  padding: 0;
+}
+.footer .container .footer-form02 .p-none ul {
+  display: flex;
   list-style: none;
   color: #a3a2a2;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
-.footer .container .footer-form02 ul li {
+.footer .container .footer-form02 .p-none ul li {
   font-size: 18px;
   font-weight: 400;
-  padding-bottom: 1rem;
-  padding-left: 0;
+  padding-bottom: 0;
+}
+.footer .container .footer-form02 .p-none ul li:not(:last-of-type) {
+  border-right: 2px solid #a3a2a2;
+  padding-right: 30px;
+}
+.footer .container .footer-form02 .p-none ul li:not(:first-of-type) {
+  padding-left: 30px;
 }
 .footer .container .footer-form02 .footer-copy {
   font-size: 18px;
   font-weight: 500;
   color: #a3a2a2;
-  padding-top: 50px;
+  padding: 0;
 }
 
 @media (max-width: 1280px) {
@@ -730,17 +730,6 @@ body .point-c {
   .sec05 .sec05_titleform .sec05_subtitle {
     font-size: 14px;
     margin-bottom: 40px;
-  }
-  .sec05 .accordion-item .accordion-button {
-    font-size: 18px;
-    padding: 1px 0;
-  }
-  .sec05 .accordion-item .accordion-button:not(.collapsed) {
-    font-size: 18px;
-  }
-  .sec05 .accordion-item .accordion-body p {
-    font-size: 14px;
-    line-height: 27px;
   }
   .footer .container .footer-logo {
     width: 65%;
