@@ -328,9 +328,17 @@ body .point-c {
   font-size: 25px;
   font-weight: 400;
 }
-.sec05 .ui-widget h3 {
+.sec05 .ui-widget .sec05_form {
   font-size: 28px;
   font-weight: 600;
+  padding: 1.5% 1%;
+  margin-bottom: 0;
+  border-bottom: 2px solid #FFA500;
+  display: flex;
+}
+.sec05 .ui-widget .sec05_form .sec05_icon {
+  margin-left: auto;
+  color: #ffa500;
 }
 .sec05 .ui-widget .ui-widget-content {
   border: none;
@@ -339,22 +347,17 @@ body .point-c {
   color: #272727;
   padding: 20px 27px;
 }
-.sec05 .ui-widget .ui-widget-content .sec05_a {
-  margin: 0;
+.sec05 .ui-widget .ui-widget-content p {
+  margin-bottom: 0;
   line-height: 140%;
-  height: fit-content;
-}
-.sec05 .ui-widget .ui-state-default {
-  background-color: #fff;
-  color: #272727;
-  border: none;
-  border-bottom: 2px solid #FFA500;
 }
 .sec05 .ui-widget .ui-state-active {
   background-color: #fff;
   color: #272727;
   border: none;
   border-bottom: 2px solid #FFA500;
+  margin-bottom: 0;
+  padding: 1% 1%;
 }
 
 .footer {
@@ -375,7 +378,7 @@ body .point-c {
   list-style: none;
 }
 .footer .container .footer-form01 ul a {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   color: #d9d9d9;
   padding: 0.5rem 1rem;
@@ -391,7 +394,7 @@ body .point-c {
   margin-bottom: 20px;
 }
 .footer .container .footer-form02 .p-none ul li {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   padding-bottom: 0;
 }
@@ -402,11 +405,14 @@ body .point-c {
 .footer .container .footer-form02 .p-none ul li:not(:first-of-type) {
   padding-left: 30px;
 }
-.footer .container .footer-form02 .footer-copy {
-  font-size: 18px;
+.footer .container .footer-form02 .footer-copyform {
+  font-size: 16px;
   font-weight: 500;
   color: #a3a2a2;
   padding: 0;
+}
+.footer .container .footer-form02 .footer-copyform .footer-copy {
+  margin-top: 20px;
 }
 
 @media (max-width: 1280px) {

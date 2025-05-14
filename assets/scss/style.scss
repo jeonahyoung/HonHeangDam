@@ -213,9 +213,18 @@
     font-size : map-get(variables.$font-size,25);
     font-weight: map-get(variables.$font-weight,400);
 
-        h3{
+        .sec05_form{
          font-size : map-get(variables.$font-size,28);
          font-weight: map-get(variables.$font-weight,600);
+         padding: 1.5% 1%; 
+         margin-bottom: 0;
+         border-bottom: 2px solid variables.$basic-c;
+         display: flex;
+            
+            .sec05_icon{
+                margin-left: auto;
+                color: #ffa500;
+            }
         }
 
         .ui-widget-content {
@@ -225,18 +234,10 @@
             color: variables.$font-c;
             padding: 20px 27px;
 
-            .sec05_a{
-                margin: 0;
+            p{
+                margin-bottom: 0;
                 line-height: 140%;
-                height: fit-content;
             }
-        }
-        
-        .ui-state-default{
-            background-color: #fff;
-            color: variables.$font-c;
-            border: none;
-            border-bottom: 2px solid variables.$basic-c;
         }
         
         .ui-state-active{
@@ -244,9 +245,9 @@
             color: variables.$font-c;
             border: none;
             border-bottom: 2px solid variables.$basic-c;
+            margin-bottom: 0;
+            padding: 1% 1%;
         }
-
-        
     }
     
 }
@@ -267,7 +268,7 @@
             ul{
                 list-style: none;
                 a{
-                    font-size: map-get(variables.$font-size,22);
+                    font-size: map-get(variables.$font-size,18);
                     font-weight: map-get(variables.$font-weight,500);
                     color: variables.$footer-font;
                     padding: 0.5rem 1rem;
@@ -285,7 +286,7 @@
                 padding: 0;
                 margin-bottom: 20px;
                     li{
-                        font-size: map-get(variables.$font-size,18);
+                        font-size: map-get(variables.$font-size,16);
                         font-weight: map-get(variables.$font-weight, 400);
                         padding-bottom: 0;  
                     }
@@ -301,11 +302,16 @@
                 }
             }
             
-            .footer-copy{
-                font-size: map-get(variables.$font-size,18);
+            .footer-copyform{
+                font-size: map-get(variables.$font-size,16);
                 font-weight: map-get(variables.$font-weight, 500);
                 color: variables.$gray-font;
                 padding: 0;
+
+                .footer-copy{
+                    margin-top: 20px;
+                }
+
             }
         }
     }
