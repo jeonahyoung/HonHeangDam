@@ -129,18 +129,3 @@ header .header_nav-icon .hamburger {
   display: none;
 }
 
-.btn {
-  background-color: #FFA500;
-  font-size: 28px;
-  font-weight: 500;
-  padding: 12px;
-  border: none;
-  border-radius: 50px;
-  margin-top: 70px;
-}
-
-.btn a {
-  background-color: #FFA500;
-  color: #fff;
-  text-decoration: none;
-}/*# sourceMappingURL=component.css.map */

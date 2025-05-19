@@ -82,71 +82,55 @@
  }
 //==========header end==========
 
+
 //==========button==============
-
-a.animated-button:link,
-a.animated-button:visited {
-    position: relative;
-	display: block;
-	margin: 0 auto;
-	padding: 15px 30px;
-	color: #ffa500;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	text-shadow: none;
-    border-radius: 50px;
-	font-weight: map-get(variables.$font-weight,500);
-	text-align: center;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-    background-color: #FFFFFF;
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 2rem;
+  padding: 0.6rem;
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
-a.animated-button:link:after,
-a.animated-button:visited:after {
-	content: "";
-	position: absolute;
-	height: 0%;
-	left: 50%;
-	top: 50%;
-	width: 150%;
-	z-index: -1;
-	-webkit-transition: all 0.75s ease 0s;
-	-moz-transition: all 0.75s ease 0s;
-	-o-transition: all 0.75s ease 0s;
-	transition: all 0.75s ease 0s;
-}
-a.animated-button:link:hover,
-a.animated-button:visited:hover {
-	color: #FFFFFF;
-	text-shadow: none ; 
-    z-index: 9999999;
-}
-a.animated-button:link:hover:after,
-a.animated-button:visited:hover:after {
-	height: 450%;
+.effect.effect-5 {
+  transition: all 0.2s linear 0s;
+  border: 2px solid variables.$basic-c;
+  color: variables.$basic-c;
+  background-color: #fff;
+  min-width: 15rem;
+  
+  &:before {
+    content: ">";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 18%;
+    background-color: rgba(#fff,0.3);
+    border-radius: 0 50% 50% 0;
+    transform: scale(0,1);
+    transform-origin: left center;
+    transition: all 0.2s linear 0s;
+  }
+  
+   &:hover {
+    text-indent: 2rem;
+    background-color: variables.$basic-c;
+    color: #Fff;
+    
+    &:before {
+      transform: scale(1,1);
+      text-indent: 0;
+    }
+  }
 }
 
-a.animated-button.victoria-four {
-	border: 2px solid #ffa500 !important;
-    font-size: 2rem;
-    font-weight: map-get(variables.$font-weight,500);
-}
-a.animated-button.victoria-four:after {
-	background: #ffa500 !important;
-	opacity: .5;
-	-moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-	-ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-	-webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-	transform: translateY(-50%) translateX(-50%) rotate(90deg);
-}
-a.animated-button.victoria-four:hover:after {
-	opacity: 1;
-	height: 600% !important;
-}
 //==========button end==========
-
