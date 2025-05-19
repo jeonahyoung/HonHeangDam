@@ -201,13 +201,9 @@
             color: variables.$gray-font;
         }
     }
+ 
 
-    // .ui-widget {
-    // font-family: 'Paperlogy';
-    // font-size : 1.6rem;
-    // font-weight: map-get(variables.$font-weight,400);
-
-        .sec05_form{
+    .sec05_form{
          font-size : 2rem;
          font-weight: map-get(variables.$font-weight,600);
          padding: 1.5% 1%; 
@@ -218,41 +214,33 @@
             .sec05_icon{
                 margin-left: auto;
                 color: #ffa500;
+
+                .sec05-toggle-icon {
+                    transition: transform 0.3s ease;
+                    display: inline-block;
+                }
+
+                .sec05-toggle-icon.rotate {
+                    transform: rotate(45deg); 
+                }  
             }
         }
 
-        // .ui-widget-content {
-        //     border: none;
-        //     background: variables.$basic-bg;
-        //     border-radius: 0 0 30px 30px;
-        //     color: variables.$font-c;
-        //     padding: 20px 27px;
+        .sec05_a{
+            font-size: 1.6rem;
+            padding: 1.2rem 1.8rem;
+            background-color: variables.$basic-bg;
+            border-radius: 0 0 30px 30px;
 
-        //     p{
-        //         margin-bottom: 0;
-        //     }
-        // }
-        
-        .ui-state-active{
-            background-color: #fff;
-            color: variables.$font-c;
-            border: none;
-            border-bottom: 2px solid variables.$basic-c;
-            margin-bottom: 0;
-            padding: 1% 1%;
+            p{
+                margin-bottom: 0;
+            }
         }
-    
-
-    .sec05-toggle-icon {
-        transition: transform 0.3s ease;
-        display: inline-block;
-    }
-
-
-    .sec05-toggle-icon.rotate {
-        transform: rotate(45deg); 
-    }  
 }
+
+
+        
+    
 //==========section 05 end==========
 
 //==========footer==============
