@@ -26,12 +26,11 @@
   
     .sec01-form{
         .sec01_title{
-            font-size: 3.6rem;
+            font-size: 3.7rem;
             font-weight: map-get(variables.$font-weight,700);
             color: variables.$font-c;
             position: absolute;
-            top: 15%;
-            left: 5%;
+            
                 p{
                     margin: 0;
                 }
@@ -54,14 +53,14 @@
 .sec02{
     .sec02-titleform{
         .sec02_title{
-        font-size: 3.6rem;
+        font-size: 2.8rem;
         font-weight: map-get(variables.$font-weight, 700);
         color: variables.$font-c;
         }
     
         .sec02__subtitle{
         color: variables.$gray-font;
-        font-size: 2rem;
+        font-size: 1.4rem;
         }
     }
 
@@ -71,7 +70,7 @@
     
         .sec02_c-content{
             width: 100%;
-            height: 30vh;
+            height: 40vh;
             z-index: 0;
         }
 
@@ -86,7 +85,7 @@
             bottom: 5%;
             color: #fff;
             right: 5%;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-weight: map-get(variables.$font-weight, 400);
         }
     }
@@ -113,13 +112,13 @@
 //==========section 03==============
 .sec03{
     .sec03_titleform{
-        font-size: 3.6rem;
+        font-size: 2.8rem;
         font-weight: map-get(variables.$font-weight, 700);
         color: variables.$font-c;
     }
     
     .sec03__content{
-        height: 30vh;
+        height: 32vh;
         display: flex;
         align-items: flex-end;
         color: #fff;
@@ -129,13 +128,13 @@
         .sec03__subcontent{
             margin: 20px;
             p{
-                font-size: 2rem;
+                font-size: 1.4rem;
                 font-weight: map-get(variables.$font-weight,600);
                 color: #fff;
             }
 
             span{
-                font-size: 1.6rem;
+                font-size: 1.1rem;
                 font-weight: map-get(variables.$font-weight,400);
                 color: #fff;
             }
@@ -161,15 +160,13 @@
 //==========section 03 end==========
 
 //==========section 04==============
-
-//==========section 04 end==========
 .sec04{
     background-color: variables.$basic-bg;
     .container{
         .sec04__titleContent{
             h2{
             color: variables.$font-c;
-            font-size: 3.6rem;
+            font-size: 2.8rem;
             font-weight: map-get(variables.$font-weight,700);
             }
         }
@@ -180,11 +177,13 @@
             }
         }
 }
+//==========section 04 end==========
+
 //==========section 05==============
 .sec05{
     .sec05_titleform{
         .sec05_title{
-            font-size: 3.6rem;
+            font-size: 2.8rem;
             font-weight: map-get(variables.$font-weight, 700);
             color: variables.$font-c;
                 .basic-c{
@@ -196,15 +195,14 @@
         }
     
         .sec05_subtitle{
-            font-size: 2rem;
+            font-size: 1.4rem;
             font-weight: map-get(variables.$font-weight, 500);
             color: variables.$gray-font;
         }
     }
  
-
     .sec05_form{
-         font-size : 2rem;
+         font-size : 1.4rem;
          font-weight: map-get(variables.$font-weight,600);
          padding: 1.5% 1%; 
          margin-bottom: 0;
@@ -227,7 +225,7 @@
         }
 
         .sec05_a{
-            font-size: 1.6rem;
+            font-size: 1.1rem;
             padding: 1.2rem 1.8rem;
             background-color: variables.$basic-bg;
             border-radius: 0 0 30px 30px;
@@ -248,7 +246,7 @@
     background-color: #3e3e3e;
     .container{
         .footer-logo{
-            width: 57%;
+            width: 45%;
         }
         .footer-form01{
             justify-content: space-between;
@@ -257,7 +255,7 @@
             ul{
                 list-style: none;
                 a{
-                    font-size: 1.4rem;
+                    font-size: 1.1rem;
                     font-weight: map-get(variables.$font-weight,500);
                     color: variables.$footer-font;
                     padding: 0.5rem 1rem;
@@ -275,7 +273,7 @@
                 padding: 0;
                 margin-bottom: 20px;
                     li{
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
                         font-weight: map-get(variables.$font-weight, 400);
                         padding-bottom: 0;  
                     }
@@ -292,7 +290,7 @@
             }
             
             .footer-copyform{
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 font-weight: map-get(variables.$font-weight, 500);
                 color: variables.$gray-font;
                 padding: 0;
@@ -300,7 +298,6 @@
                 .footer-copy{
                     margin-top: 10px;
                 }
-
             }
         }
     }
@@ -315,16 +312,16 @@
     }
         
     header img{
-        width: 90%;
+        width: 80%;
     }
     header .header-nav .header-navbar{
-        gap: 0 80px;
+        gap: 0 60px;
     }
     header .header-nav .header-navbar .header-nav-link {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     header .header_nav-icon i {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
     
     // =============header end==================
@@ -335,11 +332,11 @@
     } 
    
     .sec01 .sec01-form .sec01_title {
-            top: 11%;
+            top: 10%;
     }
 
     .sec01_title p{
-        font-size: 2.6rem;
+        font-size: 2.7rem;
     } 
 
     .sec01_bg-img{
@@ -353,10 +350,10 @@
         .sec02-titleform{
             margin-bottom: 60px;
             .sec02_title{
-                font-size: 2.6rem;
+                font-size: 2.4rem;
             }
             .sec02__subtitle{
-                font-size: 1.4rem;
+                font-size: 1.2rem;
             }
         }
 
@@ -366,7 +363,7 @@
             }
             p{
                 bottom: 1%;
-                font-size: 1.4rem;
+                font-size: 1.2rem;
             }
         }
     }
@@ -379,7 +376,7 @@
         .sec03_titleform{
             margin-bottom: 60px;
             p{
-             font-size: 2.6rem;
+             font-size: 2.4rem;
             }
         }
 
@@ -388,7 +385,7 @@
             .sec03__subcontent{
                 margin: 18px;
                 p{
-                    font-size: 1.4rem;
+                    font-size: 1.2rem;
                     margin-bottom: 10px;
                 }
 
@@ -397,24 +394,26 @@
                 }
             }
         }
-        // a.animated-button.victoria-four {
-        //     border: 2px solid #ffa500 !important;
-        //     font-size: 1.4rem;
-        //     font-weight: 500;
-        //     }
+
+        .effect{
+            font-size: 1.2rem;
         }
+    }
     
     // =============sec 03 end==================
 
     // =============sec 04======================
     .sec04{
         padding: 80px 0;
-    }
 
-    .sec04 .container .sec04__titleContent h2 {
-        font-size: 2.6rem;
+        .container .sec04__titleContent h2 {
+        font-size: 2.4rem;
+        }
+
+        .effect{
+            font-size: 1.2rem;
+        }
     }
-    
     //==============sec 04 end==================
 
     // =============sec 05======================
@@ -422,26 +421,17 @@
         padding: 80px 0;
         .sec05_titleform{
             .sec05_title{
-                font-size: 4rem;
+                font-size: 2.4rem;
             }
             .sec05_subtitle{
-                font-size: 2rem;
+                font-size: 1.2rem;
             }
         }
 
-        .accordion-item{
-            .accordion-button{
-                font-size: 2.2rem;
-                padding: 21px 0;
-            }
-            .accordion-button:not(.collapsed){
-                font-size: 2.2rem;
-            }
-
-            .accordion-body p{
-                font-size: 2rem;
-            }
-        }
+        .sec05_form {
+            font-size: 1.2rem;
+            padding: 1.5% 1%;
+        } 
     }
     // =============sec 05 end==================
 
@@ -454,27 +444,27 @@
                 ul{
                     margin-bottom: 15px;
                     a{
-                        font-size: 1.5rem;
+                        font-size: 1.1rem;
                     }
                 }
             }
     
             .footer-form02{
+                padding: 0 12px;
                 ul{
                     li{
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
                     }
                 }
     
                 .footer-copy{
-                    font-size: 1.5rem;
-                    padding-top: 30px;
-                    }
+                    font-size: 1.1rem;
+                    margin: 0;
+                   
                 }
+            }
         }
-            
-        
-        }
+    }
    // =============footer end==================
    }
  
@@ -486,11 +476,11 @@
     }
 
     header img {
-        width: 85%;
+        width: 80%;
     }
 
      header .header-nav .header-navbar .header-nav-link {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     header .header_nav-icon {
@@ -502,8 +492,13 @@
     .sec01 {
         padding: 20px 60px 60px;
     }
+
+    .sec01 .sec01-form .sec01_title {
+        top: 8%;
+    }
+
     .sec01_title p {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     // =============sec01 end==============
 
@@ -513,47 +508,46 @@
     }
 
     .sec02 .sec02-titleform .sec02_title {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .sec02 .sec02-titleform .sec02__subtitle {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
     
     .sec02 .sec02_card-form p {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     .sec02 .sec02_card-form .sec02_c-content {
-        height: 30vh;
+        height: 20vh;
     }
     // =============sec02 end===============
 
     // =============.sec03==================
     .sec03 {
         padding: 60px 0;
+
+        .sec03_titleform p {
+        font-size: 2rem;
+        }
     }
     
-    .sec03 .sec03_titleform p {
-        font-size: 3rem;
-    }
-
     .sec03 .sec03__content {
-        height: 33vh;
+        height: 20vh;
     }
 
     .sec03 .sec03__content .sec03__subcontent p {
-        font-size: 2rem;
-        margin-bottom: 8px;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
     }
 
     .sec03 .sec03__content .sec03__subcontent span {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
-    .sec03 .btn {
-        font-size: 2rem;
-        margin-top: 40px;
+    .mb-80 {
+    margin-bottom: 50px;
     }
     // =============sec03 end===============
 
@@ -562,22 +556,14 @@
         padding: 60px 0;
     }
 
-    .sec04 .sec04_titleform {
-        font-size: 3rem;
-    }
-
-    .sec04 .sec04_titleform .btn {
+    .sec04 .container .sec04__titleContent h2 {
         font-size: 2rem;
-        margin-top: 40px;
     }
 
-    .sec04 .sec04-gap {
-        width: 32%;
+    .sec04_image{
+        width: 50%;
     }
-
-    .sec04 .sec04_img {
-         height: 20vh;
-    }
+   
     // =============sec04 end===============
 
     // =============.sec05==================
@@ -585,26 +571,8 @@
         padding: 60px 0;
     }
 
-    .sec05 .sec05_titleform .sec05_title {
-        font-size: 3rem;
-    }
-
-        .sec05 .sec05_titleform .sec05_subtitle {
-        font-size: 2rem;
-        margin-bottom: 50px;
-    }
-
-    .sec05 .accordion-item .accordion-button {
-        font-size: 2rem;
-        padding: 13px 0;
-    }
-
-    .sec05 .accordion-item .accordion-button:not(.collapsed) {
-        font-size: 2rem;
-    }
-
-    .sec05 .accordion-item .accordion-body p {
-        font-size: 2rem;
+    .sec05 .sec05_a {
+        padding: 1rem 1.5rem;
     }
     // =============sec05 end===============
 
@@ -613,34 +581,17 @@
         padding: 20px 0;
     }
 
-    .footer .container .footer-logo {
-        width: 70%;
-    }
-
     .footer .container .footer-form01 ul a {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
+        padding: 0.7rem;
     }
 
-    .footer-gap{
-        width: 27%;
-    }
-
-    .footer-nav{
-        width: 48%;      
-    }
-
-    .footer .footer-form02 ul{
-      margin-bottom: 20px;
-    }
-
-    .footer .container .footer-form02 ul li{
-        font-size: 1rem;
-        padding-bottom: 0.3rem;
+    .footer .container .footer-form02 .p-none ul li {
+    font-size: 0.9rem;
     }
 
     .footer .container .footer-form02 .footer-copy {
-        font-size: 1.2rem;
-        padding-top: 20px;
+        font-size: 0.9rem;
     }
     // =============footer end==============
 }
@@ -687,8 +638,16 @@
         padding: 20px 25px 40px;
     }
 
+    .sec01 .sec01-form .sec01_title {
+        top: 5.5%;
+    }
+
     .sec01_title p {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
+    }
+
+    .sec01_bg-img {
+        width: 100%;
     }
 //==========sec01 end===========
 
@@ -697,16 +656,17 @@
         padding: 40px 0;
     }
 
+    .sec02 .sec02-titleform {
+        margin-bottom: 40px;
+    }
+
     .sec02 .sec02-titleform .sec02_title {
-        font-size: 2.5rem;
+        font-size: 1.6rem;
+        margin-bottom: 0.3rem;
     }
 
-        .sec02 .sec02-titleform .sec02__subtitle {
-        font-size: 2.5rem;
-    }
-
-    .sec02 .sec02_card-form p {
-        font-size: 2.5rem;
+    .sec02 .sec02-titleform .sec02__subtitle {
+        font-size: 1.2rem;
     }
 //==========sec02 end===========
 
@@ -716,27 +676,35 @@
     }
 
     .sec03 .sec03_titleform p {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
     }
 
     .sec03 .sec03_titleform {
         margin-bottom: 40px;
     }
 
+    .sec03 .sec03__content {
+        height: 17vh;
+    }
+
+    .sec03 .sec03__content .sec03__subcontent {
+        margin: 10px;
+    }
+
     .sec03 .sec03__content .sec03__subcontent p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-bottom: 5px;
     }
 
     .sec03 .sec03__content .sec03__subcontent span {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 
-    .sec03 .btn {
-        font-size: 1.2rem;
-        max-width: 166px;
-        padding: 9px;
+    .sec03 .effect.effect-5 {
+        min-width: 11rem;
+        padding: 0.2rem;
     }
+
 //==========sec03 end===========
     
 
@@ -745,15 +713,15 @@
         padding: 40px 0;
     }
 
-    .sec04 .sec04_titleform {
-        font-size: 2.5rem;
+    .sec04 .container .sec04__titleContent h2 {
+        font-size: 1.6rem;
     }
 
-    .sec04 .sec04_titleform .btn {
-        font-size: 1.5rem;
-        max-width: 176px;
-        padding: 8px;
+    .sec04 .effect.effect-5 {
+        min-width: 12rem;
+        padding: 0.2rem;
     }
+
 //==========sec04 end===========
 
 //==========sec05===============
@@ -762,32 +730,19 @@
     }
 
     .sec05 .sec05_titleform .sec05_title {
-        font-size: 2.5rem;
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
     }
 
-    .sec05 .sec05_titleform .sec05_subtitle {
-        font-size: 1.2rem;
-        margin-bottom: 40px;
+    .sec05 .sec05_a {
+        font-size: 1rem;
     }
-
-    // .sec05 .accordion-item .accordion-button {
-    //     font-size: 18px;
-    //     padding: 1px 0;
-    // }
-
-    // .sec05 .accordion-item .accordion-button:not(.collapsed) {
-    //     font-size: 18px;
-    // }
-
-    // .sec05 .accordion-item .accordion-body p {
-    //     font-size: 14px;
-    //     line-height: 27px;
-    // }
+   
 //==========sec05 end===========
 
 //==========footer==============
     .footer .container .footer-logo {
-        width: 65%;
+        width: 55%;
     }
 
     .footer .container .footer-form01 {
@@ -799,24 +754,21 @@
          padding-left: 0;
     }
     
-
     .footer .container .footer-form01 ul a {
-        font-size: 1rem;
-    } 
+        font-size: 0.7rem;
+    }
 
     .footer .container .footer-form02 ul{
         margin-bottom: 20px;
     }
 
-    .footer .container .footer-form02 ul li {
-        font-size: 1rem;
-        padding-bottom: 0.1rem;
-            
+    .footer .container .footer-form02 .p-none ul li {
+        font-size: 0.7rem;
     }
 
     .footer .container .footer-form02 .footer-copy {
-        font-size: 1rem;
-        padding-top: 20px;
+        font-size: 0.7rem;
+        margin-top: 0;
     }
 //==========footer end==========
 }
@@ -824,7 +776,7 @@
 @media (max-width:540px){
 //==========header==============
     header {
-        padding: 10px 33px;
+        padding: 9px 26px;
     }
 
     header img {
@@ -833,86 +785,234 @@
 //==========header end==========
 
 //==========sec01==========
+    .sec01 {
+        padding: 15px 25px;
+    }
+
     .sec01_bg-img {
         opacity: 0;
-        width: 90%;
+        width: 100%;
     }
 
     .sec01 .sec01-form .sec01_title {
         text-align: center;
-        top: 13%;
-        left: 25%;
+        top: 9%;
+        left: 26%;
     }
 
     .sec01_title p {
-        font-size: 2.5rem;
+        font-size: 1.6rem;
     }
 //==========sec01 end===========
 
 //==========sec02===============
     .sec02 {
-        padding: 60px 0;
-    }
-
-    .sec02 .sec02-titleform .sec02_title {
-        font-size: 2.5rem;
-    }
-
-    .sec02 .sec02_card-form .sec02_c-content {
-        height: 20vh;
+        padding: 30px 0;
     }
 
     .sec02 .sec02-titleform {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+    }
+
+    .sec02 .sec02-titleform .sec02_title {
+        font-size: 1.6rem;
+    }
+
+    .sec02 .sec02-titleform .sec02__subtitle {
+        font-size: 1rem;
+    }
+
+    .sec02 .sec02_card-form .sec02_c-content {
+        height: 13vh;
+    }
+
+    .sec02 .sec02_card-form p {
+        font-size: 1rem;
     }
 //==========sec02 end===========
 
 //==========sec03===============
     .sec03 {
-        padding: 60px 0;
+        padding: 30px 0;
     }
 
     .sec03 .sec03_titleform p {
-        font-size: 2.5rem;
+        font-size: 1.6rem;
     }
 
     .sec03 .sec03__content {
-        height: 33vh;
+        height: 15vh;
         margin-bottom: 15px;
+    }
+
+    .sec03 .sec03__content .sec03__subcontent {
+        margin: 15px;
+    }
+
+    .mb-80 {
+        margin-bottom: 30px;
     }
 //==========sec03 end===========
 
 //==========sec04===============
-    .sec04 .sec04_titleform {
+    .sec04 .container .sec04__titleContent h2 {
+        font-size: 1.6rem;
         text-align: center;
     }
 
-    .sec04 .sec04_img {
-        display: none;
+    .btn-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
-    .sec04 .sec04_titleform .btn {
-        margin: 0 auto;
+    .btn-wrapper a.effect {
+        width: 16.6666%;
+        min-width: 120px;
+        text-align: center;
+    }
+
+    .sec04 .container .sec04__imgContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec04_image {
+        width: 30%;
     }
 //==========sec04 end===========
 
 //==========sec05===============
+    
+    .sec05 .sec05_titleform .sec05_subtitle {
+        font-size: 1rem;
+    }
+
+    .sec05 .sec05_form {
+        font-size: 1rem;
+        padding: 2% 1%;
+    }
+
+    .sec05 .sec05_a {
+        font-size: 0.8rem;
+    }
 //==========sec05 end===========
 
 //==========footer==============
-    .footer .container .footer-logo {
-        width: 12%;
+    .footer-nav{
+        display: none;
     }
+
+    .footer .container .footer-logo {
+        width: 11%;
+    }
+
+    .footer .container .footer-form01 {
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .p-none{
+        display: none;
+    }
+
 //==========footer end==========
+}
+@media (max-width:348px){
+    //==========header==============
+        header img {
+        width: 50%;
+        }
+    //==========header end==========
 
+    //==========sec01===============
+    .sec01 .sec01-form .sec01_title {
+        top: 6.5%;
+        left: 16%;
+    }
 
+    .sec01_title p {
+        font-size: 1.4rem;
+    }
+    //==========sec01 end===========
 
+    //==========sec02===============
+    .sec02 .sec02-titleform .sec02_title {
+        font-size: 1.4rem;
+    }
 
+    .sec02 .sec02-titleform .sec02__subtitle {
+        font-size: 0.8rem;
+    }
+
+    .sec02 .sec02_card-form .sec02_c-content {
+        height: 15vh;
+    }
+
+    .sec02 .sec02_card-form p {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    //==========sec02 end===========
+
+    //==========sec03===============
+    .sec03 .sec03_titleform p {
+        font-size: 1.4rem;
+    }
+
+    .sec03 .sec03_titleform {
+        margin-bottom: 20px;
+    }
+
+    .sec03 .sec03__content .sec03__subcontent p {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+
+    .sec03 .sec03__content .sec03__subcontent span {
+        font-size: 0.5rem;
+    }
+
+    .sec03 .effect {
+        font-size: 0.8rem;
+    }
+
+    .mb-80 {
+        margin-bottom: 20px;
+    }
+
+    //==========.sec03 end==========
+
+    //==========sec04===============
+    .sec04 .container .sec04__titleContent h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .sec04_image {
+        margin-top: 15px;
+    }
+
+    .sec04 .effect {
+        font-size: 0.8rem;
+    }
+    //==========sec04 end===========
+
+    //==========sec05===============
+
+    //==========sec05 end===========
+
+    //==========footer==============
+
+    //==========footer end===========
+
+    
 
 
 
 }
-@media (max-width:348px){}
 
 
 
