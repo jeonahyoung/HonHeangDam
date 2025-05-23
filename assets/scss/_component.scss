@@ -1,25 +1,28 @@
 @use 'variables';
+
+
  //==========header==========
  header{
+    font-family: map-get(variables.$gnb, font-family);
     background-color: variables.$basic-bg;
     justify-content: space-between;
     padding: 40px 80px;
 
     .header-nav{
-        color:variables.$font-c;
-        gap: 0 120px;
+        color: map-get(variables.$gnb, color);
+        gap : 0 120px;
 
         .header-navbar{
             gap: 0 100px;
 
             .header-nav-link{
-                font-size: 1.4rem;
-                font-weight: map-get(variables.$font-weight, 700);
-                color: variables.$font-c;
+                font-size: map-get(variables.$gnb, font-size);
+                font-weight: map-get(variables.$gnb, font-weight);
+                color: map-get(variables.$gnb, color);
             }
 
             .header-nav-link:focus, .header-nav-link:hover {
-                color: variables.$font-c;
+                color: map-get(variables.$gnb, color);
             }
 
             .header-nav-link span {
@@ -29,7 +32,7 @@
               }
         
             .header-nav-link:focus span, .header-nav-link:hover span {
-                color: variables.$font-c;
+                color: map-get(variables.$gnb, color);
             }
 
             .mark{
@@ -64,9 +67,9 @@
         gap: 0 40px;
 
         i{
-            font-size: 1.6em;
-            font-weight: map-get(variables.$font-weight, 700);
-            color: variables.$font-c;
+            font-size: 1.6rem;
+            font-weight: map-get(variables.$gnb, font-weight);
+            color: map-get(variables.$gnb, color);
         }
     
         i:hover{
@@ -89,7 +92,7 @@
   position: relative;
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 1.4rem;
+  font-size: map-get(variables.$content_title, font-size);
   padding: 0.6rem;
   width: 100%;
   border-radius: 30px;
@@ -149,8 +152,8 @@
             ul{
                 list-style: none;
                 a{
-                    font-size: 1.1rem;
-                    font-weight: map-get(variables.$font-weight,500);
+                    font-size: map-get(variables.$content,font-size);
+                    font-weight: 500;
                     color: variables.$footer-font;
                     padding: 0.5rem 1rem;
                 }
@@ -167,8 +170,8 @@
                 padding: 0;
                 margin-bottom: 20px;
                     li{
-                        font-size: 1.1rem;
-                        font-weight: map-get(variables.$font-weight, 400);
+                        font-size: map-get(variables.$content,font-size);
+                        font-weight: map-get(variables.$content,font-weight);
                         padding-bottom: 0;  
                     }
                     
@@ -185,7 +188,7 @@
             
             .footer-copyform{
                 font-size: 1.1rem;
-                font-weight: map-get(variables.$font-weight, 500);
+                font-weight: 500;
                 color: variables.$gray-font;
                 padding: 0;
 

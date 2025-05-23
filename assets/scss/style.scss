@@ -25,11 +25,12 @@
   
     .sec01-form{
         .sec01_title{
+            font-family: map-get(variables.$title, font-family);
             font-size: 3.4rem;
-            font-weight: map-get(variables.$font-weight,700);
-            color: variables.$font-c;
+            font-weight: map-get(variables.$title, font-weight);
+            color: map-get(variables.$title, color);
             position: absolute;
-            top: 14%;
+            top: 22%;
             left: 7%;
             
                 p{
@@ -54,14 +55,15 @@
 .sec02{
     .sec02-titleform{
         .sec02_title{
-        font-size: 2.8rem;
-        font-weight: map-get(variables.$font-weight, 700);
-        color: variables.$font-c;
+        font-family: map-get(variables.$title, font-family);
+        font-size: map-get(variables.$title, font-size);
+        font-weight: map-get(variables.$title, font-weight);
+        color: map-get(variables.$title, color);
         }
     
         .sec02__subtitle{
-        color: variables.$gray-font;
-        font-size: 1.4rem;
+        color: map-get(variables.$subtitle, color);
+        font-size: map-get(variables.$subtitle, font-size);
         }
     }
 
@@ -86,8 +88,9 @@
             bottom: 5%;
             color: #fff;
             right: 5%;
-            font-size: 1.4rem;
-            font-weight: map-get(variables.$font-weight, 400);
+            font-size: map-get(variables.$content_title, font-size);
+            font-weight: map-get(variables.$content_title, font-weight);
+            font-family: map-get(variables.$content_title, font-family);
         }
     }
 
@@ -113,9 +116,10 @@
 //==========section 03==============
 .sec03{
     .sec03_titleform{
-        font-size: 2.8rem;
-        font-weight: map-get(variables.$font-weight, 700);
-        color: variables.$font-c;
+        font-family: map-get(variables.$title, font-family);
+        font-size: map-get(variables.$title, font-size);
+        font-weight: map-get(variables.$title, font-weight);
+        color: map-get(variables.$title, color);
     }
     
     .sec03__content{
@@ -129,14 +133,14 @@
         .sec03__subcontent{
             margin: 20px;
             p{
-                font-size: 1.4rem;
-                font-weight: map-get(variables.$font-weight,600);
+                font-size: map-get(variables.$content_title, font-size);
+                font-weight: map-get(variables.$content_title, font-weight);
                 color: #fff;
             }
 
             span{
-                font-size: 1.1rem;
-                font-weight: map-get(variables.$font-weight,400);
+                font-size: map-get(variables.$content, font-size);
+                font-weight: map-get(variables.$content, font-weight);
                 color: #fff;
             }
         }
@@ -166,9 +170,10 @@
     .container{
         .sec04__titleContent{
             h2{
-            color: variables.$font-c;
-            font-size: 2.8rem;
-            font-weight: map-get(variables.$font-weight,700);
+            font-family: map-get(variables.$title, font-family);
+            font-size: map-get(variables.$title, font-size);
+            font-weight: map-get(variables.$title, font-weight);
+            color: map-get(variables.$title, color);
             }
         }
         .sec04__imgContent{
@@ -184,9 +189,10 @@
 .sec05{
     .sec05_titleform{
         .sec05_title{
-            font-size: 2.8rem;
-            font-weight: map-get(variables.$font-weight, 700);
-            color: variables.$font-c;
+            font-family: map-get(variables.$title, font-family);
+            font-size: map-get(variables.$title, font-size);
+            font-weight: map-get(variables.$title, font-weight);
+            color: map-get(variables.$title, color);
                 .basic-c{
                     color: variables.$basic-c;
                 }
@@ -196,15 +202,15 @@
         }
     
         .sec05_subtitle{
-            font-size: 1.4rem;
-            font-weight: map-get(variables.$font-weight, 500);
-            color: variables.$gray-font;
+            font-size: map-get(variables.$subtitle, font-size);
+            font-weight: map-get(variables.$subtitle, font-weight);
+            color: map-get(variables.$subtitle, color);
         }
     }
  
     .sec05_form{
-         font-size : 1.4rem;
-         font-weight: map-get(variables.$font-weight,600);
+         font-size : map-get(variables.$content_title, font-size);
+         font-weight: map-get(variables.$content_title, font-weight);
          padding: 1.5% 1%; 
          margin-bottom: 0;
          border-bottom: 2px solid variables.$basic-c;
@@ -226,7 +232,7 @@
         }
 
         .sec05_a{
-            font-size: 1.1rem;
+            font-size: map-get(variables.$content, font-size);
             padding: 1.2rem 1.8rem;
             background-color: variables.$basic-bg;
             border-radius: 0 0 30px 30px;
@@ -242,26 +248,6 @@
 //==========footer==============
 
 //==========footet end==========
-@media (max-width:2000px) {
-    // =============sec01====================
-    .sec01 .sec01-form .sec01_title {
-    top: 24%;
-}
-// =============sec01 end====================
-
-// =============sec02 end====================
-.sec02 .sec02_card-form .sec02_c-content {
-    height: 45vh;
-}
-// =============sec02 end====================
-
-// =============sec03========================
-.sec03 .sec03__content {
-    height: 47vh;
-}
-// =============sec03 end====================
-
-}
 
 
 @media (max-width:1280px) {
@@ -576,7 +562,7 @@
 
     header .header_nav-icon .hamburger {
         display: block;
-        color: variables.$font-c;
+        color: #272727;
     }
 
     header .header_nav-icon .icon_map,.icon_mark{

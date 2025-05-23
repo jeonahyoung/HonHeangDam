@@ -18,10 +18,10 @@ header{
         }
         .nav_list{
             text-decoration: none;
-            font-family: 'Paperlogy';
-            font-weight: 700;
-            font-size: 1.4rem;
-            color: variables.$font-c;
+            font-family: map-get(variables.$gnb, font-family);
+            font-weight: map-get(variables.$gnb, font-weight);
+            font-size: map-get(variables.$gnb, font-size);
+            color : map-get(variables.$gnb, color);
         }
 
         .nav_list:hover{
@@ -36,6 +36,36 @@ header{
 // =============header end==================
 
 // =============sec01=======================
+.sec01{
+    .container{
+       .sec01_image{
+        width: 100%;
+       }
+        
+        .sec01_form{
+            display: flex;
+            align-items: center;
+
+             .sec01_title{
+            font-family: map-get(variables.$title, font-family);
+            font-size: map-get(variables.$title, font-size);
+            font-weight: map-get(variables.$title, font-weight);
+            }
+
+            .sec01_subtitle{
+            font-family:  map-get(variables.$subtitle, font-family);
+            font-size:  map-get(variables.$subtitle, font-size);
+            font-weight:  map-get(variables.$subtitle, font-weight);
+            }
+
+            .sec01_content{
+            font-family:  map-get(variables.$content, font-family);
+            font-size:  map-get(variables.$content, font-size);
+            font-weight:  map-get(variables.$content, font-weight);
+            }
+        }
+    }
+}
 
 
 // =============sec01 end==================
