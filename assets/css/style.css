@@ -1,66 +1,57 @@
-@import url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 @font-face {
-  font-family: "Paperlogy";
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Paperlogy";
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Paperlogy";
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Paperlogy";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Paperlogy";
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Paperlogy";
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Paperlogy";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Paperlogy";
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Paperlogy";
+  font-family: Pretendard;
   font-weight: 900;
-  font-style: normal;
   font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.ttf") format("truetype");
+  src: local("Pretendard Black"), url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-Black.woff2) format("woff2"), url(../../../packages/pretendard/dist/web/static/woff/Pretendard-Black.woff) format("woff");
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 800;
+  font-display: swap;
+  src: local("Pretendard ExtraBold"), url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-ExtraBold.woff2) format("woff2"), url(../../../packages/pretendard/dist/web/static/woff/Pretendard-ExtraBold.woff) format("woff");
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-Bold.woff2) format("woff2"), url(../../../packages/pretendard/dist/web/static/woff/Pretendard-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-SemiBold.woff2) format("woff2"), url(../../../packages/pretendard/dist/web/static/woff/Pretendard-SemiBold.woff) format("woff");
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Pretendard Medium"), url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-Medium.woff2) format("woff2"), url(../../../packages/pretendard/dist/web/static/woff/Pretendard-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-Regular.woff2) format("woff2"), url(../../../packages/pretendard/dist/web/static/woff/Pretendard-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Pretendard Light"), url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-Light.woff2) format("woff2"), url(../../../packages/pretendard/dist/web/static/woff/Pretendard-Light.woff) format("woff");
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 200;
+  font-display: swap;
+  src: local("Pretendard ExtraLight"), url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-ExtraLight.woff2) format("woff2"), url(../../../packages/pretendard/dist/web/static/woff/Pretendard-ExtraLight.woff) format("woff");
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 100;
+  font-display: swap;
+  src: local("Pretendard Thin"), url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-Thin.woff2) format("woff2"), url(../../../packages/pretendard/dist/web/static/woff/Pretendard-Thin.woff) format("woff");
 }
 .pd-100 {
   padding: 100px 0;
@@ -88,7 +79,7 @@ header .header-nav .header-navbar {
 }
 header .header-nav .header-navbar .header-nav-link {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #272727;
 }
 header .header-nav .header-navbar .header-nav-link:focus, header .header-nav .header-navbar .header-nav-link:hover {
@@ -130,7 +121,7 @@ header .header_nav-icon {
 }
 header .header_nav-icon i {
   font-size: 1.6em;
-  font-weight: 600;
+  font-weight: 700;
   color: #272727;
 }
 header .header_nav-icon i:hover {
@@ -187,8 +178,60 @@ header .header_nav-icon .hamburger {
   text-indent: 0;
 }
 
+.footer {
+  background-color: #3e3e3e;
+}
+.footer .container .footer-logo {
+  width: 45%;
+}
+.footer .container .footer-form01 {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.footer .container .footer-form01 ul {
+  list-style: none;
+}
+.footer .container .footer-form01 ul a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #d9d9d9;
+  padding: 0.5rem 1rem;
+}
+.footer .container .footer-form02 .p-none {
+  padding: 0;
+}
+.footer .container .footer-form02 .p-none ul {
+  display: flex;
+  list-style: none;
+  color: #a3a2a2;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.footer .container .footer-form02 .p-none ul li {
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-bottom: 0;
+}
+.footer .container .footer-form02 .p-none ul li:not(:last-of-type) {
+  border-right: 2px solid #a3a2a2;
+  padding-right: 30px;
+}
+.footer .container .footer-form02 .p-none ul li:not(:first-of-type) {
+  padding-left: 30px;
+}
+.footer .container .footer-form02 .footer-copyform {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #a3a2a2;
+  padding: 0;
+}
+.footer .container .footer-form02 .footer-copyform .footer-copy {
+  margin-top: 10px;
+}
+
 body {
-  font-family: "Paperlogy";
+  font-family: "pretendard";
 }
 body .basic-c {
   color: #FFA500;
@@ -202,10 +245,12 @@ body .point-c {
   padding: 50px 80px 100px;
 }
 .sec01 .sec01-form .sec01_title {
-  font-size: 3.7rem;
+  font-size: 3.4rem;
   font-weight: 700;
   color: #272727;
   position: absolute;
+  top: 14%;
+  left: 7%;
 }
 .sec01 .sec01-form .sec01_title p {
   margin: 0;
@@ -298,17 +343,17 @@ body .point-c {
   color: #fff;
 }
 .sec03 .sec03_card01 {
-  background: url(../images/sec03-card01.png);
+  background: url(../images/main_sec03-card01.png);
   background-position: center;
   background-size: cover;
 }
 .sec03 .sec03_card02 {
-  background: url(../images/sec03-card02.png);
+  background: url(../images/main_sec03-card02.png);
   background-position: center;
   background-size: cover;
 }
 .sec03 .sec03_card03 {
-  background: url(../images/sec03-card03.png);
+  background: url(../images/main_sec03-card03.png);
   background-position: center;
   background-size: cover;
 }
@@ -372,58 +417,17 @@ body .point-c {
   margin-bottom: 0;
 }
 
-.footer {
-  background-color: #3e3e3e;
+@media (max-width: 2000px) {
+  .sec01 .sec01-form .sec01_title {
+    top: 24%;
+  }
+  .sec02 .sec02_card-form .sec02_c-content {
+    height: 45vh;
+  }
+  .sec03 .sec03__content {
+    height: 47vh;
+  }
 }
-.footer .container .footer-logo {
-  width: 45%;
-}
-.footer .container .footer-form01 {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
-}
-.footer .container .footer-form01 ul {
-  list-style: none;
-}
-.footer .container .footer-form01 ul a {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #d9d9d9;
-  padding: 0.5rem 1rem;
-}
-.footer .container .footer-form02 .p-none {
-  padding: 0;
-}
-.footer .container .footer-form02 .p-none ul {
-  display: flex;
-  list-style: none;
-  color: #a3a2a2;
-  padding: 0;
-  margin-bottom: 20px;
-}
-.footer .container .footer-form02 .p-none ul li {
-  font-size: 1.1rem;
-  font-weight: 400;
-  padding-bottom: 0;
-}
-.footer .container .footer-form02 .p-none ul li:not(:last-of-type) {
-  border-right: 2px solid #a3a2a2;
-  padding-right: 30px;
-}
-.footer .container .footer-form02 .p-none ul li:not(:first-of-type) {
-  padding-left: 30px;
-}
-.footer .container .footer-form02 .footer-copyform {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #a3a2a2;
-  padding: 0;
-}
-.footer .container .footer-form02 .footer-copyform .footer-copy {
-  margin-top: 10px;
-}
-
 @media (max-width: 1280px) {
   header {
     padding: 30px 80px;

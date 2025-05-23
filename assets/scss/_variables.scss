@@ -1,100 +1,30 @@
 //==========font==========
-@import url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
-@font-face {
-    font-family: 'Paperlogy';
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.woff2') format('woff2'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.woff') format('woff'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.otf') format('opentype'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Paperlogy';
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.woff2') format('woff2'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.woff') format('woff'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.otf') format('opentype'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Paperlogy';
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.woff2') format('woff2'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.woff') format('woff'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.otf') format('opentype'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Paperlogy';
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.woff2') format('woff2'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.woff') format('woff'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.otf') format('opentype'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Paperlogy';
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.woff2') format('woff2'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.woff') format('woff'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.otf') format('opentype'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Paperlogy';
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.woff2') format('woff2'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.woff') format('woff'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.otf') format('opentype'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Paperlogy';
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.woff2') format('woff2'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.woff') format('woff'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.otf') format('opentype'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Paperlogy';
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.woff2') format('woff2'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.woff') format('woff'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.otf') format('opentype'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Paperlogy';
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.woff2') format('woff2'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.woff') format('woff'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.otf') format('opentype'),
-          url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.ttf') format('truetype');
-  }
+@font-face{
+    font-family:Pretendard;font-weight:900;font-display:swap;src:local('Pretendard Black'),url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-Black.woff2) format('woff2'),url(../../../packages/pretendard/dist/web/static/woff/Pretendard-Black.woff) format('woff')}
+
+@font-face{font-family:Pretendard;font-weight:800;font-display:swap;src:local('Pretendard ExtraBold'),url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-ExtraBold.woff2) format('woff2'),url(../../../packages/pretendard/dist/web/static/woff/Pretendard-ExtraBold.woff) format('woff')}
+
+@font-face{font-family:Pretendard;font-weight:700;font-display:swap;src:local('Pretendard Bold'),url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-Bold.woff2) format('woff2'),url(../../../packages/pretendard/dist/web/static/woff/Pretendard-Bold.woff) format('woff')}
+
+@font-face{font-family:Pretendard;font-weight:600;font-display:swap;src:local('Pretendard SemiBold'),url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-SemiBold.woff2) format('woff2'),url(../../../packages/pretendard/dist/web/static/woff/Pretendard-SemiBold.woff) format('woff')}
+
+@font-face{font-family:Pretendard;font-weight:500;font-display:swap;src:local('Pretendard Medium'),url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-Medium.woff2) format('woff2'),url(../../../packages/pretendard/dist/web/static/woff/Pretendard-Medium.woff) format('woff')}
+
+@font-face{font-family:Pretendard;font-weight:400;font-display:swap;src:local('Pretendard Regular'),url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-Regular.woff2) format('woff2'),url(../../../packages/pretendard/dist/web/static/woff/Pretendard-Regular.woff) format('woff')}
+
+@font-face{font-family:Pretendard;font-weight:300;font-display:swap;src:local('Pretendard Light'),url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-Light.woff2) format('woff2'),url(../../../packages/pretendard/dist/web/static/woff/Pretendard-Light.woff) format('woff')}
+
+@font-face{font-family:Pretendard;font-weight:200;font-display:swap;src:local('Pretendard ExtraLight'),url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-ExtraLight.woff2) format('woff2'),url(../../../packages/pretendard/dist/web/static/woff/Pretendard-ExtraLight.woff) format('woff')}
+
+@font-face{font-family:Pretendard;font-weight:100;font-display:swap;src:local('Pretendard Thin'),url(../../../packages/pretendard/dist/web/static/woff2/Pretendard-Thin.woff2) format('woff2'),url(../../../packages/pretendard/dist/web/static/woff/Pretendard-Thin.woff) format('woff')}
+
 //==========font end==========
 
 //==========font weight==========
 $font-weight:(
+  800:800,
   700:700,
   600:600,
   500:500,

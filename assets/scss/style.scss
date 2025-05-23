@@ -1,11 +1,10 @@
-@use 'animations';
 @use 'variables';
 @use 'component';
-@use 'responsive';
+
 
 
   body{
-    font-family: 'Paperlogy';
+    font-family: 'pretendard';
 
     .basic-c{
         color: variables.$basic-c;
@@ -26,10 +25,12 @@
   
     .sec01-form{
         .sec01_title{
-            font-size: 3.7rem;
+            font-size: 3.4rem;
             font-weight: map-get(variables.$font-weight,700);
             color: variables.$font-c;
             position: absolute;
+            top: 14%;
+            left: 7%;
             
                 p{
                     margin: 0;
@@ -142,17 +143,17 @@
     }
     
     .sec03_card01{
-        background: url(../images/sec03-card01.png);
+        background: url(../images/main_sec03-card01.png);
         background-position: center;
         background-size: cover;
     }
     .sec03_card02{
-        background: url(../images/sec03-card02.png);
+        background: url(../images/main_sec03-card02.png);
         background-position: center;
         background-size: cover;
     }
     .sec03_card03{
-        background: url(../images/sec03-card03.png);
+        background: url(../images/main_sec03-card03.png);
         background-position: center;
         background-size: cover;
     }
@@ -236,73 +237,31 @@
         }
 }
 
-
-        
-    
 //==========section 05 end==========
 
 //==========footer==============
-.footer{
-    background-color: #3e3e3e;
-    .container{
-        .footer-logo{
-            width: 45%;
-        }
-        .footer-form01{
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 50px;
-            ul{
-                list-style: none;
-                a{
-                    font-size: 1.1rem;
-                    font-weight: map-get(variables.$font-weight,500);
-                    color: variables.$footer-font;
-                    padding: 0.5rem 1rem;
-                }
-            }   
-        }
-    
-        .footer-form02{
-            .p-none{
-                padding: 0; 
-                ul{
-                display: flex;
-                list-style: none;
-                color: variables.$gray-font;
-                padding: 0;
-                margin-bottom: 20px;
-                    li{
-                        font-size: 1.1rem;
-                        font-weight: map-get(variables.$font-weight, 400);
-                        padding-bottom: 0;  
-                    }
-                    
-                    li:not(:last-of-type){
-                        border-right: 2px solid variables.$gray-font;
-                        padding-right: 30px;
-                    }
 
-                    li:not(:first-of-type){
-                        padding-left: 30px;
-                    }
-                }
-            }
-            
-            .footer-copyform{
-                font-size: 1.1rem;
-                font-weight: map-get(variables.$font-weight, 500);
-                color: variables.$gray-font;
-                padding: 0;
-
-                .footer-copy{
-                    margin-top: 10px;
-                }
-            }
-        }
-    }
-}
 //==========footet end==========
+@media (max-width:2000px) {
+    // =============sec01====================
+    .sec01 .sec01-form .sec01_title {
+    top: 24%;
+}
+// =============sec01 end====================
+
+// =============sec02 end====================
+.sec02 .sec02_card-form .sec02_c-content {
+    height: 45vh;
+}
+// =============sec02 end====================
+
+// =============sec03========================
+.sec03 .sec03__content {
+    height: 47vh;
+}
+// =============sec03 end====================
+
+}
 
 
 @media (max-width:1280px) {

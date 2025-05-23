@@ -14,7 +14,7 @@
 
             .header-nav-link{
                 font-size: 1.4rem;
-                font-weight: map-get(variables.$font-weight, 600);
+                font-weight: map-get(variables.$font-weight, 700);
                 color: variables.$font-c;
             }
 
@@ -65,7 +65,7 @@
 
         i{
             font-size: 1.6em;
-            font-weight: map-get(variables.$font-weight, 600);
+            font-weight: map-get(variables.$font-weight, 700);
             color: variables.$font-c;
         }
     
@@ -133,3 +133,67 @@
 }
 
 //==========button end==========
+
+
+//==========footer==============
+.footer{
+    background-color: #3e3e3e;
+    .container{
+        .footer-logo{
+            width: 45%;
+        }
+        .footer-form01{
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+            ul{
+                list-style: none;
+                a{
+                    font-size: 1.1rem;
+                    font-weight: map-get(variables.$font-weight,500);
+                    color: variables.$footer-font;
+                    padding: 0.5rem 1rem;
+                }
+            }   
+        }
+    
+        .footer-form02{
+            .p-none{
+                padding: 0; 
+                ul{
+                display: flex;
+                list-style: none;
+                color: variables.$gray-font;
+                padding: 0;
+                margin-bottom: 20px;
+                    li{
+                        font-size: 1.1rem;
+                        font-weight: map-get(variables.$font-weight, 400);
+                        padding-bottom: 0;  
+                    }
+                    
+                    li:not(:last-of-type){
+                        border-right: 2px solid variables.$gray-font;
+                        padding-right: 30px;
+                    }
+
+                    li:not(:first-of-type){
+                        padding-left: 30px;
+                    }
+                }
+            }
+            
+            .footer-copyform{
+                font-size: 1.1rem;
+                font-weight: map-get(variables.$font-weight, 500);
+                color: variables.$gray-font;
+                padding: 0;
+
+                .footer-copy{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+//==========footer end==========
