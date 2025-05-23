@@ -255,9 +255,14 @@ body .point-c {
   background-color: #FFF8ED;
   padding: 50px 80px 100px;
 }
+.sec01 img {
+  width: 100%;
+}
 .sec01 .sec01-form .sec01_title {
   font-family: "Paperlogy";
-  font-size: 3.4rem;
+  font-size: 3.2vw;
+  position: relative;
+  top: 30px;
   font-weight: 700;
   color: #272727;
   position: absolute;
@@ -279,7 +284,7 @@ body .point-c {
 
 .sec02 .sec02-titleform .sec02_title {
   font-family: "Paperlogy";
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   font-weight: 700;
   color: #272727;
 }
@@ -332,12 +337,12 @@ body .point-c {
 
 .sec03 .sec03_titleform {
   font-family: "Paperlogy";
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   font-weight: 700;
   color: #272727;
 }
 .sec03 .sec03__content {
-  height: 32vh;
+  height: 32vw;
   display: flex;
   align-items: flex-end;
   color: #fff;
@@ -378,7 +383,7 @@ body .point-c {
 }
 .sec04 .container .sec04__titleContent h2 {
   font-family: "Paperlogy";
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   font-weight: 700;
   color: #272727;
 }
@@ -390,7 +395,7 @@ body .point-c {
 
 .sec05 .sec05_titleform .sec05_title {
   font-family: "Paperlogy";
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   font-weight: 700;
   color: #272727;
 }
@@ -454,7 +459,7 @@ body .point-c {
     padding: 40px 60px 80px;
   }
   .sec01 .sec01-form .sec01_title {
-    top: 10%;
+    top: 8%;
   }
   .sec01_title p {
     font-size: 2.7rem;
@@ -536,6 +541,7 @@ body .point-c {
   }
   .footer .container .footer-form01 ul {
     margin-bottom: 15px;
+    padding: 0;
   }
   .footer .container .footer-form01 ul a {
     font-size: 1.1rem;
@@ -568,7 +574,7 @@ body .point-c {
     padding: 20px 60px 60px;
   }
   .sec01 .sec01-form .sec01_title {
-    top: 8%;
+    top: 6%;
   }
   .sec01_title p {
     font-size: 2rem;
@@ -666,7 +672,8 @@ body .point-c {
     padding: 20px 25px 40px;
   }
   .sec01 .sec01-form .sec01_title {
-    top: 5.5%;
+    top: 4%;
+    left: 5%;
   }
   .sec01_title p {
     font-size: 1.6rem;

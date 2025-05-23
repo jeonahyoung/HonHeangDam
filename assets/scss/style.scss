@@ -22,11 +22,16 @@
 .sec01{
     background-color: variables.$basic-bg;
     padding: 50px 80px 100px;
-  
+    img{
+        width: 100%;
+    }
+
     .sec01-form{
         .sec01_title{
             font-family: map-get(variables.$title, font-family);
-            font-size: 3.4rem;
+            font-size: 3.2vw;
+            position: relative;
+            top: 30px;
             font-weight: map-get(variables.$title, font-weight);
             color: map-get(variables.$title, color);
             position: absolute;
@@ -123,7 +128,7 @@
     }
     
     .sec03__content{
-        height: 32vh;
+        height: 32vw;
         display: flex;
         align-items: flex-end;
         color: #fff;
@@ -277,7 +282,7 @@
     } 
    
     .sec01 .sec01-form .sec01_title {
-            top: 10%;
+            top: 8%;
     }
 
     .sec01_title p{
@@ -388,6 +393,7 @@
                 padding-top: 30px;
                 ul{
                     margin-bottom: 15px;
+                    padding: 0;
                     a{
                         font-size: 1.1rem;
                     }
@@ -439,7 +445,7 @@
     }
 
     .sec01 .sec01-form .sec01_title {
-        top: 8%;
+        top: 6%;
     }
 
     .sec01_title p {
@@ -584,7 +590,8 @@
     }
 
     .sec01 .sec01-form .sec01_title {
-        top: 5.5%;
+        top: 4%;
+        left: 5%;
     }
 
     .sec01_title p {
