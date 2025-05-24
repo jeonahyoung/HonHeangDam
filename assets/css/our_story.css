@@ -218,7 +218,7 @@ footer .footer_titleform .footer_menu .footer_menulist a {
 }
 footer .footer_content, footer .footer_copy {
   font-family: "pretendard";
-  color: #dbdbdb;
+  color: #bdbdbd;
 }
 footer .footer_content {
   margin-bottom: 20px;
@@ -231,7 +231,7 @@ footer .footer_content .footer_contentlist {
   font-size: 1rem;
 }
 footer .footer_content .footer_contentlist li:not(:last-of-type) {
-  border-right: 2px solid #dbdbdb;
+  border-right: 2px solid #bdbdbd;
   padding-right: 30px;
 }
 footer .footer_content .footer_contentlist li:not(:first-of-type) {
@@ -291,6 +291,33 @@ header .sub_nav .orange {
   font-weight: 400;
 }
 
+.sec02 {
+  padding-top: 10rem;
+  padding-bottom: 13rem;
+}
+.sec02 .sec02_keyword {
+  font-size: 15rem;
+  font-weight: 600;
+  color: #bdbdbd;
+  opacity: 20%;
+  position: relative;
+  z-index: -1;
+}
+.sec02 .sec02_title {
+  position: absolute;
+  z-index: 9999;
+  font-family: "Paperlogy";
+  font-weight: 700;
+  color: #272727;
+  font-size: 3.2rem;
+  text-align: right;
+  right: 22%;
+  top: 183%;
+}
+.sec02 .sec02_title span {
+  color: #FFA500;
+}
+
 @media (max-width: 1280px) {
   header {
     padding: 30px 82px;
@@ -316,6 +343,18 @@ header .sub_nav .orange {
   }
   .sec01 .container .sec01_form .sec01_content {
     font-size: 1rem;
+  }
+  .sec02 {
+    padding-top: 7rem;
+    padding-bottom: 8rem;
+  }
+  .sec02 .sec02_keyword {
+    font-size: 14rem;
+  }
+  .sec02 .sec02_title {
+    font-size: 2.4rem;
+    top: 157%;
+    right: 21%;
   }
   footer {
     padding: 40px 82px;
@@ -346,6 +385,17 @@ header .sub_nav .orange {
   }
   .sec01 .container .sec01_form .sec01_subtitle {
     font-size: 1.1rem;
+  }
+  .sec02 {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+  }
+  .sec02 .sec02_keyword {
+    font-size: 11rem;
+  }
+  .sec02 .sec02_title {
+    font-size: 2.2rem;
+    top: 129%;
   }
   footer {
     padding: 50px 45px;
@@ -397,6 +447,19 @@ header .sub_nav .orange {
   }
   .sec01 .container .sec01_form .sec01_content {
     font-size: 0.8rem;
+  }
+  .sec02 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .sec02 .sec02_keyword {
+    font-size: 9rem;
+  }
+  .sec02 .sec02_title {
+    font-size: 2rem;
+    top: 103%;
+    right: 17%;
+    line-height: 40px;
   }
   footer {
     padding: 30px 45px;
@@ -454,6 +517,14 @@ header .sub_nav .orange {
   .sec01 .container .sec01_form .sec01_content {
     font-size: 0.7rem;
   }
+  .sec02 .sec02_keyword {
+    font-size: 7rem;
+  }
+  .sec02 .sec02_title {
+    font-size: 1.7rem;
+    top: 91%;
+    right: 15%;
+  }
   footer {
     padding: 20px 12px;
   }
@@ -493,6 +564,19 @@ header .sub_nav .orange {
   }
   .sec01 .container .sec01_form .sec01_content {
     font-size: 0.6rem;
+  }
+  .sec02 {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .sec02 .sec02_keyword {
+    font-size: 5rem;
+  }
+  .sec02 .sec02_title {
+    font-size: 0.9rem;
+    top: 73%;
+    right: 12%;
+    line-height: 1.3rem;
   }
   footer .footer_titleform {
     margin-bottom: 8px;

@@ -163,7 +163,7 @@
                         
                             a{
                                 font-family: 'Paperlogy';
-                                color: #d9d9d9;
+                                color: variables.$footer-font;
                                 text-decoration: none;
                         }
                     }
@@ -171,7 +171,7 @@
             }
         .footer_content,.footer_copy{
             font-family: 'pretendard';
-            color: #dbdbdb;
+            color: variables.$gray-font;
         }
         
         .footer_content{
@@ -186,7 +186,7 @@
             }
 
             .footer_contentlist li:not(:last-of-type){
-                border-right: 2px solid #dbdbdb;
+                border-right: 2px solid variables.$gray-font;
                 padding-right: 30px;
             }
 

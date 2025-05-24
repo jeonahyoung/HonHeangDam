@@ -250,9 +250,6 @@
 
 //==========section 05 end==========
 
-//==========footer==============
-
-//==========footet end==========
 
 
 @media (max-width:1280px) {
@@ -386,36 +383,12 @@
     // =============sec 05 end==================
 
     // =============footer======================
-   .footer{
-        .container{
-            padding: 30px 0;
-            .footer-form01{
-                padding-top: 30px;
-                ul{
-                    margin-bottom: 15px;
-                    padding: 0;
-                    a{
-                        font-size: 1.1rem;
-                    }
-                }
-            }
-    
-            .footer-form02{
-                padding: 0 12px;
-                ul{
-                    li{
-                        font-size: 1.1rem;
-                    }
-                }
-    
-                .footer-copy{
-                    font-size: 1.1rem;
-                    margin: 0;
-                   
-                }
-            }
-        }
+    footer {
+        padding: 40px 82px;
     }
+    footer .footer_titleform .footer-logo {
+        width: 80%;
+    } 
    // =============footer end==================
    }
  
@@ -528,21 +501,31 @@
     // =============sec05 end===============
 
     // =============footer==================
-    .footer .container {
-        padding: 20px 0;
+    footer{
+        padding: 50px 45px;
+     }
+
+    footer .footer_titleform .footer-logo {
+        width: 70%;
+    }
+     footer .footer_titleform .footer_menu .footer_menulist {
+            font-size: 0.9rem;
     }
 
-    .footer .container .footer-form01 ul a {
+    footer .footer_content .footer_contentlist {
         font-size: 0.9rem;
-        padding: 0.7rem;
     }
 
-    .footer .container .footer-form02 .p-none ul li {
+    footer .footer_content .footer_contentlist li:not(:first-of-type) {
+        padding-left: 25px;
+    }
+
+    footer .footer_content .footer_contentlist li:not(:last-of-type) {
+        padding-right: 25px;
+    }
+
+    footer .footer_copy {  
     font-size: 0.9rem;
-    }
-
-    .footer .container .footer-form02 .footer-copy {
-        font-size: 0.9rem;
     }
     // =============footer end==============
 }
@@ -693,34 +676,33 @@
 //==========sec05 end===========
 
 //==========footer==============
-    .footer .container .footer-logo {
-        width: 55%;
+    footer {
+        padding: 30px 45px;
+    }
+    footer .footer_titleform .footer-logo {
+        width: 47%;
     }
 
-    .footer .container .footer-form01 {
-        padding-top: 20px;
-        margin-bottom: 30px;
+    footer .footer_titleform .footer_menu .footer_menulist {
+        font-size: 0.7rem;
     }
 
-    .footer .container .footer-form01 ul{
-         padding-left: 0;
+    footer .footer_titleform { 
+    margin-bottom: 30px;
+    }
+
+    footer .footer_content {
+    margin-bottom: 10px;
+    }
+
+    footer .footer_content .footer_contentlist {
+        font-size: 0.7rem;
+        margin-bottom: 10px;
     }
     
-    .footer .container .footer-form01 ul a {
+    footer .footer_copy{
         font-size: 0.7rem;
-    }
-
-    .footer .container .footer-form02 ul{
-        margin-bottom: 20px;
-    }
-
-    .footer .container .footer-form02 .p-none ul li {
-        font-size: 0.7rem;
-    }
-
-    .footer .container .footer-form02 .footer-copy {
-        font-size: 0.7rem;
-        margin-top: 0;
+        margin: 0;
     }
 //==========footer end==========
 }
@@ -732,7 +714,15 @@
     }
 
     header img {
-        width: 53%;
+        width: 38%;
+    }
+
+    header .header_nav-icon i {
+        font-size: 1.3rem;
+    }
+
+    .pd-0{
+        padding: 0;
     }
 //==========header end==========
 
@@ -744,16 +734,17 @@
     .sec01_bg-img {
         opacity: 0;
         width: 100%;
+        height: 23vh;
     }
 
     .sec01 .sec01-form .sec01_title {
         text-align: center;
-        top: 9%;
-        left: 26%;
+        top: 17%;
+        left: 36%;
     }
 
     .sec01_title p {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 //==========sec01 end===========
 
@@ -767,11 +758,11 @@
     }
 
     .sec02 .sec02-titleform .sec02_title {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 
     .sec02 .sec02-titleform .sec02__subtitle {
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
 
     .sec02 .sec02_card-form .sec02_c-content {
@@ -779,7 +770,7 @@
     }
 
     .sec02 .sec02_card-form p {
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
 //==========sec02 end===========
 
@@ -789,16 +780,29 @@
     }
 
     .sec03 .sec03_titleform p {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 
     .sec03 .sec03__content {
-        height: 15vh;
+        height: 35vh;
         margin-bottom: 15px;
     }
 
+    .sec03 .sec03__content .sec03__subcontent p {
+        font-size: 0.6rem;
+        margin-bottom: 2px;
+    }
+
     .sec03 .sec03__content .sec03__subcontent {
-        margin: 15px;
+        margin: 10px;
+    }
+
+    .sec03 .sec03__content .sec03__subcontent span {
+        font-size: 0.5rem;
+    }
+
+    .sec03 .effect {
+        font-size: 1rem;
     }
 
     .mb-80 {
@@ -808,7 +812,7 @@
 
 //==========sec04===============
     .sec04 .container .sec04__titleContent h2 {
-        font-size: 1.6rem;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -816,7 +820,9 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 25px;
     }
+    
 
     .btn-wrapper a.effect {
         width: 16.6666%;
@@ -833,113 +839,162 @@
     .sec04_image {
         width: 30%;
     }
+
+    .sec04 .effect {
+        font-size: 1rem;
+    }
 //==========sec04 end===========
 
 //==========sec05===============
+    .sec05 .sec05_titleform .sec05_title {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
     
     .sec05 .sec05_titleform .sec05_subtitle {
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
 
     .sec05 .sec05_form {
-        font-size: 1rem;
-        padding: 2% 1%;
-    }
-
-    .sec05 .sec05_a {
-        font-size: 0.8rem;
-    }
-//==========sec05 end===========
-
-//==========footer==============
-    .footer-nav{
-        display: none;
-    }
-
-    .footer .container .footer-logo {
-        width: 11%;
-    }
-
-    .footer .container .footer-form01 {
-        padding-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .p-none{
-        display: none;
-    }
-
-//==========footer end==========
-}
-@media (max-width:348px){
-    //==========header==============
-        header img {
-        width: 50%;
-        }
-    //==========header end==========
-
-    //==========sec01===============
-    .sec01 .sec01-form .sec01_title {
-        top: 6.5%;
-        left: 16%;
-    }
-
-    .sec01_title p {
-        font-size: 1.4rem;
-    }
-    //==========sec01 end===========
-
-    //==========sec02===============
-    .sec02 .sec02-titleform .sec02_title {
-        font-size: 1.4rem;
-    }
-
-    .sec02 .sec02-titleform .sec02__subtitle {
-        font-size: 0.8rem;
-    }
-
-    .sec02 .sec02_card-form .sec02_c-content {
-        height: 15vh;
-    }
-
-    .sec02 .sec02_card-form p {
-        font-size: 0.8rem;
-        margin-bottom: 0.5rem;
-    }
-
-    //==========sec02 end===========
-
-    //==========sec03===============
-    .sec03 .sec03_titleform p {
-        font-size: 1.4rem;
-    }
-
-    .sec03 .sec03_titleform {
-        margin-bottom: 20px;
-    }
-
-    .sec03 .sec03__content .sec03__subcontent p {
-        font-size: 0.8rem;
-        margin-bottom: 5px;
-    }
-
-    .sec03 .sec03__content .sec03__subcontent span {
-        font-size: 0.5rem;
-    }
-
-    .sec03 .effect {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+        padding: 1%;
     }
 
     .mb-80 {
         margin-bottom: 20px;
     }
 
+    .sec05 .sec05_a {
+        font-size: 0.5rem;
+        padding: 0.7rem 0.8rem;
+
+    }
+//==========sec05 end===========
+
+//==========footer==============
+    footer {
+        padding: 20px 12px;
+    }
+
+    footer .footer_titleform {
+        margin-bottom: 15px;
+    }
+
+    footer .footer_titleform .footer-logo {
+        width: 38%;
+    }
+
+    footer .footer_titleform .footer_menu .footer_menulist {
+        display: none;
+    }
+
+    footer .footer_content .footer_contentlist {
+        font-size: 0.5rem;
+        margin-bottom: 10px;
+    }
+
+    footer .footer_copy {
+        font-size: 0.5rem;
+    }
+//==========footer end==========
+}
+@media (max-width:348px){
+    //==========header==============
+    header {
+        padding: 9px 12px;
+    }
+
+    header img {
+        width: 38%;
+    }
+
+    header .header_nav-icon i {
+        font-size: 1rem;
+    }
+    //==========header end==========
+
+    //==========sec01===============
+    .sec01 {
+        padding: 15px 12px;
+    }
+
+    .sec01 .sec01-form .sec01_title {
+        top: 16%;
+        left: 29%;
+    }
+
+    .sec01_title p {
+        font-size: 0.9rem;
+    }
+    //==========sec01 end===========
+
+    //==========sec02===============
+    .sec02 {
+        padding: 20px 0;
+    }
+
+    .sec02 .sec02-titleform .sec02_title {
+        font-size: 0.9rem;
+    }
+
+    .sec02 .sec02-titleform .sec02__subtitle {
+        font-size: 0.6rem;
+    }
+
+    .sec02 .sec02_card-form .sec02_c-content {
+        height: 26vh;
+    }
+
+    .sec02 .sec02_card-form p {
+        font-size: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    //==========sec02 end===========
+
+    //==========sec03===============
+    .sec03 {
+        padding: 20px 0;
+    }
+
+    .sec03 .sec03_titleform p {
+        font-size: 0.9rem;
+    }
+
+    .sec03 .sec03_titleform {
+        margin-bottom: 20px;
+    }
+
+    .sec03 .sec03__content {
+        height: 32vh;
+    }
+
+    .sec03 .sec03__content .sec03__subcontent p {
+        font-size: 0.6rem;
+        margin-bottom: 5px;
+    }
+
+    .sec03 .sec03__content .sec03__subcontent span {
+        font-size: 0.4rem;
+    }
+
+    .sec03 .effect {
+        font-size: 0.6rem;
+    }
+
+    .mb-80 {
+        margin-bottom: 15px;
+    }
+
     //==========.sec03 end==========
 
     //==========sec04===============
+    .sec04 {
+        padding: 20px 0;
+    }
+
     .sec04 .container .sec04__titleContent h2 {
-        font-size: 1.4rem;
+        font-size: 0.9rem;
         text-align: center;
     }
 
@@ -948,23 +1003,67 @@
     }
 
     .sec04 .effect {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
+
+    .btn-wrapper {
+        margin-bottom: 1.2rem;
+    }
+
     //==========sec04 end===========
 
     //==========sec05===============
+    .sec05 {
+        padding: 20px 0;
+    }
 
+    .sec05 .sec05_titleform .sec05_title {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .sec05 .sec05_titleform .sec05_subtitle {
+        font-size: 0.6rem;
+    }
+
+    .sec05 .sec05_form {
+        font-size: 0.6rem;
+        padding: 2% 1%;
+        font-weight: 600;
+    }
+
+    .sec05 .sec05_a {
+        font-size: 0.4rem;
+        padding: 0.6rem 0.8rem;
+    }
     //==========sec05 end===========
 
     //==========footer==============
+    footer .footer_titleform {
+        margin-bottom: 8px;
+    }
 
+    footer .footer_titleform .footer-logo {
+        width: 30%;
+    }
+
+    footer .footer_content {
+        margin-bottom: 0px;
+    }
+
+    footer .footer_content .footer_contentlist {
+        display: none;
+    }
+
+    footer .footer_copy p {
+        margin: 0;
+    }
     //==========footer end===========
-
-    
-
-
-
 }
+
+
+
+
 
 
 
