@@ -139,64 +139,66 @@
 
 
 //==========footer==============
-.footer{
-    background-color: #3e3e3e;
-    .container{
-        .footer-logo{
-            width: 45%;
-        }
-        .footer-form01{
-            justify-content: space-between;
-            align-items: center;
+    footer{
+            background-color: #3e3e3e;
+            padding: 40px 65px;
+        
+        .footer_titleform{
+            display: flex;
             margin-bottom: 50px;
-            ul{
-                list-style: none;
-                a{
-                    font-size: map-get(variables.$content,font-size);
-                    font-weight: 500;
-                    color: variables.$footer-font;
-                    padding: 0.5rem 1rem;
+            align-items: center;
+
+            .footer-logo{
+                width: 90%;
+            }
+
+            .footer_menu{
+                margin-left: auto;
+                    .footer_menulist{
+                        display: flex;
+                        list-style: none;
+                        gap: 0 50px;
+                        margin-left: auto;
+                        font-size: 1.1rem;
+                        
+                            a{
+                                font-family: 'Paperlogy';
+                                color: #d9d9d9;
+                                text-decoration: none;
+                        }
+                    }
                 }
-            }   
+            }
+        .footer_content,.footer_copy{
+            font-family: 'pretendard';
+            color: #dbdbdb;
         }
-    
-        .footer-form02{
-            .p-none{
-                padding: 0; 
-                ul{
+        
+        .footer_content{
+            margin-bottom: 20px;
+
+            .footer_contentlist{
                 display: flex;
                 list-style: none;
-                color: variables.$gray-font;
                 padding: 0;
-                margin-bottom: 20px;
-                    li{
-                        font-size: map-get(variables.$content,font-size);
-                        font-weight: map-get(variables.$content,font-weight);
-                        padding-bottom: 0;  
-                    }
-                    
-                    li:not(:last-of-type){
-                        border-right: 2px solid variables.$gray-font;
-                        padding-right: 30px;
-                    }
-
-                    li:not(:first-of-type){
-                        padding-left: 30px;
-                    }
-                }
+                font-family: 'pretendard';
+                font-size: 1rem;
             }
-            
-            .footer-copyform{
-                font-size: 1.1rem;
-                font-weight: 500;
-                color: variables.$gray-font;
-                padding: 0;
 
-                .footer-copy{
-                    margin-top: 10px;
-                }
+            .footer_contentlist li:not(:last-of-type){
+                border-right: 2px solid #dbdbdb;
+                padding-right: 30px;
             }
-        }
+
+            .footer_contentlist li:not(:first-of-type){
+                padding-left: 30px;
+            }
+        }        
     }
-}
+        
+        
+        
+        
+        
+        
 //==========footer end==========

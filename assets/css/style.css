@@ -189,56 +189,53 @@ header .header_nav-icon .hamburger {
   text-indent: 0;
 }
 
-.footer {
+footer {
   background-color: #3e3e3e;
+  padding: 40px 65px;
 }
-.footer .container .footer-logo {
-  width: 45%;
-}
-.footer .container .footer-form01 {
-  justify-content: space-between;
-  align-items: center;
+footer .footer_titleform {
+  display: flex;
   margin-bottom: 50px;
+  align-items: center;
 }
-.footer .container .footer-form01 ul {
-  list-style: none;
+footer .footer_titleform .footer-logo {
+  width: 90%;
 }
-.footer .container .footer-form01 ul a {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #d9d9d9;
-  padding: 0.5rem 1rem;
+footer .footer_titleform .footer_menu {
+  margin-left: auto;
 }
-.footer .container .footer-form02 .p-none {
-  padding: 0;
-}
-.footer .container .footer-form02 .p-none ul {
+footer .footer_titleform .footer_menu .footer_menulist {
   display: flex;
   list-style: none;
-  color: #bdbdbd;
-  padding: 0;
+  gap: 0 50px;
+  margin-left: auto;
+  font-size: 1.1rem;
+}
+footer .footer_titleform .footer_menu .footer_menulist a {
+  font-family: "Paperlogy";
+  color: #d9d9d9;
+  text-decoration: none;
+}
+footer .footer_content, footer .footer_copy {
+  font-family: "pretendard";
+  color: #dbdbdb;
+}
+footer .footer_content {
   margin-bottom: 20px;
 }
-.footer .container .footer-form02 .p-none ul li {
-  font-size: 1.1rem;
-  font-weight: 400;
-  padding-bottom: 0;
+footer .footer_content .footer_contentlist {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  font-family: "pretendard";
+  font-size: 1rem;
 }
-.footer .container .footer-form02 .p-none ul li:not(:last-of-type) {
-  border-right: 2px solid #bdbdbd;
+footer .footer_content .footer_contentlist li:not(:last-of-type) {
+  border-right: 2px solid #dbdbdb;
   padding-right: 30px;
 }
-.footer .container .footer-form02 .p-none ul li:not(:first-of-type) {
+footer .footer_content .footer_contentlist li:not(:first-of-type) {
   padding-left: 30px;
-}
-.footer .container .footer-form02 .footer-copyform {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #bdbdbd;
-  padding: 0;
-}
-.footer .container .footer-form02 .footer-copyform .footer-copy {
-  margin-top: 10px;
 }
 
 body {

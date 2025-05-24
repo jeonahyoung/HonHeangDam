@@ -5,38 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .sub_nav{
+        
+        footer{
+            background-color: #3e3e3e;
+            padding: 20px 60px;
+        }
+        .footer_titleform{
             display: flex;
-            padding: 0;
+        }
+        .footer_menu{
+            margin-left: auto;
+        }
+        
+        .footer_menulist{
+            display: flex;
             list-style: none;
-            gap: 20px;
+            gap: 0 50px;
+            margin-left: auto;
+            
         }
-
-        li{
-            position: relative;
-        }
-        a{
+        .footer_menulist a{
+            color: #d9d9d9;
             text-decoration: none;
         }
-        .active{
-            position: absolute;
-            z-index: -1;
-            width: 100%;
-            height: 10px;
-            bottom: 0;
-            background-color: gold;
-            display: inline-block;
-            transition-property: all;
-            transition-duration: 0.7s;
+        .footer_contentlist{
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        .footer_contentlist li:not(:last-of-type){
+            border-right: 2px solid #dbdbdb;
+            padding-right: 30px;
         }
 
+        .footer_contentlist li:not(:first-of-type){
+            padding-left: 30px;
+        }
+        .footer_content,.footer_copy{
+            color: #dbdbdb;
+        }
+        
     </style>
 </head>
 <body>
-        <ul>
-            <li><a href="#"><span class="active"></span>여행지</a></li>
-            <li><a href="#">여행지2</a></li>
-            <li><a href="#">여행지3</a></li>
-        </ul>
+        <footer class="footer">
+            <div class="footer_titleform">
+                <div class="footer_img">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="footer_menu">
+                    <ul class="footer_menulist">
+                        <li><a href="">우리의이야기</a></li>
+                        <li><a href="">여행지추천</a></li>
+                        <li><a href="">방구석투어</a></li>
+                        <li><a href="">커뮤니티</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_contentform">
+                <div class="footer_content">
+                    <ul class="footer_contentlist">
+                        <li>"고요한 길 위에서, 진짜 나를 만나는 여행</li>
+                        <li>인천광역시 미추홀구 용마루로 33</li>
+                        <li>Tel: 032_4577-6334</li>
+                        <li>대표자: 전 아 영</li>
+                    </ul>
+                </div>
+                <div class="footer_copy">
+                    <p>Copyright ⓒ HonHeangDam. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>
