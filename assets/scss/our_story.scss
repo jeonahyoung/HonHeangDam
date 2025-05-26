@@ -1,3 +1,4 @@
+@use 'common';
 @use 'variables';
 @use 'component';
 
@@ -53,19 +54,24 @@ header{
             font-family: map-get(variables.$title, font-family);
             font-size: map-get(variables.$title, font-size);
             font-weight: map-get(variables.$title, font-weight);
-            }
+            color: map-get(variables.$title,color)
+            };
 
             .sec01_subtitle{
             font-family:  map-get(variables.$subtitle, font-family);
             font-size:  map-get(variables.$subtitle, font-size);
             font-weight:  map-get(variables.$subtitle, font-weight);
-            }
+            color: map-get(variables.$subtitle,color)
+            };
+            
 
             .sec01_content{
             font-family:  map-get(variables.$content, font-family);
             font-size:  map-get(variables.$content, font-size);
             font-weight:  map-get(variables.$content, font-weight);
-            }
+            color: map-get(variables.$content,color)
+            };
+            
         }
     }
 }
@@ -105,13 +111,63 @@ header{
 
 
 // =============sec03======================
+.sec03{
+    background-color: #d9d9d9;
+    padding: 100px 0;
+    
 
+    .sec03_title{
+        font-family: map-get(variables.$title, font-family);
+        font-size: map-get(variables.$title, font-size);
+        font-weight: map-get(variables.$title, font-weight);
+        color: map-get(variables.$title,color);
+        margin-bottom : 50px;
+        };
+        
 
+        .sec03_cardform{
+            background-color: white;
+            padding: 2.2rem;
+            border-radius: 30px;
+           
+            .sec03_icon{
+            color: variables.$basic-c;
+            font-size: 3rem;
+            margin-bottom: 2.3rem;
+            }
+
+            .sec03_content{
+                font-family: 'pretendard';
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: map-get(variables.$content,color);
+                margin-top: 2.3rem;
+            }
+        }
+    }
 // =============sec03 end==================
 
 
 // =============sec04======================
+.sec04{
+    padding: 100px 0;
 
+    .sec04_title{
+        font-family: map-get(variables.$title, font-family);
+        font-size: map-get(variables.$title, font-size);
+        font-weight: map-get(variables.$title, font-weight);
+        color: map-get(variables.$title,color);
+        margin-bottom: 2.2rem;
+    }
+
+    .sec04_subtitle{
+        font-family: map-get(variables.$subtitle, font-family);
+        font-size: map-get(variables.$subtitle, font-size);
+        font-weight: map-get(variables.$subtitle, font-weight);
+        color: map-get(variables.$subtitle,color);
+        margin-bottom: 3.8rem;
+    }
+}
 // =============sec04 end==================
 
 
@@ -172,10 +228,52 @@ header{
         right: 21%;
     }
 // =============sec02 end===============
+
+// =============sec03===================
+.sec03 {
+    padding: 80px 0;
+}
+
+.sec03 .sec03_title {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+}
+
+.sec03 .sec03_cardform {
+    padding: 1.8rem;
+}
+
+.sec03 .sec03_cardform .sec03_icon {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.sec03 .sec03_cardform .sec03_content {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+}
+// =============sec03 end===============
+
+// =============sec04===================
+.sec04 {
+    padding: 80px 0;
+}
+
+.sec04 .sec04_title {
+    font-size: 2.4rem;
+    margin-bottom: 1.8rem;
+}
+
+.sec04 .sec04_subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 3.6rem;
+}
+
+.sec04 .effect {
+    font-size: 1.2rem;
+}
+// =============sec04 end===============
     
-
-
-
 // =============footer===================
 footer {
     padding: 40px 82px;
@@ -238,10 +336,47 @@ footer .footer_titleform .footer-logo {
     }
     // =============sec02 end=============
 
+    // =============sec03=================
+    .sec03 {
+        padding: 60px 0;
+    }
 
+    .sec03 .sec03_title {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
 
+    .sec03 .sec03_cardform {
+        padding: 1.4rem;
+    }
 
-     // =============footer================
+    .sec03 .sec03_cardform .sec03_content {
+        font-size: 0.9rem;
+        margin-top: 1.4rem;
+    }
+    // =============sec03 end=============
+
+    // =============sec04=================
+    .sec04 {
+        padding: 60px 0;
+    }
+
+    .sec04 .sec04_title {
+        font-size: 2.2rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .sec04 .sec04_subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 3.4rem;
+    }
+
+    .sec04 .effect {
+        font-size: 1.1rem;
+    }
+    // =============sec04 end=============\
+
+    // =============footer================
      footer{
         padding: 50px 45px;
      }
@@ -306,7 +441,7 @@ footer .footer_titleform .footer-logo {
     }
 
     .sec01 .container .sec01_form .sec01_subtitle {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .sec01 .container .sec01_form .sec01_content {
@@ -326,18 +461,60 @@ footer .footer_titleform .footer-logo {
 
     .sec02 .sec02_title {
         font-size: 2rem;
-        top: 103%;
+        top: 101%;
         right: 17%;
         line-height: 40px;
     }
     // =============sec02 end============
 
+    // =============sec03================
+    .sec03 {
+        padding: 40px 0;
+    }
 
+    .sec03 .sec03_title {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
 
+    .sec03 .sec03_cardform {
+        padding: 1.2rem;
+    }
 
+    .sec03 .sec03_cardform .sec03_icon {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
 
+    .sec03 .sec03_cardform .sec03_content {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
 
+    .sec03 .sec03_cardform .sec03_content .br{
+        display: none;
+    }
+    // =============sec03 end============
 
+    // =============sec04================
+    .sec04 {
+        padding: 40px 0;
+    }
+
+    .sec04 .sec04_title {
+        font-size: 2rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .sec04 .sec04_subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 3rem;
+    }
+
+    .sec04 .effect {
+        font-size: 0.9rem;
+    }
+    // =============sec04 end============
 
     // =============footer=================
     footer {
@@ -410,7 +587,7 @@ footer .footer_titleform .footer-logo {
     }
 
     .sec01 .container .sec01_form .sec01_subtitle {
-        font-size: 0.7rem;
+        font-size: 0.8em;
         margin-bottom: 0.6rem;
     }
         
@@ -432,7 +609,43 @@ footer .footer_titleform .footer-logo {
     }
     // =============sec02 end============
 
+    // =============sec03================
+    .mb-15{
+        margin-bottom: 15px;
+    }
 
+    .sec03 .sec03_title {
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+    }
+
+    .sec03 .sec03_cardform .sec03_icon {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .sec03 .sec03_cardform .sec03_content {
+        font-size: 0.7rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    // =============sec03 end============
+
+    // =============sec04 ===============
+    .sec04 .sec04_title {
+        font-size: 1.7rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .sec04 .sec04_subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 2.6rem;
+    }
+
+    .sec04 .effect {
+        font-size: 0.8rem;
+    }
+    // =============sec04 end============
 
     // =============footer==============
     footer {
@@ -511,12 +724,53 @@ footer .footer_titleform .footer-logo {
     }
     // =============sec02 end========
 
+    // =============sec03============
+    .br{
+        display: none;
+    }
+    .sec03 {
+        padding: 30px 0;
+    }
 
+    .sec03 .sec03_title {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
 
+    .sec03 .sec03_cardform {
+        padding: 0.8rem;
+    }
 
+    .sec03 .sec03_cardform .sec03_content {
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+    }
+    // =============sec03 end========
 
+    // =============sec04============
+    .sec04 {
+        padding: 30px 0;
+    }
 
+    .sec04 .sec04_title {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
 
+    .sec04 .sec04_subtitle {
+        font-size: 0.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .sec04 .effect {
+        font-size: 0.6rem;
+        padding: 0.3rem;
+    }
+
+    .sec04 .effect.effect-5 {
+        min-width: 10rem;
+    }
+    // =============sec04 end========
 
     // =============footer============
     footer .footer_titleform {
