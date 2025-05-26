@@ -39,7 +39,7 @@ header{
 }
 // =============header end=================
 
-// =============sec01======================
+// =============sec01================
 .sec01{
     .sec01_bg01 {
         position: relative;
@@ -47,25 +47,66 @@ header{
         background-size: cover;
         background-position: center;
         z-index: -1;
+        height: 930px;
+    }
+   
+    .sec01_bg02 {
+        position: relative;
+        background-image: url('../images/findplace_sec01_bg02.png');
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        height: 930px;
+    }
+
+    .sec01_bg03 {
+        position: relative;
+        background-image: url('../images/findplace_sec01_bg03.png');
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        height: 930px;
     }
 
     .sec01_content{
         position: absolute;
-        top: 50%;
+        top: 35%;
         right: 10%;
-        transform: translateY(-50%);
         color: white;
         text-align: right;
+        z-index: 9999;
 
+        .sec01_title{
+            font-family: map-get(variables.$title, font-family);
+            font-size: map-get(variables.$title, font-size);
+            font-weight: map-get(variables.$title, font-weight);
+            margin-bottom: 1.6rem;
+        }
+
+        .sec01_subtitle{
+            font-family:  map-get(variables.$subtitle, font-family);
+            font-size:  map-get(variables.$subtitle, font-size);
+            font-weight:  map-get(variables.$subtitle, font-weight);
+            margin-bottom: 1.6rem;
+        }
+
+        .sec01_btn{
+            border: 1px solid #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #fff;
+            font-family:  map-get(variables.$subtitle, font-family);
+            font-size:  map-get(variables.$subtitle, font-size);
+            font-weight:  map-get(variables.$subtitle, font-weight);
+            padding: 0.8rem 2.2rem;
+        }
     }
-    
 
-    
+    .next:after, .prev:after{
+        color: #fff;
+    }
 }
-
-
-
-// =============sec01 end==================
+// =============sec01 end============
 
 
 
@@ -90,6 +131,27 @@ header{
         font-size: 1.4rem;
     }
 // =============header end===============
+
+// =============sec01===============
+.sec01 .sec01_bg01, 
+.sec01 .sec01_bg02,
+.sec01 .sec01_bg03 {
+        height: 680px;
+    }
+
+.sec01 .sec01_content .sec01_title {
+    font-size: 2.4rem;
+}
+
+.sec01 .sec01_content .sec01_subtitle {
+    font-size: 1.2rem;
+}
+
+.sec01 .sec01_content .sec01_btn{
+    font-size: 1.2rem;
+    padding: 0.7rem 2rem;
+}
+// =============sec01 end===========
 }
 
 
@@ -115,8 +177,43 @@ header{
     gap: 0 30px;
     }
     // =============header end=============
+
+    // =============sec01=============
+    .sec01 .sec01_bg01, 
+    .sec01 .sec01_bg02,
+    .sec01 .sec01_bg03 {
+        height: 580px;
+    }
+
+    .sec01 .sec01_content .sec01_title {
+        font-size: 2.2rem;
+    }
+
+    .sec01 .sec01_content .sec01_subtitle {
+        font-size: 1.1rem;
+    }
+
+    .sec01 .sec01_content .sec01_btn{
+        font-size: 1.1rem;
+        padding: 0.7rem 2rem;
+    }
+
+    .sec01 .next:after, .sec01 .prev:after{
+        font-size: 1.7rem;
+    }
+
+
+    // =============sec01 end=========
 }
 
+@media (max-width:858px){
+    header .sub_nav .nav_list {
+        font-size: 0.9rem;
+    }
+    header .sub_nav {
+        gap: 0 65px;
+    }
+}
 
 @media (max-width:768px){
     // =============header===============
@@ -140,6 +237,35 @@ header{
         display: none;
     }
     // =============header end===========
+
+    // =============sec01===============
+    .sec01 .sec01_bg01, 
+    .sec01 .sec01_bg02,
+    .sec01 .sec01_bg03 {
+        height: 450px;
+    }
+    .sec01 .sec01_content .sec01_title {
+        font-size: 1.8rem;
+    }
+
+    .sec01 .sec01_content .sec01_subtitle {
+        font-size: 0.8rem;
+    }
+
+    .sec01 .sec01_content .sec01_btn{
+        font-size: 0.9rem;
+        padding: 0.5rem 1.6rem;
+    }
+
+    .sec01 .next:after,.sec01 .prev:after{
+        font-size: 1.2rem;
+    }
+    // =============sec01 end===========
+
+
+
+
+
 }
 
 @media (max-width:540px){
@@ -169,6 +295,39 @@ header{
         display: none;
     }
     // =============header end============
+    
+    // =============sec01==============
+    .sec01 .sec01_bg01, 
+    .sec01 .sec01_bg02,
+    .sec01 .sec01_bg03 {
+        height: 410px;
+    }
+
+    .sec01 .sec01_content{
+        top: 25%;
+        right: 10%;
+    }
+
+    .sec01 .sec01_content .sec01_title {
+        font-size: 1.4rem;
+        margin-bottom: .8rem;
+    }
+
+    .sec01 .sec01_content .sec01_subtitle {
+        font-size: 0.8rem;
+    }
+
+    .sec01 .sec01_content .sec01_btn{
+        font-size: 0.8rem;
+        padding: 0.4rem 1.3rem;
+    }
+
+    // =============sec01 end===========
+
+
+
+
+
 }
 
 @media (max-width:348px){
@@ -181,4 +340,29 @@ header{
         font-size: 1rem;
     }
     // =============header end======
+
+    // =============sec01=========
+    .sec01 .sec01_bg01, 
+    .sec01 .sec01_bg02,
+    .sec01 .sec01_bg03 {
+        height: 250px;
+    }
+
+    .sec01 .sec01_content .sec01_title {
+        font-size: 0.9rem;
+        
+    }
+
+    .sec01 .sec01_content .sec01_subtitle {
+        font-size: 0.6rem;
+    }
+
+    .sec01 .sec01_content .sec01_btn{
+        font-size: 0.6rem;
+        padding: 0.3rem 0.7rem;
+    }
+    // =============sec01 end======
+
+
+
 }
