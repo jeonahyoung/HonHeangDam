@@ -40,6 +40,50 @@
   <!--header end-->
 
   <!--sec01 -->
+  <section class="sec01">
+    <div class="swiper sec01_swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="sec01_bg01">
+              <!-- <img src="assets/images/findplace_sec01_bg01.png" alt="findplace_sub01_bg01" class="findplace_sub01_bg01"> -->
+                <div class="sec01_content">
+                  <p class="sec01_title">과거와 현재가 공존하는<br> 전주 감성 여행</p>
+                  <p class="sec01_subtitle">한옥마을부터 청년몰까지<br>걸어가는 길마다 이야기가 피어나는 도시</p>
+                  <a href="#" class="sec01_btn">MORE</a>
+                </div>
+          </div>
+        </div>
+  
+        <div class="swiper-slide">
+          <div class="sec01_bg02">
+              <img src="assets/images/findplace_sec01_bg02.png" alt="findplace_sub01_bg01" class="findplace_sub01_bg01">
+              <div class="sec01_content">
+                <p class="sec01_title">눈부신 햇살, 제주의 바다<br> 협재해수욕장</p>
+                <p class="sec01_subtitle">맑고 투명한 바다에 발 담그고<br> 혼자만의 여유를 누려보세요</p>
+                <a href="#" class="sec01_btn">MORE</a>
+              </div>
+          </div>
+        </div>
+  
+        <div class="swiper-slide">
+          <div class="sec01_bg01">
+              <img src="assets/images/findplace_sec01_bg03.png" alt="findplace_sub01_bg01" class="findplace_sub01_bg01">
+              <div class="sec01_content">
+                <p class="sec01_title">색색의 골목, 어린왕자와 함께한<br> 부산 감천 여행</p>
+                <p class="sec01_subtitle">골목마다 피어나는 이야기<br> 혼자 걷기 좋은 예술 마을</p>
+                <a href="#" class="sec01_btn">MORE</a>
+              </div>
+          </div>
+        </div>
+  
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+  </section>
 
   <!--sec01 end-->
 
@@ -48,8 +92,23 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 
-  <script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".sec01_swiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
   </script>
   
 

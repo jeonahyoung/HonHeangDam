@@ -37,7 +37,35 @@ header{
         }
     }       
 }
-// =============header end==================
+// =============header end=================
+
+// =============sec01======================
+.sec01{
+    .sec01_bg01 {
+        position: relative;
+        background-image: url('../images/findplace_sec01_bg01.png');
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+    .sec01_content{
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+        color: white;
+        text-align: right;
+
+    }
+    
+
+    
+}
+
+
+
+// =============sec01 end==================
 
 
 

@@ -320,6 +320,22 @@ header .sub_nav .orange {
   color: #FFA500;
 }
 
+.sec01 .sec01_bg01 {
+  position: relative;
+  background-image: url("../images/findplace_sec01_bg01.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.sec01 .sec01_content {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: right;
+}
+
 @media (max-width: 1280px) {
   header {
     padding: 30px 82px;
