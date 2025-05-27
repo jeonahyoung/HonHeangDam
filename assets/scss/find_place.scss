@@ -174,10 +174,12 @@ header{
         font-weight: map-get(variables.$title,font-weight);
         color: map-get(variables.$title,color);
         margin: 0;
+        margin-bottom: 50px;
     }
 
     .sec03_theme{
         padding-top: 50px;
+        cursor: pointer;
         i{
             font-size: 2.8rem;
             color: #ffe5bb;
@@ -194,6 +196,12 @@ header{
             border: none;
         }
 
+         &.active i {
+            background-color: #ffa500;
+            color: #fff;
+            border: none;
+        }
+
         p{
         font-family: map-get(variables.$content, font-family);
         font-size: map-get(variables.$content, font-size);
@@ -201,15 +209,59 @@ header{
         color: map-get(variables.$content,color);
         margin-top : 25px;
         }
-    }
 
-    .sec03_cardForm{
-        padding: 50px 0;
-
-        img{
-            width: 100%;
+         &.active p {
+            font-weight: bold;
+            color: #ffa500;
         }
     }
+
+        .tab-content{
+            display: none;
+            margin: 50px 0;
+            &.on {
+                display: block;
+            }
+            .sec03_card{
+                position: relative;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 500px;
+                }
+
+                .sec03_card_overlay {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 20px;
+                    background: rgba(255,255,255,.8); 
+                    color: #272727;
+                    transform: translateY(100%);
+                    transition: transform 0.4s ease-in-out;
+
+                    .title{
+                        font-family: map-get(variables.$content, font-family);
+                        font-size: map-get(variables.$subtitle, font-size);
+                        font-weight: map-get(variables.$subtitle,font-weight);
+                        color: map-get(variables.$content,color);
+                        margin-bottom: 8px;
+                    }
+                    .desc{
+                        font-family: map-get(variables.$content, font-family);
+                        font-size: map-get(variables.$content, font-size);
+                        font-weight: map-get(variables.$content,font-weight);
+                        color: map-get(variables.$content,color);
+                        margin: 0;
+                    }
+                }
+
+                 &:hover .sec03_card_overlay {
+                    transform: translateY(0);
+                }
+            }
+        }
 // =============sec03 end============
 }
 
@@ -725,6 +777,8 @@ header{
     .sec03 .effect.effect-5 {
         min-width: 7rem;
     }
+
+    
     // =============sec03 end============
 
 

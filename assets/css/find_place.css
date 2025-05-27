@@ -434,9 +434,11 @@ header .sub_nav .orange {
   font-weight: 700;
   color: #272727;
   margin: 0;
+  margin-bottom: 50px;
 }
 .sec03 .sec03_theme {
   padding-top: 50px;
+  cursor: pointer;
 }
 .sec03 .sec03_theme i {
   font-size: 2.8rem;
@@ -452,6 +454,11 @@ header .sub_nav .orange {
   transition-duration: 1s;
   border: none;
 }
+.sec03 .sec03_theme.active i {
+  background-color: #ffa500;
+  color: #fff;
+  border: none;
+}
 .sec03 .sec03_theme p {
   font-family: "pretendard";
   font-size: 1.1rem;
@@ -459,11 +466,52 @@ header .sub_nav .orange {
   color: #272727;
   margin-top: 25px;
 }
-.sec03 .sec03_cardForm {
-  padding: 50px 0;
+.sec03 .sec03_theme.active p {
+  font-weight: bold;
+  color: #ffa500;
 }
-.sec03 .sec03_cardForm img {
+.sec03 .tab-content {
+  display: none;
+  margin: 50px 0;
+}
+.sec03 .tab-content.on {
+  display: block;
+}
+.sec03 .tab-content .sec03_card {
+  position: relative;
+  overflow: hidden;
+}
+.sec03 .tab-content .sec03_card img {
   width: 100%;
+  height: 500px;
+}
+.sec03 .tab-content .sec03_card .sec03_card_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #272727;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+}
+.sec03 .tab-content .sec03_card .sec03_card_overlay .title {
+  font-family: "pretendard";
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #272727;
+  margin-bottom: 8px;
+}
+.sec03 .tab-content .sec03_card .sec03_card_overlay .desc {
+  font-family: "pretendard";
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #272727;
+  margin: 0;
+}
+.sec03 .tab-content .sec03_card:hover .sec03_card_overlay {
+  transform: translateY(0);
 }
 
 @media (max-width: 1280px) {
