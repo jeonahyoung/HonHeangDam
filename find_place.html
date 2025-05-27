@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/find_place.css">
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <!-- <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
@@ -18,14 +19,16 @@
 <body>
   <!-- header -->
   <header class="d-flex">
-    <div class="logo">
-      <img src="assets/images/logo.png" class="logo-img" alt="logo">
-    </div>
+    <a href="index.html">
+      <div class="logo">
+        <img src="assets/images/logo.png" class="logo-img" alt="logo">
+      </div>
+    </a>
 
     <div>
       <ul class="sub_nav">
-        <li><a href="#" class="nav_list">우리의이야기</a></li>
-        <li><a href="#" class="nav_list orange">여행지찾기</a></li>
+        <li><a href="our_story.html" class="nav_list">우리의이야기</a></li>
+        <li><a href="find_place.html" class="nav_list orange">여행지찾기</a></li>
         <li><a href="#" class="nav_list">방구석투어</a></li>
         <li><a href="#" class="nav_list">커뮤니티</a></li>
       </ul>
@@ -81,21 +84,109 @@
   <!--sec01 end-->
 
   <!--sec02-->
-  <section>
+  <section class="sec02">
     <div class="container">
       <div class="row">
-        <div class="com-md-12">
+        <div class="col-md-12">
           <p class="sec02_title">이번 주 인기 여행지</p>
           <p class="sec02_subtitle">지금 가장 많은 여행자들이 찾고 있는 장소들이에요!</p>
         </div>
-        <div class="sec02_content">
-          <div class="col-md-6"></div>
-          <div class="col-md-6"></div>
-        </div>
+       
+          <div class="col-md-12 d-flex border border-2 sec02_contentform">
+            <div class="col-md-6 sec02_img">
+              <img src="assets/images/findplace_sec02_img01.png" alt="findplace_sec02_img01" class="sec02_img01">
+            </div>
+
+            <div class="col-md-6 sec02_content">
+              <p class="sec02_content_title">연남동 경의선숲길 카페거리</p>
+              <ul class="sec02_contentlist">
+                <li>
+                  요즘 MZ 세대가 찾는 도심 속 혼자 힐링 공간
+                </li>
+                <li>
+                  북카페, 베이커리, 감성 공간 모두 밀집
+                </li>
+              </ul>
+              <a class="effect effect-5" href="#" title="Learn More">가까운 숙소보기</a>
+            </div>
+          </div>
       </div>
     </div>
   </section>
   <!--sec02 end-->
+
+  <!--sec03-->
+  <section class="sec03">
+    <div class="container">
+      <p class="sec03_title">테마별 소재찾기</p>      
+      <div class="row">
+        <div class="col-6 col-sm-4 col-md-2 text-center">
+          <div class="sec03_theme">
+            <i class="ph ph-leaf"></i>
+            <p>힐링/자연</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-2 text-center">
+          <div class="sec03_theme">
+            <i class="ph ph-clock"></i>
+            <p>나만의시간</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-2 text-center">
+          <div class="sec03_theme">
+            <i class="ph ph-camera"></i>
+            <p>인생샷</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-2 text-center">
+          <div class="sec03_theme">
+            <i class="ph ph-footprints"></i>
+            <p>도보여행</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-2 text-center">
+          <div class="sec03_theme">
+            <i class="ph ph-star"></i>
+            <p>별구경</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-2 text-center">
+          <div class="sec03_theme">
+            <i class="ph ph-map-trifold"></i>
+            <p>로컬여행</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row sec03_cardForm">
+        <div class="col-md-4 col-12">
+          <div class="sec03_card">
+            <img src="assets/images/findplace_sec03_card01.png" alt="sec03_card01">
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="sec03_card">
+            <img src="assets/images/findplace_sec03_card02.png" alt="sec03_card02">
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="sec03_card">
+            <img src="assets/images/findplace_sec03_card03.png" alt="sec03_card03">
+          </div>
+        </div>
+      </div>
+      
+      <div class="d-grid justify-content-center">
+        <a class="effect effect-5" href="#" title="Learn More">더보기</a>
+      </div>
+    </div>
+  </section>
+  <!--sec03 end-->
 
 
 

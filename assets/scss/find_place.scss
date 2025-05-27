@@ -108,6 +108,111 @@ header{
 }
 // =============sec01 end============
 
+// =============sec02================
+.sec02{
+    padding: 100px 0;
+    .sec02_title{
+        font-family: map-get(variables.$title, font-family);
+        font-size: map-get(variables.$title, font-size);
+        font-weight: map-get(variables.$title,font-weight);
+        color: map-get(variables.$title,color)  
+    }
+
+    .sec02_subtitle{
+        font-family:  map-get(variables.$subtitle, font-family);
+        font-size:  map-get(variables.$subtitle, font-size);
+        font-weight:  map-get(variables.$subtitle, font-weight);
+        color: map-get(variables.$subtitle,color)
+    }
+
+    .sec02_contentform{
+        padding: 0;
+
+        .sec02_img01{
+            width: 100%;
+        }
+
+        .sec02_content{
+            display: flex;
+            flex-direction: column;
+            padding: 50px 25px;
+            gap: 20px 0;
+            .sec02_content_title{
+                font-family: map-get(variables.$content_title, font-family);
+                font-size: map-get(variables.$content_title, font-size);
+                font-weight: map-get(variables.$content_title,font-weight);
+                color: map-get(variables.$content_title,color)
+            }
+
+            .sec02_contentlist{
+                font-family: map-get(variables.$content, font-family);
+                font-size: map-get(variables.$content, font-size);
+                font-weight: map-get(variables.$content,font-weight);
+                color: map-get(variables.$content,color);
+
+                li{
+                    line-height: 2rem;
+                }
+            }
+
+            .effect{
+                width: 50%;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+// =============sec02 end============
+
+// =============sec03================
+.sec03{
+    padding: 100px 0;
+
+    .sec03_title{
+        font-family: map-get(variables.$title, font-family);
+        font-size: map-get(variables.$title, font-size);
+        font-weight: map-get(variables.$title,font-weight);
+        color: map-get(variables.$title,color);
+        margin: 0;
+    }
+
+    .sec03_theme{
+        padding-top: 50px;
+        i{
+            font-size: 2.8rem;
+            color: #ffe5bb;
+            border-radius: 100px;
+            padding: 15px;
+            border: 2px solid #ffe5bb;
+        }
+
+        i:hover{
+            background-color: #ffa500;
+            color: #fff;
+            transition-property: all;
+            transition-duration: 1s;
+            border: none;
+        }
+
+        p{
+        font-family: map-get(variables.$content, font-family);
+        font-size: map-get(variables.$content, font-size);
+        font-weight: map-get(variables.$content,font-weight);
+        color: map-get(variables.$content,color);
+        margin-top : 25px;
+        }
+    }
+
+    .sec03_cardForm{
+        padding: 50px 0;
+
+        img{
+            width: 100%;
+        }
+    }
+// =============sec03 end============
+}
+
 
 
 
@@ -132,7 +237,7 @@ header{
     }
 // =============header end===============
 
-// =============sec01===============
+// =============sec01====================
 .sec01 .sec01_bg01, 
 .sec01 .sec01_bg02,
 .sec01 .sec01_bg03 {
@@ -148,10 +253,36 @@ header{
 }
 
 .sec01 .sec01_content .sec01_btn{
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.7rem 2rem;
 }
-// =============sec01 end===========
+// =============sec01 end==================
+
+// =============sec02======================
+.sec02 .sec02_title {
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.sec02 .sec02_subtitle {
+    font-size: 1.2rem;
+}
+
+.sec02 .sec02_contentform .sec02_content .effect {
+    width: 42%;
+    font-size: 1rem;
+}
+
+.sec02 .effect.effect-5 {
+    min-width: 10rem;
+}
+// =============sec02 end==================
+
+// =============sec03======================
+.sec03 .sec03_title {
+    font-size: 2.4rem;
+}
+// =============sec03 end==================
 }
 
 
@@ -178,7 +309,7 @@ header{
     }
     // =============header end=============
 
-    // =============sec01=============
+    // =============sec01==================
     .sec01 .sec01_bg01, 
     .sec01 .sec01_bg02,
     .sec01 .sec01_bg03 {
@@ -197,23 +328,72 @@ header{
         font-size: 1.1rem;
         padding: 0.7rem 2rem;
     }
+    
 
     .sec01 .next:after, .sec01 .prev:after{
         font-size: 1.7rem;
     }
+    // =============sec01 end==============
 
+    // =============sec02==================
+    .sec02 {
+        padding: 80px 0;
+    }
 
-    // =============sec01 end=========
+    .sec02 .sec02_title {
+        font-size: 2.2rem;
+    }
+
+    .sec02 .sec02_subtitle {
+        font-size: 1.1rem;
+    }
+
+    .sec02 .sec02_contentform .sec02_content {
+        padding: 24px 25px;
+        gap: 16px 0;
+    }
+
+    .sec02 .sec02_contentform .sec02_content .sec02_content_title {
+        font-size: 1.1rem;
+    }
+
+    .sec02 .sec02_contentform .sec02_content .sec02_contentlist {
+        font-size: 1.1rem;
+    }
+
+    .sec02 .sec02_contentform .sec02_content .effect {
+        width: 46%;
+    }
+    // =============sec02 end==============
+
+    // =============sec03==================
+    .sec03 {
+        padding: 80px 0;
+    }
+
+    .sec03 .sec03_title {
+        font-size: 2.2rem;
+    }
+
+    .sec03 .sec03_cardForm {
+        padding: 30px 0;
+    }
+
+    .sec03 .effect {
+        font-size: 1.1rem;
+        padding: 0.6rem;
+    }
+    // =============sec03 end==============
 }
 
-@media (max-width:858px){
-    header .sub_nav .nav_list {
-        font-size: 0.9rem;
-    }
-    header .sub_nav {
-        gap: 0 65px;
-    }
-}
+// @media (max-width:858px){
+//     header .sub_nav .nav_list {
+//         font-size: 0.9rem;
+//     }
+//     header .sub_nav {
+//         gap: 0 65px;
+//     }
+// }
 
 @media (max-width:768px){
     // =============header===============
@@ -242,7 +422,7 @@ header{
     .sec01 .sec01_bg01, 
     .sec01 .sec01_bg02,
     .sec01 .sec01_bg03 {
-        height: 450px;
+        height: 400px;
     }
     .sec01 .sec01_content .sec01_title {
         font-size: 1.8rem;
@@ -253,7 +433,7 @@ header{
     }
 
     .sec01 .sec01_content .sec01_btn{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         padding: 0.5rem 1.6rem;
     }
 
@@ -262,15 +442,79 @@ header{
     }
     // =============sec01 end===========
 
+    // =============sec02===============
+    .sec02 {
+        padding: 60px 0;
+    }
 
+    .sec02 .sec02_title {
+        font-size: 1.8rem;
+    }
 
+    .sec02 .sec02_subtitle {
+        font-size: 0.8rem;
+    }
+
+    .sec02 .sec02_contentform .sec02_content {
+        padding: 24px 25px;
+        gap: 0;
+    }
+
+    .sec02 .sec02_contentform .sec02_content .sec02_content_title {
+        font-size: 0.8rem;
+    }
+
+    .sec02 .sec02_contentform .sec02_content .sec02_contentlist {
+        font-size: 0.8rem;
+    }
+
+    .sec02 .sec02_contentform .sec02_content .effect {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+    // =============sec02 end===========
+
+    // =============sec03===============
+    .sec03 {
+        padding: 60px 0;
+    }
+
+    .sec03 .sec03_title {
+        font-size: 1.8rem;
+    }
+
+    .sec03 .sec03_theme i {
+        font-size: 1.9rem;
+        padding: 10px;
+    }
+
+    .sec03 .sec03_theme {
+        padding-top: 30px;
+    }
+
+    .sec03 .sec03_cardForm {
+        padding: 15px 0;
+    }
+
+    .sec03 .sec03_theme p {
+    font-size: 0.8rem;
+    }
+
+    .sec03 .effect {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+
+    .sec03 .effect.effect-5 {
+        min-width: 10rem;
+    }
+    // =============sec03 end===========
 
 
 }
 
 @media (max-width:540px){
     // =============header================
-
     header {
         padding: 20px 12px;
     }
@@ -300,7 +544,7 @@ header{
     .sec01 .sec01_bg01, 
     .sec01 .sec01_bg02,
     .sec01 .sec01_bg03 {
-        height: 410px;
+        height: 330px;
     }
 
     .sec01 .sec01_content{
@@ -318,11 +562,74 @@ header{
     }
 
     .sec01 .sec01_content .sec01_btn{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         padding: 0.4rem 1.3rem;
     }
-
     // =============sec01 end===========
+
+    // =============sec02===============
+    .sec02 {
+        padding: 40px 0;
+    }
+
+    .sec02 .sec02_title {
+        font-size: 1.4rem;
+    }
+
+    .sec02 .sec02_subtitle {
+        font-size: 0.8rem;
+    }
+
+    .sec02 .sec02_contentform{
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .sec02 .sec02_contentform .sec02_content{
+        padding: 24px 10px;
+    }
+
+    .sec02 .sec02_contentform .sec02_content .sec02_content_title {
+        font-size: 0.9rem;
+    }
+
+    .sec02 .sec02_contentform .sec02_content .sec02_contentlist {
+        font-size: 0.7rem;
+        padding-left: 0.5rem;
+    }
+
+    .sec02 .sec02_contentform .sec02_content .sec02_contentlist li {
+        line-height: 1.3rem;
+    }
+
+    .sec02 .sec02_contentform .sec02_content .effect {
+        font-size: 0.7rem;
+    }
+
+    .sec02 .effect.effect-5 {
+        min-width: 9rem;
+    }
+    // =============sec02 end===========
+
+    // =============sec03===============
+    .sec03 {
+        padding: 40px 0;
+    }
+
+    .sec03 .sec03_title {
+        font-size: 1.4rem;
+    }
+
+    .sec03 .sec03_theme p {
+        font-size: 0.7rem;
+        margin-top: 18px;
+    }
+
+    .sec03 .effect {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+    // =============sec03 end===========
 
 
 
@@ -345,7 +652,7 @@ header{
     .sec01 .sec01_bg01, 
     .sec01 .sec01_bg02,
     .sec01 .sec01_bg03 {
-        height: 250px;
+        height: 230px;
     }
 
     .sec01 .sec01_content .sec01_title {
@@ -361,7 +668,64 @@ header{
         font-size: 0.6rem;
         padding: 0.3rem 0.7rem;
     }
-    // =============sec01 end======
+    // =============sec01 end============
+
+    // =============sec02================
+        .sec02 .sec02_title {
+        font-size: 0.9rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .sec02 .sec02_subtitle {
+        font-size: 0.6rem;
+    }
+
+    .sec02 .sec02_contentform .sec02_content {
+        padding: 24px 0 0 10px;
+    }
+
+    .sec02 .sec02_contentform .sec02_content .sec02_content_title {
+        font-size: 0.6rem;
+    }
+
+    .sec02 .sec02_contentform .sec02_content .sec02_contentlist li {
+        line-height: 1.2rem;
+        font-size: 0.6rem;
+    }
+
+    .sec02 .sec02_contentform .sec02_content .effect {
+        font-size: 0.6rem;
+        padding: 0.2rem;
+    }
+
+    .sec02 .effect.effect-5 {
+        min-width: 8rem;
+    }
+    // =============sec02 end============
+
+    // =============sec03================
+    .sec03 .sec03_title {
+        font-size: 0.9rem;
+    }
+
+    .sec03 .sec03_theme i {
+        font-size: 1.5rem;
+        padding: 7px;
+    }
+
+    .sec03 .sec03_theme p {
+        font-size: 0.6rem;
+        margin-top: 18px;
+    }
+
+    .sec03 .effect {
+        font-size: 0.6rem;
+    }
+
+    .sec03 .effect.effect-5 {
+        min-width: 7rem;
+    }
+    // =============sec03 end============
 
 
 
