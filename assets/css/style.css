@@ -414,6 +414,7 @@ body .point-c {
   margin-bottom: 0;
   border-bottom: 2px solid #FFA500;
   display: flex;
+  cursor: pointer;
 }
 .sec05 .sec05_form .sec05_icon {
   margin-left: auto;
