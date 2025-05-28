@@ -1,9 +1,23 @@
+#slider {
+   overflow:hidden;
+   position:relative;
+   width:1440px; 
+   height:200px;
+}
 
+.image-box {
+   width:5280px; 
+   height:100%;
+   display:flex;
+   flex-wrap:nowrap;
+   animation: bannermove 10s linear infinite;
+}
 
-
-.tab-content{
-    display: none;
-    .on{
-        display: block;
-    }
+@keyframes bannermove {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(-50%, 0);
+  }
 }
