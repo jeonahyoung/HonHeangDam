@@ -17,28 +17,28 @@
 
 <body>
   <!-- header -->
-  <header class="d-flex align-items-center">
-    <div class="logo">
-      <img src="assets/images/logo.png" class="logo" alt="logo">
-    </div>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid pd-0">
-        <div class="collapse navbar-collapse header-nav" id="navbarNavAltMarkup">
-          <div class="navbar-nav header-navbar">
-            <a class="nav-link active header-nav-link" aria-current="page" href="our_story.html"><span class="mark">우리의이야기</span></a>
-            <a class="nav-link header-nav-link" href="find_place.html"><span class="mark">여행지찾기</span></a>
-            <a class="nav-link header-nav-link" href="#"><span class="mark">방구석투어</span></a>
-            <a class="nav-link header-nav-link" href="#"><span class="mark">커뮤니티</span></a>
-          </div>
-          <div class="header_nav-icon">
-            <i class="ph ph-bookmark-simple icon_mark"></i>
-            <i class="ph ph-map-pin icon_map"></i>
-            <i class="ph ph-list hamburger"></i>
+  <header class="d-flex align-items-center navform">
+      <div class="logo">
+        <img src="assets/images/logo.png" class="logo" alt="logo">
+      </div>
+  
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid pd-0">
+          <div class="collapse navbar-collapse header-nav" id="navbarNavAltMarkup">
+            <div class="navbar-nav header-navbar">
+              <a class="nav-link active header-nav-link" aria-current="page" href="our_story.html"><span class="mark">우리의이야기</span></a>
+              <a class="nav-link header-nav-link" href="find_place.html"><span class="mark">여행지찾기</span></a>
+              <a class="nav-link header-nav-link" href="#"><span class="mark">방구석투어</span></a>
+              <a class="nav-link header-nav-link" href="#"><span class="mark">커뮤니티</span></a>
+            </div>
+            <div class="header_nav-icon">
+              <i class="ph ph-bookmark-simple icon_mark"></i>
+              <i class="ph ph-map-pin icon_map"></i>
+              <i class="ph ph-list hamburger"></i>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
   </header>
   <!--header end-->
 
@@ -304,12 +304,31 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 
+
   
   <!-- Swiper JS -->
+   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
 
   <!-- Initialize Swiper -->
   <script>
+    let preScroll = 0;
+        $(window).on('scroll',function(){
+            let currentScroll = $(this).scrollTop();
+
+            if(currentScroll > preScroll){
+                $('.navform').removeClass('fixed');
+            }else{
+                $('.navform').addClass('fixed');
+            }
+            preScroll = currentScroll;
+        })
+
+
+
+
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 2.5,
       spaceBetween: 10,
@@ -323,11 +342,7 @@
       loop: true,
 
     });
-  </script>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-
-  <script>
     $(function () {
       $('#accordion div').hide(); // 초기 상태: 모든 답변 닫기
 
@@ -351,6 +366,7 @@
     });
   </script>
 
+  
 
 </body>
 

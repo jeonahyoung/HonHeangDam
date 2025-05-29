@@ -227,7 +227,7 @@ header{
                 overflow: hidden;
                 img{
                     width: 100%;
-                    height: 500px;
+                    height: 450px;
                 }
 
                 .sec03_card_overlay {
@@ -264,6 +264,93 @@ header{
         }
 // =============sec03 end============
 }
+
+// =============sec04================
+.sec04 {
+  #slider {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .image-box {
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+    animation: bannermove 18s linear infinite;
+
+    .image-item {
+      width: 200px;
+      margin: 0 20px;
+      text-align: center;
+      font-family: sans-serif;
+
+      .image-wrapper {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+
+        .hover-text {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: #fff;
+          font-weight: bold;
+          font-size: 1.4rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          border-radius: 50%;
+          text-align: center;
+          padding: 10px;
+          box-sizing: border-box;
+        }
+
+        &:hover .hover-text {
+          opacity: 1;
+        }
+      }
+
+      .caption {
+        margin-top: 10px;
+        color: #272727;
+        // line-height: 1.4;
+        .sec04-c-title{
+            font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  #slider:hover .image-box {
+    animation-play-state: paused;
+  }
+
+  @keyframes bannermove {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+// =============sec04 end============
+}
+
 
 
 
@@ -333,6 +420,12 @@ header{
 // =============sec03======================
 .sec03 .sec03_title {
     font-size: 2.4rem;
+    margin-bottom: 40px;
+}
+
+.sec03 .tab-content {
+    display: none;
+    margin: 40px 0;
 }
 // =============sec03 end==================
 }
@@ -410,7 +503,7 @@ header{
     }
 
     .sec02 .sec02_contentform .sec02_content .sec02_contentlist {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .sec02 .sec02_contentform .sec02_content .effect {
@@ -425,10 +518,35 @@ header{
 
     .sec03 .sec03_title {
         font-size: 2.2rem;
+        margin-bottom: 25px;
     }
 
     .sec03 .sec03_cardForm {
         padding: 30px 0;
+    }
+
+    .sec03 .tab-content {
+        margin: 25px 0;
+    }
+
+    .sec03 .tab-content .sec03_card img {
+        height: 330px;
+    }
+
+    .sec03 .sec03_theme i {
+        font-size: 2.1rem;
+    }
+
+    .sec03 .sec03_theme p {
+        font-size: 1rem;
+    }
+
+    .sec03 .tab-content .sec03_card .sec03_card_overlay .title {
+        font-size: 1.1rem;
+    }
+
+    .sec03 .tab-content .sec03_card .sec03_card_overlay .desc {
+        font-size: 1rem;
     }
 
     .sec03 .effect {
@@ -517,7 +635,7 @@ header{
     }
 
     .sec02 .sec02_contentform .sec02_content .sec02_contentlist {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .sec02 .sec02_contentform .sec02_content .effect {
@@ -533,6 +651,11 @@ header{
 
     .sec03 .sec03_title {
         font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .sec03 .tab-content {
+        margin: 15px 0;
     }
 
     .sec03 .sec03_theme i {
@@ -550,6 +673,18 @@ header{
 
     .sec03 .sec03_theme p {
     font-size: 0.8rem;
+    }
+
+    .sec03 .tab-content .sec03_card img {
+        height: 250px;
+    }
+
+    .sec03 .tab-content .sec03_card .sec03_card_overlay .title {
+        font-size: 0.8rem;
+    }
+
+    .sec03 .tab-content .sec03_card .sec03_card_overlay .desc {
+        font-size: 0.7rem;
     }
 
     .sec03 .effect {
@@ -642,7 +777,7 @@ header{
     }
 
     .sec02 .sec02_contentform .sec02_content .sec02_content_title {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .sec02 .sec02_contentform .sec02_content .sec02_contentlist {
@@ -670,11 +805,20 @@ header{
 
     .sec03 .sec03_title {
         font-size: 1.4rem;
+        margin-bottom: 10px;
     }
 
     .sec03 .sec03_theme p {
         font-size: 0.7rem;
         margin-top: 18px;
+    }
+
+    .sec03 .tab-content {
+        margin: 10px 0;
+    }
+
+    .sec03 .sec03_cardForm {
+        gap: 20px 0;
     }
 
     .sec03 .effect {
@@ -723,7 +867,7 @@ header{
     // =============sec01 end============
 
     // =============sec02================
-        .sec02 .sec02_title {
+    .sec02 .sec02_title {
         font-size: 0.9rem;
         margin-bottom: 0.2rem;
     }
@@ -742,7 +886,7 @@ header{
 
     .sec02 .sec02_contentform .sec02_content .sec02_contentlist li {
         line-height: 1.2rem;
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     .sec02 .sec02_contentform .sec02_content .effect {
@@ -770,6 +914,14 @@ header{
         margin-top: 18px;
     }
 
+    .sec03 .tab-content .sec03_card .sec03_card_overlay .title {
+        font-size: 0.6rem;
+    }
+
+    .sec03 .tab-content .sec03_card .sec03_card_overlay .desc {
+        font-size: 0.5rem;
+    }
+
     .sec03 .effect {
         font-size: 0.6rem;
     }
@@ -777,9 +929,11 @@ header{
     .sec03 .effect.effect-5 {
         min-width: 7rem;
     }
-
-    
     // =============sec03 end============
+
+    // =============sec04================
+
+    // =============sec04 end============
 
 
 

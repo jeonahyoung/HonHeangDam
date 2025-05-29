@@ -131,7 +131,8 @@ header {
   font-family: "Paperlogy";
   background-color: #FFF8ED;
   justify-content: space-between;
-  padding: 40px 80px;
+  padding: 30px 80px;
+  width: 100%;
 }
 header .header-nav {
   color: #272727;
@@ -195,6 +196,19 @@ header .header_nav-icon .hamburger {
   display: none;
 }
 
+.fixed {
+  position: fixed;
+  animation: fixed-ani 0.3s;
+}
+
+@keyframes fixed-ani {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .effect {
   text-align: center;
   display: inline-block;

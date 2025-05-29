@@ -6,98 +6,54 @@
   <title>Document</title>
   <link rel="stylesheet" href="assets/css/copy.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
 
 </head>
 <body>
- 
-<div id="slider">
-   <div class="image-box">
-      <div class="image-item">
-        <div class="image-wrapper">
-          <img src="assets/images/findplace_sec04_slide01.png" alt="설명 이미지" />
-          <div class="hover-text">영랑호</div>
-        </div>
-        <div class="caption">
-          <p>호수 둘레길 산책,속초</p>
-          <p>바다도 산도 아닌, 잔잔한 호수의 위로</p>
-        </div>
+ <header>
+  <nav>
+    <div class="nav-form">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="logo">
       </div>
-      <div class="image-item">
-        <div class="image-wrapper">
-          <img src="assets/images/findplace_sec04_slide02.png" alt="설명 이미지" />
-          <div class="hover-text">독일마을</div>
-        </div>
-        <div class="caption">
-          <p>동화 속을 걷는 듯, 남해</p>
-          <p>예쁜 건물과 조용한 풍경 속 감성 충전</p>
-        </div>
+      <div class="gnb">
+        <ul>
+          <li class="gnb-list"><a href="our_story.html">
+            <span class="mark">우리의이야기</span>
+          </a></li>
+          <li  class="gnb-list"><a href="find_place.html">
+            <span class="mark">여행지찾기</span>
+          </a></li>
+          <li  class="gnb-list"><a href=""><span class="mark">방구석투어</span>
+          </a></li>
+          <li  class="gnb-list"><a href=""><span class="mark">커뮤니티</span>
+          </a></li>
+          <li class="gnb-list"><i class="ph ph-list hamburger"></i></li>
+        </ul>
       </div>
-      <div class="image-item">
-        <div class="image-wrapper">
-          <img src="assets/images/findplace_sec04_slide03.png" alt="설명 이미지" />
-          <div class="hover-text">메타세콰이어길</div>
-        </div>
-        <div class="caption">
-          <p>나무 사이를 천천히,담양</p>
-          <p>예고요한 숲길에서 자신과 마주하는 시간</p>
-        </div>
-      </div>
-      <div class="image-item">
-        <div class="image-wrapper">
-          <img src="assets/images/findplace_sec04_slide04.png" alt="설명 이미지" />
-          <div class="hover-text">북촌한옥마을</div>
-        </div>
-        <div class="caption">
-          <p>도시 속 한옥마을,북촌</p>
-          <p>익숙하지만 낯선 풍경을 발견하는 기쁨</p>
-        </div>
-      </div>
-      <div class="image-item">
-        <div class="image-wrapper">
-          <img src="assets/images/findplace_sec04_slide05.png" alt="설명 이미지" />
-          <div class="hover-text">동피랑 벽화마을</div>
-        </div>
-        <div class="caption">
-          <p>알록달록한 벽화, 통영</p>
-          <p>골목길과 바다가 어우러진 감성 코스</p>
-        </div>
-      </div>
-      <div class="image-item">
-        <div class="image-wrapper">
-          <img src="assets/images/findplace_sec04_slide06.png" alt="설명 이미지" />
-          <div class="hover-text">안목해변</div>
-        </div>
-        <div class="caption">
-          <p>커피 한 잔, 파도 한 줄기 강릉</p>
-          <p>혼자만의 여유를 누리기에 딱 좋은 곳</p>
-        </div>
-      </div>
-     
+    </div>
+  </nav>
+ </header>
 
-      
-      
-      <!--   clone     -->
-      <!-- <div class="clone">
-        <img src="assets/images/findplace_sec03_card01.png" alt="설명 이미지" />
-      </div>
-      <div class="clone">
-        <img src="assets/images/findplace_sec03_card01.png" alt="설명 이미지" />
-      </div>
-      <div class="clone">
-        <img src="assets/images/findplace_sec03_card01.png" alt="설명 이미지" />
-      </div>
-      <div class="clone">
-        <img src="assets/images/findplace_sec03_card01.png" alt="설명 이미지" />
-      </div>
-      <div class="clone">
-        <img src="assets/images/findplace_sec03_card01.png" alt="설명 이미지" />
-      </div>
-      <div class="clone">
-        <img src="assets/images/findplace_sec03_card01.png" alt="설명 이미지" />
-      </div>
-       -->
-   </div>
-</div>
+ <div class="section"></div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <script>
+        let preScroll = 0;
+        $(window).on('scroll',function(){
+            let currentScroll = $(this).scrollTop();
+
+            if(currentScroll > preScroll){
+                $('.nav-form').removeClass('fixed');
+            }else{
+                $('.nav-form').addClass('fixed');
+            }
+            preScroll = currentScroll;
+        })
+     </script>
+
 
 </body>
 </html>
