@@ -30,7 +30,7 @@
         .sec01_title{
             font-family: map-get(variables.$title, font-family);
             font-size: 3.2vw;
-            position: relative;
+            position: absolute;
             top: 30px;
             font-weight: map-get(variables.$title, font-weight);
             color: map-get(variables.$title, color);

@@ -272,7 +272,7 @@ body .point-c {
 .sec01 .sec01-form .sec01_title {
   font-family: "Paperlogy";
   font-size: 3.2vw;
-  position: relative;
+  position: absolute;
   top: 30px;
   font-weight: 700;
   color: #272727;
