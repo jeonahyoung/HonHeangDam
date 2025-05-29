@@ -29,14 +29,12 @@
     .sec01-form{
         .sec01_title{
             font-family: map-get(variables.$title, font-family);
-            font-size: 3.2vw;
-            position: absolute;
-            top: 30px;
+            font-size: map-get(variables.$title, font-size);
             font-weight: map-get(variables.$title, font-weight);
             color: map-get(variables.$title, color);
             position: absolute;
             top: 22%;
-            left: 7%;
+            left: 5%;
             
                 p{
                     margin: 0;
@@ -539,7 +537,7 @@
     }
 
     header img {
-        width: 65%;
+        width: 50%;
     }
 
     .collapse:not(.show) {
@@ -574,8 +572,8 @@
     }
 
     .sec01 .sec01-form .sec01_title {
-        top: 4%;
-        left: 5%;
+        top: 10%;
+        left: 4%;
     }
 
     .sec01_title p {

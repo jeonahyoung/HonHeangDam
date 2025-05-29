@@ -174,17 +174,17 @@ header{
         font-weight: map-get(variables.$title,font-weight);
         color: map-get(variables.$title,color);
         margin: 0;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .sec03_theme{
-        padding-top: 50px;
+        padding-top: 45px;
         cursor: pointer;
         i{
             font-size: 2.8rem;
             color: #ffe5bb;
             border-radius: 100px;
-            padding: 15px;
+            padding: 20px;
             border: 2px solid #ffe5bb;
         }
 
@@ -218,7 +218,7 @@ header{
 
         .tab-content{
             display: none;
-            margin: 50px 0;
+            margin: 30px 0;
             &.on {
                 display: block;
             }
@@ -267,6 +267,23 @@ header{
 
 // =============sec04================
 .sec04 {
+    padding: 100px 0;
+    
+    .sec04_titleForm{
+        .sec04_title{
+            font-family: map-get(variables.$title, font-family);
+            font-size: map-get(variables.$title, font-size);
+            font-weight: map-get(variables.$title,font-weight);
+            color: map-get(variables.$title,color);
+        }
+        .sec04_subtitle{
+            font-family: map-get(variables.$subtitle, font-family);
+            font-size: map-get(variables.$subtitle, font-size);
+            font-weight: map-get(variables.$subtitle,font-weight);
+            color: map-get(variables.$subtitle,color);
+        }
+    }
+
   #slider {
     overflow: hidden;
     position: relative;
@@ -279,8 +296,8 @@ header{
     animation: bannermove 18s linear infinite;
 
     .image-item {
-      width: 200px;
-      margin: 0 20px;
+      width: 250px;
+      margin: 0 30px;
       text-align: center;
       font-family: sans-serif;
 
@@ -308,7 +325,8 @@ header{
           background-color: rgba(0, 0, 0, 0.5);
           color: #fff;
           font-weight: bold;
-          font-size: 1.4rem;
+          font-family: 'Paperlogy';
+          font-size: 1.2rem;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -328,9 +346,18 @@ header{
       .caption {
         margin-top: 10px;
         color: #272727;
-        // line-height: 1.4;
+        
         .sec04-c-title{
-            font-size: 1.4rem;
+            font-family: map-get(variables.$content_title, font-family);
+            font-size: map-get(variables.$content_title, font-size);
+            font-weight: map-get(variables.$content_title,font-weight);
+            color: map-get(variables.$content_title,color);
+        }
+        .sec04-c-des{
+            font-family: map-get(variables.$content, font-family);
+            font-size: map-get(variables.$content, font-size);
+            font-weight: map-get(variables.$content,font-weight);
+            color: map-get(variables.$content,color);
         }
       }
     }

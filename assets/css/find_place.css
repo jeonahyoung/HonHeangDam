@@ -133,6 +133,10 @@ header {
   justify-content: space-between;
   padding: 30px 80px;
   width: 100%;
+  z-index: 9999;
+}
+header .logo {
+  width: 26%;
 }
 header .header-nav {
   color: #272727;
@@ -142,7 +146,7 @@ header .header-nav .header-navbar {
   gap: 0 100px;
 }
 header .header-nav .header-navbar .header-nav-link {
-  font-size: 1.4rem;
+  font-size: 1.4vw;
   font-weight: 700;
   color: #272727;
 }
@@ -196,26 +200,14 @@ header .header_nav-icon .hamburger {
   display: none;
 }
 
-.fixed {
-  position: fixed;
-  animation: fixed-ani 0.3s;
-}
-
-@keyframes fixed-ani {
-  0% {
-    transform: translateY(-60px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
 .effect {
   text-align: center;
   display: inline-block;
   position: relative;
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 1.4rem;
+  font-family: "pretendard";
+  font-size: 1.2rem;
   padding: 0.6rem;
   width: 100%;
   border-radius: 30px;
@@ -324,7 +316,7 @@ header .sub_nav .nav_list {
   text-decoration: none;
   font-family: "Paperlogy";
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.4vw;
   color: #272727;
 }
 header .sub_nav .nav_list:hover {
@@ -368,7 +360,7 @@ header .sub_nav .orange {
 }
 .sec01 .sec01_content .sec01_title {
   font-family: "Paperlogy";
-  font-size: 3.2rem;
+  font-size: 2.6vw;
   font-weight: 700;
   margin-bottom: 1.6rem;
 }
@@ -397,7 +389,7 @@ header .sub_nav .orange {
 }
 .sec02 .sec02_title {
   font-family: "Paperlogy";
-  font-size: 3.2rem;
+  font-size: 2.6vw;
   font-weight: 700;
   color: #272727;
 }
@@ -421,13 +413,13 @@ header .sub_nav .orange {
 }
 .sec02 .sec02_contentform .sec02_content .sec02_content_title {
   font-family: "pretendard";
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #272727;
 }
 .sec02 .sec02_contentform .sec02_content .sec02_contentlist {
   font-family: "pretendard";
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #272727;
 }
@@ -444,21 +436,21 @@ header .sub_nav .orange {
 }
 .sec03 .sec03_title {
   font-family: "Paperlogy";
-  font-size: 3.2rem;
+  font-size: 2.6vw;
   font-weight: 700;
   color: #272727;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .sec03 .sec03_theme {
-  padding-top: 50px;
+  padding-top: 45px;
   cursor: pointer;
 }
 .sec03 .sec03_theme i {
   font-size: 2.8rem;
   color: #ffe5bb;
   border-radius: 100px;
-  padding: 15px;
+  padding: 20px;
   border: 2px solid #ffe5bb;
 }
 .sec03 .sec03_theme i:hover {
@@ -475,7 +467,7 @@ header .sub_nav .orange {
 }
 .sec03 .sec03_theme p {
   font-family: "pretendard";
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #272727;
   margin-top: 25px;
@@ -486,7 +478,7 @@ header .sub_nav .orange {
 }
 .sec03 .tab-content {
   display: none;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 .sec03 .tab-content.on {
   display: block;
@@ -519,7 +511,7 @@ header .sub_nav .orange {
 }
 .sec03 .tab-content .sec03_card .sec03_card_overlay .desc {
   font-family: "pretendard";
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #272727;
   margin: 0;
@@ -528,6 +520,21 @@ header .sub_nav .orange {
   transform: translateY(0);
 }
 
+.sec04 {
+  padding: 100px 0;
+}
+.sec04 .sec04_titleForm .sec04_title {
+  font-family: "Paperlogy";
+  font-size: 2.6vw;
+  font-weight: 700;
+  color: #272727;
+}
+.sec04 .sec04_titleForm .sec04_subtitle {
+  font-family: "Paperlogy";
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #bdbdbd;
+}
 .sec04 #slider {
   overflow: hidden;
   position: relative;
@@ -539,8 +546,8 @@ header .sub_nav .orange {
   animation: bannermove 18s linear infinite;
 }
 .sec04 .image-box .image-item {
-  width: 200px;
-  margin: 0 20px;
+  width: 250px;
+  margin: 0 30px;
   text-align: center;
   font-family: sans-serif;
 }
@@ -567,7 +574,8 @@ header .sub_nav .orange {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-family: "Paperlogy";
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -586,7 +594,16 @@ header .sub_nav .orange {
   color: #272727;
 }
 .sec04 .image-box .image-item .caption .sec04-c-title {
-  font-size: 1.4rem;
+  font-family: "pretendard";
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #272727;
+}
+.sec04 .image-box .image-item .caption .sec04-c-des {
+  font-family: "pretendard";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #272727;
 }
 .sec04 #slider:hover .image-box {
   animation-play-state: paused;

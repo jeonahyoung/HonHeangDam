@@ -17,7 +17,7 @@
 
 <body>
   <!-- header -->
-  <header class="d-flex align-items-center navform">
+  <header class="d-flex align-items-center">
       <div class="logo">
         <img src="assets/images/logo.png" class="logo" alt="logo">
       </div>
@@ -32,8 +32,6 @@
               <a class="nav-link header-nav-link" href="#"><span class="mark">커뮤니티</span></a>
             </div>
             <div class="header_nav-icon">
-              <i class="ph ph-bookmark-simple icon_mark"></i>
-              <i class="ph ph-map-pin icon_map"></i>
               <i class="ph ph-list hamburger"></i>
             </div>
           </div>
@@ -314,21 +312,6 @@
 
   <!-- Initialize Swiper -->
   <script>
-    let preScroll = 0;
-        $(window).on('scroll',function(){
-            let currentScroll = $(this).scrollTop();
-
-            if(currentScroll > preScroll){
-                $('.navform').removeClass('fixed');
-            }else{
-                $('.navform').addClass('fixed');
-            }
-            preScroll = currentScroll;
-        })
-
-
-
-
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 2.5,
       spaceBetween: 10,
