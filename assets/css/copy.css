@@ -1,4 +1,4 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
 }
@@ -43,7 +43,6 @@
 
 .mark{
   padding: 0;
-  /* background-color: #ffa500; */
 }
 
 .mark::after{
@@ -85,5 +84,111 @@
             }
         }
 
+
+ */
+
+
+
+ /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 네비게이션 컨테이너 */
+.nav-form {
+  width: 100vw;
+  padding: 35px 80px;
+  background-color: #FFF8ED;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* GNB (Global Navigation Bar) */
+.gnb {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    /* 각 메뉴 아이템 */
+    .gnb-list {
+      justify-content: space-between;
+      padding: 0 60px;
+      font-weight: 700;
+
+      a {
+        text-decoration: none;
+        color: #272727;
+        font-size: 20px;
+
+        /* 내부 span.mark */
+        .mark {
+          position: relative;
+          display: inline-block;
+          z-index: 0;
+          padding: 0;
+          /* background-color: #ffa500; */
+
+          &::after {
+            content: "";
+            width: 0.5px;
+            height: 10px;
+            position: absolute;
+            bottom: 4px;
+            left: 0;
+            background-color: #ffa500;
+            z-index: -1;
+            opacity: 0;
+            transition-property: all;
+            transition-duration: 0.7s;
+          }
+
+          /* 호버 시 언더라인 효과 */
+          &:hover::after {
+            opacity: 1;
+            width: 100%;
+          }
+        }
+      }
+
+      /* active 상태인 메뉴: 항상 언더라인 표시 */
+      &.active {
+        a {
+          .mark {
+            &::after {
+              opacity: 1;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      /* 햄버거 아이콘 등 아이콘 처리 */
+      i {
+        display: none;
+        font-size: 24px;
+        color: #272727;
+      }
+    }
+  }
+}
+
+/* 스크롤 시 position: fixed 처리 클래스 */
+.fixed {
+  position: fixed;
+  animation: fixed-ani 0.3s;
+}
+
+/* fixed 애니메이션 키프레임 */
+@keyframes fixed-ani {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 

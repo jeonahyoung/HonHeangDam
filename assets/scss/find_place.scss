@@ -5,37 +5,8 @@
 
 
 // =============header======================
-header{
+.nav-form, .nav-form .gnb ul .gnb-list a .mark{
     background-color: #fff;
-    align-items: center;
-    padding: 40px 65px;
-    .sub_nav{
-            display: flex;
-            padding: 0;
-            list-style: none;
-            gap: 100px;
-            margin: 0;
-
-        li{
-            position: relative;
-            z-index: 999999;
-        }
-        .nav_list{
-            text-decoration: none;
-            font-family: map-get(variables.$gnb, font-family);
-            font-weight: map-get(variables.$gnb, font-weight);
-            font-size: map-get(variables.$gnb, font-size);
-            color : map-get(variables.$gnb, color);
-        }
-
-        .nav_list:hover{
-            color: variables.$basic-c;
-        }
-
-        .orange{
-            color: variables.$basic-c;
-        }
-    }       
 }
 // =============header end=================
 
@@ -47,7 +18,7 @@ header{
         background-size: cover;
         background-position: center;
         z-index: -1;
-        height: 930px;
+        height: 700px;
     }
    
     .sec01_bg02 {
@@ -56,7 +27,7 @@ header{
         background-size: cover;
         background-position: center;
         z-index: -1;
-        height: 930px;
+        height: 700px;
     }
 
     .sec01_bg03 {
@@ -65,12 +36,12 @@ header{
         background-size: cover;
         background-position: center;
         z-index: -1;
-        height: 930px;
+        height: 700px;
     }
 
     .sec01_content{
         position: absolute;
-        top: 35%;
+        top: 34%;
         right: 10%;
         color: white;
         text-align: right;
@@ -89,17 +60,6 @@ header{
             font-weight:  map-get(variables.$subtitle, font-weight);
             margin-bottom: 1.6rem;
         }
-
-        .sec01_btn{
-            border: 1px solid #fff;
-            border-radius: 30px;
-            text-decoration: none;
-            color: #fff;
-            font-family:  map-get(variables.$subtitle, font-family);
-            font-size:  map-get(variables.$subtitle, font-size);
-            font-weight:  map-get(variables.$subtitle, font-weight);
-            padding: 0.8rem 2.2rem;
-        }
     }
 
     .next:after, .prev:after{
@@ -111,53 +71,64 @@ header{
 // =============sec02================
 .sec02{
     padding: 100px 0;
-    .sec02_title{
-        font-family: map-get(variables.$title, font-family);
-        font-size: map-get(variables.$title, font-size);
-        font-weight: map-get(variables.$title,font-weight);
-        color: map-get(variables.$title,color)  
-    }
+    .sec02_titleform{
+        margin-bottom: 50px;
+        .sec02_title{
+            font-family: map-get(variables.$title, font-family);
+            font-size: map-get(variables.$title, font-size);
+            font-weight: map-get(variables.$title,font-weight);
+            color: map-get(variables.$title,color)  
+        }
 
-    .sec02_subtitle{
-        font-family:  map-get(variables.$subtitle, font-family);
-        font-size:  map-get(variables.$subtitle, font-size);
-        font-weight:  map-get(variables.$subtitle, font-weight);
-        color: map-get(variables.$subtitle,color)
+        .sec02_subtitle{
+            font-family:  map-get(variables.$subtitle, font-family);
+            font-size:  map-get(variables.$subtitle, font-size);
+            font-weight:  map-get(variables.$subtitle, font-weight);
+            color: map-get(variables.$subtitle,color)
+        }
     }
 
     .sec02_contentform{
-        padding: 0;
-
-        .sec02_img01{
-            width: 100%;
-        }
-
-        .sec02_content{
-            display: flex;
-            flex-direction: column;
-            padding: 50px 25px;
-            gap: 20px 0;
-            .sec02_content_title{
-                font-family: map-get(variables.$content_title, font-family);
-                font-size: map-get(variables.$content_title, font-size);
-                font-weight: map-get(variables.$content_title,font-weight);
-                color: map-get(variables.$content_title,color)
+        .sec02_card01{
+            border: 1px solid #d9d9d9;
+            padding: 2rem;
+            border-radius: 5px;
+            .sec02-img{
+                width: 100%;
+                margin-bottom: 40px;
             }
-
-            .sec02_contentlist{
-                font-family: map-get(variables.$content, font-family);
-                font-size: map-get(variables.$content, font-size);
-                font-weight: map-get(variables.$content,font-weight);
-                color: map-get(variables.$content,color);
-
-                li{
-                    line-height: 2rem;
+            .sec02__subcontent{
+                .sec02_c_title{
+                    font-family:  map-get(variables.$content_title, font-family);
+                    font-size:  map-get(variables.$content_title, font-size);
+                    font-weight:  map-get(variables.$content_title, font-weight);
+                    color: map-get(variables.$content_title,color);
+                    margin-bottom: 10px;
                 }
-            }
-
-            .effect{
-                width: 50%;
-                font-size: 1.1rem;
+                .sec02_content{
+                    font-family:  map-get(variables.$content, font-family);
+                    font-size:  map-get(variables.$content, font-size);
+                    font-weight:  map-get(variables.$content, font-weight);
+                    color: map-get(variables.$content,color);
+                    padding-left: 1rem;
+                    margin-bottom: 40px;
+                }
+                .sec02_c_btn{
+                    font-family:  map-get(variables.$content, font-family);
+                    font-size:  map-get(variables.$content, font-size);
+                    font-weight:  map-get(variables.$content, font-weight);
+                    color: variables.$basic-c;
+                    text-decoration: none;
+                    border: 1px solid variables.$basic-c;
+                    background-color: #ffff;
+                    border-radius: 30px;
+                    padding: 0.6rem 0.9rem;
+                    transition: all 0.3s ease;
+                }
+                .sec02_c_btn:hover{
+                    color: #fff;
+                    background: variables.$basic-c;
+                }
             }
         }
     }
@@ -174,7 +145,7 @@ header{
         font-weight: map-get(variables.$title,font-weight);
         color: map-get(variables.$title,color);
         margin: 0;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .sec03_theme{
@@ -242,10 +213,10 @@ header{
                     transition: transform 0.4s ease-in-out;
 
                     .title{
-                        font-family: map-get(variables.$content, font-family);
-                        font-size: map-get(variables.$subtitle, font-size);
-                        font-weight: map-get(variables.$subtitle,font-weight);
-                        color: map-get(variables.$content,color);
+                        font-family: map-get(variables.$content_title, font-family);
+                        font-size: map-get(variables.$content_title, font-size);
+                        font-weight: map-get(variables.$content_title,font-weight);
+                        color: map-get(variables.$content_title,color);
                         margin-bottom: 8px;
                     }
                     .desc{
@@ -266,122 +237,25 @@ header{
 }
 
 // =============sec04================
-.sec04 {
-    padding: 100px 0;
-    
-    .sec04_titleForm{
+.sec04{
+    .sec04_titleform{
         .sec04_title{
-            font-family: map-get(variables.$title, font-family);
-            font-size: map-get(variables.$title, font-size);
-            font-weight: map-get(variables.$title,font-weight);
+            font-family:  map-get(variables.$title, font-family);
+            font-size:  map-get(variables.$title, font-size);
+            font-weight:  map-get(variables.$title, font-weight);
             color: map-get(variables.$title,color);
         }
         .sec04_subtitle{
-            font-family: map-get(variables.$subtitle, font-family);
-            font-size: map-get(variables.$subtitle, font-size);
-            font-weight: map-get(variables.$subtitle,font-weight);
-            color: map-get(variables.$subtitle,color);
+            font-family:  map-get(variables.$subtitle, font-family);
+            font-size:  map-get(variables.$subtitle, font-size);
+            font-weight:  map-get(variables.$subtitle, font-weight);
+            color: map-get(variables.$subtitle,color)
         }
     }
-
-  #slider {
-    overflow: hidden;
-    position: relative;
-  }
-
-  .image-box {
-    display: flex;
-    flex-wrap: nowrap;
-    width: max-content;
-    animation: bannermove 18s linear infinite;
-
-    .image-item {
-      width: 250px;
-      margin: 0 30px;
-      text-align: center;
-      font-family: sans-serif;
-
-      .image-wrapper {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        overflow: hidden;
-        border-radius: 50%;
-        margin: 0 auto;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          display: block;
-        }
-
-        .hover-text {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.5);
-          color: #fff;
-          font-weight: bold;
-          font-family: 'Paperlogy';
-          font-size: 1.2rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          opacity: 0;
-          transition: opacity 0.3s ease;
-          border-radius: 50%;
-          text-align: center;
-          padding: 10px;
-          box-sizing: border-box;
-        }
-
-        &:hover .hover-text {
-          opacity: 1;
-        }
-      }
-
-      .caption {
-        margin-top: 10px;
-        color: #272727;
-        
-        .sec04-c-title{
-            font-family: map-get(variables.$content_title, font-family);
-            font-size: map-get(variables.$content_title, font-size);
-            font-weight: map-get(variables.$content_title,font-weight);
-            color: map-get(variables.$content_title,color);
-        }
-        .sec04-c-des{
-            font-family: map-get(variables.$content, font-family);
-            font-size: map-get(variables.$content, font-size);
-            font-weight: map-get(variables.$content,font-weight);
-            color: map-get(variables.$content,color);
-        }
-      }
-    }
-  }
-
-  #slider:hover .image-box {
-    animation-play-state: paused;
-  }
-
-  @keyframes bannermove {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-// =============sec04 end============
 }
 
 
-
-
-
+// =============sec04 end============
 
 
 @media (max-width:1280px){
@@ -447,14 +321,39 @@ header{
 // =============sec03======================
 .sec03 .sec03_title {
     font-size: 2.4rem;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .sec03 .tab-content {
     display: none;
-    margin: 40px 0;
+    margin: 30px 0 40px;
+}
+
+.sec03 .tab-content .sec03_card img {
+    height: 360px;
 }
 // =============sec03 end==================
+
+// =============sec04======================
+.sec04 .sec04_titleForm .sec04_title {
+    font-size: 2.4rem;
+}
+
+.sec04 .sec04_titleForm .sec04_subtitle {
+    font-size: 1.2rem;
+}
+
+
+// =============sec04 end==================
+
+// =============footer===================
+footer {
+    padding: 40px 82px;
+}
+footer .footer_titleform .footer-logo {
+    width: 80%;
+} 
+// =============footer end===============
 }
 
 
@@ -581,7 +480,65 @@ header{
         padding: 0.6rem;
     }
     // =============sec03 end==============
-}
+
+    // =============sec04==================
+    .sec04 .sec04_titleForm .sec04_title {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    }
+    .sec04 .image-box .image-item {
+        width: 250px;
+        margin: 0 20px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .sec04 .sec04_titleForm .sec04_subtitle {
+        font-size: 1.1rem;
+    }
+
+    
+    .sec04 .image-box .image-item .caption .sec04-c-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .sec04 .image-box .image-item .caption {
+        margin-top: 24px;
+    }
+    // =============sec04 end==============
+
+    // =============footer================
+     footer{
+        padding: 50px 45px;
+     }
+
+    footer .footer_titleform .footer-logo {
+        width: 70%;
+    }
+     footer .footer_titleform .footer_menu .footer_menulist {
+            font-size: 0.9rem;
+    }
+
+    footer .footer_content .footer_contentlist {
+        font-size: 0.9rem;
+    }
+
+    footer .footer_content .footer_contentlist li:not(:first-of-type) {
+        padding-left: 25px;
+    }
+
+    footer .footer_content .footer_contentlist li:not(:last-of-type) {
+        padding-right: 25px;
+    }
+
+    footer .footer_copy {  
+    font-size: 0.9rem;
+    }
+    // =============footer end=============
+
 
 // @media (max-width:858px){
 //     header .sub_nav .nav_list {
@@ -723,6 +680,16 @@ header{
         min-width: 10rem;
     }
     // =============sec03 end===========
+
+    // =============sec04==============
+    .sec04 .sec04_titleForm .sec04_title {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+
+    // =============sec04 end===========
+
 
 
 }

@@ -5,37 +5,8 @@
 
 
 // =============header======================
-header{
+.nav-form, .nav-form .gnb ul .gnb-list a .mark{
     background-color: #fff;
-    align-items: center;
-    padding: 40px 65px;
-    .sub_nav{
-            display: flex;
-            padding: 0;
-            list-style: none;
-            gap: 100px;
-            margin: 0;
-
-        li{
-            position: relative;
-            z-index: 999999;
-        }
-        .nav_list{
-            text-decoration: none;
-            font-family: map-get(variables.$gnb, font-family);
-            font-weight: map-get(variables.$gnb, font-weight);
-            font-size: map-get(variables.$gnb, font-size);
-            color : map-get(variables.$gnb, color);
-        }
-
-        .nav_list:hover{
-            color: variables.$basic-c;
-        }
-
-        .orange{
-            color: variables.$basic-c;
-        }
-    }       
 }
 // =============header end==================
 

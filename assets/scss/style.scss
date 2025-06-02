@@ -21,7 +21,7 @@
 //==========section 01==========
 .sec01{
     background-color: variables.$basic-bg;
-    padding: 50px 80px 100px;
+    padding: 50px 80px;
     img{
         width: 100%;
     }
@@ -29,7 +29,7 @@
     .sec01-form{
         .sec01_title{
             font-family: map-get(variables.$title, font-family);
-            font-size: map-get(variables.$title, font-size);
+            font-size: 3.3rem;
             font-weight: map-get(variables.$title, font-weight);
             color: map-get(variables.$title, color);
             position: absolute;
@@ -56,84 +56,23 @@
 
 //==========section 02==============
 .sec02{
-    .sec02-titleform{
-        .sec02_title{
-        font-family: map-get(variables.$title, font-family);
-        font-size: map-get(variables.$title, font-size);
-        font-weight: map-get(variables.$title, font-weight);
-        color: map-get(variables.$title, color);
-        }
-    
-        .sec02__subtitle{
-        color: map-get(variables.$subtitle, color);
-        font-size: map-get(variables.$subtitle, font-size);
-        }
-    }
-
-    .sec02_card-form{
-        position: relative;
-        border-radius: 30px;
-    
-        .sec02_c-content{
-            width: 100%;
-            height: 40vh;
-            z-index: 0;
-        }
-
-        p{
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
-            position: absolute;
-            z-index:999;
-            width: 100%;
-            height: 100%;
-            bottom: 5%;
-            color: #fff;
-            right: 5%;
-            font-size: map-get(variables.$content_title, font-size);
-            font-weight: map-get(variables.$content_title, font-weight);
-            font-family: map-get(variables.$content_title, font-family);
-        }
-    }
-
-    .sec02_card-form::after{
-        content: "";
-        border-radius: 30px;
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background-color: rgba(0, 0, 0, 0);
-        transition: background-color 0.2s ease-in-out;
-        z-index: 999999;
-    }   
-
-    .sec02_card-form:hover::after{
-        background-color: rgba(0, 0, 0, 0.3);
-        border-radius: 30px;
-        position: absolute;
-        z-index: 1;
-    }
-}
-//==========section 02 end==========
-
-//==========section 03==============
-.sec03{
-    .sec03_titleform{
+    padding: 80px 0;
+    .sec02_titleform{
         font-family: map-get(variables.$title, font-family);
         font-size: map-get(variables.$title, font-size);
         font-weight: map-get(variables.$title, font-weight);
         color: map-get(variables.$title, color);
     }
     
-    .sec03__content{
-        height: 32vw;
+    .sec02__content{
+        height: 30vh;
         display: flex;
         align-items: flex-end;
         color: #fff;
         margin: 0;
         border-radius: 30px;
         
-        .sec03__subcontent{
+        .sec02__subcontent{
             margin: 20px;
             p{
                 font-size: map-get(variables.$content_title, font-size);
@@ -149,22 +88,138 @@
         }
     }
     
-    .sec03_card01{
-        background: url(../images/main_sec03-card01.png);
+    .sec02_card01{
+        background: url(../images/main_sec02-card01.png);
         background-position: center;
         background-size: cover;
     }
-    .sec03_card02{
-        background: url(../images/main_sec03-card02.png);
+    .sec02_card02{
+        background: url(../images/main_sec02-card02.png);
         background-position: center;
         background-size: cover;
     }
-    .sec03_card03{
-        background: url(../images/main_sec03-card03.png);
+    .sec02_card03{
+        background: url(../images/main_sec02-card03.png);
         background-position: center;
         background-size: cover;
     }
 }
+//==========section 02 end==========
+
+//==========section 03==============
+.sec03 {
+    padding: 80px 0;
+    
+    .sec03_titleForm{
+        .sec03_title{
+            font-family: map-get(variables.$title, font-family);
+            font-size: map-get(variables.$title, font-size);
+            font-weight: map-get(variables.$title,font-weight);
+            color: map-get(variables.$title,color);
+        }
+        .sec03_subtitle{
+            font-family: map-get(variables.$subtitle, font-family);
+            font-size: map-get(variables.$subtitle, font-size);
+            font-weight: map-get(variables.$subtitle,font-weight);
+            color: map-get(variables.$subtitle,color);
+            margin-bottom: 40px;
+        }
+    }
+
+  #slider {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .image-box {
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+    animation: bannermove 18s linear infinite;
+
+    .image-item {
+      width: 100%;
+      margin: 0 30px;
+      text-align: center;
+      font-family: sans-serif;
+
+      .image-wrapper {
+        position: relative;
+        width: 280px;
+        height: 280px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+
+        .hover-text {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: #fff;
+          font-weight: bold;
+          font-family: 'Paperlogy';
+          font-size: map-get(variables.$subtitle, font-size);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          border-radius: 50%;
+          text-align: center;
+        //   padding: 10px;
+          box-sizing: border-box;
+        }
+
+        &:hover .hover-text {
+          opacity: 1;
+        }
+      }
+
+      .caption {
+        margin-top: 25px;
+        color: #272727;
+        
+        .sec03-c-title{
+            font-family: map-get(variables.$content_title, font-family);
+            font-size: map-get(variables.$content_title, font-size);
+            font-weight: map-get(variables.$content_title,font-weight);
+            color: map-get(variables.$content_title,color);
+        }
+        .sec03-c-des{
+            font-family: map-get(variables.$content, font-family);
+            font-size: map-get(variables.$content, font-size);
+            font-weight: map-get(variables.$content,font-weight);
+            color: map-get(variables.$content,color);
+        }
+      }
+    }
+  }
+
+  #slider:hover .image-box {
+    animation-play-state: paused;
+  }
+
+  @keyframes bannermove {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+// =============sec04 end============
+}
+
 //==========section 03 end==========
 
 //==========section 04==============
@@ -250,85 +305,68 @@
 //==========section 05 end==========
 
 
+@media (max-width:1440px) {
+    .sec01 {
+        .sec01-form{
+            .sec01_title{
+                left: 6%;
+                top: 24%;
+                font-size: 2.7rem;
+            }
+        }
+    }
+    .sec02{
+        .sec02__content{
+            height: 48vh;
+        }
+    }
+}
+
 
 @media (max-width:1280px) {
      // =============header====================
-    header{
-        padding: 30px 80px;
+    .nav-form{
+        padding: 25px 60px;
+        .gnb{
+            ul{
+                .gnb-list{
+                    a{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
     }
-        
-    header img{
-        width: 80%;
-    }
-    header .header-nav .header-navbar{
-        gap: 0 60px;
-    }
-    header .header-nav .header-navbar .header-nav-link {
-        font-size: 1.2rem;
-    }
-    header .header_nav-icon i {
-        font-size: 1.4rem;
-    }
-    
     // =============header end==================
 
     // =============sec 01======================
     .sec01{
-        padding: 40px 60px 80px;  
+        padding: 30px 60px;  
+        .sec01-form{
+            .sec01_title {
+                top: 9.5%;
+                font-size: 2.4rem;
+            }
+        }
     } 
-   
-    .sec01 .sec01-form .sec01_title {
-            top: 8%;
-    }
-
-    .sec01_title p{
-        font-size: 2.7rem;
-    } 
-
-    .sec01_bg-img{
-        width: 100%;
-    }
     // =============sec 01 end==================
 
     // =============sec 02======================
     .sec02{
-        padding: 80px 0;
-        .sec02-titleform{
-            margin-bottom: 60px;
-            .sec02_title{
-                font-size: 2.4rem;
-            }
-            .sec02__subtitle{
-                font-size: 1.2rem;
-            }
-        }
+        padding: 60px 0;
 
-        .sec02_card-form{
-            .sec02_c-content{
-                height: 20vh;
-            }
-            p{
-                bottom: 1%;
-                font-size: 1.2rem;
-            }
-        }
-    }
-    // =============sec 02 end==================
-
-    // =============sec 03======================
-    .sec03{
-        padding: 80px 0;
-
-        .sec03_titleform{
-            margin-bottom: 60px;
+        .sec02_titleform{
+            margin-bottom: 45px;
             p{
              font-size: 2.4rem;
             }
         }
 
-        .sec03__content{
+        .container{
+            margin-bottom: 45px;
+            .sec02__content{
             height: 22vh;
-            .sec03__subcontent{
+            .sec02__subcontent{
                 margin: 18px;
                 p{
                     font-size: 1.2rem;
@@ -336,26 +374,43 @@
                 }
 
                 span{
-                font-size: 1rem;
+                    font-size: 1rem;
+                    }
                 }
             }
         }
-
         .effect{
             font-size: 1.2rem;
         }
     }
-    
+    // =============sec 02 end==================
+
+    // =============sec 03======================
+    .sec03{
+        padding: 60px 0;
+        .sec03_titleForm{
+            .sec03_title {
+                font-size: 2.4rem;
+                margin-bottom: 0.3rem;
+            }
+            .sec03_subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    }
     // =============sec 03 end==================
 
     // =============sec 04======================
     .sec04{
-        padding: 80px 0;
+        padding: 60px 0;
 
-        .container .sec04__titleContent h2 {
-        font-size: 2.4rem;
+        .container{
+            .sec04__titleContent{
+                h2{
+                    font-size: 2.4rem;
+                }
+            }
         }
-
         .effect{
             font-size: 1.2rem;
         }
@@ -364,7 +419,7 @@
 
     // =============sec 05======================
     .sec05{
-        padding: 80px 0;
+        padding: 60px 0;
         .sec05_titleform{
             .sec05_title{
                 font-size: 2.4rem;
@@ -373,692 +428,624 @@
                 font-size: 1.2rem;
             }
         }
-
         .sec05_form {
             font-size: 1.2rem;
             padding: 1.5% 1%;
         } 
     }
     // =============sec 05 end==================
-
-    // =============footer======================
-    footer {
-        padding: 40px 82px;
-    }
-    footer .footer_titleform .footer-logo {
-        width: 80%;
-    } 
-   // =============footer end==================
    }
  
     
 @media (max-width:1024px){
     // =============header==================
-    header {
-        padding: 20px 60px;
-    }
-
-    header img {
-        width: 80%;
-    }
-
-     header .header-nav .header-navbar .header-nav-link {
-        font-size: 1.2rem;
-    }
-
-    header .header_nav-icon {
-        display: none;
+    .nav-form{
+        padding: 20px 44px;
+        .gnb{
+            ul{
+                .gnb-list{
+                    a{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
     }
     // =============header end==============
 
     // =============sec01===================
     .sec01 {
-        padding: 20px 60px 60px;
-    }
+        padding: 15px 44px 20px;
+        .sec01-form{
+            .sec01_title{
+                top: 13%;
+                left: 5%;
+                font-size: 2rem;
+            }
+        }
 
-    .sec01 .sec01-form .sec01_title {
-        top: 6%;
-    }
-
-    .sec01_title p {
-        font-size: 2rem;
     }
     // =============sec01 end==============
 
     // =============sec02===================
     .sec02 {
-        padding: 60px 0;
-    }
-
-    .sec02 .sec02-titleform .sec02_title {
-        font-size: 2rem;
-    }
-
-    .sec02 .sec02-titleform .sec02__subtitle {
-        font-size: 1.2rem;
-    }
-    
-    .sec02 .sec02_card-form p {
-        font-size: 1.2rem;
-    }
-
-    .sec02 .sec02_card-form .sec02_c-content {
-        height: 20vh;
+        padding: 45px 0;
+        .sec02_titleform{
+            margin-bottom: 50px;
+            p {
+                font-size: 2rem;
+            }
+        }
+        .container{
+            margin-bottom: 50px;
+            .sec02__content {
+                height: 35vh;
+                .sec03__subcontent{
+                    p {
+                        font-size: 1.2rem;
+                        margin-bottom: 5px;
+                    }
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
     }
     // =============sec02 end===============
 
     // =============.sec03==================
-    .sec03 {
-        padding: 60px 0;
+    .sec03{
+        padding: 45px 0;
+        .sec03_titleForm{
+            .sec03_title{
+                font-size: 2rem;
+            }
 
-        .sec03_titleform p {
-        font-size: 2rem;
         }
-    }
-    
-    .sec03 .sec03__content {
-        height: 20vh;
-    }
-
-    .sec03 .sec03__content .sec03__subcontent p {
-        font-size: 1.2rem;
-        margin-bottom: 5px;
-    }
-
-    .sec03 .sec03__content .sec03__subcontent span {
-        font-size: 1rem;
-    }
-
-    .mb-80 {
-    margin-bottom: 50px;
+        .image-box{
+            .image-item{
+                margin: 0 25px;
+                .image-wrapper{
+                    width: 230px;
+                    height: 230px;
+                    .hover-text{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
     }
     // =============sec03 end===============
 
     // =============sec04===================
     .sec04 {
-        padding: 60px 0;
+        padding: 45px 0;
+        .container{
+            .sec04__titleContent{
+                margin-bottom: 65px;
+                margin-left: 40px;
+                h2{
+                    font-size: 2rem;
+                }
+            }
+            .sec04__imgContent{
+                justify-content: space-around;
+                .sec04_image{
+                    width: 50%;
+                }
+            }
+        }
+        .effect{
+            margin-left: 40px;
+        }
     }
-
-    .sec04 .container .sec04__titleContent h2 {
-        font-size: 2rem;
-    }
-
-    .sec04_image{
-        width: 50%;
-    }
-   
     // =============sec04 end===============
 
     // =============.sec05==================
     .sec05 {
-        padding: 60px 0;
-    }
-
-    .sec05 .sec05_a {
-        padding: 1rem 1.5rem;
+        padding: 45px 0;
+        .sec05_titleform{
+            .sec05_title{
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+        #accordion{
+            .sec05_a{
+                padding: 1rem 1.5rem;
+            }
+        }
     }
     // =============sec05 end===============
-
-    // =============footer==================
-    footer{
-        padding: 50px 45px;
-     }
-
-    footer .footer_titleform .footer-logo {
-        width: 70%;
-    }
-     footer .footer_titleform .footer_menu .footer_menulist {
-            font-size: 0.9rem;
-    }
-
-    footer .footer_content .footer_contentlist {
-        font-size: 0.9rem;
-    }
-
-    footer .footer_content .footer_contentlist li:not(:first-of-type) {
-        padding-left: 25px;
-    }
-
-    footer .footer_content .footer_contentlist li:not(:last-of-type) {
-        padding-right: 25px;
-    }
-
-    footer .footer_copy {  
-    font-size: 0.9rem;
-    }
-    // =============footer end==============
 }
 
 
 @media (max-width:768px){
-    //==========header==============
-    header {
-        padding: 10px 25px;
+//==========header==============
+.nav-form{
+        padding: 15px 36px;
+    .logo{
+        width: 29%;
+        line-height: 1;
     }
+    .gnb{
+        ul{
+            .gnb-list{
+                a{
+                    font-size: 0.9rem;
+                    .mark{
+                        margin-left: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
 
-    header img {
-        width: 50%;
-    }
-
-    .collapse:not(.show) {
-        display: block;
-    }
-
-    .header-navbar{
-        display: none;
-    }
-
-    header .header_nav-icon .hamburger {
-        display: block;
-        color: #272727;
-    }
-
-    header .header_nav-icon .icon_map,.icon_mark{
-        display: none;
-    }
-
-    header .header_nav-icon {
-        display: flex;
-    }
-
-    header .header_nav-icon i {
-        font-size: 25px;
-    }
 //==========header end==========
 
 //==========sec01===============
     .sec01 {
-        padding: 20px 25px 40px;
-    }
-
-    .sec01 .sec01-form .sec01_title {
-        top: 10%;
-        left: 4%;
-    }
-
-    .sec01_title p {
-        font-size: 1.6rem;
-    }
-
-    .sec01_bg-img {
-        width: 100%;
+        padding: 10px 36px 30px;
+        .sec01-form{
+            .sec01_title {
+                top: 11%;
+                left: 6%;
+                font-size: 1.4rem;
+            }
+        }
     }
 //==========sec01 end===========
 
 //==========sec02===============
-    .sec02 {
-        padding: 40px 0;
-    }
-
-    .sec02 .sec02-titleform {
-        margin-bottom: 40px;
-    }
-
-    .sec02 .sec02-titleform .sec02_title {
-        font-size: 1.6rem;
-        margin-bottom: 0.3rem;
-    }
-
-    .sec02 .sec02-titleform .sec02__subtitle {
-        font-size: 1.2rem;
+     .sec02 {
+        padding: 35px 0;
+        .sec02_titleform{
+            margin-bottom: 35px;
+            p{
+                font-size: 1.4rem;
+            }
+        }
+        .container{
+            margin-bottom: 35px;
+            .sec02__content {
+                height: 28vh;
+            .sec02__subcontent {
+                margin: 18px;
+                p {
+                    font-size: 1rem;
+                    margin-bottom: 5px;
+                }
+                span {
+                    font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        .effect{
+            font-size: 1rem;
+            min-width: 10rem;
+            padding: 0.4rem;
+        }
     }
 //==========sec02 end===========
 
 //==========sec03===============
-    .sec03 {
-        padding: 40px 0;
+.sec03 {
+        padding: 35px 0;
+    .sec03_titleForm{
+        .sec03_title {
+            font-size: 1.4rem;
+        }
+        .sec03_subtitle{
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+    }
+    .image-box{
+        .image-item{
+            margin: 0 19px;
+            .image-wrapper{
+                width: 200px;
+                height: 200px;
+                .hover-text{
+                    font-size: 0.9rem;
+                }
+            }
+            .caption{
+                margin-top: 16px;
+                .sec03-c-title{
+                    font-size: 0.9rem;
+                    margin-bottom: 0.4rem;
+                }
+                .sec03-c-des{
+                    font-size: 0.8rem;
+                }
+            }
+        }
     }
 
-    .sec03 .sec03_titleform p {
-        font-size: 1.6rem;
-    }
-
-    .sec03 .sec03_titleform {
-        margin-bottom: 40px;
-    }
-
-    .sec03 .sec03__content {
-        height: 17vh;
-    }
-
-    .sec03 .sec03__content .sec03__subcontent {
-        margin: 10px;
-    }
-
-    .sec03 .sec03__content .sec03__subcontent p {
-        font-size: 1.2rem;
-        margin-bottom: 5px;
-    }
-
-    .sec03 .sec03__content .sec03__subcontent span {
-        font-size: 0.9rem;
-    }
-
-    .sec03 .effect.effect-5 {
-        min-width: 11rem;
-        padding: 0.2rem;
-    }
-
+}
 //==========sec03 end===========
     
 
 //==========sec04===============
     .sec04 {
-        padding: 40px 0;
+        padding: 35px 0;
+        .container{
+            .sec04__titleContent{
+                margin-bottom: 40px;
+                margin-left: 30px;
+                h2{
+                    font-size: 1.4rem;
+                }
+            }
+            .sec04__imgContent{
+                .sec04_image {
+                    width: 45%;
+                }
+            }
+        }
+        .effect{
+            min-width: 12rem;
+            padding: 0.2rem;
+            font-size: 1rem;
+            margin-left: 30px;
+        }
     }
-
-    .sec04 .container .sec04__titleContent h2 {
-        font-size: 1.6rem;
-    }
-
-    .sec04 .effect.effect-5 {
-        min-width: 12rem;
-        padding: 0.2rem;
-    }
-
 //==========sec04 end===========
 
 //==========sec05===============
     .sec05 {
         padding: 40px 0;
+        .sec05_titleform{
+            .sec05_title{
+                font-size: 1.4rem;
+                margin-bottom: 0.5rem;
+            }
+            .sec05_subtitle{
+                font-size: 1rem;
+                margin-bottom: 35px;
+            }
+        }
+        #accordion{
+            .sec05_form{
+                font-size: 0.9rem;
+            }
+            .sec05_a{
+                padding: 0.7rem 1.3rem;
+                font-size: 0.8rem;
+            }
+        }
     }
-
-    .sec05 .sec05_titleform .sec05_title {
-        font-size: 1.6rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .sec05 .sec05_a {
-        font-size: 1rem;
-    }
-   
 //==========sec05 end===========
-
-//==========footer==============
-    footer {
-        padding: 30px 45px;
-    }
-    footer .footer_titleform .footer-logo {
-        width: 47%;
-    }
-
-    footer .footer_titleform .footer_menu .footer_menulist {
-        font-size: 0.7rem;
-    }
-
-    footer .footer_titleform { 
-    margin-bottom: 30px;
-    }
-
-    footer .footer_content {
-    margin-bottom: 10px;
-    }
-
-    footer .footer_content .footer_contentlist {
-        font-size: 0.7rem;
-        margin-bottom: 10px;
-    }
-    
-    footer .footer_copy{
-        font-size: 0.7rem;
-        margin: 0;
-    }
-//==========footer end==========
 }
 
 @media (max-width:540px){
 //==========header==============
-    header {
-        padding: 9px 26px;
+    .nav-form{
+        padding: 10px 20px;
+        .logo{
+            width: 36%;
+        }
+        .gnb{
+            margin-top: 10px;
+            ul{
+                .sm-d-none{
+                    display: none;
+                }
+                .hamburger{
+                    display: block;
+                    font-size: 1.2rem;
+                }
+                .hamburger:hover i{
+                    color: #ffa500;
+                }
+                
+            }
+        }
     }
-
-    header img {
-        width: 38%;
-    }
-
-    header .header_nav-icon i {
-        font-size: 1.3rem;
-    }
-
-    // .pd-0{
-    //     padding: 0;
-    // }
 //==========header end==========
 
 //==========sec01==========
     .sec01 {
-        padding: 15px 25px;
-    }
-
-    .sec01_bg-img {
-        opacity: 0;
-        width: 100%;
-        height: 23vh;
-    }
-
-    .sec01 .sec01-form .sec01_title {
-        text-align: center;
-        top: 17%;
-        left: 36%;
-    }
-
-    .sec01_title p {
-        font-size: 1rem;
+        padding: 20px 0;
+        .sec01-form{
+            .sec01_title{
+                font-size: 1.4rem;
+                text-align: center;
+                top: 17%;
+                left: 27%;
+            }
+            .sec01_bg{
+                .sec01_bg-img {
+                    opacity: 0;
+                    width: 100%;
+                    height: 23vh;
+                }   
+            }
+        }
     }
 //==========sec01 end===========
 
 //==========sec02===============
-    .sec02 {
-        padding: 30px 0;
-    }
-
-    .sec02 .sec02-titleform {
-        margin-bottom: 30px;
-    }
-
-    .sec02 .sec02-titleform .sec02_title {
-        font-size: 1rem;
-    }
-
-    .sec02 .sec02-titleform .sec02__subtitle {
-        font-size: 0.6rem;
-    }
-
-    .sec02 .sec02_card-form .sec02_c-content {
-        height: 13vh;
-    }
-
-    .sec02 .sec02_card-form p {
-        font-size: 0.6rem;
+     .sec02 {
+        padding: 40px 0;
+        .sec02_titleform{
+            margin-bottom: 30px;
+            
+        }
+        .container{
+            margin-bottom: 25px;
+            padding: 0 20px;
+            .sec02__content {
+                height: 45vh;
+                margin-bottom: 15px;
+                .sec02__subcontent{
+                    margin: 25px;
+                        p {
+                        font-size: 1rem;
+                        margin-bottom: 2px;
+                    }
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        
+        .effect {
+            font-size: 1rem;
+        }
     }
 //==========sec02 end===========
 
 //==========sec03===============
-    .sec03 {
-        padding: 30px 0;
-    }
-
-    .sec03 .sec03_titleform p {
-        font-size: 1rem;
-    }
-
-    .sec03 .sec03__content {
-        height: 35vh;
-        margin-bottom: 15px;
-    }
-
-    .sec03 .sec03__content .sec03__subcontent p {
-        font-size: 0.6rem;
-        margin-bottom: 2px;
-    }
-
-    .sec03 .sec03__content .sec03__subcontent {
-        margin: 10px;
-    }
-
-    .sec03 .sec03__content .sec03__subcontent span {
-        font-size: 0.5rem;
-    }
-
-    .sec03 .effect {
-        font-size: 1rem;
-    }
-
-    .mb-80 {
-        margin-bottom: 30px;
+    .sec03{
+        padding: 40px 0;
+        .container{
+            padding: 0 20px;
+            .sec03_titleForm{
+                .sec03_title {
+                    font-size: 1.4rem;
+                }
+                .sec03_subtitle {
+                    font-size: 0.9rem;
+                    margin-bottom: 25px;
+                }
+            }
+            #slider{
+                .image-box{
+                    .image-item{
+                        .image-wrapper{
+                            width: 180px;
+                            height: 180px;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 //==========sec03 end===========
 
 //==========sec04===============
-    .sec04 .container .sec04__titleContent h2 {
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .btn-wrapper{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 25px;
-    }
-    
-
-    .btn-wrapper a.effect {
-        width: 16.6666%;
-        min-width: 120px;
-        text-align: center;
-    }
-
-    .sec04 .container .sec04__imgContent {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .sec04_image {
-        width: 30%;
-    }
-
-    .sec04 .effect {
-        font-size: 1rem;
+    .sec04{
+        padding: 40px 0;
+        .container{
+            .row{
+                flex-wrap: wrap-reverse;
+                    .sec04__titleContent{
+                        margin-bottom: 20px;
+                        margin-left: 0px;
+                        h2{
+                            font-size: 1.4rem;
+                            text-align: center;
+                        }
+                    }   
+                .btn-wrapper{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .effect {
+                        width: 30%;
+                        min-width: 120px;
+                        text-align: center;
+                        font-size: 0.9rem;
+                        margin-left: 0;
+                    }
+                }
+                .sec04__imgContent {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 24px;
+                    .sec04_image{
+                        width: 28%;
+                    }
+                }
+            }
+        }
     }
 //==========sec04 end===========
 
 //==========sec05===============
-    .sec05 .sec05_titleform .sec05_title {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .sec05 .sec05_titleform .sec05_subtitle {
-        font-size: 0.6rem;
-    }
-
-    .sec05 .sec05_form {
-        font-size: 0.6rem;
-        padding: 1%;
-    }
-
-    .mb-80 {
-        margin-bottom: 20px;
-    }
-
-    .sec05 .sec05_a {
-        font-size: 0.5rem;
-        padding: 0.7rem 0.8rem;
-
+    .sec05{
+        padding: 40px 0;
+        .container{
+            padding: 0 20px;
+            .sec05_titleform{
+                .sec05_title {
+                    font-size: 1.4rem;
+                    margin-bottom: 0.5rem;
+                }
+                .sec05_subtitle {
+                    font-size: 0.9rem;
+                }
+            }
+            #accordion{
+                .sec05_form{
+                    font-size: 0.8rem;
+                }
+                .sec05_a{
+                    font-size: 0.7rem;
+                }
+            }
+        }
     }
 //==========sec05 end===========
-
-//==========footer==============
-    footer {
-        padding: 20px 12px;
-    }
-
-    footer .footer_titleform {
-        margin-bottom: 15px;
-    }
-
-    footer .footer_titleform .footer-logo {
-        width: 38%;
-    }
-
-    footer .footer_titleform .footer_menu .footer_menulist {
-        display: none;
-    }
-
-    footer .footer_content .footer_contentlist {
-        font-size: 0.5rem;
-        margin-bottom: 10px;
-    }
-
-    footer .footer_copy {
-        font-size: 0.5rem;
-    }
-//==========footer end==========
 }
+
 @media (max-width:348px){
     //==========header==============
-    header {
-        padding: 9px 12px;
-    }
-
-    header img {
-        width: 38%;
-    }
-
-    header .header_nav-icon i {
-        font-size: 1rem;
+    .nav-form {
+        padding: 10px 20px;
+        line-height: 0;
+        .logo{
+            width: 39%;
+        }
+        .gnb{
+            ul{
+                margin-bottom: 0;
+            }
+        }
     }
     //==========header end==========
 
     //==========sec01===============
     .sec01 {
-        padding: 15px 12px;
-    }
-
-    .sec01 .sec01-form .sec01_title {
-        top: 16%;
-        left: 29%;
-    }
-
-    .sec01_title p {
-        font-size: 0.9rem;
+        padding: 15px 20px;
+        .sec01-form{
+            .sec01_title {
+                top: 15%;
+                left: 21%;
+                font-size: 1.2rem;
+            }
+        }
     }
     //==========sec01 end===========
 
     //==========sec02===============
     .sec02 {
-        padding: 20px 0;
+        padding: 30px 0;
+        .sec02_titleform{
+            margin-bottom: 30px;
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        .container{
+            margin-bottom: 10px;
+            .sec02__content {
+                height: 28vh;
+            .sec02__subcontent{
+                line-height: 1;
+                margin: 16px;
+                    p {
+                        font-size: 0.8rem;
+                        margin-bottom: 2px;
+                    }
+                    span {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+        .effect {
+            font-size: 0.7rem;
+        }
     }
-
-    .sec02 .sec02-titleform .sec02_title {
-        font-size: 0.9rem;
-    }
-
-    .sec02 .sec02-titleform .sec02__subtitle {
-        font-size: 0.6rem;
-    }
-
-    .sec02 .sec02_card-form .sec02_c-content {
-        height: 26vh;
-    }
-
-    .sec02 .sec02_card-form p {
-        font-size: 0.6rem;
-        margin-bottom: 0.5rem;
-    }
-
     //==========sec02 end===========
 
     //==========sec03===============
-    .sec03 {
-        padding: 20px 0;
-    }
-
-    .sec03 .sec03_titleform p {
-        font-size: 0.9rem;
-    }
-
-    .sec03 .sec03_titleform {
-        margin-bottom: 20px;
-    }
-
-    .sec03 .sec03__content {
-        height: 32vh;
-    }
-
-    .sec03 .sec03__content .sec03__subcontent p {
-        font-size: 0.6rem;
-        margin-bottom: 5px;
-    }
-
-    .sec03 .sec03__content .sec03__subcontent span {
-        font-size: 0.4rem;
-    }
-
-    .sec03 .effect {
-        font-size: 0.6rem;
-    }
-
-    .mb-80 {
-        margin-bottom: 15px;
-    }
-
+    .sec03{
+        padding: 30px 0;
+        .container{
+            .sec03_titleForm{
+                .sec03_title {
+                    font-size: 1.2rem;
+                    margin-bottom:2px;
+                }
+                .sec03_subtitle {
+                    font-size: 0.8rem;
+                    margin-bottom: 25px;
+                }
+            }
+            #slider{
+                .image-box{
+                    .image-item{
+                        .image-wrapper{
+                            width: 160px;
+                            height: 160px;
+                        }
+                        .caption{
+                            .sec03-c-title{
+                                font-size: 0.8rem;
+                                margin-bottom: 0.4rem;
+                            }
+                            .sec03-c-des {
+                                font-size: 0.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }  
     //==========.sec03 end==========
 
     //==========sec04===============
     .sec04 {
-        padding: 20px 0;
-    }
+        padding: 30px 0;
+        .container{
+            // margin: 30px 0;
+            .row{
+                .sec04__titleContent{
+                    h2{
+                        font-size: 1.2rem;
+                    }
 
-    .sec04 .container .sec04__titleContent h2 {
-        font-size: 0.9rem;
-        text-align: center;
+                }
+                .btn-wrapper{
+                    .effect{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            
+        }
     }
-
-    .sec04_image {
-        margin-top: 15px;
-    }
-
-    .sec04 .effect {
-        font-size: 0.6rem;
-    }
-
-    .btn-wrapper {
-        margin-bottom: 1.2rem;
-    }
-
     //==========sec04 end===========
 
     //==========sec05===============
     .sec05 {
-        padding: 20px 0;
-    }
-
-    .sec05 .sec05_titleform .sec05_title {
-        font-size: 0.9rem;
-        margin-bottom: 0.3rem;
-    }
-
-    .sec05 .sec05_titleform .sec05_subtitle {
-        font-size: 0.6rem;
-    }
-
-    .sec05 .sec05_form {
-        font-size: 0.6rem;
-        padding: 2% 1%;
-        font-weight: 600;
-    }
-
-    .sec05 .sec05_a {
-        font-size: 0.4rem;
-        padding: 0.6rem 0.8rem;
+        padding: 40px 0;
+        .container{
+            .sec05_titleform{
+                .sec05_title {
+                    font-size: 1.2rem;
+                    margin-bottom: 0.3rem;
+                }
+                .sec05_subtitle {
+                    font-size: 0.8rem;
+                }
+            }
+            #accordion{
+                .sec05_form{
+                    font-size: 0.7rem;
+                }
+                .sec05_a{
+                    font-size: 0.5rem;
+                    padding: 0.5rem 0.9rem;
+                }
+            }
+        }
     }
     //==========sec05 end===========
-
-    //==========footer==============
-    footer .footer_titleform {
-        margin-bottom: 8px;
-    }
-
-    footer .footer_titleform .footer-logo {
-        width: 30%;
-    }
-
-    footer .footer_content {
-        margin-bottom: 0px;
-    }
-
-    footer .footer_content .footer_contentlist {
-        display: none;
-    }
-
-    footer .footer_copy p {
-        margin: 0;
-    }
-    //==========footer end===========
 }
+
 
 
 

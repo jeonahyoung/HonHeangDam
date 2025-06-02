@@ -8,16 +8,10 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/find_place.css">
-  <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
-  <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
@@ -25,27 +19,31 @@
 
 <body>
   <!-- header -->
-  <header class="d-flex">
-    <a href="index.html">
-      <div class="logo">
-        <img src="assets/images/logo.png" class="logo-img" alt="logo">
+  <header>
+    <nav>
+      <div class="nav-form">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="logo" class="logo">
+          </a>
+        </div>
+        <div class="gnb">
+          <ul>
+            <li class="gnb-list sm-d-none"><a href="our_story.html">
+                <span class="mark">우리의이야기</span>
+              </a></li>
+            <li class="gnb-list sm-d-none active"><a href="find_place.html">
+                <span class="mark">여행지찾기</span>
+              </a></li>
+            <li class="gnb-list sm-d-none"><a href="gallery.html"><span class="mark">방구석투어</span>
+              </a></li>
+            <li class="gnb-list sm-d-none"><a href=""><span class="mark">커뮤니티</span>
+              </a></li>
+            <li class="gnb-list hamburger"><i class="ph ph-list"></i></li>
+          </ul>
+        </div>
       </div>
-    </a>
-
-    <div>
-      <ul class="sub_nav">
-        <li><a href="our_story.html" class="nav_list">우리의이야기</a></li>
-        <li><a href="find_place.html" class="nav_list orange">여행지찾기</a></li>
-        <li><a href="#" class="nav_list">방구석투어</a></li>
-        <li><a href="#" class="nav_list">커뮤니티</a></li>
-      </ul>
-    </div>
-
-    <div class="header_nav-icon">
-      <i class="ph ph-bookmark-simple icon_mark"></i>
-      <i class="ph ph-map-pin icon_map"></i>
-      <i class="ph ph-list hamburger"></i>
-    </div>
+    </nav>
   </header>
   <!--header end-->
 
@@ -58,7 +56,7 @@
             <div class="sec01_content">
               <p class="sec01_title">과거와 현재가 공존하는<br> 전주 감성 여행</p>
               <p class="sec01_subtitle">한옥마을부터 청년몰까지<br>걸어가는 길마다 이야기가 피어나는 도시</p>
-              <a href="#" class="sec01_btn">MORE</a>
+
             </div>
           </div>
         </div>
@@ -68,7 +66,7 @@
             <div class="sec01_content">
               <p class="sec01_title">눈부신 햇살, 제주의 바다<br> 협재해수욕장</p>
               <p class="sec01_subtitle">맑고 투명한 바다에 발 담그고<br> 혼자만의 여유를 누려보세요</p>
-              <a href="#" class="sec01_btn">MORE</a>
+
             </div>
           </div>
         </div>
@@ -78,7 +76,7 @@
             <div class="sec01_content">
               <p class="sec01_title">색색의 골목, 어린왕자와 함께한<br> 부산 감천 여행</p>
               <p class="sec01_subtitle">골목마다 피어나는 이야기<br> 혼자 걷기 좋은 예술 마을</p>
-              <div><a href="#" class="sec01_btn">MORE</a></div>
+
             </div>
           </div>
         </div>
@@ -93,31 +91,41 @@
   <!--sec02-->
   <section class="sec02">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p class="sec02_title">이번 주 인기 여행지</p>
-          <p class="sec02_subtitle">지금 가장 많은 여행자들이 찾고 있는 장소들이에요!</p>
-        </div>
-       
-          <div class="col-md-12 d-flex border border-2 sec02_contentform">
-            <div class="col-md-6 sec02_img">
-              <img src="assets/images/findplace_sec02_img01.png" alt="findplace_sec02_img01" class="sec02_img01">
-            </div>
+      <div class="sec02_titleform text-center">
+        <p class="sec02_title">이번 주 인기 여행지</p>
+        <p class="sec02_subtitle">지금 가장 많은 여행자들이 찾고 있는 장소들이에요!</p>
+      </div>
 
-            <div class="col-md-6 sec02_content">
-              <p class="sec02_content_title">연남동 경의선숲길 카페거리</p>
-              <ul class="sec02_contentlist">
-                <li>
-                  요즘 MZ 세대가 찾는 도심 속 혼자 힐링 공간
-                </li>
-                <li>
-                  북카페, 베이커리, 감성 공간 모두 밀집
-                </li>
+      <div class="row sec02_contentform">
+        <div class="col-md-6">
+          <div class="sec02_card01">
+            <img src="assets/images/findplace_sec02_img01.png" alt="sec02_img01" class="sec02-img">
+            <div class="sec02__subcontent">
+              <p class="sec02_c_title">연남동 경의선숲길 카페거리</p>
+              <ul class="sec02_content">
+                <li>요즘 MZ 세대가 찾는 도심 속 혼자 힐링 공간</li>
+                <li>북카페, 베이커리, 감성 공간 모두 밀집</li>
               </ul>
-              <a class="effect effect-5" href="#" title="Learn More">가까운 숙소보기</a>
+              <a href="#" class="sec02_c_btn">근처 숙소 알아보기</a>
             </div>
           </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="sec02_card01">
+            <img src="assets/images/findplace_sec02_img02.png" alt="sec02_img02" class="sec02-img">
+            <div class="sec02__subcontent">
+              <p class="sec02_c_title">대전 스카이로드</p>
+              <ul class="sec02_content">
+                <li>으능정이 거리 위에 설치된 옥외 LED 전광판 미디어파사드</li>
+                <li>밤에 영상이 인상적, 주변에 많은 맛집·카페</li>
+              </ul>
+              <a href="#" class="sec02_c_btn">근처 숙소 알아보기</a>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
     </div>
   </section>
   <!--sec02 end-->
@@ -125,7 +133,7 @@
   <!--sec03-->
   <section class="sec03">
     <div class="container">
-      <p class="sec03_title">테마별 소재찾기</p>      
+      <p class="sec03_title">테마별 소재찾기</p>
       <div class="row">
         <div class="col-6 col-sm-4 col-md-2 text-center">
           <div class="sec03_theme active" data-tab="tab-heal">
@@ -356,8 +364,8 @@
             </div>
           </div>
         </div>
-      </div> 
-      
+      </div>
+
       <div class="d-grid justify-content-center">
         <a class="effect effect-5" href="#" title="Learn More">더보기</a>
       </div>
@@ -368,168 +376,61 @@
   <!--sec04-->
   <section class="sec04">
     <div class="container">
-      <div class="sec04_titleForm">
-        <p class="sec04_title">전국 구석구석!</p>
-        <p class="sec04_subtitle">혼자서도 충분히 즐거운 여행</p>
+      <div class="sec04_titleform">
+        <p class="sec04_title">맛 따라 걷는 여행지도</p>
+        <p class="sec04_subtitle">혼자여도 맛있는 여행</p>
       </div>
-
-      <div id="slider">
-        <div class="image-box">
-          <div class="image-item">
-            <div class="image-wrapper">
-              <img src="assets/images/findplace_sec04_slide01.png" alt="설명 이미지" />
-              <div class="hover-text">영랑호</div>
-            </div>
-            <div class="caption">
-              <p class="sec04-c-title">호수 둘레길 산책,속초</p>
-              <p class="sec04-c-des">바다도 산도 아닌, 잔잔한 호수의 위로</p>
-            </div>
+  
+      <div class="sec04_slideform">
+        <div class="swiper sec04_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
           </div>
-          <div class="image-item">
-            <div class="image-wrapper">
-              <img src="assets/images/findplace_sec04_slide02.png" alt="설명 이미지" />
-              <div class="hover-text">독일마을</div>
-            </div>
-            <div class="caption">
-              <p class="sec04-c-title">동화 속을 걷는 듯, 남해</p>
-              <p class="sec04-c-des">예쁜 건물과 조용한 풍경 속 감성 충전</p>
-            </div>
-          </div>
-          <div class="image-item">
-            <div class="image-wrapper">
-              <img src="assets/images/findplace_sec04_slide03.png" alt="설명 이미지" />
-              <div class="hover-text">메타세콰이어길</div>
-            </div>
-            <div class="caption">
-              <p class="sec04-c-title">나무 사이를 천천히,담양</p>
-              <p class="sec04-c-des">고요한 숲길에서 자신과 마주하는 시간</p>
-            </div>
-          </div>
-          <div class="image-item">
-            <div class="image-wrapper">
-              <img src="assets/images/findplace_sec04_slide04.png" alt="설명 이미지" />
-              <div class="hover-text">북촌한옥마을</div>
-            </div>
-            <div class="caption">
-              <p class="sec04-c-title">도시 속 한옥마을,북촌</p>
-              <p class="sec04-c-des">익숙하지만 낯선 풍경을 발견하는 기쁨</p>
-            </div>
-          </div>
-          <div class="image-item">
-            <div class="image-wrapper">
-              <img src="assets/images/findplace_sec04_slide05.png" alt="설명 이미지" />
-              <div class="hover-text">동피랑 벽화마을</div>
-            </div>
-            <div class="caption">
-              <p class="sec04-c-title">알록달록한 벽화, 통영</p>
-              <p class="sec04-c-des">골목길과 바다가 어우러진 감성 코스</p>
-            </div>
-          </div>
-          <div class="image-item">
-            <div class="image-wrapper">
-              <img src="assets/images/findplace_sec04_slide06.png" alt="설명 이미지" />
-              <div class="hover-text">안목해변</div>
-            </div>
-            <div class="caption">
-              <p class="sec04-c-title">커피 한 잔, 파도 한 줄기 강릉</p>
-              <p class="sec04-c-des">혼자만의 여유를 누리기에 딱 좋은 곳</p>
-            </div>
-          </div>
-          <div class="image-item">
-            <div class="image-wrapper">
-              <img src="assets/images/findplace_sec04_slide01.png" alt="설명 이미지" />
-              <div class="hover-text">영랑호</div>
-            </div>
-            <div class="caption">
-              <p class="sec04-c-title">호수 둘레길 산책,속초</p>
-              <p class="sec04-c-des">바다도 산도 아닌, 잔잔한 호수의 위로</p>
-            </div>
-          </div>
-          <div class="image-item">
-            <div class="image-wrapper">
-              <img src="assets/images/findplace_sec04_slide02.png" alt="설명 이미지" />
-              <div class="hover-text">독일마을</div>
-            </div>
-            <div class="caption">
-              <p class="sec04-c-title">동화 속을 걷는 듯, 남해</p>
-              <p class="sec04-c-des">예쁜 건물과 조용한 풍경 속 감성 충전</p>
-            </div>
-          </div>
-          <div class="image-item">
-            <div class="image-wrapper">
-              <img src="assets/images/findplace_sec04_slide03.png" alt="설명 이미지" />
-              <div class="hover-text">메타세콰이어길</div>
-            </div>
-            <div class="caption">
-              <p class="sec04-c-title">나무 사이를 천천히,담양</p>
-              <p class="sec04-c-des">예고요한 숲길에서 자신과 마주하는 시간</p>
-            </div>
-          </div>
-          <div class="image-item">
-            <div class="image-wrapper">
-              <img src="assets/images/findplace_sec04_slide04.png" alt="설명 이미지" />
-              <div class="hover-text">북촌한옥마을</div>
-            </div>
-            <div class="caption">
-              <p class="sec04-c-title">도시 속 한옥마을,북촌</p>
-              <p class="sec04-c-des">익숙하지만 낯선 풍경을 발견하는 기쁨</p>
-            </div>
-          </div>
-          <div class="image-item">
-            <div class="image-wrapper">
-              <img src="assets/images/findplace_sec04_slide05.png" alt="설명 이미지" />
-              <div class="hover-text">동피랑 벽화마을</div>
-            </div>
-            <div class="caption">
-              <p class="sec04-c-title">알록달록한 벽화, 통영</p>
-              <p class="sec04-c-des">골목길과 바다가 어우러진 감성 코스</p>
-            </div>
-          </div>
-          <div class="image-item">
-            <div class="image-wrapper">
-              <img src="assets/images/findplace_sec04_slide06.png" alt="설명 이미지" />
-              <div class="hover-text">안목해변</div>
-            </div>
-            <div class="caption">
-              <p class="sec04-c-title">커피 한 잔, 파도 한 줄기 강릉</p>
-              <p class="sec04-c-des">혼자만의 여유를 누리기에 딱 좋은 곳</p>
-            </div>
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
   </section>
+
+
   <!--sec04 end-->
 
-   <!--footer-->
+  <!--footer-->
   <footer class="footer">
-            <div class="footer_titleform">
-                <div class="footer_img">
-                    <img src="assets/images/logo.png" alt="footer-logo" class="footer-logo">
-                </div>
-                <div class="footer_menu">
-                    <ul class="footer_menulist">
-                        <li><a href="our_story.html">우리의이야기</a></li>
-                        <li><a href="find_place.html">여행지추천</a></li>
-                        <li><a href="">방구석투어</a></li>
-                        <li><a href="">커뮤니티</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer_contentform">
-                <div class="footer_content">
-                    <ul class="footer_contentlist">
-                        <li>"고요한 길 위에서, 진짜 나를 만나는 여행</li>
-                        <li>인천광역시 미추홀구 용마루로 33</li>
-                        <li>Tel: 032_4577-6334</li>
-                        <li>대표자: 전 아 영</li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="footer_copy">Copyright ⓒ HonHeangDam. All Rights Reserved</p>
-                </div>
-            </div>
-        </footer>
+    <div class="footer_titleform">
+      <div class="footer_img">
+        <img src="assets/images/logo.png" alt="footer-logo" class="footer-logo">
+      </div>
+      <div class="footer_menu">
+        <ul class="footer_menulist">
+          <li><a href="our_story.html">우리의이야기</a></li>
+          <li><a href="find_place.html">여행지추천</a></li>
+          <li><a href="">방구석투어</a></li>
+          <li><a href="">커뮤니티</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_contentform">
+      <div class="footer_content">
+        <ul class="footer_contentlist">
+          <li>"고요한 길 위에서, 진짜 나를 만나는 여행</li>
+          <li>인천광역시 미추홀구 용마루로 33</li>
+          <li>Tel: 032_4577-6334</li>
+          <li>대표자: 전 아 영</li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer_copy">Copyright ⓒ HonHeangDam. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
   <!--footer end-->
 
 
@@ -541,8 +442,13 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- Initialize Swiper -->
   <script>
+    //sec01
     var swiper = new Swiper(".sec01_swiper", {
       cssMode: true,
       navigation: {
@@ -555,23 +461,40 @@
       mousewheel: true,
       keyboard: true,
       loop: true,
+      autoplay: {
+        delay: 30000,
+        pauseOnMouseEnter: true,
+      }
     });
-  </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-   $(document).ready(function(e){
-    $('.sec03_theme').click(function(e){
+    //sec03
+    $(document).ready(function (e) {
+      $('.sec03_theme').click(function (e) {
         e.preventDefault();
         let current = $(this).attr('data-tab');
         $('.sec03_theme').removeClass('active');
         $('.tab-content').removeClass('on');
         $(this).addClass('active');
         $('#' + current).addClass('on');
+      })
     })
-   })
+
+    //sec04
+    var swiper = new Swiper(".sec04_swiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <!-- Initialize Swiper -->
+  <script>
+
   </script>
 
 </body>

@@ -17,27 +17,30 @@
 
 <body>
   <!-- header -->
-  <header class="d-flex align-items-center">
+  <header>
+  <nav>
+    <div class="nav-form">
       <div class="logo">
-        <img src="assets/images/logo.png" class="logo" alt="logo">
+        <img src="assets/images/logo.png" alt="logo" class="logo">
       </div>
-  
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid pd-0">
-          <div class="collapse navbar-collapse header-nav" id="navbarNavAltMarkup">
-            <div class="navbar-nav header-navbar">
-              <a class="nav-link active header-nav-link" aria-current="page" href="our_story.html"><span class="mark">우리의이야기</span></a>
-              <a class="nav-link header-nav-link" href="find_place.html"><span class="mark">여행지찾기</span></a>
-              <a class="nav-link header-nav-link" href="#"><span class="mark">방구석투어</span></a>
-              <a class="nav-link header-nav-link" href="#"><span class="mark">커뮤니티</span></a>
-            </div>
-            <div class="header_nav-icon">
-              <i class="ph ph-list hamburger"></i>
-            </div>
-          </div>
-        </div>
-      </nav>
-  </header>
+      <div class="gnb">
+        <ul>
+          <li class="gnb-list sm-d-none"><a href="our_story.html">
+            <span class="mark">우리의이야기</span>
+          </a></li>
+          <li  class="gnb-list sm-d-none"><a href="find_place.html">
+            <span class="mark">여행지찾기</span>
+          </a></li>
+          <li  class="gnb-list sm-d-none"><a href="gallery.html"><span class="mark">방구석투어</span>
+          </a></li>
+          <li  class="gnb-list sm-d-none"><a href=""><span class="mark">커뮤니티</span>
+          </a></li>
+          <li class="gnb-list hamburger"><i class="ph ph-list"></i></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ </header>
   <!--header end-->
 
   <!--sec01-->
@@ -56,89 +59,10 @@
   </section>
   <!--sec01 end-->
 
-  <!--sec02-->
-  <section class="sec02 pd-100">
-    <div class="col-md-12 sec02-titleform mb-80">
-      <p class="sec02_title text-center">랜선으로 즐기는 <span class="basic-c">방구석</span><span class="point-c">투어</span>
-      </p>
-      <p class="sec02__subtitle text-center m-auto">사진으로 먼저 떠나볼까요:)</p>
-    </div>
-
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="sec02_card-form slide1">
-            <img src="assets/images/main_sec02_card-image01.png" alt="sec02_image01" class="sec02_c-content">
-            <div class="sec02_card-content">
-              <p>#강화_멍때림(카페)</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="sec02_card-form slide2">
-            <img src="assets/images/main_sec02_card-image02.png" alt="sec02_image02" class="sec02_c-content">
-            <div class="sec02_card-content">
-              <p>#제주_유채꽃도로</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="sec02_card-form slide3">
-            <img src="assets/images/main_sec02_card-image03.png" alt="sec02_image03" class="sec02_c-content">
-            <div class="sec02_card-content">
-              <p>#부산_망미단길카페</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="sec02_card-form slide4">
-            <img src="assets/images/main_sec02_card-image04.png" alt="sec02_image04" class="sec02_c-content">
-            <div class="sec02_card-content">
-              <p>#인천_개항장거리</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="sec02_card-form slide5">
-            <img src="assets/images/main_sec02_card-image05.png" alt="sec02_image05" class="sec02_c-content">
-            <div class="sec02_card-content">
-              <p>#전주_서학동 예술마을</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="sec02_card-form slide6">
-            <img src="assets/images/main_sec02_card-image06.png" alt="sec02_image06" class="sec02_c-content">
-            <div class="sec02_card-content">
-              <p>#춘천_소양강 스카이워크</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="sec02_card-form slide7">
-            <img src="assets/images/main_sec02_card-image07.png" alt="sec02_image07" class="sec02_c-content">
-            <div class="sec02_card-content">
-              <p>#담양_메타세쿼이아길</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="sec02_card-form slide8">
-            <img src="assets/images/main_sec02_card-image08.png" alt="sec02_image08" class="sec02_c-content">
-            <div class="sec02_card-content">
-              <p>#서울_연남동 북카페거리</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--sec02 end-->
-
-  <!--sec03-->
-  <section class="sec03 pd-100">
+  <!--sec02 -->
+<section class="sec02">
     <div class="col-md-12">
-      <div class="text-center sec03_titleform mb-80">
+      <div class="text-center sec02_titleform mb-80">
         <p>이달의 Best3,<br>인기 여행지 둘러봐요!</p>
       </div>
     </div>
@@ -146,8 +70,8 @@
     <div class="container mb-80">
       <div class="row">
         <div class="col-md-4">
-          <div class="sec03__content sec03_card01">
-            <div class="sec03__subcontent">
+          <div class="sec02__content sec02_card01">
+            <div class="sec02__subcontent">
               <p>옹심이마을(강원)</p>
               <span>#옹심이</span>
               <span>#감자</span>
@@ -157,8 +81,8 @@
         </div>
         
         <div class="col-md-4">
-          <div class="sec03__content sec03_card02">
-            <div class="sec03__subcontent">
+          <div class="sec02__content sec02_card02">
+            <div class="sec02__subcontent">
               <p>당포성(경기)</p>
               <span>#은하수</span>
               <span>#감성샷</span>
@@ -167,8 +91,8 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="sec03__content sec03_card03">
-            <div class="sec03__subcontent">
+          <div class="sec02__content sec02_card03">
+            <div class="sec02__subcontent">
               <p>영종도(인천)</p>
               <span>#차로 갈 수 있는 섬</span>
               <span>#드라이브</span>
@@ -180,6 +104,144 @@
 
      <div class="d-grid justify-content-center"><a class="effect effect-5" href="find_place.html" title="Learn More">더보기</a></div>
   </section>
+
+  <!--sec02 end-->
+
+  <!--sec03-->
+  <section class="sec03">
+    <div class="container">
+      <div class="sec03_titleForm">
+        <p class="sec03_title">전국 구석구석!</p>
+        <p class="sec03_subtitle">혼자서도 충분히 즐거운 여행</p>
+      </div>
+
+      <div id="slider">
+        <div class="image-box">
+          <div class="image-item">
+            <div class="image-wrapper">
+              <img src="assets/images/main_sec03_slide01.png" alt="설명 이미지" />
+              <div class="hover-text">영랑호</div>
+            </div>
+            <div class="caption">
+              <p class="sec03-c-title">호수 둘레길 산책,속초</p>
+              <p class="sec03-c-des">바다도 산도 아닌, 잔잔한 호수의 위로</p>
+            </div>
+          </div>
+          <div class="image-item">
+            <div class="image-wrapper">
+              <img src="assets/images/main_sec03_slide02.png" alt="설명 이미지" />
+              <div class="hover-text">독일마을</div>
+            </div>
+            <div class="caption">
+              <p class="sec03-c-title">동화 속을 걷는 듯, 남해</p>
+              <p class="sec03-c-des">예쁜 건물과 조용한 풍경 속 감성 충전</p>
+            </div>
+          </div>
+          <div class="image-item">
+            <div class="image-wrapper">
+              <img src="assets/images/main_sec03_slide03.png" alt="설명 이미지" />
+              <div class="hover-text">메타세콰이어길</div>
+            </div>
+            <div class="caption">
+              <p class="sec03-c-title">나무 사이를 천천히,담양</p>
+              <p class="sec03-c-des">고요한 숲길에서 자신과 마주하는 시간</p>
+            </div>
+          </div>
+          <div class="image-item">
+            <div class="image-wrapper">
+              <img src="assets/images/main_sec03_slide04.png" alt="설명 이미지" />
+              <div class="hover-text">북촌한옥마을</div>
+            </div>
+            <div class="caption">
+              <p class="sec03-c-title">도시 속 한옥마을,북촌</p>
+              <p class="sec03-c-des">익숙하지만 낯선 풍경을 발견하는 기쁨</p>
+            </div>
+          </div>
+          <div class="image-item">
+            <div class="image-wrapper">
+              <img src="assets/images/main_sec03_slide05.png" alt="설명 이미지" />
+              <div class="hover-text">동피랑 벽화마을</div>
+            </div>
+            <div class="caption">
+              <p class="sec03-c-title">알록달록한 벽화, 통영</p>
+              <p class="sec03-c-des">골목길과 바다가 어우러진 감성 코스</p>
+            </div>
+          </div>
+          <div class="image-item">
+            <div class="image-wrapper">
+              <img src="assets/images/main_sec03_slide06.png" alt="설명 이미지" />
+              <div class="hover-text">안목해변</div>
+            </div>
+            <div class="caption">
+              <p class="sec03-c-title">커피 한 잔, 파도 한 줄기 강릉</p>
+              <p class="sec03-c-des">혼자만의 여유를 누리기에 딱 좋은 곳</p>
+            </div>
+          </div>
+          <div class="image-item">
+            <div class="image-wrapper">
+              <img src="assets/images/main_sec03_slide01.png" alt="설명 이미지" />
+              <div class="hover-text">영랑호</div>
+            </div>
+            <div class="caption">
+              <p class="sec03-c-title">호수 둘레길 산책,속초</p>
+              <p class="sec03-c-des">바다도 산도 아닌, 잔잔한 호수의 위로</p>
+            </div>
+          </div>
+          <div class="image-item">
+            <div class="image-wrapper">
+              <img src="assets/images/main_sec03_slide02.png" alt="설명 이미지" />
+              <div class="hover-text">독일마을</div>
+            </div>
+            <div class="caption">
+              <p class="sec03-c-title">동화 속을 걷는 듯, 남해</p>
+              <p class="sec03-c-des">예쁜 건물과 조용한 풍경 속 감성 충전</p>
+            </div>
+          </div>
+          <div class="image-item">
+            <div class="image-wrapper">
+              <img src="assets/images/main_sec03_slide03.png" alt="설명 이미지" />
+              <div class="hover-text">메타세콰이어길</div>
+            </div>
+            <div class="caption">
+              <p class="sec03-c-title">나무 사이를 천천히,담양</p>
+              <p class="sec03-c-des">고요한 숲길에서 자신과 마주하는 시간</p>
+            </div>
+          </div>
+          <div class="image-item">
+            <div class="image-wrapper">
+              <img src="assets/images/main_sec03_slide04.png" alt="설명 이미지" />
+              <div class="hover-text">북촌한옥마을</div>
+            </div>
+            <div class="caption">
+              <p class="sec03-c-title">도시 속 한옥마을,북촌</p>
+              <p class="sec03-c-des">익숙하지만 낯선 풍경을 발견하는 기쁨</p>
+            </div>
+          </div>
+          <div class="image-item">
+            <div class="image-wrapper">
+              <img src="assets/images/main_sec03_slide05.png" alt="설명 이미지" />
+              <div class="hover-text">동피랑 벽화마을</div>
+            </div>
+            <div class="caption">
+              <p class="sec03-c-title">알록달록한 벽화, 통영</p>
+              <p class="sec03-c-des">골목길과 바다가 어우러진 감성 코스</p>
+            </div>
+          </div>
+          <div class="image-item">
+            <div class="image-wrapper">
+              <img src="assets/images/main_sec03_slide06.png" alt="설명 이미지" />
+              <div class="hover-text">안목해변</div>
+            </div>
+            <div class="caption">
+              <p class="sec03-c-title">커피 한 잔, 파도 한 줄기 강릉</p>
+              <p class="sec03-c-des">혼자만의 여유를 누리기에 딱 좋은 곳</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <!--sec03 end-->
 
 
@@ -312,20 +374,7 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2.5,
-      spaceBetween: 10,
-      centeredSlides: true,
-
-      autoplay: {
-        delay: 1000,
-        pauseOnMouseEnter: true,
-
-      },
-      loop: true,
-
-    });
-
+  // sec05
     $(function () {
       $('#accordion div').hide(); // 초기 상태: 모든 답변 닫기
 
