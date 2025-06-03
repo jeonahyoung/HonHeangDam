@@ -1,114 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나는 어떤 안주?🍺</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
-   <section id="sec04" class="sec4">
-        <div class="sec4-form">
-            <div class="sec4-title">
-                <p class="c-title">고객의소리</p>
-                <h2>당신의 첫 차,<br>
-                    고객 감동 REAL 후기</h2>
-                <p>다양한 차종의 중고차를 한눈에 비교하고 선택하세요! <br>
-                    철저한 검증과 품질 보증으로 믿을 수 있는 중고차!</p>
+    <div class="container">
+        <article class="start">
+            <h1 class="text-center">
+                내가 안주라면? 어떤 안주?🍻
+            </h1>
+            <h3 class="text-center">
+                MBTI기반 안주 테스트!
+            </h3>
+            <p class="text-center">
+                ⚠️과몰입 주의⚠️
+            </p>
+            <button class="btn btn-primary mt-5" onclick="start()">스따아-뜨 ></button>
+        </article>
+        <article class="question">
+            <div class="progress mt-5" role="progressbar" aria-label="Basic" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width:calc(100/12*1%)"></div>
             </div>
-            <div class="container-fluid">
-                <div class="review">
-                    <div class="swiper review__swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="d-flex sec4-content">
-                                    <div class="w-50 sec5-content1">
-                                        <div class="c1 m-b-30"><b>K5 20년식</b></div>
-                                        <div class="c2 m-b-10">박OO /47세</div>
-                                        <div class="c3">
-                                            컨설턴트님께서 차량 상태나 금액에 대해서 자세하게
-                                            설명해주셔서 꼼꼼하게 비교하면서 구매할 수 있었습니다!
-                                        </div>
-
-                                    </div>
-                                    <div class="w-50 sec4-img">
-                                        <img src="assets/images/findplace_sec01_bg01.png" alt="sec4-review-img1"
-                                            class="sec4-content2">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="d-flex sec5-content">
-                                    <div class="w-50 sec5-content1">
-                                        <div class="c1 m-b-30"><b>SONATA 18년식</b></div>
-                                        <div class="c2 m-b-10">김OO /33세</div>
-                                        <div class="c3">
-                                            차량 종류도 많고, 차량 상태들도 좋은 것들이 많아 컨설턴트님 도움 많이 받았습니다!
-                                        </div>
-
-                                    </div>
-                                    <div class="w-50">
-                                        <img src="assets/images/sec5-review-img2.jpg" alt="sec5-review-img2"
-                                            class="sec5-content2">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="d-flex sec5-content">
-                                    <div class="w-50 sec5-content1">
-                                        <div class="c1 m-b-30"><b>SANTA FE 22년식</b></div>
-                                        <div class="c2 m-b-10">김OO /45세</div>
-                                        <div class="c3">
-                                            차량 구입시 가장 고민되었던 부분이 허위매물이였는데, 영카에서 안심하고 구매했습니다.
-                                        </div>
-
-                                    </div>
-                                    <div class="w-50">
-                                        <img src="assets/images/sec5-review-img3.jpg" alt="sec5-review-img3"
-                                            class="sec5-content2">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="d-flex sec5-content">
-                                    <div class="w-50 sec5-content1">
-                                        <div class="c1 m-b-30"><b>KHAN 20년식</b></div>
-                                        <div class="c2 m-b-10">이OO /35세</div>
-                                        <div class="c3">
-                                            영카 공식 서비스 센터 같이 운영해서 AS까지 고려했는데, 현재 AS받을 일이 없네요! 영카 추천드립니다!
-                                        </div>
-
-                                    </div>
-                                    <div class="w-50">
-                                        <img src="assets/images/sec5-review-img4.jpg" alt="sec5-review-img4"
-                                            class="sec5-content2">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="d-flex sec5-content">
-                                    <div class="w-50 sec5-content1">
-                                        <div class="c1 m-b-30"><b>TIVOLY 20년식</b></div>
-                                        <div class="c2 m-b-10">정OO 31세</div>
-                                        <div class="c3">
-                                            요즘 사기가 많아서 걱정이 많았는데, 보고 온 차량 바로 보여주시고 다른 차량과의 꼼꼼하게 비교해주셔서 좋은 차량 선택할 수 있었어요!
-                                            영카 번창하세요:)
-                                        </div>
-
-                                    </div>
-                                    <div class="w-50">
-                                        <img src="assets/images/sec5-review-img5.jpg" alt="sec5-review-img5"
-                                            class="sec5-content2">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                </div>
-            </div>
-
+            <h2 id="title" class="text-center mt-5">문제</h2>
+            <input id="type" type="hidden" value="EI">
+            <button id="A" type="button">선택</button>
+            <button id="B" type="button">선택</button>
+        </article>
+        <article class="result text-center">
+            <img id="result_img" src="assets/images/kittten01.jpg" alt="mbti-images">
+            <h2 id="resultTitle" class="mt-5">타이틀 제목</h2>
+            <p id="explain" class="mt-5">설명</p>
+        </article>
+        <div class="none">
+            <input type="hidden" id="EI" value="0">
+            <input type="hidden" id="SN" value="0">
+            <input type="hidden" id="TF" value="0">
+            <input type="hidden" id="JP" value="0">
         </div>
-    </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

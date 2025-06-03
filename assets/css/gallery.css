@@ -296,10 +296,10 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   .nav-form .gnb ul .gnb-list a {
     font-size: 1.2rem;
   }
-  footer {
-    padding: 40px 82px;
+  ffooter {
+    padding: 40px 60px;
   }
-  footer .footer_titleform .footer-logo {
+  ffooter .footer_titleform .footer-logo {
     width: 80%;
   }
 }
@@ -347,16 +347,16 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     margin-left: 60px;
   }
   footer {
-    padding: 30px 45px;
+    padding: 30px 25px;
+  }
+  footer .footer_titleform {
+    margin-bottom: 30px;
   }
   footer .footer_titleform .footer-logo {
     width: 47%;
   }
   footer .footer_titleform .footer_menu .footer_menulist {
     font-size: 0.7rem;
-  }
-  footer .footer_titleform {
-    margin-bottom: 30px;
   }
   footer .footer_content {
     margin-bottom: 10px;
@@ -372,10 +372,10 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 @media (max-width: 540px) {
   .nav-form {
-    padding: 10px 20px;
+    padding: 0 20px;
   }
   .nav-form .logo {
-    width: 36%;
+    width: 33%;
   }
   .nav-form .gnb {
     margin-top: 10px;
@@ -391,7 +391,7 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     color: #ffa500;
   }
   footer {
-    padding: 20px 20px;
+    padding: 24px;
   }
   footer .footer_titleform {
     margin-bottom: 15px;
@@ -402,11 +402,17 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   footer .footer_titleform .footer_menu .footer_menulist {
     display: none;
   }
-  footer .footer_content .footer_contentlist {
+  footer .footer_contentform .footer_content .footer_contentlist {
     font-size: 0.5rem;
     margin-bottom: 10px;
   }
-  footer .footer_copy {
+  footer .footer_contentform .footer_content .footer_contentlist li:not(:last-of-type) {
+    padding-right: 20px;
+  }
+  footer .footer_contentform .footer_content .footer_contentlist li:not(:first-of-type) {
+    padding-left: 20px;
+  }
+  footer .footer_contentform .footer_copy {
     font-size: 0.5rem;
   }
 }
@@ -421,6 +427,9 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   .nav-form .gnb ul {
     margin-bottom: 0;
   }
+  .nav-form .gnb ul .hamburger {
+    font-size: 1rem;
+  }
   footer .footer_titleform {
     margin-bottom: 8px;
   }
@@ -428,7 +437,7 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     width: 30%;
   }
   footer .footer_content {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   footer .footer_content .footer_contentlist {
     display: none;
@@ -441,6 +450,9 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   background-color: #fff;
 }
 
+.sec01 {
+  padding: 100px 0;
+}
 .sec01 .sec01-titleform .sec01_title {
   font-family: "Paperlogy";
   font-size: 2.6rem;
@@ -490,86 +502,8 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   z-index: 1;
 }
 
-.gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: #fff;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-.gallery-item {
-  flex-basis: 32.7%;
-  margin-bottom: 6px;
-  opacity: 0.85;
-  cursor: pointer;
-}
-
-.gallery-item:hover {
-  opacity: 1;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.gallery-content {
-  font-size: 0.8em;
-}
-
-.lightbox {
-  position: fixed;
-  display: none;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  top: 0;
-  left: 0;
-}
-
-.lightbox-content {
-  position: relative;
-  width: 70%;
-  height: 70%;
-  margin: 5% auto;
-}
-
-.lightbox-content img {
-  border-radius: 7px;
-  box-shadow: 0 0 3px 0 rgba(225, 225, 225, 0.25);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.lightbox-prev,
-.lightbox-next {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 7px;
-  top: 45%;
-  cursor: pointer;
-  z-index: 999;
-}
-
-.lightbox-prev {
-  left: 0;
-}
-
-.lightbox-next {
-  right: 0;
-}
-
-.lightbox-prev:hover,
-.lightbox-next:hover {
-  opacity: 0.8;
+.sec02 {
+  padding-bottom: 100px;
 }
 
 @media (max-width: 1280px) {

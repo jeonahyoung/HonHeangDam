@@ -140,7 +140,13 @@
     }
 }
 // =============sec04 end==================
-
+@media (max-width:1399px){
+    .sec03{
+        .sec03_cardform {
+            padding: 1rem;
+        }
+    } 
+}
 
 
 
@@ -256,6 +262,13 @@ footer .footer_titleform .footer-logo {
 
 }
 
+@media (max-width:1199px){
+    .sec03{
+        .sec03_cardform {
+            padding: 1.8rem 0.8rem;
+        }
+    } 
+}
 
 @media (max-width:1024px){
     // =============header=================

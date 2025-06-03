@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>4문항 기반 여행 유형 추천</title>
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/recommand.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+  <!-- ==================== 1번 질문 ==================== -->
+  <section id="q1" class="question-section">
+    <div class="question-title">1. 어떤 스타일의 여행을 선호하시나요?</div>
+    <ul class="options">
+      <li><input type="radio" name="q1" value="A"> A. 조용하고 평화로운 자연 속 여행</li>
+      <li><input type="radio" name="q1" value="B"> B. 활기차고 에너제틱한 도시여행</li>
+      <li><input type="radio" name="q1" value="C"> C. 감성 충만한 문화/예술 여행</li>
+      <li><input type="radio" name="q1" value="D"> D. 이국적인 느낌이 나는 여행</li>
+    </ul>
+    <button id="btn-q1-next" class="btn-next" disabled>다음 질문 보기</button>
+  </section>
+
+  <!-- ==================== 2번 질문 ==================== -->
+  <section id="q2" class="question-section">
+    <div class="question-title">2. 여행 기간은 얼마나 되나요?</div>
+    <ul class="options">
+      <li><input type="radio" name="q2" value="A"> A. 당일치기 또는 1박2일</li>
+      <li><input type="radio" name="q2" value="B"> B. 2박 3일</li>
+      <li><input type="radio" name="q2" value="C"> C. 3박 4일</li>
+      <li><input type="radio" name="q2" value="D"> D. 5일 이상 긴 여행</li>
+    </ul>
+    <button id="btn-q2-next" class="btn-next" disabled>다음 질문 보기</button>
+  </section>
+
+  <!-- ==================== 3번 질문 ==================== -->
+  <section id="q3" class="question-section">
+    <div class="question-title">3. 여행할 때 이동 방식은 어떤 걸 선호하나요?</div>
+    <ul class="options">
+      <li><input type="radio" name="q3" value="A"> A. 도보 중심으로 천천히</li>
+      <li><input type="radio" name="q3" value="B"> B. 대중교통(버스, 기차) 이용</li>
+      <li><input type="radio" name="q3" value="C"> C. 렌터카나 자차 이용</li>
+      <li><input type="radio" name="q3" value="D"> D. 가이드 투어 이용</li>
+    </ul>
+    <button id="btn-q3-next" class="btn-next" disabled>다음 질문 보기</button>
+  </section>
+
+  <!-- ==================== 4번 질문 ==================== -->
+  <section id="q4" class="question-section">
+    <div class="question-title">4. 여행에서 가장 피하고 싶은 점은?</div>
+    <ul class="options">
+      <li><input type="radio" name="q4" value="A"> A. 사람 많은 곳(혼잡, 붐빔)</li>
+      <li><input type="radio" name="q4" value="B"> B. 교통이 복잡한 지역</li>
+      <li><input type="radio" name="q4" value="C"> C. 활동이 과한 일정(힘든 체력 소모)</li>
+      <li><input type="radio" name="q4" value="D"> D. 너무 정적인 일정(지루함)</li>
+    </ul>
+    <button id="btn-q4-finish" class="btn-next" disabled>여행 코스 추천받기</button>
+  </section>
+
+  <!-- ==================== 결과 출력 섹션 ==================== -->
+  <section id="result-section">
+    <div id="result-title"></div>
+    <div id="result-text"></div>
+  </section>
+
+  
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/recommand.js"></script>
+
+
+  
+</body>
+</html>
