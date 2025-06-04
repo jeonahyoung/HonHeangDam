@@ -1,0 +1,486 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css");
+.w-100 {
+  width: 100%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.pd-0 {
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-1Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-2ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-3Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.otf") format("opentype"), url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.ttf") format("truetype");
+}
+.pd-100 {
+  padding: 100px 0;
+}
+
+.pd-50 {
+  padding: 50px 0;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.nav-form {
+  width: 100%;
+  padding: 25px 80px;
+  background-color: #FFF8ED;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.nav-form .logo {
+  width: 28%;
+}
+.nav-form .gnb {
+  align-items: center;
+  font-family: "Paperlogy";
+  margin-top: 15px;
+}
+.nav-form .gnb ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.nav-form .gnb ul .gnb-list {
+  font-weight: 700;
+}
+.nav-form .gnb ul .gnb-list a {
+  text-decoration: none;
+  color: #272727;
+  font-size: 1.5rem;
+}
+.nav-form .gnb ul .gnb-list a .mark {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+  padding: 0;
+  margin-left: 80px;
+  background-color: #FFF8ED;
+}
+.nav-form .gnb ul .gnb-list a .mark::after {
+  content: "";
+  width: 0.5px;
+  height: 10px;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  background-color: #ffa500;
+  z-index: -1;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.nav-form .gnb ul .gnb-list a .mark:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+.nav-form .gnb ul .gnb-list.active a .mark::after {
+  opacity: 1;
+  width: 100%;
+}
+.nav-form .gnb ul .hamburger {
+  display: none;
+  font-size: 24px;
+  color: #272727;
+}
+
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "pretendard";
+  font-size: 1.4rem;
+  padding: 0.6rem;
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.effect.effect-5 {
+  transition: all 0.2s linear 0s;
+  border: 2px solid #FFA500;
+  color: #FFA500;
+  background-color: #fff;
+  min-width: 15rem;
+}
+.effect.effect-5:before {
+  content: ">";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 18%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 50% 50% 0;
+  transform: scale(0, 1);
+  transform-origin: left center;
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-5:hover {
+  text-indent: 2rem;
+  background-color: #FFA500;
+  color: #Fff;
+}
+.effect.effect-5:hover:before {
+  transform: scale(1, 1);
+  text-indent: 0;
+}
+
+footer {
+  background-color: #3e3e3e;
+  padding: 40px 65px;
+}
+footer .footer_titleform {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+}
+footer .footer_titleform .footer-logo {
+  width: 90%;
+}
+footer .footer_titleform .footer_menu {
+  margin-left: auto;
+}
+footer .footer_titleform .footer_menu .footer_menulist {
+  display: flex;
+  list-style: none;
+  gap: 0 50px;
+  margin-left: auto;
+  font-size: 1.1rem;
+}
+footer .footer_titleform .footer_menu .footer_menulist a {
+  font-family: "Paperlogy";
+  color: #d9d9d9;
+  text-decoration: none;
+}
+footer .footer_content, footer .footer_copy {
+  font-family: "pretendard";
+  color: #bdbdbd;
+}
+footer .footer_content {
+  margin-bottom: 20px;
+}
+footer .footer_content .footer_contentlist {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  font-family: "pretendard";
+  font-size: 1rem;
+}
+footer .footer_content .footer_contentlist li:not(:last-of-type) {
+  border-right: 2px solid #bdbdbd;
+  padding-right: 30px;
+}
+footer .footer_content .footer_contentlist li:not(:first-of-type) {
+  padding-left: 30px;
+}
+
+@media (max-width: 1280px) {
+  .nav-form {
+    padding: 25px 60px;
+  }
+  .nav-form .gnb ul .gnb-list a {
+    font-size: 1.2rem;
+  }
+  ffooter {
+    padding: 40px 60px;
+  }
+  ffooter .footer_titleform .footer-logo {
+    width: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  .nav-form {
+    padding: 20px 44px;
+  }
+  .nav-form .gnb ul .gnb-list a {
+    font-size: 1rem;
+  }
+  footer {
+    padding: 50px 45px;
+  }
+  footer .footer_titleform .footer-logo {
+    width: 70%;
+  }
+  footer .footer_titleform .footer_menu .footer_menulist {
+    font-size: 0.9rem;
+  }
+  footer .footer_content .footer_contentlist {
+    font-size: 0.9rem;
+  }
+  footer .footer_content .footer_contentlist li:not(:first-of-type) {
+    padding-left: 25px;
+  }
+  footer .footer_content .footer_contentlist li:not(:last-of-type) {
+    padding-right: 25px;
+  }
+  footer .footer_copy {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 768px) {
+  .nav-form {
+    padding: 15px 36px;
+  }
+  .nav-form .logo {
+    width: 29%;
+    line-height: 1;
+  }
+  .nav-form .gnb ul .gnb-list a {
+    font-size: 0.9rem;
+  }
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: 60px;
+  }
+  footer {
+    padding: 30px 25px;
+  }
+  footer .footer_titleform {
+    margin-bottom: 30px;
+  }
+  footer .footer_titleform .footer-logo {
+    width: 47%;
+  }
+  footer .footer_titleform .footer_menu .footer_menulist {
+    font-size: 0.7rem;
+  }
+  footer .footer_content {
+    margin-bottom: 10px;
+  }
+  footer .footer_content .footer_contentlist {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+  footer .footer_copy {
+    font-size: 0.7rem;
+    margin: 0;
+  }
+}
+@media (max-width: 540px) {
+  .nav-form {
+    padding: 0 20px;
+  }
+  .nav-form .logo {
+    width: 33%;
+  }
+  .nav-form .gnb {
+    margin-top: 10px;
+  }
+  .nav-form .gnb ul .sm-d-none {
+    display: none;
+  }
+  .nav-form .gnb ul .hamburger {
+    display: block;
+    font-size: 1.2rem;
+  }
+  .nav-form .gnb ul .hamburger:hover i {
+    color: #ffa500;
+  }
+  footer {
+    padding: 24px;
+  }
+  footer .footer_titleform {
+    margin-bottom: 15px;
+  }
+  footer .footer_titleform .footer-logo {
+    width: 38%;
+  }
+  footer .footer_titleform .footer_menu .footer_menulist {
+    display: none;
+  }
+  footer .footer_contentform .footer_content .footer_contentlist {
+    font-size: 0.5rem;
+    margin-bottom: 10px;
+  }
+  footer .footer_contentform .footer_content .footer_contentlist li:not(:last-of-type) {
+    padding-right: 20px;
+  }
+  footer .footer_contentform .footer_content .footer_contentlist li:not(:first-of-type) {
+    padding-left: 20px;
+  }
+  footer .footer_contentform .footer_copy {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 348px) {
+  .nav-form {
+    padding: 10px 20px;
+    line-height: 0;
+  }
+  .nav-form .logo {
+    width: 39%;
+  }
+  .nav-form .gnb ul {
+    margin-bottom: 0;
+  }
+  .nav-form .gnb ul .hamburger {
+    font-size: 1rem;
+  }
+  footer .footer_titleform {
+    margin-bottom: 8px;
+  }
+  footer .footer_titleform .footer-logo {
+    width: 30%;
+  }
+  footer .footer_content {
+    margin-bottom: 0;
+  }
+  footer .footer_content .footer_contentlist {
+    display: none;
+  }
+  footer .footer_copy p {
+    margin: 0;
+  }
+}
+.nav-form, .nav-form .gnb ul .gnb-list a .mark {
+  background-color: #fff;
+}
+
+.sec01 {
+  padding: 100px 0;
+}
+.sec01 .sec01_titleForm .sec01__title {
+  font-family: "Paperlogy";
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #272727;
+}
+.sec01 .sec01_titleForm .sec01_subtitle {
+  font-family: "Paperlogy";
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #bdbdbd;
+}
+
+.sec02 {
+  padding-bottom: 100px;
+}
+.sec02 .titleForm .sec02_title {
+  font-family: "Paperlogy";
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #272727;
+}
+.sec02 .titleForm .sec02_subtitle {
+  font-family: "Paperlogy";
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #bdbdbd;
+}
+.sec02 .container .sponsor-buttons a .me-2 {
+  height: 10vh;
+}/*# sourceMappingURL=community.css.map */

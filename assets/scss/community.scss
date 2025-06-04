@@ -1,0 +1,60 @@
+@use 'common';
+@use 'variables';
+@use 'component';
+
+// =============header======================
+.nav-form, .nav-form .gnb ul .gnb-list a .mark{
+    background-color: #fff;
+}
+// =============header end=================
+
+// =============sec01======================
+.sec01{
+    padding: 100px 0;
+    .sec01_titleForm{
+        .sec01__title{
+            font-family: map-get(variables.$title, font-family);
+            font-size: map-get(variables.$title, font-size);
+            font-weight: map-get(variables.$title, font-weight);
+            color: map-get(variables.$title, color);
+        }
+        .sec01_subtitle{
+            font-family:  map-get(variables.$subtitle, font-family);
+            font-size:  map-get(variables.$subtitle, font-size);
+            font-weight:  map-get(variables.$subtitle, font-weight);
+            color: map-get(variables.$subtitle,color)
+        }
+    }
+}
+
+// =============sec01 end==================
+
+// =============sec02======================
+.sec02{
+    padding-bottom: 100px;
+    .titleForm{
+        .sec02_title{
+            font-family: map-get(variables.$title, font-family);
+            font-size: map-get(variables.$title, font-size);
+            font-weight: map-get(variables.$title, font-weight);
+            color: map-get(variables.$title, color);
+        }
+        .sec02_subtitle{
+            font-family:  map-get(variables.$subtitle, font-family);
+            font-size:  map-get(variables.$subtitle, font-size);
+            font-weight:  map-get(variables.$subtitle, font-weight);
+            color: map-get(variables.$subtitle,color)
+        }
+    }
+    .container{
+        .sponsor-buttons{
+            a{
+                .me-2{
+                    height: 10vh;
+                }
+            }
+        }
+    }
+}
+
+// =============sec01 end==================
