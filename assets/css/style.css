@@ -237,17 +237,22 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   padding-left: 30px;
 }
 
+@media (max-width: 1440px) {
+  .nav-form .gnb ul .gnb-list a {
+    font-size: 1.4rem;
+  }
+}
 @media (max-width: 1280px) {
   .nav-form {
     padding: 25px 60px;
   }
   .nav-form .gnb ul .gnb-list a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
-  ffooter {
+  footer {
     padding: 40px 60px;
   }
-  ffooter .footer_titleform .footer-logo {
+  footer .footer_titleform .footer-logo {
     width: 80%;
   }
 }
@@ -280,6 +285,67 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     font-size: 0.9rem;
   }
 }
+@media (max-width: 923px) {
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: 79px;
+  }
+}
+@media (max-width: 917px) {
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: 78px;
+  }
+}
+@media (max-width: 917px) {
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: 77px;
+  }
+}
+@media (max-width: 906px) {
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: 76px;
+  }
+}
+@media (max-width: 901px) {
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: 75px;
+  }
+}
+@media (max-width: 895px) {
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: 65px;
+  }
+}
+@media (max-width: 840px) {
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: 63px;
+  }
+}
+@media (max-width: 829px) {
+  .nav-form .gnb ul .gnb-list a {
+    font-size: 0.9rem;
+  }
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: 63px;
+  }
+}
+@media (max-width: 789px) {
+  .nav-form .gnb ul .gnb-list a {
+    font-size: 0.9rem;
+  }
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: 61px;
+  }
+}
+@media (max-width: 778px) {
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: 60px;
+  }
+}
+@media (max-width: 773px) {
+  .nav-form .logo {
+    width: 27%;
+  }
+}
 @media (max-width: 768px) {
   .nav-form {
     padding: 15px 36px;
@@ -287,6 +353,9 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   .nav-form .logo {
     width: 29%;
     line-height: 1;
+  }
+  .nav-form .gnb {
+    line-height: 1.1;
   }
   .nav-form .gnb ul .gnb-list a {
     font-size: 0.9rem;
