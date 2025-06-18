@@ -217,29 +217,26 @@
       transform: translateX(-50%);
     }
   }
-// =============sec04 end============
 }
-
 //==========section 03 end==========
 
 //==========section 04==============
 .sec04{
     background-color: variables.$basic-bg;
     .container{
-        .sec04__titleContent{
-            h2{
-            font-family: map-get(variables.$title, font-family);
-            font-size: map-get(variables.$title, font-size);
-            font-weight: map-get(variables.$title, font-weight);
-            color: map-get(variables.$title, color);
-            }
-        }
-        .sec04__imgContent{
-            display: flex;
+        .row{
             align-items: center;
-            justify-content: end;
+            margin: 0px 40px;
+            .sec04__titleContent{
+                h2{
+                    font-family: map-get(variables.$title, font-family);
+                    font-size: map-get(variables.$title, font-size);
+                    font-weight: map-get(variables.$title, font-weight);
+                    color: map-get(variables.$title, color);
+                }
             }
-        }
+        }       
+    }
 }
 //==========section 04 end==========
 

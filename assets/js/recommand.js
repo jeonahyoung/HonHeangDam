@@ -1,159 +1,190 @@
+// — 문항 데이터 정의 —
+const questions = [
+  {
+    title: "1. 어떤 스타일의 여행을 선호하시나요?",
+    options: [
+      { value: "A", label: "A. 조용하고 평화로운 자연 속 여행" },
+      { value: "B", label: "B. 활기차고 에너제틱한 도시여행" },
+      { value: "C", label: "C. 감성 충만한 문화/예술 여행" },
+      { value: "D", label: "D. 이국적인 느낌이 나는 여행" }
+    ]
+  },
+  {
+    title: "2. 여행 기간은 얼마나 되나요?",
+    options: [
+      { value: "A", label: "A. 당일치기 또는 1박2일" },
+      { value: "B", label: "B. 2박 3일" },
+      { value: "C", label: "C. 3박 4일" },
+      { value: "D", label: "D. 5일 이상 긴 여행" }
+    ]
+  },
+  {
+    title: "3. 여행할 때 이동 방식은 어떤 걸 선호하나요?",
+    options: [
+      { value: "A", label: "A. 도보 중심으로 천천히" },
+      { value: "B", label: "B. 대중교통(버스, 기차) 이용" },
+      { value: "C", label: "C. 렌터카나 자차 이용" },
+      { value: "D", label: "D. 가이드 투어 이용" }
+    ]
+  },
+  {
+    title: "4. 여행에서 가장 피하고 싶은 점은?",
+    options: [
+      { value: "A", label: "A. 사람 많은 곳(혼잡, 붐빔)" },
+      { value: "B", label: "B. 교통이 복잡한 지역" },
+      { value: "C", label: "C. 활동이 과한 일정(힘든 체력 소모)" },
+      { value: "D", label: "D. 너무 정적인 일정(지루함)" }
+    ]
+  }
+];
 
-    // (1) 각 질문에 사용자가 선택한 값을 저장할 변수
-    let ans1 = "";
-    let ans2 = "";
-    let ans3 = "";
-    let ans4 = "";
+// — 결과 계산 함수 —
+function computeResult(a1, a2, a3, a4) {
+  if (a1 === "C") {
+    return {
+      title: "문화·예술 탐방 여행",
+      text: "현대미술관에서 새로운 관점을 얻고, 삼청동 골목의 소소한 전통 문화를 체험하며 감성 충만한 시간을 보낼 수 있는 여행입니다. 골목마다 숨겨진 갤러리와 카페를 찾아다니며 색다른 영감을 얻어보세요.",
+      course: [
+        "국립현대미술관 서울관 →",
+        "삼청동 골목 산책 →",
+        "북촌한옥마을 구경 →",
+        "삼청동 카페 거리에서 티타임"
+      ]
+    };
+  }
+  if ((a1 === "D" || a3 === "C") && (a2 === "C" || a2 === "D")) {
+    return {
+      title: "로드 트립 자유 여행",
+      text: "차창밖 풍경을 지나며 자유롭게 멈춰 서서 사진도 찍고, 현지 맛집에서 여유롭게 식사하는 드라이브 일정입니다. 낯선 길 위에서만 느낄 수 있는 해방감과 소소한 모험을 함께 즐겨보세요.",
+      course: [
+        "임진각 평화누리공원 →",
+        "프로방스 마을 구경 →",
+        "헤이리 예술마을 산책 →",
+        "파주 출판단지 북카페에서 휴식"
+      ]
+    };
+  }
+  if (a1 === "A" && (a4 === "A" || a4 === "C")) {
+    return {
+      title: "자연 속 힐링 여행",
+      text: "울창한 숲길을 걸으며 피톤치드를 가득 마시고, 잔잔한 호숫가에서 고요함을 만끽하는 휴식형 일정입니다. 잔잔한 자연의 속삭임이 마음을 다독여 주는 시간이 될 거예요.",
+      course: [
+        "아침고요수목원 산책 →",
+        "두물머리 강변 산책 →",
+        "세미원 연꽃정원 구경 →",
+        "양평 카페거리에서 커피 한잔"
+      ]
+    };
+  }
+  if (a1 === "B" && (a3 === "B" || a3 === "D")) {
+    return {
+      title: "도시 에너지 충전 여행",
+      text: "컬러풀한 스트리트 아트에서 시작해 세련된 카페와 길거리 음식을 맛보며 도심의 활력을 가득 채우는 코스입니다. 계속해서 새로운 볼거리와 맛을 찾아다니며 에너지가 샘솟는 하루를 경험해 보세요.",
+      course: [
+        "홍대 스트리트 아트 구경 →",
+        "연남동 카페 골목 투어 →",
+        "망원시장 길거리 음식 체험 →",
+        "상수동 플리마켓 방문"
+      ]
+    };
+  }
+  return {
+    title: "편안한 휴식형 여행",
+    text: "포근한 펜션에서의 휴식과 호반 산책으로 지친 일상을 내려놓는 일정입니다. 소박한 맛집에서 현지 음식을 맛보며 여유롭게 하루를 마무리해 보세요.",
+    course: [
+      "양평 펜션 체크인 →",
+      "호명호수 산책 →",
+      "두물머리 석양 감상 →",
+      "양평 전통 맛집에서 저녁 식사"
+    ]
+  };
+}
 
-    // (2) 질문별 플래그: 답 선택 여부
-    let answered1 = false;
-    let answered2 = false;
-    let answered3 = false;
-    let answered4 = false;
+// — DOM 제어 & 이벤트 로직 —
+const coverSec     = document.getElementById('cover');
+const questionForm = document.querySelector('.question_form');
+const qContainer   = document.querySelector('.q-container');
+const stepInd      = document.querySelector('.step-indicator');
+const qSec         = document.querySelector('.question-section');
+const resultSec    = document.getElementById('result-section');
+const btnStart     = document.getElementById('btn-start');
+const btnPrev      = document.getElementById('btn-prev');
+const btnNext      = document.getElementById('btn-next');
+const stepEls      = document.querySelectorAll('.step-indicator .step');
+const qTitleEl     = document.querySelector('.question-title');
+const optionsEl    = document.querySelector('.options');
+const resultTitle  = document.getElementById('result-title');
+const resultText   = document.getElementById('result-text');
+const resultCourse = document.getElementById('result-course');
 
-    // (3) 섹션 DOM 가져오기
-    const section1 = document.getElementById('q1');
-    const section2 = document.getElementById('q2');
-    const section3 = document.getElementById('q3');
-    const section4 = document.getElementById('q4');
-    const resultSection = document.getElementById('result-section');
-    const resultTitle = document.getElementById('result-title');
-    const resultText = document.getElementById('result-text');
+let currentStep = 1;
+const answers = {1:"",2:"",3:"",4:""};
 
-    // (4) 버튼 DOM 가져오기
-    const btnQ1Next = document.getElementById('btn-q1-next');
-    const btnQ2Next = document.getElementById('btn-q2-next');
-    const btnQ3Next = document.getElementById('btn-q3-next');
-    const btnQ4Finish = document.getElementById('btn-q4-finish');
+function updateStep(n) {
+  stepEls.forEach(el =>
+    el.classList.toggle('active', Number(el.dataset.step) === n)
+  );
+}
 
-    // (5) 1번 질문 라디오 클릭 시 처리
-    const q1Radios = document.querySelectorAll('input[name="q1"]');
-    q1Radios.forEach(radio => {
-      radio.addEventListener('change', () => {
-        answered1 = true;
-        ans1 = radio.value;            // 선택된 A/B/C/D 저장
-        btnQ1Next.disabled = false;    // 다음 질문 버튼 활성화
-      });
+function showQuestion(n) {
+  updateStep(n);
+  btnPrev.style.display = n > 1 ? 'inline-block' : 'none';
+
+  const q = questions[n - 1];
+  qTitleEl.textContent = q.title;
+  optionsEl.innerHTML = q.options
+    .map(o => `
+      <li>
+        <label>
+          <input type="radio" name="q" value="${o.value}" ${answers[n] === o.value ? 'checked' : ''}/>
+          ${o.label}
+        </label>
+      </li>`).join('');
+
+  btnNext.disabled = !answers[n];
+  optionsEl.querySelectorAll('input[type="radio"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+      answers[n] = radio.value;
+      btnNext.disabled = false;
     });
+  });
+}
 
-    // (6) 2번 질문 라디오 클릭 시 처리
-    const q2Radios = document.querySelectorAll('input[name="q2"]');
-    q2Radios.forEach(radio => {
-      radio.addEventListener('change', () => {
-        answered2 = true;
-        ans2 = radio.value;
-        btnQ2Next.disabled = false;
-      });
-    });
+function showResult() {
+  questionForm.style.display = 'none';
+  stepInd.style.display      = 'none';
+  qContainer.style.display   = 'none';
+  resultSec.style.display    = 'block';
 
-    // (7) 3번 질문 라디오 클릭 시 처리
-    const q3Radios = document.querySelectorAll('input[name="q3"]');
-    q3Radios.forEach(radio => {
-      radio.addEventListener('change', () => {
-        answered3 = true;
-        ans3 = radio.value;
-        btnQ3Next.disabled = false;
-      });
-    });
+  const res = computeResult(answers[1], answers[2], answers[3], answers[4]);
+  resultTitle.textContent = res.title;
+  resultText.textContent  = res.text;
+  resultCourse.innerHTML  = res.course.map(s => `<li>${s}</li>`).join('');
+  updateStep(4);
+}
 
-    // (8) 4번 질문 라디오 클릭 시 처리
-    const q4Radios = document.querySelectorAll('input[name="q4"]');
-    q4Radios.forEach(radio => {
-      radio.addEventListener('change', () => {
-        answered4 = true;
-        ans4 = radio.value;
-        btnQ4Finish.disabled = false;
-      });
-    });
+btnStart.addEventListener('click', () => {
+  coverSec.style.display     = 'none';
+  questionForm.style.display = 'flex';
+  qContainer.style.display   = 'block';
+  stepInd.style.display      = 'flex';
+  qSec.style.display         = 'block';
+  showQuestion(currentStep);
+});
 
-    // (9) “다음 질문 보기” 각 버튼 클릭 이벤트
-    btnQ1Next.addEventListener('click', () => {
-      section2.scrollIntoView({ behavior: 'smooth' });
-    });
-    btnQ2Next.addEventListener('click', () => {
-      section3.scrollIntoView({ behavior: 'smooth' });
-    });
-    btnQ3Next.addEventListener('click', () => {
-      section4.scrollIntoView({ behavior: 'smooth' });
-    });
+btnNext.addEventListener('click', () => {
+  if (currentStep < questions.length) {
+    currentStep++;
+    showQuestion(currentStep);
+  } else {
+    qSec.style.display = 'none';
+    showResult();
+  }
+});
 
-    // (10) “여행 코스 추천받기” 버튼 클릭 시
-    btnQ4Finish.addEventListener('click', () => {
-      // 4문항 모두 반드시 answeredX가 true여야 함 (버튼 활성화 조건에서 이미 검증)
-      const result = computeResult(ans1, ans2, ans3, ans4);
-      showResult(result);
-      // 화면을 결과 영역으로 스크롤
-      resultSection.scrollIntoView({ behavior: 'smooth' });
-    });
-
-    // (11) 스크롤 제어: 답변 전에는 다음 섹션으로 자연 스크롤 방지
-    window.addEventListener('scroll', () => {
-      const scrollY = window.pageYOffset;
-      const H = window.innerHeight;
-
-      // 아직 1번 미선택 → 1번 섹션(0 ~ H)으로 고정
-      if (!answered1 && scrollY > H * 0.1) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-      // 1번은 선택했지만 2번 미선택 → 2번 섹션(H ~ 2H)으로 고정
-      if (answered1 && !answered2 && scrollY > H * 1.1) {
-        window.scrollTo({ top: H, behavior: 'smooth' });
-      }
-      // 2번 선택, 3번 미선택 → 3번 섹션(2H ~ 3H)으로 고정
-      if (answered2 && !answered3 && scrollY > H * 2.1) {
-        window.scrollTo({ top: H * 2, behavior: 'smooth' });
-      }
-      // 3번 선택, 4번 미선택 → 4번 섹션(3H ~ 4H)으로 고정
-      if (answered3 && !answered4 && scrollY > H * 3.1) {
-        window.scrollTo({ top: H * 3, behavior: 'smooth' });
-      }
-    });
-
-    // (12) 결과 계산 함수: 4개의 답(ans1~ans4)을 받아서 5가지 유형 중 하나를 반환
-    function computeResult(a1, a2, a3, a4) {
-      // 각 질문의 답은 "A", "B", "C", "D"
-      // 우선순위 로직을 간단히 예시로 작성했습니다.
-      // 실제로는 회사/서비스 특성에 맞게 가중치나 배점 테이블을 만들 수도 있습니다.
-
-      // 1) “감성 충만한 문화/예술” 유형 우선
-      if (a1 === "C") {
-        return {
-          title: "문화·예술 탐방 여행",
-          text: "미술관, 박물관, 공연과 전통 체험이 가득한 일정으로, 지역의 문화 자원을 여유롭게 즐기는 코스로 안내해 드립니다."
-        };
-      }
-      // 2) 로드 트립 자유 여행
-      if ((a1 === "D" || a3 === "C") && (a2 === "C" || a2 === "D")) {
-        return {
-          title: "로드 트립 자유 여행",
-          text: "렌터카나 자차를 이용해 이국적인 풍경을 직접 운전하며 즐기는 자유 일정으로, 장거리 드라이브와 함께 현지의 숨은 명소를 탐방합니다."
-        };
-      }
-      // 3) 자연 속 힐링 여행
-      if (a1 === "A" && (a4 === "A" || a4 === "C")) {
-        return {
-          title: "자연 속 힐링 여행",
-          text: "조용한 숲길 산책, 호수 옆 캠핑, 정갈한 숲속 펜션에서의 휴식 등 한적한 자연 속에서 심신을 치유하는 일정으로 구성해 드립니다."
-        };
-      }
-      // 4) 도시 에너지 충전 여행
-      if (a1 === "B" && (a3 === "B" || a3 === "D")) {
-        return {
-          title: "도시 에너지 충전 여행",
-          text: "버스·지하철을 이용해 주요 핫플레이스와 트렌디 카페, 쇼핑몰을 돌며 활기찬 도시의 에너지를 만끽할 수 있는 일정입니다."
-        };
-      }
-      // 5) 나머지는 편안한 휴식형 여행
-      return {
-        title: "편안한 휴식형 여행",
-        text: "분주한 일정 보다는 리조트나 스파, 한적한 숙소에서 느긋하게 쉬면서 지역 향토 음식을 즐기는 여유로운 코스를 추천해 드립니다."
-      };
-    }
-
-    // (13) 결과를 화면에 표시하는 함수
-    function showResult(resultObj) {
-      resultTitle.textContent = resultObj.title;
-      resultText.textContent = resultObj.text;
-      resultSection.style.display = "block";
-    }
-   
+btnPrev.addEventListener('click', () => {
+  if (currentStep > 1) {
+    currentStep--;
+    showQuestion(currentStep);
+  }
+});

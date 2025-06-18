@@ -648,16 +648,15 @@ body .point-c {
 .sec04 {
   background-color: #FFF8ED;
 }
-.sec04 .container .sec04__titleContent h2 {
+.sec04 .container .row {
+  align-items: center;
+  margin: 0px 40px;
+}
+.sec04 .container .row .sec04__titleContent h2 {
   font-family: "Paperlogy";
   font-size: 2.6rem;
   font-weight: 700;
   color: #272727;
-}
-.sec04 .container .sec04__imgContent {
-  display: flex;
-  align-items: center;
-  justify-content: end;
 }
 
 .sec05 .sec05_titleform .sec05_title {
