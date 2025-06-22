@@ -505,13 +505,22 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   footer .footer_titleform .footer-logo {
     width: 30%;
   }
-  footer .footer_content {
+  footer .footer_contentform .footer_content {
     margin-bottom: 0;
   }
-  footer .footer_content .footer_contentlist {
+  footer .footer_contentform .footer_content .footer_contentlist {
+    margin-bottom: 5px;
+  }
+  footer .footer_contentform .footer_content .footer_contentlist .d-none {
     display: none;
   }
-  footer .footer_copy p {
+  footer .footer_contentform .footer_content .footer_contentlist li:not(:last-of-type) {
+    padding-right: 10px;
+  }
+  footer .footer_contentform .footer_content .footer_contentlist li:not(:first-of-type) {
+    padding-left: 10px;
+  }
+  footer .footer_contentform .footer_copy p {
     margin: 0;
   }
 }
@@ -572,7 +581,52 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 
 .sec02 {
-  padding-bottom: 100px;
+  padding: 80px 0;
+}
+.sec02 .titleform .title {
+  font-family: "Paperlogy";
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #272727;
+}
+.sec02 .titleform .subtitle {
+  font-family: "Paperlogy";
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #bdbdbd;
+  margin-bottom: 30px;
+}
+.sec02 .sec02_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.sec02 .h-4 {
+  height: 308px;
+  overflow: hidden;
+}
+.sec02 .h-8 {
+  height: 640px;
+  overflow: hidden;
+}
+.sec02 .p-0 {
+  padding: 0;
+}
+.sec02 .g-24 {
+  gap: 24px 0;
+}
+.sec02 .mt-24 {
+  margin-top: 24px;
+}
+.sec02 .fadein, .sec02 .fadein02 {
+  display: none;
+}
+.sec02 .modal .modal_img {
+  width: 29rem;
+  height: 22rem;
+  object-fit: cover;
+  border-radius: 30px;
 }
 
 @media (max-width: 1280px) {
@@ -592,6 +646,21 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     bottom: 1%;
     font-size: 1.2rem;
   }
+  .sec02 {
+    padding: 60px 0;
+  }
+  .sec02 .titleform .title {
+    font-size: 2.4rem;
+  }
+  .sec02 .titleform .subtitle {
+    font-size: 1.2rem;
+  }
+  .sec02 .modal .modal_img {
+    width: 29rem;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: 30px;
+  }
 }
 @media (max-width: 1024px) {
   .sec01 {
@@ -605,6 +674,25 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   }
   .sec01 .sec01_card-form .sec02_c-content {
     height: 20vh;
+  }
+  .sec02 {
+    padding: 45px 0;
+  }
+  .sec02 .titleform .title {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+  }
+  .sec02 .titleform .subtitle {
+    font-size: 1.2rem;
+  }
+  .sec02 .h-4 {
+    height: 230px;
+  }
+  .sec02 .h-8 {
+    height: 480px;
+  }
+  .sec02 .modal .modal_img {
+    height: 15rem;
   }
 }
 @media (max-width: 768px) {
@@ -621,16 +709,47 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   .sec01 .sec01_card-form p {
     font-size: 0.9rem;
   }
+  .sec02 {
+    padding: 45px 0;
+  }
+  .sec02 .titleform .title {
+    font-size: 1.4rem;
+    margin-bottom: 0.2rem;
+  }
+  .sec02 .titleform .subtitle {
+    font-size: 0.9rem;
+  }
+  .sec02 .h-4 {
+    height: 170px;
+  }
+  .sec02 .h-8 {
+    height: 360px;
+  }
+  .sec02 .g-24 {
+    gap: 20px 0;
+  }
+  .sec02 .p-10 {
+    padding: 0 10px;
+  }
+  .sec02 .mt-24 {
+    margin-top: 20px;
+  }
+  .sec02 .modal .modal-title {
+    font-size: 1.2rem;
+  }
+  .sec02 .modal .modal-body p {
+    font-size: 0.9rem;
+  }
+  .sec02 .modal .modal_img {
+    height: 18rem;
+  }
 }
 @media (max-width: 540px) {
   .sec01 {
-    padding: 30px 0;
+    padding: 45px 0;
   }
   .sec01 .sec01-titleform {
-    margin-bottom: 30px;
-  }
-  .sec01 .sec01-titleform .sec01_title {
-    font-size: 1.2rem;
+    margin-bottom: 45px;
   }
   .sec01 .sec01_card-form .sec01_c-content {
     height: 30vh;
@@ -641,13 +760,40 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   .sec01 .sec01_card-form:hover::after {
     border-radius: 13px;
   }
+  .sec02 .h-4, .sec02 .h-8 {
+    height: 280px;
+  }
+  .sec02 .g-24 {
+    gap: 24px 0;
+  }
+  .sec02 .p-10 {
+    padding: 0 12px;
+  }
+  .sec02 .mt-24 {
+    margin-top: 24px;
+  }
+  .sec02 .mb-24 {
+    margin-bottom: 24px;
+  }
+  .sec02 .modal .modal-title {
+    font-size: 1rem;
+  }
+  .sec02 .modal .modal-body p {
+    font-size: 0.8rem;
+  }
+  .sec02 .modal .modal_img {
+    height: 16rem;
+  }
 }
 @media (max-width: 348px) {
   .sec01 {
     padding: 30px 0;
   }
+  .sec01 .sec01-titleform {
+    margin-bottom: 35px;
+  }
   .sec01 .sec01-titleform .sec01_title {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .sec01 .swiper {
     padding: 0 20px;
@@ -656,7 +802,42 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     height: 26vh;
   }
   .sec01 .sec01_card-form p {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     margin-bottom: 0.5rem;
+  }
+  .sec02 .titleform {
+    margin-bottom: 35px;
+  }
+  .sec02 .titleform .title {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+  .sec02 .titleform .subtitle {
+    font-size: 0.7rem;
+  }
+  .sec02 .h-4, .sec02 .h-8 {
+    height: 220px;
+  }
+  .sec02 .g-24 {
+    gap: 20px 0;
+  }
+  .sec02 .p-10 {
+    padding: 0 10px;
+  }
+  .sec02 .mt-24 {
+    margin-top: 20px;
+  }
+  .sec02 .mb-24 {
+    margin-bottom: 20px;
+  }
+  .sec02 .modal .modal-title {
+    font-size: 1rem;
+  }
+  .sec02 .modal .modal-body p {
+    font-size: 0.7rem;
+  }
+  .sec02 .modal .modal_img {
+    width: 18.6rem;
+    height: 14rem;
   }
 }/*# sourceMappingURL=gallery.css.map */

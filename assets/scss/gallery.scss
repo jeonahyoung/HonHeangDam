@@ -68,15 +68,67 @@
 
 //=============sec02============
 .sec02{
-    padding-bottom: 100px;
+    padding: 80px 0;
+    .titleform{
+        .title{
+            font-family: map-get(variables.$title, font-family);
+            font-size: map-get(variables.$title, font-size);
+            font-weight: map-get(variables.$title, font-weight);
+            color: map-get(variables.$title, color);
+        }
+        .subtitle{
+            font-family: map-get(variables.$subtitle, font-family);
+            font-size: map-get(variables.$subtitle, font-size);
+            font-weight: map-get(variables.$subtitle,font-weight);
+            color: map-get(variables.$subtitle,color);
+            margin-bottom: 30px;
+        }
+    }
+    .sec02_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .h-4 {
+        height: 308px;
+        overflow: hidden;
+    }
+
+    .h-8{
+        height: 640px;
+        overflow: hidden;
+    }
+
+    .p-0{
+        padding: 0;
+    }
+
+    .g-24{
+        gap: 24px 0;
+    }
+
+    .mt-24{
+        margin-top: 24px;
+    }
+
+    .fadein, .fadein02{
+        display: none;
+    }
+
+    .modal{
+        .modal_img{
+            width: 29rem;
+            height: 22rem;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+    }
 }
+
+
 //=============sec02 end============
-
-@media (max-width:1440px) {
-
-}
-
-
 
 @media (max-width:1280px) {
     .sec01{
@@ -98,6 +150,27 @@
             }
         }
     }
+
+    .sec02{
+    padding: 60px 0;
+        .titleform{
+            .title{
+                font-size: 2.4rem;
+            }
+            .subtitle{
+                font-size: 1.2rem;
+            }
+        }
+    
+        .modal{
+            .modal_img{
+                width: 29rem;
+                height: 22rem;
+                object-fit: cover;
+                border-radius: 30px;
+            }
+        }
+    }
 }
 
 
@@ -116,6 +189,33 @@
             }
             .sec02_c-content {
                 height: 20vh;
+            }
+        }
+    }
+
+    .sec02{
+    padding: 45px 0;
+        .titleform{
+            .title{
+                font-size: 2rem;
+                margin-bottom: 0.2rem;
+            }
+            .subtitle{
+                font-size: 1.2rem;
+            }
+        }
+
+        .h-4 {
+            height: 230px;
+        }
+
+        .h-8{
+            height: 480px;
+        }
+
+        .modal{
+            .modal_img{
+                height: 15rem;
             }
         }
     }
@@ -141,17 +241,58 @@
             }
         }
     }
+
+    .sec02{
+    padding: 45px 0;
+        .titleform{
+            .title{
+                font-size: 1.4rem;
+                margin-bottom: 0.2rem;
+            }
+            .subtitle{
+                font-size: 0.9rem;
+            }
+        }
+
+        .h-4 {
+            height: 170px;
+        }
+
+        .h-8{
+            height: 360px;
+        }
+
+        .g-24{
+            gap: 20px 0;
+        }
+
+        .p-10{
+            padding: 0 10px;
+        }
+
+        .mt-24{
+            margin-top: 20px;
+        }
+
+        .modal{
+            .modal-title{
+                font-size: 1.2rem;
+            }
+            .modal-body p{
+                font-size: 0.9rem;
+            }
+            .modal_img{
+                height: 18rem;
+            }
+        }
+    }
 }
 
 @media (max-width:540px){
     .sec01 {
-        padding: 30px 0;
+        padding: 45px 0;
         .sec01-titleform {
-            margin-bottom: 30px;
-            .sec01_title {
-                font-size: 1.2rem;
-            }
-        
+            margin-bottom: 45px;
         }
         .sec01_card-form{
             .sec01_c-content {
@@ -164,7 +305,40 @@
         .sec01_card-form:hover::after {
             border-radius: 13px;
         }
+    }
 
+    .sec02{
+        .h-4, .h-8{
+            height: 280px;
+        }
+
+        .g-24{
+            gap: 24px 0;
+        }
+
+        .p-10{
+            padding: 0 12px;
+        }
+
+        .mt-24{
+            margin-top: 24px;
+        }
+
+        .mb-24{
+            margin-bottom: 24px;
+        }
+
+        .modal{
+            .modal-title{
+                font-size: 1rem;
+            }
+            .modal-body p{
+                font-size: 0.8rem;
+            }
+            .modal_img{
+                height: 16rem;
+            }
+        }
     }
 }
 
@@ -175,8 +349,9 @@
     .sec01 {
         padding: 30px 0;
         .sec01-titleform{
+            margin-bottom: 35px;
             .sec01_title {
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
         }
         .swiper {
@@ -188,8 +363,53 @@
                 height: 26vh;
             }
             p {
-                font-size: 0.6rem;
+                font-size: 0.7rem;
                 margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+     .sec02{
+        .titleform{
+            margin-bottom: 35px;
+            .title{
+                font-size: 1rem;
+                margin-bottom: 0.2rem;
+            }
+            .subtitle{
+                font-size: 0.7rem;
+            }
+        }
+        .h-4, .h-8{
+            height: 220px;
+        }
+
+        .g-24{
+            gap: 20px 0;
+        }
+
+        .p-10{
+            padding: 0 10px;
+        }
+
+        .mt-24{
+            margin-top: 20px;
+        }
+
+        .mb-24{
+            margin-bottom: 20px;
+        }
+
+        .modal{
+            .modal-title{
+                font-size: 1rem;
+            }
+            .modal-body p{
+                font-size: 0.7rem;
+            }
+            .modal_img{
+                width: 18.6rem;
+                height: 14rem;
             }
         }
     }

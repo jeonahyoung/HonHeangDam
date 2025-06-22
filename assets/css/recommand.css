@@ -454,13 +454,22 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   footer .footer_titleform .footer-logo {
     width: 30%;
   }
-  footer .footer_content {
+  footer .footer_contentform .footer_content {
     margin-bottom: 0;
   }
-  footer .footer_content .footer_contentlist {
+  footer .footer_contentform .footer_content .footer_contentlist {
+    margin-bottom: 5px;
+  }
+  footer .footer_contentform .footer_content .footer_contentlist .d-none {
     display: none;
   }
-  footer .footer_copy p {
+  footer .footer_contentform .footer_content .footer_contentlist li:not(:last-of-type) {
+    padding-right: 10px;
+  }
+  footer .footer_contentform .footer_content .footer_contentlist li:not(:first-of-type) {
+    padding-left: 10px;
+  }
+  footer .footer_contentform .footer_copy p {
     margin: 0;
   }
 }
@@ -471,9 +480,10 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 
 .step-indicator,
 .question-section,
-#result-section,
 .question_form,
-.q-container {
+.q-container,
+#result-section .r-container,
+#result-section {
   display: none;
 }
 
@@ -498,8 +508,9 @@ html, body {
   margin: 0 auto;
   background-color: #fff;
   border: 7px solid #FFA500;
-  padding: 115px 275px;
+  padding: 115px 0;
   border-radius: 30px;
+  max-width: 1440px;
 }
 #cover .container .title {
   font-family: "Paperlogy";
@@ -525,6 +536,7 @@ html, body {
 }
 #cover .container a {
   width: 18%;
+  font-family: "Paperlogy";
 }
 
 /* — 질문폼 전체 — */
@@ -536,7 +548,6 @@ html, body {
   text-align: center;
   padding: 0 20px;
   /* display는 JS로 토글 */
-  /* .q-container */
 }
 .question_form .q-container {
   background-color: #fff;
@@ -544,6 +555,7 @@ html, body {
   border: 7px solid #FFA500;
   padding: 60px 90px;
   border-radius: 30px;
+  width: 80%;
   /* .question-section */
 }
 .question_form .q-container .step-indicator {
@@ -571,7 +583,7 @@ html, body {
   padding: 40px 20px;
 }
 .question_form .q-container .question-section .question-title {
-  font-size: 2.7rem;
+  font-size: 2.1rem;
   font-weight: 700;
   color: #272727;
   margin-bottom: 60px;
@@ -588,9 +600,21 @@ html, body {
   margin-bottom: 30px;
   font-size: 1.2rem;
   background-color: #FFF8ED;
-  padding: 30px 40px;
+  padding: 0;
   border-radius: 30px;
   width: 48%;
+}
+.question_form .q-container .question-section .options li label {
+  display: block;
+  padding: 30px 40px;
+  background-color: #FFF8ED;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+input[type=radio]:checked + .question_form .q-container {
+  border: 2px solid #FFA500;
 }
 .question_form .q-container .btn_form {
   display: flex;
@@ -599,8 +623,8 @@ html, body {
   gap: 0 30px;
 }
 .question_form .q-container .btn_form .btn-prev {
-  padding: 12px 24px;
-  font-size: 1rem;
+  padding: 12px 40px;
+  font-size: 1.1rem;
   cursor: pointer;
   background: #fff;
   border: 1px solid #bdbdbd;
@@ -608,8 +632,8 @@ html, body {
   border-radius: 30px;
 }
 .question_form .q-container .btn_form .btn-next {
-  padding: 12px 24px;
-  font-size: 1rem;
+  padding: 12px 40px;
+  font-size: 1.1em;
   cursor: pointer;
   background: #FFA500;
   color: #fff;
@@ -623,7 +647,6 @@ html, body {
   cursor: not-allowed;
 }
 
-/* .question_form */
 /* — 결과 섹션 — */
 #result-section {
   position: relative;
@@ -632,6 +655,7 @@ html, body {
   background: #FFF8ED;
   text-align: center;
   padding: 0 20px;
+  display: flex;
 }
 #result-section .r-container {
   background-color: #fff;
@@ -639,21 +663,121 @@ html, body {
   border: 7px solid #FFA500;
   padding: 60px 90px;
   border-radius: 30px;
+  max-width: 1440px;
+  display: inherit;
 }
 #result-section .r-container #result-title {
-  font-size: 2rem;
+  font-size: 2.1rem;
   margin-bottom: 20px;
+  font-weight: 700;
+  color: #272727;
 }
 #result-section .r-container #result-text {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #272727;
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
 #result-section .r-container #result-course {
-  list-style: decimal inside;
+  list-style: none;
   padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+  margin-bottom: 40px;
 }
 #result-section .r-container #result-course li {
   margin-bottom: 10px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#result-section .r-container .effect {
+  width: 16%;
+  font-size: 1.2rem;
+  font-family: "Paperlogy";
+}
+
+@media (max-width: 1280px) {
+  #cover .container {
+    max-width: 980px;
+    padding: 95px 0;
+  }
+  #cover .container .title {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+  #cover .container .subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 60px;
+  }
+  #cover .container img {
+    top: 53%;
+    right: 15%;
+  }
+  #cover .container .effect {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1024px) {
+  #cover .container {
+    max-width: 850px;
+    padding: 85px 0;
+  }
+  #cover .container .title {
+    font-size: 2.2rem;
+  }
+  #cover .container .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 65px;
+  }
+  #cover .container img {
+    top: 55%;
+    right: 12%;
+  }
+  #cover .container .effect {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  #cover .container {
+    max-width: 600px;
+    padding: 65px 0;
+  }
+  #cover .container .title {
+    font-size: 1.8rem;
+  }
+  #cover .container .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+  }
+  #cover .container img {
+    right: 14%;
+  }
+  #cover .container .effect {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 540px) {
+  #cover .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #cover .container .title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  #cover .container .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+  #cover .container img {
+    display: none;
+  }
+  #cover .container .effect {
+    font-size: 0.9rem;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=recommand.css.map */
