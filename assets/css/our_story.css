@@ -314,6 +314,9 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   .nav-form .gnb ul .gnb-list a {
     font-size: 1rem;
   }
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: 70px;
+  }
   footer {
     padding: 50px 45px;
   }
@@ -409,10 +412,10 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     line-height: 1.1;
   }
   .nav-form .gnb ul .gnb-list a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .nav-form .gnb ul .gnb-list a .mark {
-    margin-left: 60px;
+    margin-left: 43px;
   }
   footer {
     padding: 30px 25px;
@@ -450,9 +453,10 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     display: block;
   }
   .nav-form .gnb ul {
+    gap: 0;
     position: absolute;
     top: 100%;
-    right: -110.5%;
+    right: -60.5%;
     width: 100vw;
     display: none;
     flex-direction: column;
@@ -466,6 +470,9 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     padding: 1rem;
     border-bottom: 1px solid #eee;
     text-align: center;
+  }
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: auto;
   }
   .nav-form .gnb ul.open {
     display: flex;
@@ -504,11 +511,11 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   .nav-form .logo {
     width: 39%;
   }
+  .nav-form .gnb .hamburger {
+    font-size: 1.2rem;
+  }
   .nav-form .gnb ul {
     margin-bottom: 0;
-  }
-  .nav-form .gnb ul .hamburger {
-    font-size: 1rem;
   }
   footer .footer_titleform {
     margin-bottom: 8px;

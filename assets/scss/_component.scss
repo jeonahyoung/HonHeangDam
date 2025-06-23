@@ -225,6 +225,9 @@
                 .gnb-list{
                     a{
                         font-size: 1rem;
+                        .mark{
+                          margin-left: 70px;
+                        }
                     }
                 }
             }
@@ -451,9 +454,9 @@
         ul{
             .gnb-list{
                 a{
-                    font-size: 0.9rem;
+                    font-size: 0.8rem;
                     .mark{
-                        margin-left: 60px;
+                        margin-left: 43px;
                     }
                 }
             }
@@ -508,9 +511,10 @@
       display: block;
     }
     ul{
+      gap: 0;
       position: absolute;
       top: 100%;
-      right: -110.5%;
+      right: -60.5%;
       width: 100vw; 
       display: none;
       flex-direction: column;
@@ -525,7 +529,7 @@
           text-align: center;
           a{
             .mark{
-    
+              margin-left: auto;
             }
           }
         }
@@ -588,11 +592,11 @@
             width: 39%;
         }
         .gnb{
+            .hamburger{
+                    font-size: 1.2rem;
+            }
             ul{
                 margin-bottom: 0;
-                .hamburger{
-                    font-size: 1rem;
-                }
             }
         }
     }

@@ -22,29 +22,29 @@
 .sec01{
     background-color: variables.$basic-bg;
     padding: 50px 80px;
+    
     img{
         width: 100%;
     }
-
     .sec01-form{
+        position: relative;
         .sec01_title{
             font-family: map-get(variables.$title, font-family);
             font-size: 3.3rem;
             font-weight: map-get(variables.$title, font-weight);
             color: map-get(variables.$title, color);
             position: absolute;
-            top: 22%;
-            left: 5%;
-            
-                p{
-                    margin: 0;
-                }
+            top: 5%;
+            left: 2%;
+            p{
+                margin: 0;
                 .basic-c{
                     color: variables.$basic-c;
                 }
                 .point-c{
                     color: variables.$point-c;
                 }
+            }
         }
 
         .sec01_bg{
@@ -298,7 +298,6 @@
             }
         }
 }
-
 //==========section 05 end==========
 
 
@@ -306,42 +305,27 @@
     .sec01 {
         .sec01-form{
             .sec01_title{
-                left: 6%;
-                top: 24%;
+                left: 2%;
+                top: 3%;
                 font-size: 2.7rem;
             }
         }
     }
     .sec02{
         .sec02__content{
-            height: 48vh;
+            height: 28vh;
         }
     }
 }
 
 
 @media (max-width:1280px) {
-     // =============header====================
-    .nav-form{
-        padding: 25px 60px;
-        .gnb{
-            ul{
-                .gnb-list{
-                    a{
-                        font-size: 1.2rem;
-                    }
-                }
-            }
-        }
-    }
-    // =============header end==================
-
     // =============sec 01======================
     .sec01{
         padding: 30px 60px;  
         .sec01-form{
             .sec01_title {
-                top: 9.5%;
+                top: 4%;
                 font-size: 2.4rem;
             }
         }
@@ -402,9 +386,11 @@
         padding: 60px 0;
 
         .container{
-            .sec04__titleContent{
-                h2{
-                    font-size: 2.4rem;
+            .row{
+                .sec04__titleContent{
+                    h2{
+                        font-size: 2.4rem;
+                    }
                 }
             }
         }
@@ -435,28 +421,12 @@
  
     
 @media (max-width:1024px){
-    // =============header==================
-    .nav-form{
-        padding: 20px 44px;
-        .gnb{
-            ul{
-                .gnb-list{
-                    a{
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
-    }
-    // =============header end==============
-
     // =============sec01===================
     .sec01 {
         padding: 15px 44px 20px;
         .sec01-form{
             .sec01_title{
-                top: 13%;
-                left: 5%;
+                left: 2%;
                 font-size: 2rem;
             }
         }
@@ -476,7 +446,7 @@
         .container{
             margin-bottom: 50px;
             .sec02__content {
-                height: 35vh;
+                height: 20vh;
                 .sec03__subcontent{
                     p {
                         font-size: 1.2rem;
@@ -519,13 +489,16 @@
     .sec04 {
         padding: 45px 0;
         .container{
-            .sec04__titleContent{
-                margin-bottom: 65px;
-                margin-left: 40px;
-                h2{
-                    font-size: 2rem;
+            .row{
+                .sec04__titleContent{
+                    margin-bottom: 65px;
+                    margin-left: 40px;
+                    h2{
+                        font-size: 2rem;
+                    }
                 }
             }
+            
             .sec04__imgContent{
                 justify-content: space-around;
                 .sec04_image{
@@ -559,36 +532,13 @@
 
 
 @media (max-width:768px){
-//==========header==============
-.nav-form{
-        padding: 15px 36px;
-    .logo{
-        width: 29%;
-        line-height: 1;
-    }
-    .gnb{
-        ul{
-            .gnb-list{
-                a{
-                    font-size: 0.9rem;
-                    .mark{
-                        margin-left: 60px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-//==========header end==========
-
 //==========sec01===============
     .sec01 {
         padding: 10px 36px 30px;
         .sec01-form{
             .sec01_title {
-                top: 11%;
-                left: 6%;
+                top: 5%;
+                left: 2%;
                 font-size: 1.4rem;
             }
         }
@@ -607,7 +557,7 @@
         .container{
             margin-bottom: 35px;
             .sec02__content {
-                height: 28vh;
+                height: 17vh;
             .sec02__subcontent {
                 margin: 18px;
                 p {
@@ -671,26 +621,30 @@
     .sec04 {
         padding: 35px 0;
         .container{
-            .sec04__titleContent{
-                margin-bottom: 40px;
-                margin-left: 30px;
-                h2{
-                    font-size: 1.4rem;
+            .row{
+                .sec04__titleContent{
+                    margin-bottom: 40px;
+                    margin-left: 30px;
+                    h2{
+                        font-size: 1.4rem;
+                    }
+                }
+                .effect{
+                    min-width: 12rem;
+                    padding: 0.2rem;
+                    font-size: 1rem;
+                    margin-left: 30px;
+                }
+                .sec04__imgContent{
+                    .sec04_image {
+                        width: 45%;
+                    }
                 }
             }
-            .sec04__imgContent{
-                .sec04_image {
-                    width: 45%;
-                }
-            }
-        }
-        .effect{
-            min-width: 12rem;
-            padding: 0.2rem;
-            font-size: 1rem;
-            margin-left: 30px;
         }
     }
+
+    
 //==========sec04 end===========
 
 //==========sec05===============
@@ -723,20 +677,20 @@
 
 //==========sec01==========
     .sec01 {
-        padding: 0;
+        padding: 14px 0;
         .sec01-form{
             position: relative;
             .sec01_title{
                 font-size: 1.4rem;
                 text-align: center;
-                top: 22%;
+                top: 12%;
                 left: 30%;
             }
             .sec01_bg{
                 .sec01_bg-img {
                     opacity: 0;
                     width: 100%;
-                    height: 23vh;
+                    height: 12vh;
                 }   
             }
         }
@@ -754,7 +708,7 @@
             margin-bottom: 25px;
             padding: 0 20px;
             .sec02__content {
-                height: 45vh;
+                height: 21vh;
                 margin-bottom: 15px;
                 .sec02__subcontent{
                     margin: 25px;
@@ -836,7 +790,7 @@
                     justify-content: center;
                     margin-bottom: 24px;
                     .sec04_image{
-                        width: 28%;
+                        width: 33%;
                     }
                 }
             }
@@ -872,28 +826,13 @@
 }
 
 @media (max-width:348px){
-    //==========header==============
-    .nav-form {
-        padding: 10px 20px;
-        line-height: 0;
-        .logo{
-            width: 39%;
-        }
-        .gnb{
-            ul{
-                margin-bottom: 0;
-            }
-        }
-    }
-    //==========header end==========
-
     //==========sec01===============
     .sec01 {
         padding: 15px 20px;
         .sec01-form{
             .sec01_title {
-                top: 15%;
-                left: 21%;
+                top: 14%;
+                left: 18%;
                 font-size: 1.2rem;
             }
         }
@@ -912,7 +851,7 @@
         .container{
             margin-bottom: 10px;
             .sec02__content {
-                height: 28vh;
+                height: 15vh;
             .sec02__subcontent{
                 line-height: 1;
                 margin: 16px;
@@ -935,7 +874,7 @@
     //==========sec03===============
     .sec03{
         padding: 30px 0;
-        .container{
+        
             .sec03_titleForm{
                 .sec03_title {
                     font-size: 1.2rem;
@@ -946,7 +885,7 @@
                     margin-bottom: 25px;
                 }
             }
-            #slider{
+            
                 .image-box{
                     .image-item{
                         .image-wrapper{
@@ -964,9 +903,9 @@
                         }
                     }
                 }
-            }
             
-        }
+            
+        
     }  
     //==========.sec03 end==========
 
@@ -1019,6 +958,7 @@
     }
     //==========sec05 end===========
 }
+
 
 
 

@@ -262,6 +262,9 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   .nav-form .gnb ul .gnb-list a {
     font-size: 1rem;
   }
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: 70px;
+  }
   footer {
     padding: 50px 45px;
   }
@@ -357,10 +360,10 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     line-height: 1.1;
   }
   .nav-form .gnb ul .gnb-list a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .nav-form .gnb ul .gnb-list a .mark {
-    margin-left: 60px;
+    margin-left: 43px;
   }
   footer {
     padding: 30px 25px;
@@ -398,9 +401,10 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     display: block;
   }
   .nav-form .gnb ul {
+    gap: 0;
     position: absolute;
     top: 100%;
-    right: -110.5%;
+    right: -60.5%;
     width: 100vw;
     display: none;
     flex-direction: column;
@@ -414,6 +418,9 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     padding: 1rem;
     border-bottom: 1px solid #eee;
     text-align: center;
+  }
+  .nav-form .gnb ul .gnb-list a .mark {
+    margin-left: auto;
   }
   .nav-form .gnb ul.open {
     display: flex;
@@ -452,11 +459,11 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   .nav-form .logo {
     width: 39%;
   }
+  .nav-form .gnb .hamburger {
+    font-size: 1.2rem;
+  }
   .nav-form .gnb ul {
     margin-bottom: 0;
-  }
-  .nav-form .gnb ul .hamburger {
-    font-size: 1rem;
   }
   footer .footer_titleform {
     margin-bottom: 8px;
@@ -500,22 +507,25 @@ body .point-c {
 .sec01 img {
   width: 100%;
 }
+.sec01 .sec01-form {
+  position: relative;
+}
 .sec01 .sec01-form .sec01_title {
   font-family: "Paperlogy";
   font-size: 3.3rem;
   font-weight: 700;
   color: #272727;
   position: absolute;
-  top: 22%;
-  left: 5%;
+  top: 5%;
+  left: 2%;
 }
 .sec01 .sec01-form .sec01_title p {
   margin: 0;
 }
-.sec01 .sec01-form .sec01_title .basic-c {
+.sec01 .sec01-form .sec01_title p .basic-c {
   color: #FFA500;
 }
-.sec01 .sec01-form .sec01_title .point-c {
+.sec01 .sec01-form .sec01_title p .point-c {
   color: #32BD7E;
 }
 .sec01 .sec01-form .sec01_bg {
@@ -728,26 +738,20 @@ body .point-c {
 
 @media (max-width: 1440px) {
   .sec01 .sec01-form .sec01_title {
-    left: 6%;
-    top: 24%;
+    left: 2%;
+    top: 3%;
     font-size: 2.7rem;
   }
   .sec02 .sec02__content {
-    height: 48vh;
+    height: 28vh;
   }
 }
 @media (max-width: 1280px) {
-  .nav-form {
-    padding: 25px 60px;
-  }
-  .nav-form .gnb ul .gnb-list a {
-    font-size: 1.2rem;
-  }
   .sec01 {
     padding: 30px 60px;
   }
   .sec01 .sec01-form .sec01_title {
-    top: 9.5%;
+    top: 4%;
     font-size: 2.4rem;
   }
   .sec02 {
@@ -791,7 +795,7 @@ body .point-c {
   .sec04 {
     padding: 60px 0;
   }
-  .sec04 .container .sec04__titleContent h2 {
+  .sec04 .container .row .sec04__titleContent h2 {
     font-size: 2.4rem;
   }
   .sec04 .effect {
@@ -812,18 +816,11 @@ body .point-c {
   }
 }
 @media (max-width: 1024px) {
-  .nav-form {
-    padding: 20px 44px;
-  }
-  .nav-form .gnb ul .gnb-list a {
-    font-size: 1rem;
-  }
   .sec01 {
     padding: 15px 44px 20px;
   }
   .sec01 .sec01-form .sec01_title {
-    top: 13%;
-    left: 5%;
+    left: 2%;
     font-size: 2rem;
   }
   .sec02 {
@@ -839,7 +836,7 @@ body .point-c {
     margin-bottom: 50px;
   }
   .sec02 .container .sec02__content {
-    height: 35vh;
+    height: 20vh;
   }
   .sec02 .container .sec02__content .sec03__subcontent p {
     font-size: 1.2rem;
@@ -867,11 +864,11 @@ body .point-c {
   .sec04 {
     padding: 45px 0;
   }
-  .sec04 .container .sec04__titleContent {
+  .sec04 .container .row .sec04__titleContent {
     margin-bottom: 65px;
     margin-left: 40px;
   }
-  .sec04 .container .sec04__titleContent h2 {
+  .sec04 .container .row .sec04__titleContent h2 {
     font-size: 2rem;
   }
   .sec04 .container .sec04__imgContent {
@@ -895,25 +892,12 @@ body .point-c {
   }
 }
 @media (max-width: 768px) {
-  .nav-form {
-    padding: 15px 36px;
-  }
-  .nav-form .logo {
-    width: 29%;
-    line-height: 1;
-  }
-  .nav-form .gnb ul .gnb-list a {
-    font-size: 0.9rem;
-  }
-  .nav-form .gnb ul .gnb-list a .mark {
-    margin-left: 60px;
-  }
   .sec01 {
     padding: 10px 36px 30px;
   }
   .sec01 .sec01-form .sec01_title {
-    top: 11%;
-    left: 6%;
+    top: 5%;
+    left: 2%;
     font-size: 1.4rem;
   }
   .sec02 {
@@ -929,7 +913,7 @@ body .point-c {
     margin-bottom: 35px;
   }
   .sec02 .container .sec02__content {
-    height: 28vh;
+    height: 17vh;
   }
   .sec02 .container .sec02__content .sec02__subcontent {
     margin: 18px;
@@ -979,21 +963,21 @@ body .point-c {
   .sec04 {
     padding: 35px 0;
   }
-  .sec04 .container .sec04__titleContent {
+  .sec04 .container .row .sec04__titleContent {
     margin-bottom: 40px;
     margin-left: 30px;
   }
-  .sec04 .container .sec04__titleContent h2 {
+  .sec04 .container .row .sec04__titleContent h2 {
     font-size: 1.4rem;
   }
-  .sec04 .container .sec04__imgContent .sec04_image {
-    width: 45%;
-  }
-  .sec04 .effect {
+  .sec04 .container .row .effect {
     min-width: 12rem;
     padding: 0.2rem;
     font-size: 1rem;
     margin-left: 30px;
+  }
+  .sec04 .container .row .sec04__imgContent .sec04_image {
+    width: 45%;
   }
   .sec05 {
     padding: 40px 0;
@@ -1016,7 +1000,7 @@ body .point-c {
 }
 @media (max-width: 540px) {
   .sec01 {
-    padding: 0;
+    padding: 14px 0;
   }
   .sec01 .sec01-form {
     position: relative;
@@ -1024,13 +1008,13 @@ body .point-c {
   .sec01 .sec01-form .sec01_title {
     font-size: 1.4rem;
     text-align: center;
-    top: 22%;
+    top: 12%;
     left: 30%;
   }
   .sec01 .sec01-form .sec01_bg .sec01_bg-img {
     opacity: 0;
     width: 100%;
-    height: 23vh;
+    height: 12vh;
   }
   .sec02 {
     padding: 40px 0;
@@ -1043,7 +1027,7 @@ body .point-c {
     padding: 0 20px;
   }
   .sec02 .container .sec02__content {
-    height: 45vh;
+    height: 21vh;
     margin-bottom: 15px;
   }
   .sec02 .container .sec02__content .sec02__subcontent {
@@ -1109,7 +1093,7 @@ body .point-c {
     margin-bottom: 24px;
   }
   .sec04 .container .row .sec04__imgContent .sec04_image {
-    width: 28%;
+    width: 33%;
   }
   .sec05 {
     padding: 40px 0;
@@ -1132,22 +1116,12 @@ body .point-c {
   }
 }
 @media (max-width: 348px) {
-  .nav-form {
-    padding: 10px 20px;
-    line-height: 0;
-  }
-  .nav-form .logo {
-    width: 39%;
-  }
-  .nav-form .gnb ul {
-    margin-bottom: 0;
-  }
   .sec01 {
     padding: 15px 20px;
   }
   .sec01 .sec01-form .sec01_title {
-    top: 15%;
-    left: 21%;
+    top: 14%;
+    left: 18%;
     font-size: 1.2rem;
   }
   .sec02 {
@@ -1163,7 +1137,7 @@ body .point-c {
     margin-bottom: 10px;
   }
   .sec02 .container .sec02__content {
-    height: 28vh;
+    height: 15vh;
   }
   .sec02 .container .sec02__content .sec02__subcontent {
     line-height: 1;
@@ -1182,23 +1156,23 @@ body .point-c {
   .sec03 {
     padding: 30px 0;
   }
-  .sec03 .container .sec03_titleForm .sec03_title {
+  .sec03 .sec03_titleForm .sec03_title {
     font-size: 1.2rem;
     margin-bottom: 2px;
   }
-  .sec03 .container .sec03_titleForm .sec03_subtitle {
+  .sec03 .sec03_titleForm .sec03_subtitle {
     font-size: 0.8rem;
     margin-bottom: 25px;
   }
-  .sec03 .container #slider .image-box .image-item .image-wrapper {
+  .sec03 .image-box .image-item .image-wrapper {
     width: 160px;
     height: 160px;
   }
-  .sec03 .container #slider .image-box .image-item .caption .sec03-c-title {
+  .sec03 .image-box .image-item .caption .sec03-c-title {
     font-size: 0.8rem;
     margin-bottom: 0.4rem;
   }
-  .sec03 .container #slider .image-box .image-item .caption .sec03-c-des {
+  .sec03 .image-box .image-item .caption .sec03-c-des {
     font-size: 0.6rem;
   }
   .sec04 {
