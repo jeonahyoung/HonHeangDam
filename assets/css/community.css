@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 @import url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css");
 .w-100 {
@@ -140,15 +141,23 @@
   width: 28%;
 }
 .nav-form .gnb {
+  display: flex;
   align-items: center;
   font-family: "Paperlogy";
   margin-top: 15px;
 }
+.nav-form .gnb .hamburger {
+  display: none;
+  font-size: 2rem;
+  color: #272727;
+  cursor: pointer;
+}
 .nav-form .gnb ul {
-  list-style: none;
   display: flex;
-  align-items: center;
+  gap: 2rem; /* 항목 사이 간격 */
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 .nav-form .gnb ul .gnb-list {
   font-weight: 700;
@@ -176,21 +185,11 @@
   background-color: #ffa500;
   z-index: -1;
   opacity: 0;
-  transition-property: all;
-  transition-duration: 0.7s;
+  transition: all 0.7s;
 }
 .nav-form .gnb ul .gnb-list a .mark:hover::after {
   opacity: 1;
   width: 100%;
-}
-.nav-form .gnb ul .gnb-list.active a .mark::after {
-  opacity: 1;
-  width: 100%;
-}
-.nav-form .gnb ul .hamburger {
-  display: none;
-  font-size: 24px;
-  color: #272727;
 }
 
 .effect {
@@ -441,23 +440,35 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 @media (max-width: 540px) {
   .nav-form {
-    padding: 0 20px;
-  }
-  .nav-form .logo {
-    width: 33%;
+    position: relative;
+    padding: 20px 20px;
   }
   .nav-form .gnb {
-    margin-top: 10px;
+    position: relative;
   }
-  .nav-form .gnb ul .sm-d-none {
-    display: none;
-  }
-  .nav-form .gnb ul .hamburger {
+  .nav-form .gnb .hamburger {
     display: block;
-    font-size: 1.2rem;
   }
-  .nav-form .gnb ul .hamburger:hover i {
-    color: #ffa500;
+  .nav-form .gnb ul {
+    position: absolute;
+    top: 100%;
+    right: -110.5%;
+    width: 100vw;
+    display: none;
+    flex-direction: column;
+    background-color: #FFF8ED;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+  }
+  .nav-form .gnb ul .gnb-list {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+  }
+  .nav-form .gnb ul.open {
+    display: flex;
   }
   footer {
     padding: 24px;

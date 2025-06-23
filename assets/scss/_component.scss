@@ -2,7 +2,6 @@
 
 
  //==========header==========
-
 .nav-form {
   width: 100%;
   padding: 25px 80px;
@@ -17,76 +16,58 @@
   }
 
   .gnb {
+    display: flex;
     align-items: center;
     font-family: 'Paperlogy';
     margin-top: 15px;
-  ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    padding: 0;
-
-   
-    .gnb-list {
-        font-weight: 700;
-
-      a {
-        text-decoration: none;
-        color: #272727;
-        font-size: 1.5rem;
-
-        .mark {
-          position: relative;
-          display: inline-block;
-          z-index: 0;
-          padding: 0;
-          margin-left: 80px;
-          background-color: #FFF8ED;
-    
-          &::after {
-            content: "";
-            width: 0.5px;
-            height: 10px;
-            position: absolute;
-            bottom: 4px;
-            left: 0;
-            background-color: #ffa500;
-            z-index: -1;
-            opacity: 0;
-            transition-property: all;
-            transition-duration: 0.7s;
-          }
-
-          &:hover::after {
-            opacity: 1;
-            width: 100%;
+    .hamburger{
+      display: none;
+      font-size: 2rem;
+      color: #272727;
+      cursor: pointer;
+    }
+    ul{
+      display: flex;
+      gap: 2rem;           /* 항목 사이 간격 */
+      list-style: none;
+      padding: 0;
+      margin: 0;
+        .gnb-list {
+          font-weight: 700;
+          a{
+            text-decoration: none;
+            color: #272727;
+            font-size: 1.5rem;
+            .mark {
+              position: relative;
+              display: inline-block;
+              z-index: 0;
+              padding: 0;
+              margin-left: 80px;
+              background-color: #FFF8ED;
+            }
+            .mark::after {
+              content: "";
+              width: 0.5px;
+              height: 10px;
+              position: absolute;
+              bottom: 4px;
+              left: 0;
+              background-color: #ffa500;
+              z-index: -1;
+              opacity: 0;
+              transition: all 0.7s;
+            }
+            .mark:hover::after{
+              opacity: 1;
+              width: 100%;
+            }
           }
         }
-      }
-
-      &.active {
-            a {
-              .mark {
-                &::after {
-                  opacity: 1;
-                  width: 100%;
-                }
-              }
-            }
-      }
-      
     }
-    .hamburger {
-        display: none;
-        font-size: 24px;
-        color: #272727;
-      }
   }
 }
-}
-
 //==========header end==========
-
 
 //==========button==============
 .effect {
@@ -138,9 +119,7 @@
     }
   }
 }
-
 //==========button end==========
-
 
 //==========footer==============
     footer{
@@ -232,7 +211,7 @@
       width: 80%;
     }
   }
-}
+    }
 
    // =============footer end==================
    }
@@ -516,31 +495,46 @@
 }
 
 //==========footer end==========
+}
+
+@media (max-width:540px){
+//==========header==============
+.nav-form {
+  position: relative;
+  padding: 20px 20px;
+  .gnb{
+    position: relative;
+    .hamburger{
+      display: block;
     }
-    @media (max-width:540px){
-      //==========header==============
-    .nav-form{
-        padding: 0 20px;
-        .logo{
-            width: 33%;
-        }
-        .gnb{
-            margin-top: 10px;
-            ul{
-                .sm-d-none{
-                    display: none;
-                }
-                .hamburger{
-                    display: block;
-                    font-size: 1.2rem;
-                }
-                .hamburger:hover i{
-                    color: #ffa500;
-                }
-                
+    ul{
+      position: absolute;
+      top: 100%;
+      right: -110.5%;
+      width: 100vw; 
+      display: none;
+      flex-direction: column;
+      background-color: #FFF8ED;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin: 0;
+      padding: 0;
+      z-index: 1000;
+        .gnb-list{
+          padding: 1rem;
+          border-bottom: 1px solid #eee;
+          text-align: center;
+          a{
+            .mark{
+    
             }
+          }
         }
-    }
+      }
+      ul.open{
+        display: flex;
+      }
+  }
+}
 //==========header end==========
 
 //==========footer==============

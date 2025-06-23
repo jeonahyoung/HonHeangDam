@@ -24,18 +24,18 @@
         <img src="assets/images/logo.png" alt="logo" class="logo">
       </div>
       <div class="gnb">
+        <span class="gnb-list hamburger"><i class="ph ph-list"></i></span>
         <ul>
-          <li class="gnb-list sm-d-none"><a href="our_story.html">
+          <li class="gnb-list"><a href="our_story.html">
             <span class="mark">우리의이야기</span>
           </a></li>
-          <li  class="gnb-list sm-d-none"><a href="find_place.html">
+          <li  class="gnb-list"><a href="find_place.html">
             <span class="mark">여행지찾기</span>
           </a></li>
-          <li  class="gnb-list sm-d-none"><a href="gallery.html"><span class="mark">방구석투어</span>
+          <li  class="gnb-list"><a href="gallery.html"><span class="mark">방구석투어</span>
           </a></li>
-          <li  class="gnb-list sm-d-none"><a href=""><span class="mark">커뮤니티</span>
+          <li  class="gnb-list"><a href=""><span class="mark">커뮤니티</span>
           </a></li>
-          <li class="gnb-list hamburger"><i class="ph ph-list"></i></li>
         </ul>
       </div>
     </div>
@@ -373,6 +373,17 @@
 
   <!-- Initialize Swiper -->
   <script>
+  //nav
+  document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.querySelector('.hamburger');
+      const gnbUl = document.querySelector('.gnb ul');
+
+      
+      hamburger.addEventListener('click', () => {
+        gnbUl.classList.toggle('open');
+      });
+    });
+
   // sec05
     $(function () {
       $('#accordion div').hide(); // 초기 상태: 모든 답변 닫기
@@ -396,9 +407,6 @@
       });
     });
   </script>
-
-  
-
 </body>
 
 </html>

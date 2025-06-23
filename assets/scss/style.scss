@@ -720,40 +720,17 @@
 }
 
 @media (max-width:540px){
-//==========header==============
-    .nav-form{
-        padding: 10px 20px;
-        .logo{
-            width: 36%;
-        }
-        .gnb{
-            margin-top: 10px;
-            ul{
-                .sm-d-none{
-                    display: none;
-                }
-                .hamburger{
-                    display: block;
-                    font-size: 1.2rem;
-                }
-                .hamburger:hover i{
-                    color: #ffa500;
-                }
-                
-            }
-        }
-    }
-//==========header end==========
 
 //==========sec01==========
     .sec01 {
-        padding: 20px 0;
+        padding: 0;
         .sec01-form{
+            position: relative;
             .sec01_title{
                 font-size: 1.4rem;
                 text-align: center;
-                top: 17%;
-                left: 27%;
+                top: 22%;
+                left: 30%;
             }
             .sec01_bg{
                 .sec01_bg-img {
