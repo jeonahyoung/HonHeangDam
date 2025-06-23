@@ -161,7 +161,12 @@ function showResult() {
   resultText.textContent  = res.text;
   resultCourse.innerHTML  = res.course.map(s => `<li>${s}</li>`).join('');
   updateStep(4);
+
+  const moreBtn = document.querySelector('#result-section .result-section');
+  if (moreBtn) moreBtn.style.display = 'inline-block';
 }
+
+
 
 btnStart.addEventListener('click', () => {
   coverSec.style.display     = 'none';

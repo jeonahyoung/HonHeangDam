@@ -222,6 +222,7 @@
 
 //==========section 04==============
 .sec04{
+    padding: 80px 0;
     background-color: variables.$basic-bg;
     .container{
         .row{
@@ -233,6 +234,13 @@
                     font-size: map-get(variables.$title, font-size);
                     font-weight: map-get(variables.$title, font-weight);
                     color: map-get(variables.$title, color);
+                }
+            }
+            .sec04__imgContent{
+                    width: 80%;
+                    margin-left: auto;
+                .sec04_image{
+                    width: 100%;
                 }
             }
         }       
@@ -314,6 +322,16 @@
     .sec02{
         .sec02__content{
             height: 28vh;
+        }
+    }
+
+    .sec04{
+        .container{
+            .row{
+                .sec04__imgContent{
+                    width: 74%;
+                }
+            }
         }
     }
 }
@@ -824,6 +842,43 @@
     }
 //==========sec05 end===========
 }
+
+@media (max-width:402px){
+    .sec01{
+        .sec01-form{
+            .sec01_bg{
+                .sec01_bg-img{
+                    height: 23vh;
+                }
+            }
+            .sec01_title{
+                top: 20%;
+                left: 21%;
+            }
+        }
+    }
+
+    .sec02{
+        .container{
+            .sec02__content{
+                height: 38vh;
+            }
+        }
+    }
+
+    .sec04{
+        .container{
+            .row{
+                .sec04__imgContent{
+                    .sec04_image{
+                        width: 49%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media (max-width:348px){
     //==========sec01===============

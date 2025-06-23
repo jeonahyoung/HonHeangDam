@@ -583,6 +583,31 @@
 //==========footer end==========
 }
 
+@media (max-width:402px){
+    .nav-form{
+      padding: 15px;
+        .logo{
+            width: 40%;
+        }
+        .gnb{
+            margin-top: 0;
+            .hamburger{
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media (max-width:385px){
+  .nav-form{
+    .gnb{
+      ul{
+        right: -87.5%;
+      }
+    }
+  }         
+}
+
     @media (max-width:348px){
        //==========header==============
     .nav-form {

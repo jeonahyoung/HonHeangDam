@@ -194,6 +194,7 @@ html, body {
 
 /* — 결과 섹션 — */
 #result-section {
+
   position: relative;
   align-items: center;
   height: 100vh;
@@ -201,6 +202,7 @@ html, body {
   text-align: center;
   padding: 0 20px;
   display: flex;
+  display: none;
   .r-container{
     background-color: #fff;
     margin: 0 auto;
@@ -241,9 +243,14 @@ html, body {
         width: 16%;
         font-size: 1.2rem;
         font-family: 'Paperlogy';
+
+        
     }
   }
 }
+// .btn-start{
+//   display: none;
+// }
 
 @media(max-width : 1280px){
   #cover .container {

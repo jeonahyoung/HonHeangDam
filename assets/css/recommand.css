@@ -451,6 +451,25 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     font-size: 0.5rem;
   }
 }
+@media (max-width: 402px) {
+  .nav-form {
+    padding: 15px;
+  }
+  .nav-form .logo {
+    width: 40%;
+  }
+  .nav-form .gnb {
+    margin-top: 0;
+  }
+  .nav-form .gnb .hamburger {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 385px) {
+  .nav-form .gnb ul {
+    right: -87.5%;
+  }
+}
 @media (max-width: 348px) {
   .nav-form {
     padding: 10px 20px;
@@ -673,6 +692,7 @@ input[type=radio]:checked + .question_form .q-container {
   text-align: center;
   padding: 0 20px;
   display: flex;
+  display: none;
 }
 #result-section .r-container {
   background-color: #fff;
