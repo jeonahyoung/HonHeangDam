@@ -414,7 +414,13 @@
 
 
 @media (max-width:540px){
-   
+    .nav-form{
+        .gnb{
+            ul.open{
+                background: #fff;
+            }
+        }
+    } 
     // =============sec01================
     .sec01 .container .sec01_form {
         margin-top: 1.1rem !important;

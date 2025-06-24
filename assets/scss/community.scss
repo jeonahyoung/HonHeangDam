@@ -331,6 +331,13 @@
 }
 
 @media (max-width:540px){
+    .nav-form{
+        .gnb{
+            ul.open{
+                background: #fff;
+            }
+        }
+    }   
     .sec01 {
         padding: 40px 0;
         .sec01_titleForm{

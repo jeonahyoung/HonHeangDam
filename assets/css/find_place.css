@@ -1138,6 +1138,9 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   }
 }
 @media (max-width: 540px) {
+  .nav-form .gnb ul.open {
+    background: #fff;
+  }
   .sec01 .sec01_bg01,
   .sec01 .sec01_bg02,
   .sec01 .sec01_bg03 {

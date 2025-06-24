@@ -21,7 +21,7 @@
   <nav>
     <div class="nav-form">
       <div class="logo">
-        <img src="assets/images/logo.png" alt="logo" class="logo">
+        <a href="index.html"><img src="assets/images/logo.png" alt="logo" class="logo"></a>
       </div>
       <div class="gnb">
         <span class="gnb-list hamburger"><i class="ph ph-list"></i></span>
@@ -160,14 +160,20 @@
   </footer>
   <!--footer end-->
 
-
-
- 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 
   <script>
+    //nav
+    document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.querySelector('.hamburger');
+      const gnbUl = document.querySelector('.gnb ul');
 
+      
+      hamburger.addEventListener('click', () => {
+        gnbUl.classList.toggle('open');
+      });
+    });
   </script>
   
 

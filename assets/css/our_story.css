@@ -851,6 +851,9 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   }
 }
 @media (max-width: 540px) {
+  .nav-form .gnb ul.open {
+    background: #fff;
+  }
   .sec01 .container .sec01_form {
     margin-top: 1.1rem !important;
   }
