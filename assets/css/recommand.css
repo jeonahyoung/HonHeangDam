@@ -777,6 +777,18 @@ input[type=radio]:checked + .question_form .q-container {
   #cover .container .effect {
     font-size: 1.2rem;
   }
+  .question_form .q-container .question-section .question-title {
+    margin-bottom: 40px;
+  }
+  .question_form .q-container .question-section .options {
+    gap: 0 22px;
+  }
+  .question_form .q-container .question-section .options li {
+    margin-bottom: 20px;
+  }
+  .question_form .q-container .btn_form {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 768px) {
   #cover .container {
@@ -795,6 +807,41 @@ input[type=radio]:checked + .question_form .q-container {
   }
   #cover .container .effect {
     font-size: 1.1rem;
+  }
+  .question_form .q-container {
+    padding: 60px 60px;
+  }
+  .question_form .q-container .step-indicator .step {
+    font-size: 1.2rem;
+  }
+  .question_form .q-container .question-section .question-title {
+    font-size: 1.4rem;
+    margin-bottom: 35px;
+  }
+  .question_form .q-container .question-section .options li {
+    width: 100%;
+  }
+  .question_form .q-container .question-section .options li label {
+    padding: 30px 33px;
+  }
+  .question_form .q-container .btn_form .btn-next {
+    font-size: 1.2rem;
+  }
+  #result-section .r-container {
+    margin: 100px auto;
+    padding: 60px;
+  }
+  #result-section .r-container #result-title {
+    margin-bottom: 25px;
+  }
+  #result-section .r-container #result-text {
+    width: 97%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  #result-section .r-container #result-course {
+    flex-wrap: wrap;
+    gap: 0 42px;
   }
 }
 @media (max-width: 540px) {
@@ -816,5 +863,197 @@ input[type=radio]:checked + .question_form .q-container {
   #cover .container .effect {
     font-size: 0.9rem;
     margin: 0 auto;
+  }
+  .question_form .q-container {
+    padding: 30px;
+  }
+  .question_form .q-container .step-indicator .step {
+    font-size: 1.1rem;
+  }
+  .question_form .q-container .question-section {
+    padding: 0;
+  }
+  .question_form .q-container .question-section .question-title {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+  }
+  .question_form .q-container .question-section .options li {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  .question_form .q-container .question-section .options li label {
+    padding: 20px;
+  }
+  .question_form .q-container .btn_form .btn-next,
+  .question_form .q-container .btn_form .btn-prev {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+  }
+  #result-section .r-container #result-title {
+    font-size: 1.5rem;
+  }
+  #result-section .r-container #result-text {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  #result-section .r-container #result-course {
+    margin-bottom: 20px;
+  }
+  #result-section .r-container #result-course li {
+    width: 100%;
+  }
+  #result-section .effect {
+    font-size: 1.1rem;
+  }
+  #result-section .effect.effect-5 {
+    min-width: 12rem;
+  }
+}
+@media (max-width: 402px) {
+  #cover .container .title {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    padding: 0 101px;
+    word-break: break-all;
+  }
+  #cover .container .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  #cover .container .effect {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+  }
+  #cover .container .effect.effect-5 {
+    min-width: 9rem;
+  }
+  .question_form {
+    padding: 0;
+  }
+  .question_form .q-container {
+    width: 95%;
+    padding: 30px 5px;
+  }
+  .question_form .q-container .step-indicator {
+    display: none !important;
+  }
+  .question_form .q-container .step-indicator span {
+    display: none;
+  }
+  .question_form .q-container .question-section {
+    padding: 0;
+  }
+  .question_form .q-container .question-section .question-title {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+  .question_form .q-container .question-section .options li {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .question_form .q-container .question-section .options li label {
+    padding: 15px;
+  }
+  .question_form .q-container .btn_form {
+    margin-top: 10px;
+  }
+  .question_form .q-container .btn_form .btn-next,
+  .question_form .q-container .btn_form .btn-prev {
+    font-size: 0.8rem;
+    padding: 6px 17px;
+  }
+  #result-section .r-container #result-title {
+    font-size: 1.3rem;
+  }
+  #result-section .r-container #result-text {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  #result-section .r-container #result-course {
+    margin-bottom: 15px;
+  }
+  #result-section .r-container #result-course li {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  #result-section .r-container .effect {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+  #result-section .r-container .effect.effect-5 {
+    min-width: 7rem;
+  }
+}
+@media (max-width: 348px) {
+  #cover .container .title {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  #cover .container .subtitle {
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+  }
+  #cover .container .effect {
+    font-size: 0.7rem;
+    padding: 0.3rem;
+  }
+  #cover .container .effect.effect-5 {
+    min-width: 9rem;
+  }
+  .question_form {
+    padding: 0;
+  }
+  .question_form .q-container {
+    width: 95%;
+    padding: 30px 5px;
+  }
+  .question_form .q-container .step-indicator {
+    display: none !important;
+  }
+  .question_form .q-container .step-indicator span {
+    display: none;
+  }
+  .question_form .q-container .question-section {
+    padding: 0;
+  }
+  .question_form .q-container .question-section .question-title {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  .question_form .q-container .question-section .options li {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .question_form .q-container .question-section .options li label {
+    padding: 15px;
+  }
+  .question_form .q-container .btn_form {
+    margin-top: 10px;
+  }
+  .question_form .q-container .btn_form .btn-next,
+  .question_form .q-container .btn_form .btn-prev {
+    font-size: 0.8rem;
+    padding: 6px 17px;
+  }
+  #result-section .r-container #result-title {
+    font-size: 1rem;
+  }
+  #result-section .r-container #result-text {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  #result-section .r-container #result-course {
+    margin-bottom: 15px;
+  }
+  #result-section .r-container #result-course li {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  #result-section .r-container .effect {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+  #result-section .r-container .effect.effect-5 {
+    min-width: 7rem;
   }
 }/*# sourceMappingURL=recommand.css.map */
