@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     font-family: 'Paperlogy';
-    margin-top: 15px;
+    // margin-top: 15px;
     .hamburger{
       display: none;
       font-size: 2rem;
@@ -215,8 +215,26 @@
 
    // =============footer end==================
    }
+
+@media (max-width:1127px){
+    .nav-form{
+      .gnb{
+        ul{
+          .gnb-list{
+            a{
+              .mark{
+                margin-left: 60px;
+              }
+            }
+          }
+        }
+      }
+    } 
+
+}
+
       
-    @media (max-width:1024px){
+@media (max-width:1024px){
       // =============header==================
     .nav-form{
         padding: 20px 44px;
@@ -271,167 +289,39 @@
     // =============footer end==============
 }
 
-@media (max-width:923px){
+@media (max-width : 1001px){
   .nav-form{
-    .gnb{
-      ul{
-        .gnb-list{
-          a{
-            .mark{
-              margin-left: 79px;
+        .gnb{
+            ul{
+                .gnb-list{
+                    a{
+                        .mark{
+                          margin-left: 50px;
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }     
 }
 
-@media (max-width:917px){
+@media (max-width:890px){
   .nav-form{
     .gnb{
       ul{
         .gnb-list{
           a{
+            font-size: 0.8rem;
             .mark{
-              margin-left: 78px;
+              margin-left: 40px;
             }
           }
         }
       }
     }
-  }     
+  } 
 }
 
-@media (max-width:917px){
-  .nav-form{
-    .gnb{
-      ul{
-        .gnb-list{
-          a{
-            .mark{
-              margin-left: 77px;
-            }
-          }
-        }
-      }
-    }
-  }     
-}
-
-@media (max-width:906px){
-  .nav-form{
-    .gnb{
-      ul{
-        .gnb-list{
-          a{
-            .mark{
-              margin-left: 76px;
-            }
-          }
-        }
-      }
-    }
-  }     
-}
-
-@media (max-width:901px){
-  .nav-form{
-    .gnb{
-      ul{
-        .gnb-list{
-          a{
-            .mark{
-              margin-left: 75px;
-            }
-          }
-        }
-      }
-    }
-  }     
-}
-
-@media (max-width:895px){
-  .nav-form{
-    .gnb{
-      ul{
-        .gnb-list{
-          a{
-            .mark{
-              margin-left: 65px;
-            }
-          }
-        }
-      }
-    }
-  }     
-}
-
-@media (max-width:840px){
-  .nav-form{
-    .gnb{
-      ul{
-        .gnb-list{
-          a{
-            .mark{
-              margin-left: 63px;
-            }
-          }
-        }
-      }
-    }
-  }     
-}
-
-@media (max-width:829px){
-  .nav-form{
-    .gnb{
-      ul{
-        .gnb-list{
-          a{
-            font-size: 0.9rem;
-            .mark{
-              margin-left: 63px;
-            }
-          }
-        }
-      }
-    }
-  }     
-}
-
-@media (max-width:789px){
-  .nav-form{
-    .gnb{
-      ul{
-        .gnb-list{
-          a{
-            font-size: 0.9rem;
-            .mark{
-              margin-left: 61px;
-            }
-          }
-        }
-      }
-    }
-  }     
-}
-
-@media (max-width:778px){
-  .nav-form{
-    .gnb{
-      ul{
-        .gnb-list{
-          a{
-            .mark{
-              margin-left: 60px;
-            }
-          }
-        }
-      }
-    }
-  }     
-}
 
 @media (max-width:773px){
   .nav-form{
@@ -441,7 +331,7 @@
   }     
 }
 
-    @media (max-width:768px){
+@media (max-width:768px){
       //==========header==============
 .nav-form{
         padding: 15px 36px;
@@ -450,6 +340,7 @@
         line-height: 1;
     }
     .gnb{
+        margin-top: 0;
         line-height: 1.1;
         ul{
             .gnb-list{
@@ -505,10 +396,14 @@
 .nav-form {
   position: relative;
   padding: 20px 20px;
+  .logo{
+    width: 37%;
+  }
   .gnb{
     position: relative;
     .hamburger{
       display: block;
+      font-size: 1.5rem;
     }
     ul{
       gap: 0;
@@ -608,7 +503,7 @@
   }         
 }
 
-    @media (max-width:348px){
+@media (max-width:348px){
        //==========header==============
     .nav-form {
         padding: 10px 20px;

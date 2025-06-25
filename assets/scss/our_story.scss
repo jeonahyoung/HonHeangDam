@@ -2,581 +2,606 @@
 @use 'variables';
 @use 'component';
 
-
-
 // =============header======================
-.nav-form, .nav-form .gnb ul .gnb-list a .mark{
-    background-color: #fff;
+.nav-form,
+.nav-form .gnb ul .gnb-list a .mark {
+  background-color: #fff;
 }
 // =============header end==================
 
 // =============sec01=======================
-.sec01{
-    .container{
-       .sec01_image{
-        width: 100%;
-        height: 80vh;
-        border-radius: 30px;
-       }
-        
-        .sec01_form{
-            display: flex;
-            align-items: center;
-            padding: 0 12px;
+.sec01 {
+  padding: 80px 0;
 
-             .sec01_title{
-            font-family: map-get(variables.$title, font-family);
-            font-size: map-get(variables.$title, font-size);
-            font-weight: map-get(variables.$title, font-weight);
-            color: map-get(variables.$title,color)
-            };
-
-            .sec01_subtitle{
-            font-family:  map-get(variables.$subtitle, font-family);
-            font-size:  map-get(variables.$subtitle, font-size);
-            font-weight:  map-get(variables.$subtitle, font-weight);
-            color: map-get(variables.$subtitle,color)
-            };
-            
-
-            .sec01_content{
-            font-family:  map-get(variables.$content, font-family);
-            font-size:  map-get(variables.$content, font-size);
-            font-weight:  map-get(variables.$content, font-weight);
-            color: map-get(variables.$content,color)
-            };
-            
-        }
+  .container {
+    .sec01_image {
+      width: 100%;
+      height: 65vh;
+      border-radius: 30px;
     }
+
+    .sec01_form {
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+
+      .sec01_title {
+        font-family: map-get(variables.$title, font-family);
+        font-size:   map-get(variables.$title, font-size);
+        font-weight: map-get(variables.$title, font-weight);
+        color:       map-get(variables.$title, color);
+      }
+
+      .sec01_subtitle {
+        font-family: map-get(variables.$subtitle, font-family);
+        font-size:   map-get(variables.$subtitle, font-size);
+        font-weight: map-get(variables.$subtitle, font-weight);
+        color:       map-get(variables.$subtitle, color);
+      }
+
+      .sec01_content {
+        font-family: map-get(variables.$content, font-family);
+        font-size:   1.2rem;
+        font-weight: map-get(variables.$content, font-weight);
+        color:       map-get(variables.$content, color);
+      }
+    }
+  }
 }
 // =============sec01 end==================
 
-
 // =============sec02======================
-.sec02{
-    position: relative;
-    padding-top: 10rem;
-    padding-bottom: 13rem;
+.sec02 {
+  position: relative;
+  padding: 80px 0 120px;
 
-    .sec02_keyword{
-        font-size: 15rem;
-        font-weight: 600;
-        color: variables.$gray-font;
-        opacity: 0.2;
-        z-index: -1;
-    }
+  .sec02_keyword {
+    font-size: 15rem;
+    font-weight: 600;
+    color: variables.$gray-font;
+    opacity: 0.2;
+    z-index: -1;
+  }
 
-    .sec02_title{
-            position: absolute;
-            z-index: 9999;
-            font-family: "Paperlogy";
-            font-weight: 700;
-            color: #272727;
-            font-size: 3.2rem;
-            text-align: right;
-            left: 48%;
-            bottom: 11%;
-            transform: translateY(-50%);
-            span{
-                color: variables.$basic-c
-            }
+  .sec02_title {
+    position: absolute;
+    z-index: 9999;
+    font-family: "Paperlogy";
+    font-weight: 700;
+    color: #272727;
+    font-size: 3.2rem;
+    text-align: right;
+    left: 48%;
+    bottom: 0%;
+    transform: translateY(-50%);
+
+    span {
+      color: variables.$basic-c;
     }
+  }
 }
 // =============sec02 end==================
 
-
 // =============sec03======================
-.sec03{
-    background-color: #d9d9d9;
-    padding: 100px 0;
-    
+.sec03 {
+  background-color: #d9d9d9;
+  padding: 80px 0;
 
-    .sec03_title{
-        font-family: map-get(variables.$title, font-family);
-        font-size: map-get(variables.$title, font-size);
-        font-weight: map-get(variables.$title, font-weight);
-        color: map-get(variables.$title,color);
-        margin-bottom : 50px;
-        };
-        
+  .sec03_title {
+    font-family: map-get(variables.$title, font-family);
+    font-size:   map-get(variables.$title, font-size);
+    font-weight: map-get(variables.$title, font-weight);
+    color:       map-get(variables.$title, color);
+    margin-bottom: 50px;
+  }
 
-        .sec03_cardform{
-            background-color: white;
-            padding: 2.2rem;
-            border-radius: 30px;
-           
-            .sec03_icon{
-            color: variables.$basic-c;
-            font-size: 3rem;
-            margin-bottom: 2.3rem;
-            }
+  .sec03_cardform {
+    background-color: #fff;
+    padding: 2.2rem;
+    border-radius: 30px;
 
-            .sec03_content{
-                font-family: 'pretendard';
-                font-size: 1.2rem;
-                font-weight: 600;
-                color: map-get(variables.$content,color);
-                margin-top: 2.3rem;
-            }
-        }
+    .sec03_icon {
+      color:       variables.$basic-c;
+      font-size:   3rem;
+      margin-bottom: 2.3rem;
     }
+
+    .sec03_content {
+      font-family: 'pretendard';
+      font-size:   1.2rem;
+      font-weight: 600;
+      color:       map-get(variables.$content, color);
+      margin-top:  2.3rem;
+    }
+  }
+}
 // =============sec03 end==================
 
-
 // =============sec04======================
-.sec04{
-    padding: 100px 0;
+.sec04 {
+  padding: 80px 0;
 
-    .sec04_title{
-        font-family: map-get(variables.$title, font-family);
-        font-size: map-get(variables.$title, font-size);
-        font-weight: map-get(variables.$title, font-weight);
-        color: map-get(variables.$title,color);
-        margin-bottom: 2.2rem;
-    }
+  .sec04_title {
+    font-family: map-get(variables.$title, font-family);
+    font-size:   map-get(variables.$title, font-size);
+    font-weight: map-get(variables.$title, font-weight);
+    color:       map-get(variables.$title, color);
+    margin-bottom: 2.2rem;
+  }
 
-    .sec04_subtitle{
-        font-family: map-get(variables.$subtitle, font-family);
-        font-size: map-get(variables.$subtitle, font-size);
-        font-weight: map-get(variables.$subtitle, font-weight);
-        color: map-get(variables.$subtitle,color);
-        margin-bottom: 3.8rem;
-    }
+  .sec04_subtitle {
+    font-family: map-get(variables.$subtitle, font-family);
+    font-size:   map-get(variables.$subtitle, font-size);
+    font-weight: map-get(variables.$subtitle, font-weight);
+    color:       map-get(variables.$subtitle, color);
+    margin-bottom: 3.8rem;
+  }
+
+  .effect {
+    font-size: 1.2rem;
+  }
 }
 // =============sec04 end==================
 
-@media (max-width:1440px){
+// ================== Responsive ==================
 
+@media (max-width: 1440px) {
+  // (no overrides)
 }
 
-
-@media (max-width:1399px){
-    .sec03{
-        .sec03_cardform {
-            padding: 1rem;
-        }
-    } 
+@media (max-width: 1399px) {
+  .sec03 {
+    .sec03_cardform {
+      padding: 1rem;
+    }
+  }
 }
 
+@media (max-width: 1280px) {
+  // sec01
+  .sec01 {
+    padding: 70px 0;
 
-@media (max-width:1280px){
-  
-// =============sec01===================
-    .sec01 .container .sec01_form {
+    .container {
+      .sec01_form {
         margin-top: 2.5rem !important;
-    }
-    .sec01 .container .sec01_form .sec01_title {
-        font-size: 2.4rem;
-        margin-bottom: 0.6rem;
-    }
 
-    .sec01 .container .sec01_form .sec01_subtitle {
-        font-size: 1.2rem;
-    }
-
-    .sec01 .container .sec01_form .sec01_content {
-        font-size: 1rem;
-    }  
-// =============sec01 end===============
-
-// =============sec02===================
-    .sec02 {
-        padding-top: 7rem;
-        padding-bottom: 8rem;
-    }
-
-    .sec02 .sec02_keyword {
-        font-size: 14rem;
-    }
-
-    .sec02 .sec02_title {
-        font-size: 2.4rem;
-        left: 54%;
-        bottom: 7%;
-    }
-
-// =============sec02 end===============
-
-// =============sec03===================
-.sec03 {
-    padding: 80px 0;
-}
-
-.sec03 .sec03_title {
-    font-size: 2.4rem;
-    margin-bottom: 40px;
-}
-
-.sec03 .sec03_cardform {
-    padding: 1.8rem;
-}
-
-.sec03 .sec03_cardform .sec03_icon {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.sec03 .sec03_cardform .sec03_content {
-    font-size: 1rem;
-    margin-top: 1.8rem;
-}
-// =============sec03 end===============
-
-// =============sec04===================
-.sec04 {
-    padding: 80px 0;
-}
-
-.sec04 .sec04_title {
-    font-size: 2.4rem;
-    margin-bottom: 1.8rem;
-}
-
-.sec04 .sec04_subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 3.6rem;
-}
-
-.sec04 .effect {
-    font-size: 1.2rem;
-}
-// =============sec04 end===============
-}
-
-@media (max-width:1199px){
-    .sec03{
-        .sec03_cardform {
-            padding: 1.8rem 0.8rem;
+        .sec01_title {
+          font-size: 2.4rem;
+          margin-bottom: 0.6rem;
         }
-    } 
+
+        .sec01_subtitle {
+          font-size: 1.1rem;
+        }
+
+        .sec01_content {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  // sec02
+  .sec02 {
+    padding: 70px 0 100px;
+
+    .sec02_keyword {
+      font-size: 14rem;
+    }
+
+    .sec02_title {
+      font-size: 2.4rem;
+      left: 54%;
+      bottom: 7%;
+    }
+  }
+
+  // sec03
+  .sec03 {
+    padding: 70px 0;
+
+    .container {
+      .text-center {
+        .sec03_title {
+          font-size: 2.4rem;
+          margin-bottom: 40px;
+        }
+      }
+
+      .row {
+        .col-md-3 {
+          .sec03_cardform {
+            padding: 1.8rem;
+
+            .sec03_icon {
+              font-size: 2.5rem;
+              margin-bottom: 2rem;
+            }
+
+            .sec03_content {
+              font-size: 1rem;
+              margin-top: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // sec04
+  .sec04 {
+    .sec04_title {
+      font-size: 2.4rem;
+      margin-bottom: 1.8rem;
+    }
+    .sec04_subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 3.6rem;
+    }
+    .effect {
+      font-size: 1.2rem;
+    }
+  }
 }
 
-@media (max-width:1024px){
-    // =============sec01=================
-    .sec01 .container .sec01_form .sec01_title {
-        font-size: 2.2rem;
-        margin-bottom: 0.5rem;
+@media (max-width: 1199px) {
+  .sec01 {
+    .container {
+      .sec01_image {
+        height: 50vh;
+      }
     }
-    
-    .sec01 .container .sec01_form .sec01_subtitle {
-        font-size: 1.1rem;
+  }
+  .sec03 {
+    .container {
+      .row {
+        .col-md-3 {
+          .sec03_cardform {
+            padding: 1.8rem 0.8rem;
+          }
+        }
+      }
     }
-    // =============sec01 end=============
-
-    // =============sec02=================
-    .sec02 {
-        padding-top: 5rem;
-        padding-bottom: 6rem;
-    }
-
-    .sec02 .sec02_keyword {
-        font-size: 11rem;
-    }
-
-    .sec02 .sec02_title {
-        font-size: 2.2rem;
-        left: 50%;
-        bottom: 0%;
-    }
-    // =============sec02 end=============
-
-    // =============sec03=================
-    .sec03 {
-        padding: 60px 0;
-    }
-
-    .sec03 .sec03_title {
-        font-size: 2.2rem;
-        margin-bottom: 30px;
-    }
-
-    .sec03 .sec03_cardform {
-        padding: 1.4rem;
-    }
-
-    .sec03 .sec03_cardform .sec03_content {
-        font-size: 0.9rem;
-        margin-top: 1.4rem;
-    }
-    // =============sec03 end=============
-
-    // =============sec04=================
-    .sec04 {
-        padding: 60px 0;
-    }
-
-    .sec04 .sec04_title {
-        font-size: 2.2rem;
-        margin-bottom: 1.6rem;
-    }
-
-    .sec04 .sec04_subtitle {
-        font-size: 1.1rem;
-        margin-bottom: 3.4rem;
-    }
-
-    .sec04 .effect {
-        font-size: 1.1rem;
-    }
-    // =============sec04 end=============
-
+  }
 }
 
+@media (max-width: 1024px) {
+  // sec01
+  .sec01 {
+    padding: 60px 0;
 
-@media (max-width:768px){
-    // =============sec01================
-    .sec01 .container .sec01_form {
-        margin-top: 1.8rem !important;
+    .container {
+      .sec01_form {
+        .sec01_title {
+          font-size: 2.2rem;
+          margin-bottom: 0.5rem;
+        }
+        .sec01_subtitle {
+          font-size: 1.1rem;
+        }
+      }
     }
+  }
 
-    .sec01 .container .sec01_form .sec01_title {
-        font-size: 2rem;
-        margin-bottom: 0.3rem;
+  // sec02
+  .sec02 {
+    padding: 60px 0 80px;
+
+    .sec02_keyword {
+      font-size: 11rem;
     }
-
-    .sec01 .container .sec01_form .sec01_subtitle {
-        font-size: 0.9rem;
+    .sec02_title {
+      font-size: 2.2rem;
+      left: 50%;
+      bottom: 0%;
     }
+  }
 
-    .sec01 .container .sec01_form .sec01_content {
-        font-size: 0.8rem;
+  // sec03
+  .sec03 {
+    padding: 60px 0;
+
+    .container {
+      .text-center {
+        .sec03_title {
+          font-size: 2.2rem;
+          margin-bottom: 30px;
+        }
+      }
+      .row {
+        .col-md-3 {
+          .sec03_cardform {
+            padding: 1.4rem;
+
+            .sec03_content {
+              font-size: 0.9rem;
+              margin-top: 1.4rem;
+            }
+          }
+        }
+      }
     }
-    // =============sec01 end============
+  }
 
-    // =============sec02================
-    .sec02 {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+  // sec04
+  .sec04 {
+    padding: 60px 0;
+
+    .sec04_title {
+      font-size: 2.2rem;
+      margin-bottom: 1.6rem;
     }
-
-    .sec02 .sec02_keyword {
-        font-size: 9rem;
+    .sec04_subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 3.4rem;
     }
-
-    .sec02 .sec02_title {
-        font-size: 2rem;
-        line-height: 40px;
-        left: 47%;
-        bottom: -6%;
+    .effect {
+      font-size: 1.1rem;
     }
-    // =============sec02 end============
-
-    // =============sec03================
-    .sec03 {
-        padding: 40px 0;
-    }
-
-    .sec03 .sec03_title {
-        font-size: 2rem;
-        margin-bottom: 25px;
-    }
-
-    .sec03 .sec03_cardform {
-        padding: 1.2rem;
-    }
-
-    .sec03 .sec03_cardform .sec03_icon {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .sec03 .sec03_cardform .sec03_content {
-        font-size: 0.8rem;
-        margin-top: 1rem;
-    }
-
-    .sec03 .sec03_cardform .sec03_content .br{
-        display: none;
-    }
-    // =============sec03 end============
-
-    // =============sec04================
-    .sec04 {
-        padding: 40px 0;
-    }
-
-    .sec04 .sec04_title {
-        font-size: 2rem;
-        margin-bottom: 1.4rem;
-    }
-
-    .sec04 .sec04_subtitle {
-        font-size: 0.9rem;
-        margin-bottom: 3rem;
-    }
-
-    .sec04 .effect {
-        font-size: 0.9rem;
-    }
-    // =============sec04 end============
-
+  }
 }
 
-
-@media (max-width:540px){
-    .nav-form{
-        .gnb{
-            ul.open{
-                background: #fff;
+@media (max-width: 767px){
+    .sec03{
+        .container{
+            .row{
+                gap: 20px 0;
             }
         }
-    } 
-    // =============sec01================
-    .sec01 .container .sec01_form {
+    }
+}
+
+@media (max-width: 768px) {
+  // sec01
+  .sec01 {
+    padding: 50px 0;
+
+    .container {
+      .sec01_image {
+        height: 35vh;
+      }
+      .sec01_form {
+        margin-top: 1.3rem !important;
+
+        .sec01_title {
+          font-size: 1.8rem;
+          margin-bottom: 0.3rem;
+        }
+        .sec01_subtitle {
+          font-size: 0.9rem;
+        }
+        .sec01_content {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  // sec02
+  .sec02 {
+    padding: 50px 0;
+
+    .text-center {
+      .sec02_keyword {
+        font-size: 9rem;
+      }
+    }
+    .sec02_title {
+      font-size: 1.8rem;
+      line-height: 40px;
+      left: 49%;
+      bottom: -2%;
+    }
+  }
+
+  // sec03
+  .sec03 {
+    padding: 50px 0;
+
+    .container {
+      .text-center {
+        .sec03_title {
+          font-size: 1.8rem;
+          margin-bottom: 25px;
+        }
+      }
+      .row {
+        .col-md-3 {
+          .sec03_cardform {
+            padding: 1.2rem;
+
+            .sec03_icon {
+              font-size: 2rem;
+              margin-bottom: 2rem;
+            }
+            .sec03_content {
+              font-size: 0.8rem;
+              margin-top: 1rem;
+              .br {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // sec04
+  .sec04 {
+    padding: 50px 0;
+
+    .sec04_title {
+      font-size: 2rem;
+      margin-bottom: 1.4rem;
+    }
+    .sec04_subtitle {
+      font-size: 0.9rem;
+      margin-bottom: 3rem;
+    }
+    .effect {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  // sec01
+  .sec01 {
+    padding: 30px 0;
+
+    .container {
+      .sec01_form {
         margin-top: 1.1rem !important;
+
+        .sec01_title {
+          font-size: 1.7rem;
+        }
+        .sec01_subtitle {
+          font-size: 0.8em;
+          margin-bottom: 0.6rem;
+        }
+        .sec01_content {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+
+  // sec02
+  .sec02 {
+    padding: 30px 0;
+
+    .sec02_keyword {
+      font-size: 7rem;
+    }
+    .sec02_title {
+      font-size: 1.7rem;
+      left: 43%;
+      bottom: -11%;
+    }
+  }
+
+  // sec03
+  .sec03 {
+    .mb-15 {
+      margin-bottom: 15px;
     }
 
-    .sec01 .container .sec01_form .sec01_title {
-        font-size: 1.7rem;
+    .sec03_title {
+      font-size: 1.7rem;
+      margin-bottom: 30px;
     }
 
-    .sec01 .container .sec01_form .sec01_subtitle {
-        font-size: 0.8em;
-        margin-bottom: 0.6rem;
-    }
-        
-    .sec01 .container .sec01_form .sec01_content {
-        font-size: 0.7rem;
-    }
-    // =============sec01 end============
-
-
-    // =============sec02================
-    .sec02 .sec02_keyword {
-        font-size: 7rem;
-    }
-
-    .sec02 .sec02_title {
-        font-size: 1.7rem;
-        left: 43%;
-        bottom: -11%;
-    }
-    // =============sec02 end============
-
-    // =============sec03================
-    .mb-15{
-        margin-bottom: 15px;
-    }
-
-    .sec03 .sec03_title {
-        font-size: 1.7rem;
-        margin-bottom: 30px;
-    }
-
-    .sec03 .sec03_cardform .sec03_icon {
+    .sec03_cardform {
+      .sec03_icon {
         font-size: 1.8rem;
         margin-bottom: 2rem;
-    }
-
-    .sec03 .sec03_cardform .sec03_content {
+      }
+      .sec03_content {
         font-size: 0.7rem;
         margin-top: 1rem;
         margin-bottom: 0;
+      }
     }
-    // =============sec03 end============
+  }
 
-    // =============sec04 ===============
-    .sec04 .sec04_title {
-        font-size: 1.7rem;
-        margin-bottom: 1.2rem;
+  // sec04
+  .sec04 {
+    .sec04_title {
+      font-size: 1.7rem;
+      margin-bottom: 1.2rem;
     }
-
-    .sec04 .sec04_subtitle {
-        font-size: 0.8rem;
-        margin-bottom: 2.6rem;
+    .sec04_subtitle {
+      font-size: 0.8rem;
+      margin-bottom: 2.6rem;
     }
-
-    .sec04 .effect {
-        font-size: 0.8rem;
+    .effect {
+      font-size: 0.8rem;
     }
-    // =============sec04 end============
+    .effect-5 {
+      min-width: 10rem;
+    }
+  }
 }
 
-
-@media (max-width:348px){
-
-    // =============sec01============
-    .sec01 .container .sec01_form .sec01_title {
-        font-size: 0.9rem;
-    }
-
-    .sec01 .container .sec01_form {
+@media (max-width: 348px) {
+  // sec01
+  .sec01 {
+    .container {
+      .sec01_form {
         margin-top: 0.8rem !important;
-    }
 
-    .sec01 .container .sec01_form .sec01_subtitle {
-        font-size: 0.6rem;
-        margin-bottom: 0.4rem;
+        .sec01_title {
+          font-size: 0.9rem;
+        }
+        .sec01_subtitle {
+          font-size: 0.6rem;
+          margin-bottom: 0.4rem;
+        }
+        .sec01_content {
+          font-size: 0.6rem;
+        }
+      }
     }
-    
-    .sec01 .container .sec01_form .sec01_content {
-        font-size: 0.6rem;
-    }
-    // =============sec01 end========
+  }
 
-    // =============sec02============
-    .sec02 {
-        padding-top: 1.5rem;
-        padding-bottom: 2.5rem;
+  // sec02
+  .sec02 {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    .text-center{
+        .sec02_keyword{
+            font-size: 5rem;
+        }
     }
+    .sec02_title {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+      left: 53%;
+      bottom: 1%;
+    }
+  }
 
-    .sec02 .sec02_keyword {
-        font-size: 5rem;
-    }
+  // sec03
+  .sec03 {
+    padding: 30px 0;
 
-    .sec02 .sec02_title {
-        font-size: 0.9rem;
-        line-height: 1.3rem;
-        left: 53%;
-        bottom: 1%;
+    .br {
+      display: none;
     }
-    // =============sec02 end========
-
-    // =============sec03============
-    .br{
-        display: none;
+    .sec03_title {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
     }
-    .sec03 {
-        padding: 30px 0;
-    }
-
-    .sec03 .sec03_title {
-        font-size: 0.9rem;
-        margin-bottom: 15px;
-    }
-
-    .sec03 .sec03_cardform {
-        padding: 0.8rem;
-    }
-
-    .sec03 .sec03_cardform .sec03_content {
+    .sec03_cardform {
+      padding: 0.8rem;
+      .sec03_content {
         font-size: 0.6rem;
         margin-top: 0.5rem;
+      }
     }
-    // =============sec03 end========
+  }
 
-    // =============sec04============
-    .sec04 {
-        padding: 30px 0;
-    }
+  // sec04
+  .sec04 {
+    padding: 30px 0;
 
-    .sec04 .sec04_title {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
+    .sec04_title {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
     }
-
-    .sec04 .sec04_subtitle {
-        font-size: 0.6rem;
-        margin-bottom: 2rem;
+    .sec04_subtitle {
+      font-size: 0.6rem;
+      margin-bottom: 2rem;
     }
-
-    .sec04 .effect {
-        font-size: 0.6rem;
-        padding: 0.3rem;
+    .effect {
+      font-size: 0.6rem;
+      padding: 0.3rem;
     }
-
-    .sec04 .effect.effect-5 {
-        min-width: 10rem;
+    .effect-5 {
+      min-width: 10rem;
     }
-    // =============sec04 end========
+  }
 }
