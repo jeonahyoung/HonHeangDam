@@ -379,16 +379,16 @@
 
 }
 
-@media (max-width:348px){
+@media (max-width:402px){
     .sec01 {
         padding: 40px 0;
         .sec01_titleForm{
             .sec01__title{
-                font-size: 1.2rem;
+                font-size: 1.7rem;
                 margin-bottom: .3rem;
             }
             .sec01_subtitle{
-                font-size: 0.8rem;
+                font-size: 0.9rem;
             }
         }
         .listForm{
@@ -406,7 +406,7 @@
                         margin-bottom: 3px;
                     }
                     .category-label{
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                     }
                     .line-left{
                         width: 100%;
@@ -419,8 +419,8 @@
                         }
                     }
                     .category-btn{
-                        font-size: 0.6rem;
-                        padding: 6px 9px;
+                        font-size: 0.7rem;
+                        padding: 5px 9px;
                         margin-left: 24px;
                         width: 28%;
                     }
@@ -435,6 +435,46 @@
                 }
                 .line-bottom{
                     padding: 15px 0;
+                }
+            }
+        }
+    }
+
+    .sec02{
+        padding: 40px 0;
+        .sec02_titleForm{
+            margin-bottom : 30px;
+            .sec02_title{
+                font-size: 1.7rem;
+                margin-bottom: .3rem;
+            }
+            .sec02_subtitle{
+                font-size: 0.9rem;
+            }
+        }
+        .container{
+            .sponsor-buttons{
+                margin-bottom : 30px;
+                .sec02_spon{
+                    .sec02_btn_img{
+                        height: 7vh;
+                    }
+                }
+            }
+            .youtube-cards{
+                .card{
+                    .card-body{
+                        .card-title{
+                            font-size: 0.9rem;
+                        }
+                        .card-text{
+                            font-size: 0.8rem;
+                            margin-bottom: 0.5rem;
+                        }
+                        .sec02_link{
+                            font-size: 0.8rem;
+                        }
+                    }
                 }
             }
         }

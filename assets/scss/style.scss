@@ -15,7 +15,15 @@
     }
   }
 //==========header==============
-
+@media (max-width: 540px){
+.nav-form {
+  .gnb{
+      ul.open{
+        background-color: variables.$basic-bg;
+      }
+  }
+}
+}
 //==========header end==========
 
 //==========section 01==========

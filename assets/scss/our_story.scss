@@ -127,6 +127,9 @@
     font-weight: map-get(variables.$title, font-weight);
     color:       map-get(variables.$title, color);
     margin-bottom: 2.2rem;
+    .none{
+      display: none;
+    }
   }
 
   .sec04_subtitle {
@@ -525,6 +528,45 @@
     }
   }
 }
+
+@media (max-width: 402px) {
+  .sec02{
+    padding: 30px 0 50px;
+    .text-center{
+      .sec02_keyword{
+        font-size: 6rem;
+      }
+    }
+    .sec02_title{
+        font-size: 1.7rem;
+        left: 33%;
+      }
+  }  
+
+  .sec03{
+    .container{
+      .text-center{
+        .sec03_title{
+          font-size: 1.7rem;
+        }
+      }
+      .row{
+        .mb-15{
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+
+  .sec04{
+    .sec04_title{
+      .none{
+        display: block;
+      }
+    }
+  }
+}
+
 
 @media (max-width: 348px) {
   // sec01

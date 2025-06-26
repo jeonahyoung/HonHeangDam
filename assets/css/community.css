@@ -442,6 +442,7 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   }
   .nav-form .gnb ul.open {
     display: flex;
+    background-color: #fff;
   }
   footer {
     padding: 24px;
@@ -832,16 +833,16 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     padding: 15px 0;
   }
 }
-@media (max-width: 348px) {
+@media (max-width: 402px) {
   .sec01 {
     padding: 40px 0;
   }
   .sec01 .sec01_titleForm .sec01__title {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     margin-bottom: 0.3rem;
   }
   .sec01 .sec01_titleForm .sec01_subtitle {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .sec01 .listForm .list .d-inherit {
     display: block;
@@ -857,7 +858,7 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     margin-bottom: 3px;
   }
   .sec01 .listForm .list .d-inherit .category-label {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .sec01 .listForm .list .d-inherit .line-left {
     width: 100%;
@@ -870,8 +871,8 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     font-size: 0.7rem;
   }
   .sec01 .listForm .list .d-inherit .category-btn {
-    font-size: 0.6rem;
-    padding: 6px 9px;
+    font-size: 0.7rem;
+    padding: 5px 9px;
     margin-left: 24px;
     width: 28%;
   }
@@ -885,5 +886,34 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   }
   .sec01 .listForm .list .line-bottom {
     padding: 15px 0;
+  }
+  .sec02 {
+    padding: 40px 0;
+  }
+  .sec02 .sec02_titleForm {
+    margin-bottom: 30px;
+  }
+  .sec02 .sec02_titleForm .sec02_title {
+    font-size: 1.7rem;
+    margin-bottom: 0.3rem;
+  }
+  .sec02 .sec02_titleForm .sec02_subtitle {
+    font-size: 0.9rem;
+  }
+  .sec02 .container .sponsor-buttons {
+    margin-bottom: 30px;
+  }
+  .sec02 .container .sponsor-buttons .sec02_spon .sec02_btn_img {
+    height: 7vh;
+  }
+  .sec02 .container .youtube-cards .card .card-body .card-title {
+    font-size: 0.9rem;
+  }
+  .sec02 .container .youtube-cards .card .card-body .card-text {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  .sec02 .container .youtube-cards .card .card-body .sec02_link {
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=community.css.map */
