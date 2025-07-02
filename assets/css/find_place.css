@@ -198,7 +198,7 @@
   text-decoration: none;
   text-transform: capitalize;
   font-family: "pretendard";
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   padding: 0.6rem;
   width: 100%;
   border-radius: 30px;
@@ -566,13 +566,13 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec01 .sec01_content .sec01_title {
   font-family: "Paperlogy";
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.6rem;
 }
 .sec01 .sec01_content .sec01_subtitle {
   font-family: "Paperlogy";
-  font-size: 1.3rem;
+  font-size: 1.125rem;
   font-weight: 500;
   margin-bottom: 1.6rem;
 }
@@ -588,13 +588,13 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec02 .sec02_titleform .sec02_title {
   font-family: "Paperlogy";
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #272727;
 }
 .sec02 .sec02_titleform .sec02_subtitle {
   font-family: "Paperlogy";
-  font-size: 1.3rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: #bdbdbd;
 }
@@ -609,7 +609,7 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec02 .sec02_contentform .sec02_card01 .sec02__subcontent .sec02_c_title {
   font-family: "pretendard";
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #272727;
   margin-bottom: 10px;
@@ -644,7 +644,7 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec03 .sec03_title {
   font-family: "Paperlogy";
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #272727;
   margin: 0;
@@ -680,7 +680,7 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec03 .sec03_tab .sec03_theme p {
   font-family: "pretendard";
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   font-weight: 400;
   color: #272727;
   text-align: center;
@@ -719,7 +719,7 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec03 .tab-content .sec03_card .sec03_card_overlay .title {
   font-family: "pretendard";
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #272727;
   margin-bottom: 8px;
@@ -746,13 +746,13 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec04 .sec04_titleform .sec04_title {
   font-family: "Paperlogy";
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #272727;
 }
 .sec04 .sec04_titleform .sec04_subtitle {
   font-family: "Paperlogy";
-  font-size: 1.3rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: #bdbdbd;
 }

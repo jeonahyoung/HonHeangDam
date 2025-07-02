@@ -198,7 +198,7 @@
   text-decoration: none;
   text-transform: capitalize;
   font-family: "pretendard";
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   padding: 0.6rem;
   width: 100%;
   border-radius: 30px;
@@ -540,13 +540,13 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec01 .sec01_titleForm .sec01__title {
   font-family: "Paperlogy";
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #272727;
 }
 .sec01 .sec01_titleForm .sec01_subtitle {
   font-family: "Paperlogy";
-  font-size: 1.3rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: #bdbdbd;
 }
@@ -561,7 +561,7 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec01 .listForm .list .line-left .item-title {
   font-family: "pretendard";
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #272727;
   line-height: 1.8;
@@ -607,13 +607,13 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec02 .sec02_titleForm .sec02_title {
   font-family: "Paperlogy";
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #272727;
 }
 .sec02 .sec02_titleForm .sec02_subtitle {
   font-family: "Paperlogy";
-  font-size: 1.3rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: #bdbdbd;
 }
@@ -629,7 +629,7 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec02 .container .youtube-cards .card .card-body .card-title {
   font-family: "pretendard";
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #272727;
 }
@@ -656,9 +656,6 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   }
 }
 @media (max-width: 1280px) {
-  .sec01 {
-    padding: 80px 0;
-  }
   .sec01 .sec01_titleForm {
     margin-bottom: 40px;
   }
@@ -689,8 +686,20 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   .sec01 .listForm .line-bottom {
     padding: 35px 0;
   }
-  .sec02 {
-    padding-bottom: 100px;
+  .sec02 .sec02_titleForm .sec02_title {
+    font-size: 1.7rem;
+  }
+  .sec02 .sec02_titleForm .sec02_subtitle {
+    font-size: 1.1rem;
+  }
+  .sec02 .container .youtube-cards .card .card-body .card-title {
+    font-size: 1.1rem;
+  }
+  .sec02 .container .youtube-cards .card .card-body .card-text {
+    font-size: 0.9rem;
+  }
+  .sec02 .container .youtube-cards .card .card-body .sec02_link {
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 1024px) {
@@ -726,6 +735,25 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   .sec01 .listForm .list .line-bottom {
     padding: 30px 0;
   }
+  .sec02 {
+    padding: 70px 0;
+  }
+  .sec02 .sec02_titleForm .sec02_title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .sec02 .sec02_titleForm .sec02_subtitle {
+    font-size: 1rem;
+  }
+  .sec02 .container .youtube-cards .card .card-body .card-title {
+    font-size: 1rem;
+  }
+  .sec02 .container .youtube-cards .card .card-body .card-text {
+    font-size: 0.8rem;
+  }
+  .sec02 .container .youtube-cards .card .card-body .sec02_link {
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 991px) {
   .sec01 .sec01_titleForm {
@@ -758,6 +786,30 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   }
   .sec01 .listForm .list .line-bottom {
     padding: 25px 0;
+  }
+  .sec02 .sec02_titleForm {
+    margin-bottom: 45px;
+  }
+  .sec02 .sec02_titleForm .sec02_title {
+    font-size: 1.4rem;
+  }
+  .sec02 .sec02_titleForm .sec02_subtitle {
+    font-size: 0.9rem;
+  }
+  .sec02 .container .sponsor-buttons {
+    margin-bottom: 45px;
+  }
+  .sec02 .container .sponsor-buttons .sec02_spon .sec02_btn_img {
+    height: 8vh;
+  }
+  .sec02 .container .youtube-cards .card .card-body .card-title {
+    font-size: 0.9rem;
+  }
+  .sec02 .container .youtube-cards .card .card-body .card-text {
+    font-size: 0.7rem;
+  }
+  .sec02 .container .youtube-cards .card .card-body .sec02_link {
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 767px) {
@@ -795,11 +847,36 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   .sec01 .listForm .list .line-bottom {
     padding: 20px 0;
   }
+  .sec02 {
+    padding: 55px 0;
+  }
+  .sec02 .sec02_titleForm {
+    margin-bottom: 25px;
+  }
+  .sec02 .sec02_titleForm .sec02_title {
+    font-size: 1.2rem;
+  }
+  .sec02 .sec02_titleForm .sec02_subtitle {
+    font-size: 0.8rem;
+  }
+  .sec02 .container .sponsor-buttons {
+    margin-bottom: 25px;
+  }
+  .sec02 .container .sponsor-buttons .sec02_spon .sec02_btn_img {
+    height: 8vh;
+  }
+  .sec02 .container .youtube-cards .card .card-body .card-title {
+    font-size: 0.8rem;
+  }
+  .sec02 .container .youtube-cards .card .card-body .card-text {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  .sec02 .container .youtube-cards .card .card-body .sec02_link {
+    font-size: 0.7rem;
+  }
 }
 @media (max-width: 540px) {
-  .nav-form .gnb ul.open {
-    background: #fff;
-  }
   .sec01 {
     padding: 40px 0;
   }
@@ -831,6 +908,15 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   }
   .sec01 .listForm .list .line-bottom {
     padding: 15px 0;
+  }
+  .sec02 {
+    padding: 40px 0;
+  }
+  .sec02 .sec02_titleForm .sec02_title {
+    font-size: 1.1rem;
+  }
+  .sec02 .sec02_titleForm .sec02_subtitle {
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 402px) {

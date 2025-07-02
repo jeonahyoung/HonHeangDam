@@ -198,7 +198,7 @@
   text-decoration: none;
   text-transform: capitalize;
   font-family: "pretendard";
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   padding: 0.6rem;
   width: 100%;
   border-radius: 30px;
@@ -548,13 +548,13 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec01 .container .sec01_form .sec01_title {
   font-family: "Paperlogy";
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #272727;
 }
 .sec01 .container .sec01_form .sec01_subtitle {
   font-family: "Paperlogy";
-  font-size: 1.3rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: #bdbdbd;
 }
@@ -598,7 +598,7 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec03 .sec03_title {
   font-family: "Paperlogy";
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #272727;
   margin-bottom: 50px;
@@ -626,7 +626,7 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec04 .sec04_title {
   font-family: "Paperlogy";
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #272727;
   margin-bottom: 2.2rem;
@@ -636,7 +636,7 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
 }
 .sec04 .sec04_subtitle {
   font-family: "Paperlogy";
-  font-size: 1.3rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: #bdbdbd;
   margin-bottom: 3.8rem;

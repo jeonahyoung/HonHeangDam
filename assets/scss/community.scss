@@ -79,8 +79,8 @@
         }
     }
 }
-
 // =============sec01 end==================
+
 
 // =============sec02======================
 .sec02{
@@ -141,7 +141,6 @@
         }
     }
 }
-
 // =============sec02 end==================
 
 @media(max-width:1440px){
@@ -160,7 +159,6 @@
 
 @media (max-width:1280px){
     .sec01{
-        padding: 80px 0;
         .sec01_titleForm{
             margin-bottom: 40px;
             .sec01__title {
@@ -199,9 +197,32 @@
         }
     } 
 
-
     .sec02{
-        padding-bottom: 100px;
+        .sec02_titleForm{
+            .sec02_title{
+                font-size: 1.7rem;
+            }
+            .sec02_subtitle{
+                font-size: 1.1rem;
+            }
+        }
+        .container{
+            .youtube-cards{
+                .card{
+                    .card-body{
+                        .card-title{
+                            font-size: 1.1rem;
+                        }
+                        .card-text{
+                            font-size: 0.9rem;
+                        }
+                        .sec02_link{
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
         
     }
 }
@@ -246,6 +267,36 @@
             }
         }
     }
+    .sec02{
+        padding: 70px 0;
+        .sec02_titleForm{
+            .sec02_title{
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+            .sec02_subtitle{
+                font-size: 1rem;
+            }
+        }
+        .container{
+            .youtube-cards{
+                .card{
+                    .card-body{
+                        .card-title{
+                            font-size: 1rem;
+                        }
+                        .card-text{
+                            font-size: 0.8rem;
+                        }
+                        .sec02_link{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
 }
 
 @media (max-width:991px){
@@ -282,6 +333,43 @@
                 }
                 .line-bottom {
                     padding: 25px 0;
+                }
+            }
+        }
+    }
+
+    .sec02{
+        .sec02_titleForm{
+            margin-bottom: 45px;
+            .sec02_title{
+                font-size: 1.4rem;
+            }
+            .sec02_subtitle{
+                font-size: 0.9rem;
+            }
+        }
+        .container{
+            .sponsor-buttons{
+                margin-bottom: 45px;
+                .sec02_spon{
+                    .sec02_btn_img{
+                        height: 8vh;
+                    }
+                }
+            }
+            .youtube-cards{
+                .card{
+                    .card-body{
+                        .card-title{
+                            font-size: 0.9rem;
+                        }
+                        .card-text{
+                            font-size: 0.7rem;
+                        }
+                        .sec02_link{
+                            font-size: 0.7rem;
+                        }
+                    }
                 }
             }
         }
@@ -327,17 +415,48 @@
             }
             
         }
-    }    
+    }  
+    .sec02{
+        padding: 55px 0;
+        .sec02_titleForm{
+            margin-bottom: 25px;
+            .sec02_title{
+                font-size: 1.2rem;
+            }
+            .sec02_subtitle{
+                font-size: 0.8rem;
+            }
+        }
+        .container{
+            .sponsor-buttons{
+                margin-bottom: 25px;
+                .sec02_spon{
+                    .sec02_btn_img{
+                        height: 8vh;
+                    }
+                }
+            }
+            .youtube-cards{
+                .card{
+                    .card-body{
+                        .card-title{
+                            font-size: 0.8rem;
+                        }
+                        .card-text{
+                            font-size: 0.7rem;
+                            margin-bottom: 0.5rem;
+                        }
+                        .sec02_link{
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }  
 }
 
 @media (max-width:540px){
-    .nav-form{
-        .gnb{
-            ul.open{
-                background: #fff;
-            }
-        }
-    }   
     .sec01 {
         padding: 40px 0;
         .sec01_titleForm{
@@ -376,7 +495,17 @@
             }
         }
     }
-
+    .sec02{
+        padding: 40px 0;
+        .sec02_titleForm{
+            .sec02_title{
+                font-size: 1.1rem;
+            }
+            .sec02_subtitle{
+                font-size: 0.7rem;
+            }
+        }
+    }  
 }
 
 @media (max-width:402px){
