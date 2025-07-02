@@ -391,6 +391,23 @@
 //==========footer end==========
 }
 
+@media (max-width:766px){
+  .nav-form{
+    .gnb{
+      ul{
+        .gnb-list{
+          a{
+            font-size: 0.6rem;
+            .mark{
+              margin-left: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width:540px){
 //==========header==============
 .nav-form {

@@ -508,6 +508,22 @@
     }  
 }
 
+@media (max-width:460px){
+    .sec01{
+        .listForm{
+            .list{
+                .line-left{
+                    padding-left: 1rem !important;
+                }
+                .category-btn{
+                    font-size: 0.45rem;
+                    padding: 6px 3px;
+                }
+            }
+        }
+    } 
+}
+
 @media (max-width:402px){
     .sec01 {
         padding: 40px 0;
