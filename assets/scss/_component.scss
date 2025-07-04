@@ -425,8 +425,8 @@
     ul{
       gap: 0;
       position: absolute;
-      top: 100%;
-      right: -60.5%;
+      top: 154%;
+      right: -81.5%;
       width: 100vw; 
       display: none;
       flex-direction: column;
@@ -440,6 +440,7 @@
           border-bottom: 1px solid #eee;
           text-align: center;
           a{
+            font-size: 0.9rem;
             .mark{
               margin-left: auto;
             }

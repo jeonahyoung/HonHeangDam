@@ -92,6 +92,7 @@
         height: 100%;
         object-fit: cover;
         border-radius: 30px;
+        cursor: pointer;
     }
 
     .h-4 {
@@ -218,6 +219,20 @@
         .modal{
             .modal_img{
                
+            }
+        }
+    }
+}
+
+@media (max-width:767px){
+    .sec02{
+        .container{
+            .row{
+                gap: 20px;
+                .img_modal_content{
+                    height: 320px;
+                    width: 520px;
+                }
             }
         }
     }

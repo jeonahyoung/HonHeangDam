@@ -377,8 +377,8 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
   .nav-form .gnb ul {
     gap: 0;
     position: absolute;
-    top: 100%;
-    right: -60.5%;
+    top: 154%;
+    right: -81.5%;
     width: 100vw;
     display: none;
     flex-direction: column;
@@ -392,6 +392,9 @@ footer .footer_content .footer_contentlist li:not(:first-of-type) {
     padding: 1rem;
     border-bottom: 1px solid #eee;
     text-align: center;
+  }
+  .nav-form .gnb ul .gnb-list a {
+    font-size: 0.9rem;
   }
   .nav-form .gnb ul .gnb-list a .mark {
     margin-left: auto;
@@ -494,11 +497,6 @@ body .point-c {
   color: #32BD7E;
 }
 
-@media (max-width: 540px) {
-  .nav-form .gnb ul.open {
-    background-color: #FFF8ED;
-  }
-}
 .sec01 {
   background-color: #FFF8ED;
   padding: 50px 80px;
@@ -541,7 +539,7 @@ body .point-c {
   color: #272727;
 }
 .sec02 .sec02__content {
-  height: 30vh;
+  height: 37vh;
   display: flex;
   align-items: flex-end;
   color: #fff;
@@ -575,6 +573,9 @@ body .point-c {
   background: url(../images/main_sec02-card03.png);
   background-position: center;
   background-size: cover;
+}
+.sec02 .effect.effect-5:before {
+  width: 21%;
 }
 
 .sec03 {
@@ -743,6 +744,11 @@ body .point-c {
   margin-bottom: 0;
 }
 
+@media (max-width: 1649px) {
+  .sec01 .sec01-form .sec01_title {
+    font-size: 2.8rem;
+  }
+}
 @media (max-width: 1440px) {
   .sec01 .sec01-form .sec01_title {
     left: 2%;
@@ -754,6 +760,13 @@ body .point-c {
   }
   .sec04 .container .row .sec04__imgContent {
     width: 74%;
+  }
+}
+@media (max-width: 1387px) {
+  .sec01 .sec01-form .sec01_title {
+    font-size: 2.3rem;
+    left: 1%;
+    top: 4%;
   }
 }
 @media (max-width: 1280px) {
@@ -1033,7 +1046,15 @@ body .point-c {
     font-size: 0.8rem;
   }
 }
+@media (max-width: 767px) {
+  .sec02 .container .row {
+    gap: 20px;
+  }
+}
 @media (max-width: 540px) {
+  .nav-form .gnb ul.open {
+    background-color: #FFF8ED;
+  }
   .sec01 {
     padding: 14px 0;
   }
@@ -1063,7 +1084,6 @@ body .point-c {
   }
   .sec02 .container .sec02__content {
     height: 26vh;
-    margin-bottom: 15px;
   }
   .sec02 .container .sec02__content .sec02__subcontent {
     margin: 25px;

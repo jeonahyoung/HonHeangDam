@@ -15,15 +15,7 @@
     }
   }
 //==========header==============
-@media (max-width: 540px){
-.nav-form {
-  .gnb{
-      ul.open{
-        background-color: variables.$basic-bg;
-      }
-  }
-}
-}
+
 //==========header end==========
 
 //==========section 01==========
@@ -73,7 +65,7 @@
     }
     
     .sec02__content{
-        height: 30vh;
+        height: 37vh;
         display: flex;
         align-items: flex-end;
         color: #fff;
@@ -110,6 +102,9 @@
         background: url(../images/main_sec02-card03.png);
         background-position: center;
         background-size: cover;
+    }
+    .effect.effect-5:before{
+        width: 21%;
     }
 }
 //==========section 02 end==========
@@ -315,7 +310,15 @@
         }
 }
 //==========section 05 end==========
-
+@media (max-width:1649px){
+    .sec01{
+        .sec01-form{
+            .sec01_title{
+                font-size: 2.8rem;
+            }
+        }
+    }    
+}
 
 @media (max-width:1440px) {
     .sec01 {
@@ -342,6 +345,18 @@
             }
         }
     }
+}
+
+@media (max-width:1387px){
+    .sec01{
+        .sec01-form{
+            .sec01_title{
+                font-size: 2.3rem;
+                left: 1%;
+                top: 4%;
+            }
+        }
+    }    
 }
 
 @media (max-width:1280px) {
@@ -625,6 +640,7 @@
         }
         .container{
             margin-bottom: 35px;
+
             .sec02__content {
                 height: 26vh;
             .sec02__subcontent {
@@ -742,7 +758,24 @@
 //==========sec05 end===========
 }
 
+@media (max-width:767px){
+    .sec02{
+        .container{
+            .row{
+                gap: 20px;
+            }
+        }
+    }
+}
+
 @media (max-width:540px){
+.nav-form {
+  .gnb{
+      ul.open{
+        background-color: variables.$basic-bg;
+      }
+    }
+}
 
 //==========sec01==========
     .sec01 {
@@ -778,7 +811,6 @@
             padding: 0 20px;
             .sec02__content {
                 height: 26vh;
-                margin-bottom: 15px;
                 .sec02__subcontent{
                     margin: 25px;
                         p {
@@ -943,7 +975,6 @@
         }
     }
 }
-
 
 @media (max-width:348px){
     //==========sec01===============
