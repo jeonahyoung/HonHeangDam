@@ -677,8 +677,8 @@ input[type=radio]:checked + .question_form .q-container {
   display: none;
 }
 #result-section .r-container {
-  background-color: #fff;
-  margin: 0 auto;
+  background-color: #Fff;
+  margin: 0px auto;
   border: 7px solid #FFA500;
   padding: 60px 90px;
   border-radius: 30px;

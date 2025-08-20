@@ -501,6 +501,71 @@ body .point-c {
   color: #32BD7E;
 }
 
+.welcome-modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.welcome-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+.welcome-modal .modal-content {
+  width: 90%;
+  max-width: 500px;
+  background-color: #fff;
+  opacity: 0.9;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+  border: 1px solid #e0e0e0;
+  border-top: 3px solid #000000;
+}
+.active .welcome-modal .modal-content {
+  transform: translateY(0);
+}
+.welcome-modal .modal-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  border: none;
+}
+.welcome-modal .modal-header .close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+.welcome-modal .modal-header .close-btn:hover {
+  color: #333333;
+}
+.welcome-modal .modal-body {
+  padding: 0 15px 30px;
+  text-align: center;
+}
+.welcome-modal .modal-body p {
+  font-family: "Paperlogy", sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000000;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
 .sec01 {
   background-color: #FFF8ED;
   padding: 50px 80px;
@@ -543,7 +608,7 @@ body .point-c {
   color: #272727;
 }
 .sec02 .sec02__content {
-  height: 37vh;
+  height: 40vh;
   display: flex;
   align-items: flex-end;
   color: #fff;
@@ -713,7 +778,7 @@ body .point-c {
     font-size: 2.7rem;
   }
   .sec02 .sec02__content {
-    height: 28vh;
+    height: 46vh;
   }
   .sec04 .container .row .sec04__imgContent {
     width: 74%;
